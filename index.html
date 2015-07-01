@@ -150,138 +150,6 @@
           
           
             
-              <a class="post-title-link" href="/2015/07/01/it-is-time-to-switch-to-android-studio-android-project/">
-                是时候把Android 项目切换到Android Studio
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-07-01
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/07/01/it-is-time-to-switch-to-android-studio-android-project/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/01/it-is-time-to-switch-to-android-studio-android-project/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="http://ww4.sinaimg.cn/large/68622377gw1et3o1cgo1pj20qo0bogmb.jpg" alt="Support for C/C++"><br>前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。</p>
-<h2 id="我的经历">我的经历</h2><hr>
-<p>当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高我们的生产效率。所以当我转做Android 开发的时候，自然而然地使用Android Studio 开发，当然遇到好多问题，不过最终我都克服了，现在使用Android Studio 虽然算不上得心应手，但对于平常的开发还是绰绰有余，也能解决掉平常遇到的小问题。</p>
-<h2 id="Android_Studio在国内为什么这么不流行？">Android Studio在国内为什么这么不流行？</h2><hr>
-<p>当然我也知道，Android Studio 在国内为什么这么不流行？我总结几点原因，之前在微博上和大牛们有讨论过。</p>
-<ul>
-<li><p><strong>国内的网络环境。</strong>对于下载，安装，更新都需要科学上网，初学者遇到这些问题基本上都会退缩；就算当初能科学上网，我也是遇到一大堆问题。</p>
-</li>
-<li><p><strong>学习成本高。</strong>基本上国内的开发者的博客，入门教程大都是基于Eclipse，Android Studio 的教程少之又少，所以资源少，所以让初学者望而却步。</p>
-</li>
-<li><p><strong>从业者和教育者的固步自封。</strong>基本上，Android 开发的不管大小公司，很少有公司使用Android Studio 来开发，再加上大家已经习惯使用Eclipse 开发，不愿意脱离熟悉的环境。市面上的Android 开发书籍，基本上都是以Eclipse 作为开发环境来讲解样例的，所以综上来说，没有人带头使用，造就了Android Studio 没有流行的原因。也只是稍微有点觉悟的公司都使用Android Studio 开发。</p>
-</li>
-<li><p><strong>Android Studio 没有稳定的版本，并且不支持C/C++ 开发。</strong>直到2014 年 12 月才终于发布了正式版（1.0）。在这之前，时常会出现一些Bug。不过随着Android Studio 正式版的发布，到Google I/O 2015 的1.3 的发布，支持C/C++ 等众多特性，我们看到Android Studio 变得更加健壮，也让Android 开发者有信心切换到Android Studio。</p>
-</li>
-</ul>
-<p>对于以上的几个问题，我都已经找到了解决办法。</p>
-<ul>
-<li>作为一个程序员，第一步就要学会科学上网，至于方法，自行搜索，如果找不到，劝你还是不要做程序员了。</li>
-<li>至于说Android Studio 的教程，我会在文章结尾推荐大家一些教程，对于入门，熟悉使用也是足够了。</li>
-<li>对于从业者和教育者，我建议大家去关注微博上的大牛，关注Github 的Android 开发者，他们都在使用Android Studio，有什么问题，可以向他们请教。我也希望，作为一个Android 开发者，也向周围的人推荐使用Android Studio。</li>
-</ul>
-<h2 id="Android_Studio_VS_Eclipse">Android Studio VS Eclipse</h2><hr>
-<p>至于说Android Studio 和Eclipse 孰优孰劣，网上大牛们已经很多讨论了，更多请看，我就不多谈论了。</p>
-<ul>
-<li><a href="http://www.infoq.com/cn/news/2013/11/why-drop-eclipse-use-intellij" target="_blank" rel="external">我们为何放弃Eclipse，投奔IntelliJ IDEA</a></li>
-<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse</a></li>
-<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？</a></li>
-</ul>
-<p>也有人担心Android Studio 编译速度慢，不过以后就不用担心了，Android Studio 1.3 重写了编译系统，采用和Eclispe 一样的编译原理，所以我们就不用担心Android Studio 的速度了，我也亲自测试了，真的快了好多。</p>
-<p>Google 官方也停止了ADT 的更新。那么使用Eclipse 就意味着好多新特性不能使用。而Android Studio 几乎每周都有更新，而且众多服务的集成，让开发者开发更加便捷，专注。</p>
-<p>如果你上Github 的话，目前现在流行的开源Android 项目已经没有采用Eclipse，基本上全部采用Android Studio，而且Android Studio 集成Git 插件，从Github Clone 项目特别方便，而且可以直接运行。</p>
-<h3 id="介绍Android_Studio_1-3_的新特性">介绍Android Studio 1.3 的新特性</h3><p>如果说Android Studio 1.0 可以勉强够用，那么Android Studio 1.3 相比1.0 就是质的改变，支持C/C++，支持SVG 图片自动生成不同分辨率的图片，增加主题编辑器，以后编辑主题，你也可以实时预览了等等很多。更多请看。</p>
-<ul>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a></li>
-</ul>
-<h2 id="怎么将Eclipse_项目切换到Android_Studio？">怎么将Eclipse 项目切换到Android Studio？</h2><hr>
-<p>不用急，Google 官方已经给出了两种解决方式解决方案。</p>
-<h3 id="第一种">第一种</h3><p>直接选择目录，next 一直到最后，我们的Eclipse 的项目就到了Android Studio 上了，需要注意的是，这样导入的项目还是会保留Eclipse 的构建方式，比如我们在Eclipse 上使用Ant 构建，迁移后还是会是会用Ant 构建。</p>
-<p><img src="http://ww1.sinaimg.cn/large/68622377gw1et3ljatc2vj20m50hq40y.jpg" alt="导入Eclipse ADT"></p>
-<h3 id="第二种">第二种</h3><p>首先，我们在Eclipse 将项目导出为Gradle 项目。<br><img src="http://ww1.sinaimg.cn/large/68622377gw1et3lme261sj209q0ajmyw.jpg" alt="选择导出"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1et3lmdqdx5j20el07djs8.jpg" alt="导出Gradle 项目"><br>然后在Android Studio 直接打开build.grade 即可。<br>这样，项目就变成了Gradle 构建了。</p>
-<p>当然了，如果项目比较庞大，特别是商业项目，直接切换，难免会有很多问题，不过这是难免的，切换过来，也会一段时间内不太适应，不过当你适应了Android Studio 的便捷的开发，就会对它不离不弃了。</p>
-<p>上面的两种方式是官方提供的方式，如果英文过关的话，可以看英文原文。</p>
-<ul>
-<li><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a></li>
-</ul>
-<h2 id="参考以及文章推荐">参考以及文章推荐</h2><hr>
-<p>最后，关于Android Studio 我感觉不错的文章，推荐给你。</p>
-<ul>
-<li><p><a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">Android Studio 入门指南</a><br>这是我写的文章，主要是给初学者搭建Android Studio 开发环境来看的。</p>
-</li>
-<li><p><a href="http://stormzhang.com/" target="_blank" rel="external">Android Studio系列教程</a><br>这篇是大牛StormZhang 写的系列Android Studio 教程，深入浅出，通俗易懂。</p>
-</li>
-<li><p><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a><br>这篇是官方给出的从Eclipse 迁移项目到Android Studio 的两种解决方式。</p>
-</li>
-</ul>
-<ul>
-<li><a href="http://robovm.com/google-io-summary-whats-new-in-android-development-tools/" target="_blank" rel="external">Google I/O Summary: What’s new in Android Development Tools</a></li>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a><br>上面两篇，都是对Google IO 2015 的总结，一个中文，一个英文，就看你喜欢看哪个了。中文是大牛代码家总结的。<br><br></li>
-<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇）</a></li>
-<li><a href="http://android-studio.org/index.php/docs/guide" target="_blank" rel="external">Android Studio 使用指南 | Android Studio 中文教程</a></li>
-<li><a href="http://www.jianshu.com/p/470730011d85" target="_blank" rel="external">从Eclipse中导入项目到AndroidStudio中</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/fe6af27c12ed" target="_blank" rel="external">http://www.jianshu.com/p/fe6af27c12ed</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
               <a class="post-title-link" href="/2015/07/01/User-github-hexo-build-blog/">
                 使用Github + Hexo 来搭建自己的博客
               </a>
@@ -420,6 +288,1265 @@
 
 
     
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/">
+                是时候把Android 项目切换到Android Studio
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-06-14
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/14/it-is-time-to-switch-to-android-studio-android-project/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><img src="http://ww4.sinaimg.cn/large/68622377gw1et3o1cgo1pj20qo0bogmb.jpg" alt="Support for C/C++"><br>前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。</p>
+<h2 id="我的经历">我的经历</h2><hr>
+<p>当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高我们的生产效率。所以当我转做Android 开发的时候，自然而然地使用Android Studio 开发，当然遇到好多问题，不过最终我都克服了，现在使用Android Studio 虽然算不上得心应手，但对于平常的开发还是绰绰有余，也能解决掉平常遇到的小问题。</p>
+<h2 id="Android_Studio在国内为什么这么不流行？">Android Studio在国内为什么这么不流行？</h2><hr>
+<p>当然我也知道，Android Studio 在国内为什么这么不流行？我总结几点原因，之前在微博上和大牛们有讨论过。</p>
+<ul>
+<li><p><strong>国内的网络环境。</strong>对于下载，安装，更新都需要科学上网，初学者遇到这些问题基本上都会退缩；就算当初能科学上网，我也是遇到一大堆问题。</p>
+</li>
+<li><p><strong>学习成本高。</strong>基本上国内的开发者的博客，入门教程大都是基于Eclipse，Android Studio 的教程少之又少，所以资源少，所以让初学者望而却步。</p>
+</li>
+<li><p><strong>从业者和教育者的固步自封。</strong>基本上，Android 开发的不管大小公司，很少有公司使用Android Studio 来开发，再加上大家已经习惯使用Eclipse 开发，不愿意脱离熟悉的环境。市面上的Android 开发书籍，基本上都是以Eclipse 作为开发环境来讲解样例的，所以综上来说，没有人带头使用，造就了Android Studio 没有流行的原因。也只是稍微有点觉悟的公司都使用Android Studio 开发。</p>
+</li>
+<li><p><strong>Android Studio 没有稳定的版本，并且不支持C/C++ 开发。</strong>直到2014 年 12 月才终于发布了正式版（1.0）。在这之前，时常会出现一些Bug。不过随着Android Studio 正式版的发布，到Google I/O 2015 的1.3 的发布，支持C/C++ 等众多特性，我们看到Android Studio 变得更加健壮，也让Android 开发者有信心切换到Android Studio。</p>
+</li>
+</ul>
+<p>对于以上的几个问题，我都已经找到了解决办法。</p>
+<ul>
+<li>作为一个程序员，第一步就要学会科学上网，至于方法，自行搜索，如果找不到，劝你还是不要做程序员了。</li>
+<li>至于说Android Studio 的教程，我会在文章结尾推荐大家一些教程，对于入门，熟悉使用也是足够了。</li>
+<li>对于从业者和教育者，我建议大家去关注微博上的大牛，关注Github 的Android 开发者，他们都在使用Android Studio，有什么问题，可以向他们请教。我也希望，作为一个Android 开发者，也向周围的人推荐使用Android Studio。</li>
+</ul>
+<h2 id="Android_Studio_VS_Eclipse">Android Studio VS Eclipse</h2><hr>
+<p>至于说Android Studio 和Eclipse 孰优孰劣，网上大牛们已经很多讨论了，更多请看，我就不多谈论了。</p>
+<ul>
+<li><a href="http://www.infoq.com/cn/news/2013/11/why-drop-eclipse-use-intellij" target="_blank" rel="external">我们为何放弃Eclipse，投奔IntelliJ IDEA</a></li>
+<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse</a></li>
+<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？</a></li>
+</ul>
+<p>也有人担心Android Studio 编译速度慢，不过以后就不用担心了，Android Studio 1.3 重写了编译系统，采用和Eclispe 一样的编译原理，所以我们就不用担心Android Studio 的速度了，我也亲自测试了，真的快了好多。</p>
+<p>Google 官方也停止了ADT 的更新。那么使用Eclipse 就意味着好多新特性不能使用。而Android Studio 几乎每周都有更新，而且众多服务的集成，让开发者开发更加便捷，专注。</p>
+<p>如果你上Github 的话，目前现在流行的开源Android 项目已经没有采用Eclipse，基本上全部采用Android Studio，而且Android Studio 集成Git 插件，从Github Clone 项目特别方便，而且可以直接运行。</p>
+<h3 id="介绍Android_Studio_1-3_的新特性">介绍Android Studio 1.3 的新特性</h3><p>如果说Android Studio 1.0 可以勉强够用，那么Android Studio 1.3 相比1.0 就是质的改变，支持C/C++，支持SVG 图片自动生成不同分辨率的图片，增加主题编辑器，以后编辑主题，你也可以实时预览了等等很多。更多请看。</p>
+<ul>
+<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a></li>
+</ul>
+<h2 id="怎么将Eclipse_项目切换到Android_Studio？">怎么将Eclipse 项目切换到Android Studio？</h2><hr>
+<p>不用急，Google 官方已经给出了两种解决方式解决方案。</p>
+<h3 id="第一种">第一种</h3><p>直接选择目录，next 一直到最后，我们的Eclipse 的项目就到了Android Studio 上了，需要注意的是，这样导入的项目还是会保留Eclipse 的构建方式，比如我们在Eclipse 上使用Ant 构建，迁移后还是会是会用Ant 构建。</p>
+<p><img src="http://ww1.sinaimg.cn/large/68622377gw1et3ljatc2vj20m50hq40y.jpg" alt="导入Eclipse ADT"></p>
+<h3 id="第二种">第二种</h3><p>首先，我们在Eclipse 将项目导出为Gradle 项目。<br><img src="http://ww1.sinaimg.cn/large/68622377gw1et3lme261sj209q0ajmyw.jpg" alt="选择导出"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1et3lmdqdx5j20el07djs8.jpg" alt="导出Gradle 项目"><br>然后在Android Studio 直接打开build.grade 即可。<br>这样，项目就变成了Gradle 构建了。</p>
+<p>当然了，如果项目比较庞大，特别是商业项目，直接切换，难免会有很多问题，不过这是难免的，切换过来，也会一段时间内不太适应，不过当你适应了Android Studio 的便捷的开发，就会对它不离不弃了。</p>
+<p>上面的两种方式是官方提供的方式，如果英文过关的话，可以看英文原文。</p>
+<ul>
+<li><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a></li>
+</ul>
+<h2 id="参考以及文章推荐">参考以及文章推荐</h2><hr>
+<p>最后，关于Android Studio 我感觉不错的文章，推荐给你。</p>
+<ul>
+<li><p><a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">Android Studio 入门指南</a><br>这是我写的文章，主要是给初学者搭建Android Studio 开发环境来看的。</p>
+</li>
+<li><p><a href="http://stormzhang.com/" target="_blank" rel="external">Android Studio系列教程</a><br>这篇是大牛StormZhang 写的系列Android Studio 教程，深入浅出，通俗易懂。</p>
+</li>
+<li><p><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a><br>这篇是官方给出的从Eclipse 迁移项目到Android Studio 的两种解决方式。</p>
+</li>
+</ul>
+<ul>
+<li><a href="http://robovm.com/google-io-summary-whats-new-in-android-development-tools/" target="_blank" rel="external">Google I/O Summary: What’s new in Android Development Tools</a></li>
+<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a><br>上面两篇，都是对Google IO 2015 的总结，一个中文，一个英文，就看你喜欢看哪个了。中文是大牛代码家总结的。<br><br></li>
+<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇）</a></li>
+<li><a href="http://android-studio.org/index.php/docs/guide" target="_blank" rel="external">Android Studio 使用指南 | Android Studio 中文教程</a></li>
+<li><a href="http://www.jianshu.com/p/470730011d85" target="_blank" rel="external">从Eclipse中导入项目到AndroidStudio中</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/fe6af27c12ed" target="_blank" rel="external">http://www.jianshu.com/p/fe6af27c12ed</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/04/20/android-studio-getting-guide/">
+                Android Studio 入门指南
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-04-20
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/04/20/android-studio-getting-guide/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/20/android-studio-getting-guide/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>作为一个Android 开发者，你应该很了解Android Studio，如果你现在还不了解，没关系，那么从现在开始，我们一起来了解了解Andoid Studio。</p>
+<blockquote>
+<p>Android Studio 是Google 官方在2013 Google I/O 大会（2013 年5月）上发布的全新Andrid 开发IDE（基于Intellij IDEA），在2014 年12 月发布第一个稳定版（1.0），目前最新版本为1.2 Beta 3；依托与Intellij IDEA，它更智能，提示功能更强，默认使用Gradle 构建，布局文件实时预览等等。</p>
+</blockquote>
+<p>更多Android Studio 的优点请移步：<a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse ADT</a><br><img src="http://blogldc.s3.amazonaws.com/wp-content/uploads/2014/12/studio-hero.jpg" alt="Android Studio（题图来自网络）"></p>
+<h2 id="Android_SDK_安装">Android  SDK 安装</h2><hr>
+<p>官方下载：<a href="https://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">SDK Tools - Android Developer</a><br>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools#sdk-tools" target="_blank" rel="external">SDK Tools - AndroidDevTools</a><br>有了SDK Tools 就可以配置，就可以安装Andrid SDK 了，打开Android SDK Manager</p>
+<p><img src="http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png" alt="Windows SDK Manager（题图来自 [http://www.android.pk](http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png)）"></p>
+<p><img src="http://ww2.sinaimg.cn/mw690/68622377gw1erbmsv7jjdj20pr0hfgpr.jpg" alt="Linux SDK Manager"></p>
+<p>打开SDK Manager，如果有代理或者VPN 可以直接下载，一般要勾选Tools，Extras；SDK 版本不用全部更新。由于国内连接速度很慢，可以参考这篇文章来使用国内的镜像来下载。</p>
+<ul>
+<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
+</ul>
+<p><img src="http://tutorchen.qiniudn.com/sdk-manager.png" alt="SDK Manager"></p>
+<h2 id="Android_Studio_下载和安装">Android Studio 下载和安装</h2><hr>
+<h3 id="下载">下载</h3><p>下载之前，你要确保已经安装JDK 和Android SDK。<br>由于国内不能直接下载，所以我在这里提供两种下载方式，一种是官网，另一种是国内的镜像网站。</p>
+<ul>
+<li>官网下载：<a href="http://tools.android.com/download/studio" target="_blank" rel="external">Android Studio Download</a></li>
+<li>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">AndroidDevTools - Github</a>。</li>
+</ul>
+<h3 id="安装">安装</h3><p>下载完之后，如果是安装包，可以直接安装即可；如果是解压包，可以解压后，直接运行。</p>
+<ul>
+<li>Windows 运行 <code>安装目录/studio.exe</code> 文件。</li>
+<li>Mac / Linux 运行 <code>安装目录/bin/studio.sh</code>。</li>
+</ul>
+<p>打开之后，会进入设置页面，如果没有安装SDK，选择Standard（标准）。如果已经安装过了SDK 就选择Custom（自定义），然后选择SDK 安装目录即可。<br><img src="http://stormzhang.com/image/studio_wizard2.png" alt="选择SDK（[题图来自 StoreZhang 的博客](http://stormzhang.com/)）"><br>然后一直Next 就好了。</p>
+<h2 id="Gradle_的安装和配置">Gradle 的安装和配置</h2><hr>
+<p>由于Android Studio 默认使用Gradle 构建，而gradle 在国内访问速度离奇的慢，所以我们就自己安装了。</p>
+<ul>
+<li>官方下载Gradle：<a href="http://gradle.org/downloads" target="_blank" rel="external">Gradle - Download</a></li>
+<li>国内下载Gradle： <a href="https://github.com/inferjay/AndroidDevTools#gradle" target="_blank" rel="external">Gradle - AndroidDevTools</a></li>
+</ul>
+<p>详细安装：<a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></p>
+<h2 id="使用Android_Studio构建第一个Android_程序">使用Android Studio构建第一个Android 程序</h2><hr>
+<p><img src="http://stormzhang.com/image/studio_wizard6.png" alt="Android Studio Setup（[题图来自StoreZhang 的博客](http://stormzhang.com/)）"><br>据说第一次创建项目的时候，会卡在那里，有大牛找到的解决办法，就是配置离线Gradle，因为上面我们已经下载过Gradle 了，可以直接拿来用。<br>可以把gradle-2.1-all.zip（不解压）<br>Windows 放在<code>C:\Users\xxx\.gradle\wrapper\dists\......</code> 目录中（如图所示）。<br>Mac/Linux 放在 <code>~/.gradle\wrapper\dists\......</code>。</p>
+<p><img src="http://xyzphoto.qiniudn.com/wordpress_13_QQ%E6%88%AA%E5%9B%BE20140918233902.png" alt="Windows Gradle"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1erbmsuj5qhj20pr09utac.jpg" alt="Linux Gradle"></p>
+<p>然后再次创建Project 就不会卡了。</p>
+<h3 id="一个Android_项目的目录文件的作用">一个Android 项目的目录文件的作用</h3><p><img src="http://ww3.sinaimg.cn/mw690/68622377gw1erbmsu0ddcj21fj0tcqcg.jpg" alt="Android Project Folder"></p>
+<p>一个Project 创建后，大概的文件目录就是这样的。<br>因为在Android Studio每个Project，相当于Eclipse 的WorkSpace；每个Module（上图的app 目录）相当于Eclipse 的Project。</p>
+<ul>
+<li><strong>settings.gradle</strong>： 每个Moudle 要在这里注册</li>
+<li><strong>build.gradle</strong>：每个Project 的配置</li>
+<li><strong>app</strong>：每个Module</li>
+<li><strong>app/build.gradle</strong>：每个Module 配置文件，比如依赖的类库，SDK 版本</li>
+<li><strong>app/src/</strong>：源码和资源文件都在这里；我们写的文件都在这里面。</li>
+<li><strong>app/libs/</strong>：添加类库。</li>
+</ul>
+<h2 id="工程和文件结构">工程和文件结构</h2><hr>
+<p><img src="https://www.jetbrains.com/img/webhelp/uiEditor.png" alt="题图来自 [Jetbrains 官方文档](https://www.jetbrains.com/img/webhelp/uiEditor.png)"></p>
+<ol>
+<li>文件编辑区域</li>
+<li>编辑区域左边（显示行号的）</li>
+<li>输入提示区域</li>
+<li>文档切换区域<ul>
+<li><code>Alt + Left</code> 或者<code>Alt + Right</code>，不同的Tab 切换</li>
+<li><code>Ctrl + Tab</code>：切换不同的区域</li>
+</ul>
+</li>
+<li>其他功能区域</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/mw690/68622377gw1erbugxjgb0j20fs06vgm1.jpg" alt="Android Studio 工具栏设置（题图来自 [大猫知乎的回答](http://www.zhihu.com/question/28110006/answer/39433946)）"></p>
+<p><em>新建文件或者插入方法</em><br><code>ALT + INSERT</code>（<code>COMMAND + N</code> Mac）</p>
+<ul>
+<li>在<code>编辑区</code>域是插入方法（构造方法，Get Set 方法等等）；</li>
+<li>在<code>工程结构</code>新建文件</li>
+</ul>
+<h2 id="罗列一些常用的快捷键">罗列一些常用的快捷键</h2><hr>
+<table>
+<thead>
+<tr>
+<th>全局快捷键（比较重要的）</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALT + ENTER</td>
+<td>工程快速修复</td>
+</tr>
+<tr>
+<td>CTRL + SHIFT + A</td>
+<td>快速查找</td>
+</tr>
+<tr>
+<td>CTRL + ALT + L (Win)</td>
+<td>格式化代码（我的锁屏的快捷键占了）</td>
+</tr>
+<tr>
+<td>CTRL + Q (Win)</td>
+<td>查看文档</td>
+</tr>
+<tr>
+<td>SHIFT + ESC</td>
+<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>编辑区快捷键</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTRL + B / F4</td>
+<td>查看源码</td>
+</tr>
+<tr>
+<td>CTRL + Q</td>
+<td>查看文档</td>
+</tr>
+<tr>
+<td>SHIFT + ESC</td>
+<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
+</tr>
+<tr>
+<td>ATRL + /</td>
+<td>上下文联想</td>
+</tr>
+<tr>
+<td>ALT + LEFT / RIGHT</td>
+<td>不同文档左右切换</td>
+</tr>
+<tr>
+<td>ALT + TOP / BOTTOM</td>
+<td>跳转到上一个 / 下一方法</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>注释</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTRL + /</td>
+<td>注视当前行</td>
+</tr>
+<tr>
+<td>CTRL + SHIFT + /</td>
+<td>文档注视</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>复制 / 粘贴</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTRL + C</td>
+<td>复制该行</td>
+</tr>
+<tr>
+<td>CTRL + V</td>
+<td>粘贴</td>
+</tr>
+<tr>
+<td>CTRL + X</td>
+<td>剪切</td>
+</tr>
+<tr>
+<td>CTRL + Y</td>
+<td>删除该行</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">查找</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Ctrl+Shift+A</td>
+<td>查找所有行为</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + F</td>
+<td>查找当前编辑的文档</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + R</td>
+<td>查找并替代</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + N</td>
+<td>查找类（class）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ctrl + SHIFT + N</td>
+<td>查找文件</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Git_使用">Git 使用</h2><hr>
+<p>由于Android Studio 已经自带了Git 插件，所以我们就不需要去下载了，只需要在本机下载Git 安装即可。<br>然后将可执行文件配置在Android Studio 即可。<br><img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/AndroidStudio_3_7.png" alt="Git（题图来自网络）"></p>
+<h2 id="参考">参考</h2><hr>
+<ul>
+<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio系列教程——下载与安装</a></li>
+<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？ - 知乎</a></li>
+<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇） - 简书</a></li>
+<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
+<li><a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></li>
+<li><a href="https://github.com/inferjay/AndroidDevTools/" target="_blank" rel="external">inferjay/AndroidDevTools</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">http://www.jianshu.com/p/36cfa1614d23</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/04/18/android-the-development-of-essential-little-knowledge/">
+                Android 开发必备小知识点
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-04-18
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/04/18/android-the-development-of-essential-little-knowledge/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/18/android-the-development-of-essential-little-knowledge/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <ul>
+<li><p><a href="http://stackoverflow.com/questions/11285961/how-to-make-a-background-transparent-20-in-android" target="_blank" rel="external">RGB 颜色透明度</a><br>Android 中使用RGB 来表示颜色，如果想要表示透明度，在六位十六进制的前面<code>添加两位十六进制表示透明度</code>。</p>
+</li>
+<li><p><a href="http://www.materialui.co/colors" target="_blank" rel="external">Material Color</a><br>对开发人员，选择一个颜色真的很不容易，那就让设计师帮你挑选吧。</p>
+</li>
+<li><p><a href="http://stackoverflow.com/questions/19691530/valid-values-for-androidfontfamily-and-what-they-map-to" target="_blank" rel="external">Android 系统默认字体</a><br>Android 系统默认字体只有很少，从Android 16（Android 4.1）默认提供了一些字体，可以引用。</p>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://blog.csdn.net/top_code/article/details/8588703" target="_blank" rel="external">Android px、dp、sp之间相互转换</a><br>在Android 中设置在Java 文件中设置属性，有的方法只提供一种形式的尺寸（比如px），所以这个时候就需要我们去相互转化。</p>
+</li>
+<li><p><a href="http://androidpixels.net/" target="_blank" rel="external">AndroidPixels</a><br>AndroidPixels 是一个px，sp 相互转化的工具。</p>
+</li>
+<li><p><a href="http://www.stormzhang.com/android/2015/03/29/android-support-library/" target="_blank" rel="external">Android Support兼容包详解</a><br>Android 中有不同版本的系统，对于老的版本想要支持新的系统的功能，Android 使用Support 包来解决的。</p>
+</li>
+<li><p><a href="http://www.cnblogs.com/vanezkw/articles/3383744.html" target="_blank" rel="external">Android 多屏适配</a><br>Android 手机，平板有不同的尺寸，不同的尺寸又相差很多，所以要对不同的尺寸的手机进行适配。</p>
+</li>
+</ul>
+<hr>
+<p>更多的以后补充。。。。。。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/748c10304d08" target="_blank" rel="external">http://www.jianshu.com/p/748c10304d08</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/02/22/10-great-learning-android-development-of-the-site/">
+                10个很棒的学习Android 开发的网站
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-02-22
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/02/22/10-great-learning-android-development-of-the-site/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/22/10-great-learning-android-development-of-the-site/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>看到<a href="http://www.jianshu.com/users/eFsf4z/latest_articles" target="_blank" rel="external">江湖旅人</a> 写的《<a href="http://www.jianshu.com/p/ff96a8e5abdb" target="_blank" rel="external">10个很棒的学习iOS开发的网站 - 简书</a>》，所以就忍不住写Android 啦，也希望对大家有帮助。<br>我推荐的网站，都是我在学习Android 开发过程中发现的好网站，给初学者一些建议，少走一些弯路。</p>
+<h2 id="Android_Developers"><a href="https://developer.android.com/index.html" target="_blank" rel="external">Android Developers</a></h2><hr>
+<p>作为一个Android 开发者，官网的资料当然不可错过，从设计，培训，指南，文档，都不应该错过，在以后的学习过程中慢慢理解体会。<br><img src="http://ww4.sinaimg.cn/large/68622377jw1epljqud94bj21fj0tcaiz.jpg" alt="Android Developer"></p>
+<h2 id="Android_Guides_-_CodePath"><a href="http://guides.codepath.com/android" target="_blank" rel="external">Android Guides  - CodePath</a></h2><hr>
+<p>CodePath 是国外一个技术培训机构，主要培训iOS 和Android 开发，而CodePath 将Android Guides 放在Github，已经获得了4000+ 个赞，对于Android 初学这特别适合，而且浅显易懂。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqvisahj21fj0tck65.jpg" alt="CodePath"></p>
+<h2 id="Android_tutorial_-_TutorialSpoint"><a href="http://www.tutorialspoint.com/android/" target="_blank" rel="external">Android tutorial - TutorialSpoint</a></h2><hr>
+<p>TutorialSpoint 是一个专业的技术教程网站，基本上我们所熟知的热门技术，都能在这里找到教程，知识点覆盖的特别全，而且代码风格也很不错，同时也适合初学着；更人性化的是，所有教程提供离线PDF 下载。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwixt2j21fj0tc17a.jpg" alt="Tutorial Spoint"></p>
+<h2 id="Android_Development_-_Vogella"><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a></h2><hr>
+<p>Vogella 提供的Android 开发教程也是可圈可点的，可能知识点覆盖不是特别全，但是单个知识点，Vogella 讲解的还是很详细的。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwiqdej21fj0tck8z.jpg" alt="Vogella"></p>
+<h2 id="AndroidHive"><a href="http://www.androidhive.info/" target="_blank" rel="external">AndroidHive</a></h2><hr>
+<p>AndroidHive 是一个个人博客，主要写Android 开发的教程，虽然只是一个人，但却提供了绘图，到写教程，功能视频演示，也表现出了博主的专业与敬业，博主写的东西也是跟随新技术，可实用性特别强。<br><img src="http://ww2.sinaimg.cn/large/68622377jw1epljqxvulzj21fj0tcwot.jpg" alt="Android Hive"></p>
+<h2 id="Android_SDK_-_Tuts+_Code"><a href="http://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code</a></h2><hr>
+<p>Tuts+ 是一个技术教程，课程和电子书的网站，基本上热门的技术都提供了，他的教程主要是免费的，而课程，电子书是有偿的，由于其专业性，大多教程都是高精华的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqyixf0j21fj0tcdq4.jpg" alt="Tuts Plus"></p>
+<h2 id="Lynda"><a href="http://www.lynda.com/" target="_blank" rel="external">Lynda</a></h2><hr>
+<p>Lynda 是一个在线学习网站，该网站提供技术，设计等很多的课程。</p>
+<p><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqzu0n2j21fj0tctn7.jpg" alt="Lynda"></p>
+<h2 id="Android_Questions_-_Stack_Overflow"><a href="http://stackoverflow.com/questions/tagged/android" target="_blank" rel="external">Android Questions - Stack Overflow</a></h2><hr>
+<p>Stackoverflow 是一个技术在线问答网站，几乎平常遇到的所有技术网站，在这里都能找到答案，而且你提问的问题，上面有很多大牛会很热心回答。</p>
+<p><img src="http://ww4.sinaimg.cn/large/68622377jw1epljr0g5zjj21fj0tck6a.jpg" alt="Stackoverflow"></p>
+<h2 id="Search_·_android_-_Github"><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=android" target="_blank" rel="external">Search · android - Github</a></h2><hr>
+<p>Github 是一个基于Git 的代码托管工具，几乎所有知名的开源软件都选择Github 来托管，而很多Android 开发者也都选择Github，几乎常见的Demo 在Github 都能找到类似的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljr0ys5xj21fj0tc44x.jpg" alt="Github"></p>
+<h2 id="Android_Archives_|_Java_Code_Geeks"><a href="http://www.javacodegeeks.com/tutorials/android-tutorials/android-core-tutorials/" target="_blank" rel="external">Android Archives | Java Code Geeks</a></h2><hr>
+<p>Java Code Geeks 主要是一个Java 教程的网站，而他提供的Android 教程，一步一步，还有配图，使初学者没有太大压力。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljr1kqqoj21fj0tcakk.jpg" alt="Java Code Geeks"></p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/85cb02292acc" target="_blank" rel="external">http://www.jianshu.com/p/85cb02292acc</a><br>非商业转载请在「<code>开头</code>」注明作者「<code>详细信息</code>」和「<code>本文出处</code>」。</p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/02/11/how-do-i-self-study-android-2015/">
+                我是如何自学Android，资料分享（2015）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-02-11
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/02/11/how-do-i-self-study-android-2015/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/11/how-do-i-self-study-android-2015/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>自己学了两三个月的Android，最近花了一周左右的时间写了个App——<a href="https://github.com/Tikitoo/Diigoer" target="_blank" rel="external">Diigoer（已开源）</a>，又花了一两周时间找工作，收到了两个Offer，也算是对自己学习的一种认可吧；我刚开始学习总结的——《<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a>》，如果是初学Android 的话，不应该错过的，而今天这篇分享好这篇文章，相对于第一次写的会有所提升，所以建议先把上一篇看了，再来看这一篇；<br>那下面就切入正题吧，之前重复的就不再介绍了，相对于第一季，自己对Android 的认识更加深了（算是入门了吧），干货更多了，更加通俗易懂了，英文资料会多一点；而自己学习过程中发现的一些好资源，分享给你们，希望对你们的有一些帮助；</p>
+<h2 id="Java_学习">Java 学习</h2><hr>
+<p>我要再次强调，一定要有Java 基础（虽然现在使用其他语言也可以开发Android，但毕竟是很小众），也不要认为学习Java 两三周就可以不用管了，这会在以后的深入学习中暴露出问题，所以Java 基础一定要牢固，当然我也不是说，Java 学的特别好，才能去学习Android，毕竟学习是循序渐进的，所以在以后的学习中要注意，对于Java 系统的学习，我有一下几个推荐；</p>
+<blockquote>
+<ul>
+<li><a href="http://introcs.cs.princeton.edu/java/home/" target="_blank" rel="external">Introduction to Programming in Java: An Interdisciplinary Approach</a><br>普林斯顿的公开课，也有书籍，我觉得可以直接跟着公开课学习就OK 啦；</li>
+<li><a href="http://www.tutorialspoint.com/java/" target="_blank" rel="external">Java Tutorial - TutorialSpoint</a><br>TutorialSpoint 是一个专门技术教程网站，其他教程也可以去看学习；当然你想离线观看，网站还提供了PDF 版<ul>
+<li><a href="http://www.tutorialspoint.com/java/java_tutorial.pdf" target="_blank" rel="external">Java Tutorial PDF</a></li>
+</ul>
+</li>
+<li><a href="http://math.hws.edu/eck/cs124/downloads/javanotes7.pdf" target="_blank" rel="external">Javanotes 7.0 — Title Page</a><br>这个是霍巴特威廉史密斯学院的一本书，跟着JDK 版本，已经发行了好多版本；</li>
+</ul>
+</blockquote>
+<p>由于篇幅有限，所以在这里就不累赘了，以后会专门写一篇文章来说Java；</p>
+<h2 id="Android_系列教程">Android 系列教程</h2><hr>
+<p>这一段时间，发现了好多学习资源，自己收藏了，不敢独享，所以拿出来和大家分享，如果您发现不错的学习资源，欢迎留言；<br>而学习的过程中，也忽略了一些问题，比如自己学习的不系统，如果您也是自学的话，一定要注意这个问题，我觉得，除了看官方文档和大牛的博客之外，最重要就找一本好书，把自己的知识系统化；</p>
+<h3 id="入门指南">入门指南</h3><hr>
+<ul>
+<li><a href="developer.android.com/docs/training/index.html">Getting Started | Android Developers</a></li>
+<li><a href="http://halfapp.com/blog/get-started-programming-android-apps/" target="_blank" rel="external">How to get started programming Android apps | HalfApp</a></li>
+<li><a href="http://www.reddit.com/r/Android/comments/1w3woc/a_step_by_step_guide_about_how_to_get_started_and/" target="_blank" rel="external">A step by step guide about how to get started and involved in Android Development - Reddit</a></li>
+<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
+<li><a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a></li>
+<li><a href="http://drakeet.me/android_base_road" target="_blank" rel="external">我推荐的 Android 基础学习路线</a></li>
+<li><a href="http://mmclub.github.io/blog/2014/04/03/start-learning-android/" target="_blank" rel="external">Android入门杂谈</a></li>
+</ul>
+<h3 id="书籍推荐">书籍推荐</h3><hr>
+<p>首先自己没有很系统地去看一本书，所以我也是搜索，或者实在知乎上别人推荐的，所以，要根据自己的情况，适合自己的书来看；</p>
+<ul>
+<li><a href="http://commonsware.com/Android/" target="_blank" rel="external"> The Busy Coder’s Guide to Android Development</a><br>这是大牛CommonsGuy 开源的一本书，它的更新非常及时，基本上就是跟着SDK 更新的，下载PDF 可以在这里（<a href="http://commonsware.com/Android/4-2-free" target="_blank" rel="external">Four-to-Free Guarantee</a>）下载，书籍中源码可以在Github（<a href="https://github.com/commonsguy/cw-omnibus" target="_blank" rel="external">commonsguy/cw-omnibus</a>） 中查看；</li>
+<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">Best Android Books and Resources 2014</a><br>这篇文章主要介绍了Android 书籍和开发资源；</li>
+</ul>
+<h3 id="公开课">公开课</h3><hr>
+<ul>
+<li><a href="https://www.udacity.com/course/ud853" target="_blank" rel="external">How to Develop Android Apps Online Course - Udacity</a></li>
+<li><a href="https://class.coursera.org/android-001/lecture" target="_blank" rel="external">Programming Mobile Applications for Android (Coursera)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLB03EA9545DD188C3" target="_blank" rel="external">Android Development For Absolute Beginners - YouTube</a></li>
+</ul>
+<h3 id="系列教程">系列教程</h3><hr>
+<ul>
+<li><a href="https://github.com/thecodepath/android_guides/wiki" target="_blank" rel="external">Home · codepath/android_guides Wiki - codepath</a><br>Android 指南，它不仅介绍怎么创建一个最简单的App Demo，循序渐进教你使用各种流行的框架，对于即将工作的同学来说是很用用的；Demo 很有实战意义；</li>
+<li><a href="http://www.tutorialspoint.com/android/index.htm" target="_blank" rel="external">Android tutorial - TutorialSpoint</a><br>是不是特别熟悉呀，对上面提到过，教程特别通俗易懂，代码实例也不错；</li>
+<li><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a><br>教程挺通俗易懂</li>
+<li><a href="http://androidhive.info/" target="_blank" rel="external">AndroidHive | Tutorials, Games, Apps, Tips |</a><br>博主是印度人，博客主要是以教程为主，质量较高，而且会分享比较新的东西；</li>
+<li><a href="http://www.codelearn.org/android-tutorial/" target="_blank" rel="external">Android Tutorial | Interactive and Step by step tutorial to learn Android</a></li>
+<li><a href="https://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code Category</a></li>
+<li><a href="http://www.learn2crack.com/category/androidprogramming" target="_blank" rel="external">Android Programming Archives - Learn2Crack</a></li>
+<li><a href="https://www.mysliderule.com/learning-paths/android/learn/" target="_blank" rel="external">Android Learning Path | SlideRule</a></li>
+</ul>
+<h3 id="大牛博客推荐">大牛博客推荐</h3><hr>
+<ul>
+<li><a href="https://github.com/android-cn/android-dev-cn" target="_blank" rel="external">android-cn/android-dev-cn</a><br>主要介绍国内Android 开发大牛；</li>
+<li><a href="https://github.com/android-cn/android-dev-com" target="_blank" rel="external">android-cn/android-dev-com</a><br>主要介绍国外Android 开发大牛；</li>
+<li><a href="http://www.quora.com/What-are-must-read-Android-developer-blogs" target="_blank" rel="external">What are must-read Android developer blogs? - Quora</a><br>Quora 上的回答</li>
+<li><a href="http://www.zhihu.com/question/19775981" target="_blank" rel="external">有哪些 Android 大牛的 blog 值得推荐？ - 知乎</a><br>知乎上的回答</li>
+</ul>
+<h3 id="开源App">开源App</h3><hr>
+<ul>
+<li><a href="https://f-droid.org/" target="_blank" rel="external">F-Droid | Free and Open Source Android App Repository</a><br>F-Droid 是一个Android 开源App 仓库</li>
+<li><a href="http://blog.tisa7.com/android_open_source_projects" target="_blank" rel="external">Android优秀开源项目 - 小猪爬爬</a></li>
+<li><a href="https://android-arsenal.com/" target="_blank" rel="external">The Android Arsenal - A categorized directory of free libraries and tools for Android</a><br>在这里，找到最新最流行的Android 开源类库</li>
+<li><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Trinea/android-open-project - Trinea</a><br>大牛Trinea 写的Android 开源项目汇总</li>
+</ul>
+<h3 id="开发工具">开发工具</h3><hr>
+<ul>
+<li><a href="http://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a><br>一个Android 代码搜索引擎；前两天发现了这个工具就爱不释手，写了篇文章——《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，让你参考入门。</li>
+<li><a href="http://www.gradleware.com/" target="_blank" rel="external">Gradle</a><br>知乎上我回答的《<a href="http://www.zhihu.com/question/27866554/answer/38427122" target="_blank" rel="external">如何从eclipse转入android studio,感觉Gradle什么的很难理解的。有什么教程吗? - Tikitoo 的回答 - 知乎</a>》，可以参考。</li>
+<li><a href="">Android Studio</a><br>从Google 的态度就可以看出，Android Studio 就是未来，而且在最近发布了正式版，教程在网上也不少。</li>
+<li><a href="http://androiduiux.com" target="_blank" rel="external">Android User Interface | User Experience | Inspiration source for Android Designers and Developers</a></li>
+<li><a href="http://www.android-app-patterns.com/" target="_blank" rel="external">Android App Patterns</a></li>
+<li><a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder - 400,000+ free and premium icons</a><br>一个Icon 搜索引擎</li>
+<li><a href="https://github.com/google/material-design-icons" target="_blank" rel="external">google/material-design-icons - github</a><br>Google 把官方的Material Design 1000+ 的Icon 开源了，不仅仅只有Android 版，而且还有Web 和iOS，真是业界良心呀。</li>
+<li><a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">inferjay/AndroidDevTools</a><br>inferjay 总结的开发工具，并且提供了国内的镜像。</li>
+<li><a href="https://www.genymotion.com/" target="_blank" rel="external">Genymotion - A faster Android emulator</a><br>Genymotion 是Android 的虚拟机，比官方的快了不知多少啊，它是基于Virtual Box，并且提供了插件。</li>
+</ul>
+<h3 id="订阅">订阅</h3><hr>
+<ul>
+<li><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周刊</a></li>
+<li><a href="http://www.androidweekly.cn/" target="_blank" rel="external">Android开发技术周报</a></li>
+<li><a href="https://github.com/nemoTyrant/manong#ANDROID" target="_blank" rel="external">码农周刊 - Android</a></li>
+</ul>
+<h3 id="资源">资源</h3><hr>
+<ul>
+<li><a href="http://www.androidauthority.com/best-resources-android-development-372414/" target="_blank" rel="external">Best resources for Android development</a></li>
+<li><a href="http://www.bongizmo.com/blog/android-resources-each-developer-should-know/" target="_blank" rel="external">Resources every Android developer must know</a><br>中文版——《<a href="http://www.importnew.com/3988.html" target="_blank" rel="external">Android开发者必知的开发资源 - ImportNew</a><br>》，译者是ImportNew - 黄小非</li>
+<li><a href="http://yeungeek.com/awesome-resources/" target="_blank" rel="external">开发资源 | Android 沉思录</a></li>
+<li><a href="http://www.apptentive.com/blog/programming-resources-for-android-developers/" target="_blank" rel="external">Android Developer Resources, Tutorials, and References — Being Apptentive</a></li>
+<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
+<li><a href="http://www.cnblogs.com/mainroadlee/p/android_resources_list.html" target="_blank" rel="external">Android开发者资源大汇总 - Android开发周刊 - 博客园</a></li>
+<li><a href="https://github.com/snowdream/awesome-android" target="_blank" rel="external">awesome-android - github</a></li>
+<li><a href="https://plus.google.com/+KevinDarty/posts/Qex6Ae6zhZW" target="_blank" rel="external">Where To Start - Learning Android Development the Right Way - Kevin Darty - Google+</a></li>
+<li><a href="http://www.reddit.com/r/androiddev/wiki/resources" target="_blank" rel="external">resources - androiddev reddit</a></li>
+<li><a href="http://zhuanlan.zhihu.com/anzhuo/19657543" target="_blank" rel="external">Android自学资料汇总</a></li>
+<li><a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">Android 学习之路</a></li>
+</ul>
+<h2 id="参考">参考</h2><hr>
+<ul>
+<li><a href="http://www.quora.com/What-are-the-best-resources-to-learn-Android-development" target="_blank" rel="external">http://www.quora.com/What-are-the-best-resources-to-learn-Android-development</a></li>
+<li><a href="http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#" target="_blank" rel="external">http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#</a></li>
+<li><a href="http://www.sitepoint.com/12-android-tutorials-beginners/" target="_blank" rel="external">http://www.sitepoint.com/12-android-tutorials-beginners/</a></li>
+<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">http://nimooli.com/blog/best-android-books-2014/</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/">
+                Android 开发工具之Codota——搜索最好的Android 代码
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-02-04
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/04/codota-search-of-the-best-android-tools-android-code/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Find Great Code Examples</span><br><span class="line">Our crawler extracts coding patterns <span class="built_in">from</span> <span class="operator">a</span> vast <span class="built_in">number</span> <span class="operator">of</span> code projects. </span><br><span class="line">Search here <span class="keyword">for</span> <span class="operator">the</span> best code examples <span class="built_in">from</span> over <span class="number">7</span> million sources</span><br></pre></td></tr></table></figure>
+<p>上面是<a href="https://www.codota.com/" target="_blank" rel="external">Codota</a> 官方介绍的<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">最好的代码实例，我们的抓取工具从大量的代码项目中抓取了大量的代码模式，</span><br><span class="line"></span><br><span class="line">你可以从这里搜索超过七百万精品代码实例；</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<h2 id="Codota_的特性">Codota 的特性</h2><hr>
+<ul>
+<li><p>的确，正如codota 官方所说，的确是精品，他的搜索源，不仅只有Github，而且还有知<br>名博客和开发者网站，让你搜索一个东西，不用在找上半天；</p>
+</li>
+<li><p>除了<code>搜索功能</code>，首页的下方还罗列比较流行的类库，还提供保存代码的<code>CodeBox</code>，同时还提供了Chrome 插件和Android Studio 插件，最后通过Google，Github，Facebook 任意一个授权登录即可使用；</p>
+</li>
+<li><p>而且当你点击搜索的结果（Java class）的时候，右侧会显示<code>UML 视图</code>，而且左边的代码如果点击会有高亮现实，而且还会显示<code>Doc</code>，并提供了API Doc 的链接。<br><img src="http://blog.codota.com/wp-content/uploads/2014/05/related-scrshot.png" alt=""></p>
+</li>
+</ul>
+<p><br></p>
+<h2 id="Chrome_插件">Chrome 插件</h2><hr>
+<p>而且Codota 还提供了Chrome 插件，通过插件可以对Github，Stackoverflow 的代码，进行<code>查看</code>，<code>分享</code>，也可以保存在<code>CodeBox</code> 中。<br><img src="http://blog.codota.com/wp-content/uploads/2013/06/livecode-normal1.png" alt=""></p>
+<p><br></p>
+<h2 id="Android_Studio_插件">Android Studio 插件</h2><hr>
+<p>这么好的工具，怎么可能会没有Android Studio 插件呢？直接在<code>plugin</code> 中搜索<code>codota</code>，安装后重启Android Studio 即可；重启之后，<code>Ctrl + K</code> 或者<code>⌘ + K</code>（OS X）即可打开<code>Codota 视图</code>，需要注意的是，这个时候会请求一个<code>token</code>，会在浏览器中打开，直接复制，就可以使用了。<br><img src="http://assets.codota.com/android-studio-plugin/installation/images/image02.png" alt=""></p>
+<p><br></p>
+<h2 id="最后">最后</h2><hr>
+<p>那就一睹为快吧，Codota 的官网：</p>
+<ul>
+<li><a href="https://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2014/10/27/how-do-i-self-study-android/">
+                我是如何自学Android，资料分享
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2014-10-27
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2014/10/27/how-do-i-self-study-android/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2014/10/27/how-do-i-self-study-android/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p><a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">我是如何自学Android，资料分享（2015 版）</a> 已经完成，我的建议是先把这一篇看完，再看2015 版的，欢迎<code>喜欢</code>，<code>收藏</code>。</p>
+</blockquote>
+<p>最近知乎上有网友问我怎么自学Android，其实说实在的，我学的也一塌糊涂，当然在学习过程也积累了一些知识，对于以前没接触过Android的朋友，或者刚入门Android 的朋友，这篇文章作为入门，那是再合适不过了，希望对刚入门Android的朋友有帮助，接下来，就不罗嗦啦。</p>
+<blockquote>
+<p>本文主要有以下几个步骤：<br><code>1.</code>  Java 基础；<br><code>2.</code> 搭建Android 开发环境；<br><code>3.</code> 了解Android 运行原理以及一个工程项目结构；<br><code>4.</code> 如何系统学习Android；<br><code>5.</code> 推荐一些实用的资源<br><code>6.</code> 总结</p>
+</blockquote>
+<p><br></p>
+<h3 id="首先呢？当然要有Java_基础；"><strong>首先呢？当然要有Java 基础；</strong></h3><hr>
+<p>我大学的专业就是Java，但由于没学好，刚开始学Android 的时候，挺吃力的，后来又去补Java 基础去了；<br>因为Android SDK 是基于Java 开发的，使用的语言是Java，如果有了Java 基础，学Android 就会事半功倍；比如在Android 中要使用到的接口，抽象类，类型转换，继承，覆盖，匿名内部类，多线程，这些都是Java 语言的，如果以前没有基础过，学Android 会很郁闷的；</p>
+<p>当然如果你有C++ 基础，当然也可以基于NDK 开发，可以不使用Java；</p>
+<p><strong>对于没有Java 基础的朋友，我推荐一些资料：</strong></p>
+<blockquote>
+<p>Mars 的Java4Android：<a href="http://yun.baidu.com/s/1dD5RRQ5" target="_blank" rel="external">http://yun.baidu.com/s/1dD5RRQ5</a><br>极客学院推出的Android 专题：<a href="http://android.jikexueyuan.com/" target="_blank" rel="external">http://android.jikexueyuan.com/</a></p>
+</blockquote>
+<p><br></p>
+<h3 id="搭建环境">搭建环境</h3><hr>
+<p>Android 开发IDE选择，有Eclipse，IntelliJ IDEA，Android Studio（基于IntelliJ IDEA 社区版开发的），Eclipse 和 Android Studio 是免费的；<br>对于初学者我推荐使用Eclipse，因为Eclipse 成熟，遇到问题，搜索也容易找到答案；以后可以尝试不同的IDE；</p>
+<p><strong>搭建环境的步骤：*</strong></p>
+<blockquote>
+<ol>
+<li>Eclipse安装；</li>
+<li>Android SDK安装（Android 开发工具包）；</li>
+<li>ADT安装（Eclipse 的插件，使Eclipse 能够开发Android）；</li>
+<li>创建AVD（在电脑创建一个虚拟手机）；</li>
+</ol>
+<p>详细步骤：<a href="http://www.cnblogs.com/skynet/archive/2010/04/12/1709892.html" target="_blank" rel="external">Android开发之旅：环境搭建及HelloWorld</a></p>
+<p>在这里会有很多工具，可能刚入门的会比较模糊，可以参考：<a href="http://tikitoo.github.io/blog/2014/10/12/android-tools/" target="_blank" rel="external">Android 开发，各种工具</a></p>
+</blockquote>
+<p>如果最终虚拟的手机屏幕能够显示主界面，则表示成功；</p>
+<p><br></p>
+<h3 id="了解Android_运行原理，一个工程的项目结构">了解Android 运行原理，一个工程的项目结构</h3><hr>
+<ul>
+<li><p>项目结构推荐慕课网的视频教程：<a href="http://www.imooc.com/video/1442" target="_blank" rel="external">Android 项目结构介绍</a></p>
+</li>
+<li><p><a href="http://tonyqus.blog.51cto.com/2676222/1305405" target="_blank" rel="external">Android项目目录结构介绍</a></p>
+</li>
+<li><a href="http://www.cnblogs.com/skynet/archive/2010/04/13/1711479.html" target="_blank" rel="external">Android开发之旅：HelloWorld项目的目录结构</a></li>
+</ul>
+<p><br></p>
+<h3 id="系统学习Android">系统学习Android</h3><hr>
+<p>有了上面的学习，对Android 也有了初步的认识，接下来可以系统地学习Android 啦，网上资料也很多啦，书籍也很多，视频也很多，我觉得首先要《<a href="https://developer.android.com/guide/index.html" target="_blank" rel="external">官方API Guide</a>》；然后手上准备一本书，可以当做字典，不会可以看看；如果看官方文档，有难度，看书进度太慢，可以看视频，跟着视频学，做一下东西，有什么不会的问题，可以Google 搜索；</p>
+<p>如果说到细的知识点，比如四大组件，UI，多媒体处理，信号连接，数据存储，我在这里就不多介绍了；主要介绍了一些学习资料；</p>
+<blockquote>
+<p><strong>官方文档</strong></p>
+<ul>
+<li><p>官方指南：<a href="https://developer.android.com/guide/index.html" target="_blank" rel="external">Introduction to Android | Android Developers</a></p>
+</li>
+<li><p>Android API：<a href="https://developer.android.com/reference/packages.html" target="_blank" rel="external">Android API| Android Developers</a></p>
+</li>
+<li><p>官方中文文档： <a href="http://hukai.me/android-training-course-in-chinese/index.html" target="_blank" rel="external">序言 | Google Android官方培训课程中文版(v0.5)</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>书推荐</strong></p>
+<ul>
+<li><p>《<a href="">Head first Android Developer</a>》；</p>
+</li>
+<li><p>《<a href="">Pro Android</a>》；</p>
+</li>
+</ul>
+<hr>
+<p><strong>视频教程</strong></p>
+<ul>
+<li><p><a href="http://marschen.com/portal.php" target="_blank" rel="external">Mars——Android 开发视频教程</a></p>
+</li>
+<li><p><a href="http://pan.baidu.com/s/1qWAWU52" target="_blank" rel="external">黎活明——8天快速掌握Android视频</a></p>
+</li>
+<li><p><a href="http://www.imooc.com/course/list" target="_blank" rel="external">慕课网——Android 开发视频</a></p>
+</li>
+<li><p><a href="http://android.jikexueyuan.com/" target="_blank" rel="external">极客学院——Android开发,安卓开发教程,android教程,安卓软件开发教程,安卓开发视频教程,安卓开发环境搭建</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>博客推荐</strong></p>
+<ul>
+<li><p><strong><a href="http://yeungeek.com/android%E5%BC%80%E5%8F%91%E5%A4%A7%E7%89%9B%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">android开发大牛博客</a></strong> <br></p>
+</li>
+<li><p><a href="http://blog.csdn.net/hellogv" target="_blank" rel="external">hellogv的专栏 - 博客频道</a> <br></p>
+</li>
+<li><p><a href="http://blog.csdn.net/android_tutor" target="_blank" rel="external">Android_Tutor的专栏 - 博客频道</a> <br></p>
+</li>
+<li><p><a href="http://stormzhang.github.io/" target="_blank" rel="external">Storm’ blog</a> <br></p>
+</li>
+<li><p><a href="http://blog.csdn.net/column/details/flowingflying02.html" target="_blank" rel="external">恺风（Wei）之Android专栏</a> <br></p>
+</li>
+<li><p><a href="http://blog.csdn.net/luoshengyang" target="_blank" rel="external">老罗的Android之旅 - 博客频道</a> <br></p>
+</li>
+</ul>
+<hr>
+<p><strong>网站推荐</strong></p>
+<ul>
+<li><p><a href="http://www.importnew.com/" target="_blank" rel="external">ImportNew - 专注Java &amp; Android 技术分享</a></p>
+</li>
+<li><p><a href="http://blog.jobbole.com/category/android/" target="_blank" rel="external">Android - 博客 - 伯乐在线</a></p>
+</li>
+<li><p><a href="http://www.androidchina.net/" target="_blank" rel="external">Android开发中文站关注Android，关注开发者</a></p>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<h3 id="总结">总结</h3><hr>
+<ol>
+<li><p>当然Github 上有很多开源的项目，多看看源码，自己才能快速提升；《<a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Android开源项目分类汇总</a>》，这里几乎汇总了github 上所有的开源项目，可以自己找些慢慢学；</p>
+</li>
+<li><p>然而学习是乏味的事，坚持到最后是不易的；</p>
+</li>
+<li><p>要善于利用搜索引擎，遇到不会的问题，要使用Google 搜索；对了，作为一个开发者，要学会自备梯子；</p>
+</li>
+<li><p>还有学Android，要时刻关注Android 的最新动态，比如最新发布的Android 5.0 棒棒糖版，去了解他的新特性；</p>
+</li>
+<li><p>加一些QQ 群，有不会可以问问，相互交流；</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">http://www.jianshu.com/p/2ee0e74abbdf</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2014/10/27/learn-android-from-rookie/">
+                Android 学习之路（转载）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2014-10-27
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2014/10/27/learn-android-from-rookie/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2014/10/27/learn-android-from-rookie/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>本文作者：<a href="https://github.com/stormzhang" target="_blank" rel="external">Stormzhang</a><br>转载来自：<a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/</a></p>
+</blockquote>
+<p>QQ交流群：383323653 (入群理由填写我的GitHub账号(<code>stormzhang</code>))<br>收到一些朋友的微博私信，说能不能给Android新手们一些指导，我只能说指导谈不上，毕竟我也很多东西正在学习中，与此同时一大学同学准备转行Android，可以说是从头开始，那么我就姑且以一个过来人的身份给一些建议吧，只希望在学习的过程中能够少走写弯路吧。</p>
+<p><br></p>
+<h3 id="硬件">硬件</h3><hr>
+<ul>
+<li><strong>电脑–推荐Mac</strong><br>首先声明我不是果粉，个人Windows，Linux，Mac OX系统均用过， 只能说Windows上面的开发工具简直难以恭维，尤其命令行超级难用，而Linux自己必须得花不少时间在折腾中，更是不适合新手了，Max OS是我认为迄今为止最好用的系统，没有之一， 所以如果你不差钱的话，强烈建议入手一台Mac，推荐Pro系列， 当然它的价格确实比较昂贵，如果暂时入手有困难，推荐以后手头宽裕的时候再入手吧，会带给你质的体验。(Google的工程师们都在用Mac，应该比较有说服力吧)</li>
+</ul>
+<ul>
+<li><strong>手机–推荐Nexus 5</strong><br>做Android开发最难以忍受的就是那龟速的模拟器，强烈推荐入手我Google的Nexus系列，原生rom，性价比超高，有条件的推荐再入手一台小米或三星之类的，不是因为他们有多好用，而是因为目前市场上这两个品牌的手机份额最大，实际开发中可能需要进行适配与测试，总之你需要有台Android手机。你可能还需要知道魅族手机有个SmartBar的东东，虽然我认为确实很SB。最后你实在还是要用模拟器的话，那么姑且就给你推荐一款比较快速的模拟器吧—-Genymotion, 具体的见我这篇博客《<a href="http://stormzhang.github.io/android/2013/12/04/android-genymotion/" target="_blank" rel="external">一个强大的Android模拟器Genymotion</a>》。</li>
+</ul>
+<p><br></p>
+<h3 id="开发环境">开发环境</h3><hr>
+<ul>
+<li><p><strong><a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external"> Eclipse ADT</a></strong><br>Google帮你集成了一个完整的Android开发环境，包含一个定制的Eclipse + ADT plugin，以及最新的SDK及源码</p>
+</li>
+<li><p><strong><a href="http://www.jetbrains.com/idea/" target="_blank" rel="external">IntelliJ IDEA</a></strong><br>相比与Eclipse更推荐使用IDEA，以后可以无缝过渡到Android Studio</p>
+</li>
+<li><p><strong><a href="http://developer.android.com/sdk/installing/studio.html" target="_blank" rel="external">Android Studio</a></strong><br>首先说明这个不适合新手们使用，但是你必须知道这是Google最新推出的Android开发工具，基于IDEA，编译依赖<a href="http://www.gradle.org/" target="_blank" rel="external">Gradle</a>，目前还没有推出1.0的正式版，但是你依然可以业余项目熟悉了解下，因为这也许是Android开发工具的未来</p>
+</li>
+<li><p><strong>翻墙</strong><br>俗话说，不会翻墙的程序员不是好程序员，尤其最近Google各项服务被屏蔽，以上IDE的下载也就都需要翻墙，这里推荐一个靠谱的VPN吧，支持多设备MAC，Windows，Android，iPhone等，如果和小伙伴们一起合买的话每月只要几块钱，圈内的朋友们都在用，如果你通过下面链接购买的话，你和我的账户都会增加10元钱。<br><strong><a href="http://refyt.com/?r=a9b90a505050781a" target="_blank" rel="external">云梯VPN</a></strong></p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="如果无论如何你都不想翻墙的话，这里github上可以直接下载以上Android开发工具">如果无论如何你都不想翻墙的话，这里github上可以直接下载以上Android开发工具</h3><hr>
+<ul>
+<li><a href="https://github.com/inferjay/AndroidDevTools/" target="_blank" rel="external">AndroidDevTools</a></li>
+</ul>
+<h3 id="Google_Android官方教程">Google Android官方教程</h3><hr>
+<ul>
+<li><a href="http://hukai.me/android-training-course-in-chinese/index.html" target="_blank" rel="external">Android Training Course in Chinese</a></li>
+</ul>
+<p><br></p>
+<h3 id="Android基础">Android基础</h3><hr>
+<p>上面可能是一个比较全面系统的培训教程，对于新手们可能对某些需要着重掌握的东西比较迷茫，于是整理下个人认为新手们必须要掌握的知识点，顺便也会附带相应觉得不错的讲解博客地址。</p>
+<ul>
+<li><p><a href="http://blog.csdn.net/android_tutor/article/details/5772285" target="_blank" rel="external">两分钟彻底让你明白Android Activity生命周期(图文)!</a><br>Activity实际开发中使用频率最高，这个必须要理解</p>
+</li>
+<li><p><a href="http://www.cnblogs.com/bravestarrhu/archive/2012/05/02/2479461.html" target="_blank" rel="external">Android四大基本组件介绍与生命周期</a><br>Android中的四大组件必须得知道，也是面试常问到的</p>
+</li>
+<li><p><a href="http://www.cnblogs.com/noTice520/archive/2011/12/05/2276379.html" target="_blank" rel="external">ListView的基本使用与优化</a><br>ListView是所有控件中最常使用且对新手来说比较复杂的用法，各种Adapter的使用以及ListView的优化都是必须掌握的</p>
+</li>
+<li><p><a href="http://blog.csdn.net/zhangjg_blog/article/details/10901293" target="_blank" rel="external">Android系统用于Activity的标准Intent</a><br>Intent解决了Android中四大组件的通讯，非常有用，这篇博客收集整理了系统的标准Intent</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/android/2014/05/16/android-screen-adaptation/" target="_blank" rel="external">Android 屏幕适配</a><br>介绍一些Android屏幕适配的基础</p>
+</li>
+<li><p><a href="http://blog.csdn.net/liuhe688/article/details/6715983" target="_blank" rel="external">Android中SQLite应用详解</a><br>Android中的SQLite需要掌握，这篇博客很适合新手</p>
+</li>
+<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/8881711" target="_blank" rel="external">Android Fragment完全解析</a><br>3.0之后新加的Fragment，必须要掌握，目前使用的场景也是越来越普遍了</p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="Android中级">Android中级</h3><hr>
+<ul>
+<li><p><a href="http://blog.csdn.net/android_tutor/article/details/4952960" target="_blank" rel="external">Android应用程序的生命周期</a><br>Android的应用程序的生命周期需要理解，面试也是经常会被问的</p>
+</li>
+<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/12921889" target="_blank" rel="external">带你一步步深入了解View</a><br>View做为UI开发中最常用到的，必须要深入理解</p>
+</li>
+<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11952435" target="_blank" rel="external">Android Service完全解析</a><br>Service作为Android四大组件之一，在每一个应用程序中都扮演着非常重要的角色</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/android/2014/05/22/android-gson/" target="_blank" rel="external">Android Gson</a><br>目前比较常用比较流行的数据格式就是json了，这篇博客教你如何使用Google Gson库来进行json解析</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/android/2014/04/10/android-optimize-layout/" target="_blank" rel="external">Android 布局优化</a><br>Android开发中经常会用到xml布局，那么布局优化方面的知识更是需要掌握的了</p>
+</li>
+<li><p><a href="http://blog.csdn.net/android_tutor/article/details/5740845" target="_blank" rel="external">Android中Intent传递对象的两种方法(Serializable,Parcelable)</a><br>详细讲解了Android中Intent中如何传递对象</p>
+</li>
+<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11711405" target="_blank" rel="external">Android异步消息处理机制完全解析</a><br>Android开发中异步操作是经常使用的，必须理解掌握</p>
+</li>
+<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11711405" target="_blank" rel="external">Android AsyncTask完全解析</a><br>Android异步操作的另一种方法</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/openandroid/2013/11/15/android-custom-loading/" target="_blank" rel="external">Android Custom Loading</a><br>很早的一个小demo，教你如果做一个App的Loading动画</p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="Android进阶">Android进阶</h3><hr>
+<ul>
+<li><p><a href="http://stormzhang.github.io/android/2014/02/28/android-gradle/" target="_blank" rel="external">Android Gradle</a><br>Google官方Android新的构建系统，可以很方便的管理依赖、编译打包等</p>
+</li>
+<li><p><a href="http://www.trinea.cn/android/android-performance-demo/" target="_blank" rel="external">Android 性能优化</a><br>一系列的性能调优教程，让你的代码以及App更畅通！</p>
+</li>
+<li><p><a href="https://github.com/stormzhang/9GAG" target="_blank" rel="external">一个完整的开源项目–9GAG</a><br>一个开源客户端，教你使用Studio、Gradle以及一些流行的开源库快速开发一个不错的Android客户端</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/android/2014/06/05/android-awesome-resources/" target="_blank" rel="external">整理的Android开发资源</a><br>自己整理的一些Android开发资源，包括开发、工具、设计等，相信会对你有用的</p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="Android设计">Android设计</h3><hr>
+<p>在开发一款Android App之前，你需要了解下Android平台的设计规范，这里有一系列关于Android Design的讲解以及Google最新推出的Material Design中文翻译版</p>
+<ul>
+<li><p><a href="http://www.geekpark.net/tag/Android%20Design" target="_blank" rel="external">Android Design</a></p>
+</li>
+<li><p><a href="http://design.1sters.com/" target="_blank" rel="external">Material Design</a></p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="Android兼容库">Android兼容库</h3><hr>
+<p>在了解了设计规范准备着手开发你的App时，你还需要考虑你的App支持的版本，如果是全新的App，从目前的市场份额来看，建议直接支持4.0+，虽然2.3的份额仍然有一部分，但是这部分真正用来使用App的人又能有多少呢。当然如果你的公司必须要求支持2.x的版本，那么也不用担心，下面整理了几个满足你适配的一些兼容库:</p>
+<ul>
+<li><p><a href="https://github.com/JakeWharton/ActionBarSherlock" target="_blank" rel="external">ActionBarSherlock</a><br>大神JakeWharton的一个ActionBar的兼容库，支持在2.x版本使用ActionBar</p>
+</li>
+<li><p><a href="http://stormzhang.github.io/android/2013/12/13/android-actionbar-compact/" target="_blank" rel="external">ActionBar Compact</a><br>在这之前使用ActionBar基本都会使用上述JakeWharton的兼容库，但是目前Google有了自己的一套ActionBar兼容库，推荐使用ActionBar Compact，具体介绍及使用方法详见我的这篇博客</p>
+</li>
+<li><p><a href="http://nineoldandroids.com/" target="_blank" rel="external">NineOldAndroids</a><br>Android 3.0之前开放的一些新的动画api–Property Animation，大神JakeWharton的又一大作，可以让你在2.x版本的sdk可以使用属性动画.</p>
+</li>
+<li><p><a href="http://developer.android.com/reference/android/support/v4/app/package-summary.html" target="_blank" rel="external">Android Support V4</a><br>如果需要兼容2.x的版本，在使用如下类的时候你需要使用v4包下的，如Fragment, FragmentManager, FragmentActivity, FragmentPagerAdapter, CursorLoader, LoaderManager, AsyncTaskLoader，当然v4包下面除了以上还有一些新的控件你必须知道</p>
+</li>
+<li><p><a href="http://my.oschina.net/summerpxy/blog/211835" target="_blank" rel="external">Navigation Drawer(导航抽屉)</a><br>在这之前在Android上实现一个抽屉导航你可能会用到<a href="https://github.com/jfeinstein10/SlidingMenu" target="_blank" rel="external">SlidingMenu</a>开源库，如今你可以使用官方的DrawerLayout控件很容易实现</p>
+</li>
+<li><p><a href="http://my.oschina.net/summerpxy/blog/211835" target="_blank" rel="external">SlidingPaneLayout</a><br>SlidingPaneLayout是V4包中新添加的组件，可以实现两列面板的切换, 具体使用与效果见博客链接</p>
+</li>
+<li><p><a href="https://github.com/stormzhang/SwipeRefreshLayoutDemo" target="_blank" rel="external">SwipeRefreshLayout</a><br>SwipeRefreshLayout是Google在support v4 19.1版本的library更新的一个下拉刷新组件,使用起来很方便,可以很方便的实现Google Now的效果</p>
+</li>
+</ul>
+<p><br></p>
+<h3 id="Android开发必知的一些开源库">Android开发必知的一些开源库</h3><hr>
+<p>说到开源库就不得不提<a href="https://github.com/" target="_blank" rel="external">GitHub</a>，只能说是目前最活跃的开源社区，不知道的赶紧去注册个账号使用起来，绝对是你快速提升技术的利器。</p>
+<blockquote>
+<p><strong><a href="https://android.googlesource.com/platform/frameworks/volley" target="_blank" rel="external">Volley</a></strong><br>App开发中免不了要和服务端进行交互，而volley是Google官方推出的一个开源的网络通信库，它能使网络通信更简单，更快速。</p>
+<ul>
+<li><a href="http://blog.csdn.net/guolin_blog/article/details/17482095" target="_blank" rel="external">Volley完全解析</a></li>
+<li><a href="https://github.com/stormzhang/AndroidVolley" target="_blank" rel="external">Android volley sample</a></li>
+</ul>
+<hr>
+<p><strong><a href="http://github.com/pardom/ActiveAndroid" target="_blank" rel="external">ActiveAndroid</a></strong><br>ActiveAndroid算是一个轻量级的ORM(对象关系映射(Object Relation Mapping))框架，简单地通过如save()和delete()等方法来做到增删改查等操作。</p>
+<ul>
+<li><a href="http://stormzhang.github.io/openandroid/android/sqlite/2013/12/20/android-orm-tools-activeandroid/" target="_blank" rel="external">ActiveAndroid–Android轻量级ORM框架</a></li>
+</ul>
+<hr>
+<p><strong><a href="http://square.github.io/retrofit/" target="_blank" rel="external">Retrofit</a></strong><br>Retrofit和Java领域的ORM概念类似， ORM把结构化数据转换为Java对象，而Retrofit 把REST API返回的数据转化为Java对象方便操作。同时还封装了网络代码的调用。</p>
+<ul>
+<li><a href="http://blog.chengyunfeng.com/?p=491" target="_blank" rel="external">Retrofit – Java(Android) 的REST 接口封装类库</a></li>
+</ul>
+<hr>
+<p><strong><a href="http://stormzhang.github.io/android/openandroid/2013/12/01/android-universal-image-loader/" target="_blank" rel="external">Android-Universal-Image-Loader</a></strong><br>Android-Universal-Image-Loader是一个强大的开源图片异步加载库，该项目的目的是提供一个可重复使用的仪器为异步图像加载，缓存和显示。</p>
+<ul>
+<li><a href="http://stormzhang.github.io/android/openandroid/2013/12/01/android-universal-image-loader/" target="_blank" rel="external">Android-Universal-Image-Loader</a></li>
+</ul>
+</blockquote>
+<p><br></p>
+<h3 id="Android开源项目分类汇总"><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Android开源项目分类汇总</a></h3><hr>
+<p>非常全面的GitHub开源项目汇总，不需要重复发明轮子，尽情遨游在开源世界里吧</p>
+<p><br></p>
+<h3 id="关于作者">关于作者</h3><hr>
+<p>非科班转投编程，Android开发者，Google脑残粉，热爱开源，分享Android方面的知识、技术、见闻</p>
+<p>Weibo: <a href="http://weibo.com/zhangqi8" target="_blank" rel="external">googdev</a></p>
+<p>GitHub: <a href="https://github.com/stormzhang" target="_blank" rel="external">stormzhang</a></p>
+<p>Company &amp; App: <a href="http://www.boohee.com/app/" target="_blank" rel="external">薄荷</a></p>
+<p>Android微信公众账号<br>推荐大家关注我的微信公众账号AndroidDeveloper, 专注Android技术分享，保证绝对干货！</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
   </div>
 
   
@@ -454,7 +1581,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -468,7 +1595,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
