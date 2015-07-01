@@ -195,6 +195,9 @@
 <p>然后在浏览器中打开：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>.</p>
 <h3 id="部署到远程服务器（Github）">部署到远程服务器（Github）</h3><p>需要在配置文件（_config.yml）中添加一下配置远程仓库信息。<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="keyword">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</span><br></pre></td></tr></table></figure></p>
 <p>然后就可以部署了。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line">hexo deploy</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="使用自己的域名">使用自己的域名</h3><p>添加CNAME 绑定域名的话，直接将CNAME 文件放在<code>source 文件</code>夹下即可。</p>
+<h3 id="添加README_文件">添加README 文件</h3><p>和上面创建CNAME 文件一样，但是有一点要注意的是，README 文件后面不能跟后缀<code>.md</code>，因为跟了后缀<code>.md</code> 会被编译为html 文件，提交Github 就不起作用了。</p>
+<h3 id="添加Github_Gist_代码段">添加Github Gist 代码段</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gist gist-<span class="property">id</span>  [<span class="type">file</span>-<span class="property">name</span>] %&#125;</span><br></pre></td></tr></table></figure>
 
         
       
@@ -1478,7 +1481,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
