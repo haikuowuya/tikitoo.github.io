@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-07-01T13:28:49.000Z</updated>
+  <updated>2015-07-02T10:22:02.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Android Studio 入门指南（Slides）]]></title>
+    <link href="http://yoursite.com/2015/07/02/html-embed-slides-com-test/"/>
+    <id>http://yoursite.com/2015/07/02/html-embed-slides-com-test/</id>
+    <published>2015-07-02T10:14:58.000Z</published>
+    <updated>2015-07-02T10:22:02.000Z</updated>
+    <content type="html"><![CDATA[<p>This is Html embed slides.com.</p>
+<iframe src="//slides.com/tikitoo/android-sutdio/embed" width="700" height="510" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is Html embed slides.com.</p>
+<iframe src="//slides.com/tikitoo/android-sutdio/embed" width="700" height="510" scrolling="no" frameb]]>
+    </summary>
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="slides" scheme="http://yoursite.com/tags/slides/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[使用Github + Hexo 来搭建自己的博客]]></title>
