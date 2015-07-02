@@ -152,6 +152,89 @@
           
           
             
+              <a class="post-title-link" href="/2015/01/19/android-add-to-actionbar-back-button/">
+                为ActionBar 添加返回按钮
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-01-19
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/01/19/android-add-to-actionbar-back-button/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/01/19/android-add-to-actionbar-back-button/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>前几天做App 的时候，做的比较仓促，就没有添加返回按钮，还有就是MainActivity 的Theme 怎么传递到其他Activity 中，今天无意中看到官方的Train，所以就记下来啦，顺便吧ActionBar，Menu 也复习复习；</p>
+<h2 id="添加Action_Buttons">添加Action Buttons</h2><p>首先我们要创建<code>menu</code> 文件，我们可以为顶部添加Menu，<code>showAsAction</code> 是显示的类型，ifRoom 会自动匹配是否有实体键，always 是一直隐藏，但是使用Support Library<code>android:showAsAction=&quot;ifRoom&quot;</code> 会提示错误，所以在menu 中添加<code>xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</code> 属性，改为<code>app:showAsAction=&quot;ifRoom&quot;</code> 就没有错误；</p>
+<p><code>res/menu/main_activity_actions.xml</code><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">menu</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span> &gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Search, should appear as action button --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_search"</span></span><br><span class="line">          <span class="attribute">android:icon</span>=<span class="value">"@drawable/ic_action_search"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_search"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"ifRoom"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Settings, should always be in the overflow --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_settings"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_settings"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"never"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">menu</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="添加ActionBar">添加ActionBar</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onCreateOptionsMenu</span><span class="params">(Menu menu)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// Inflate the menu; this adds items to the action bar if it is present.</span></span><br><span class="line">        getMenuInflater().inflate(R.menu.menu_main, menu);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="为Action_Button_添加响应事件">为Action Button 添加响应事件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> id = item.getItemId();</span><br><span class="line">    <span class="comment">//当点击不同的menu item 是执行不同的操作</span></span><br><span class="line">    <span class="keyword">switch</span> (id) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_search:</span><br><span class="line">            openSearch();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_settings:</span><br><span class="line">            openSettings();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="为ActionBar_顶部添加返回按钮">为ActionBar 顶部添加返回按钮</h2><p>首先要在AndroidManifest 文件中配置</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">application</span> <span class="attribute">...</span> &gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">&lt;!-- The main/home activity (it has no parent activity) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> <span class="attribute">...</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- A child of the main activity --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.DisplayMessageActivity"</span></span><br><span class="line">        <span class="attribute">android:label</span>=<span class="value">"@string/title_activity_display_message"</span></span><br><span class="line">        <span class="attribute">android:parentActivityName</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> &gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Parent activity meta-data to support 4.0 and lower --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"android.support.PARENT_ACTIVITY"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">application</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后在onCrate 中设置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.activity_displaymessage);</span><br><span class="line">    <span class="comment">// 3.0+ </span></span><br><span class="line">    getSupportActionBar().setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br><span class="line">    <span class="comment">// If your minSdkVersion is 11 or higher, instead use:</span></span><br><span class="line">    <span class="comment">// getActionBar().setDisplayHomeAsUpEnabled(true);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="最后的效果图">最后的效果图</h2><p><img src="http://tikitoo.qiniudn.com/android_training_back_activity.png" alt="http://tikitoo.qiniudn.com/android_training_back_activity.png"></p>
+<h2 id="为下一个Activity_传递MainActivity_Theme">为下一个Activity 传递MainActivity Theme</h2><p>需要注意的是，<code>setTheme</code> 方法在<code>setContentView</code> 之前；其实就是利用Intent 将Theme 传递到下一个Activity；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> MAIN_THEME_STYLE_ID = R.style.Theme_AppCompat_Light;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String MAIN_THEME_STYLE = <span class="string">"Theme_AppCompat_Light"</span>;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setTheme(R.style.Theme_AppCompat_Light);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onToBackActivity</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">        Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, BackActivity.class);</span><br><span class="line">        intent.putExtra(MAIN_THEME_STYLE, MAIN_THEME_STYLE_ID);</span><br><span class="line">        startActivity(intent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="在下一个Activity_获取Theme">在下一个Activity 获取Theme</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BackActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> style_id;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        getMainIntent();</span><br><span class="line">        setTheme(style_id);</span><br><span class="line">        setContentView(R.layout.activity_back);</span><br><span class="line"></span><br><span class="line">        getSupportActionBar().setDisplayShowCustomEnabled(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getMainIntent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Intent intent = getIntent();</span><br><span class="line">        style_id = intent.getIntExtra(MainActivity.MAIN_THEME_STYLE, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="原文地址">原文地址</h2><ul>
+<li><p><a href="https://github.com/Tikitoo/blog/issues/29" target="_blank" rel="external">Android 学习为ActionBar 添加返回按钮 · Issue #29 · Tikitoo/blog</a></p>
+</li>
+<li><p>转载请<code>注明出处</code></p>
+</li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2014/11/11/three-stone-talking-java/">
                 三石 · 道——聊聊Java（转载）
               </a>
@@ -725,7 +808,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -739,7 +822,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
