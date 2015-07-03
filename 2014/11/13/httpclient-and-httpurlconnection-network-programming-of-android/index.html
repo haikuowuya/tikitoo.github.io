@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="android,network,samples," />
+  <meta name="keywords" content="android,http,network," />
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-  <title> Android 中判断网络状态是否连接 // Tikitoo Blog </title>
+  <title> Android 网络编程之Httpclient 和HttpUrlConnection // Tikitoo Blog </title>
 </head>
 
 <body>
@@ -150,7 +150,7 @@
           
           
             
-              Android 中判断网络状态是否连接
+              Android 网络编程之Httpclient 和HttpUrlConnection
             
           
         </h1>
@@ -158,7 +158,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-02-02
+          发表于 2014-11-13
         </span>
 
         
@@ -167,8 +167,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/02/02/android-check-network-available/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/02/android-check-network-available/"></span>
+            <a href="/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/"></span>
             </a>
           </span>
           
@@ -182,15 +182,91 @@
       
 
       
-        <h2 id="在Activity_中判断网络状态">在Activity 中判断网络状态</h2><p>在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=NetworkUtils.java"></script></p>
-<p>当然了，也别忘记要在清单文件注册获取网络状态的权限。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=AndroidManifest.xml"></script></p>
-<h2 id="使用单例模式来判断网络">使用单例模式来判断网络</h2><hr>
-<p>当然上面的代码也有弊端，获取getSystemService() 方法必须是有默认上下文的，才可以获取的，但是获取网络状态又是很频繁，我们将它抽离出来，放到工具类中。我们通过getInstance() 传入上下文。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=SingleNetworkUtils.java"></script></p>
-<p>最后我们在Activity 中就可这样使用了。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=MainActivity.java"></script></p>
-<h2 id="参考">参考</h2><hr>
+        <p>我们知道在Android 中有两种方式来访问网络，一种是HttpClient，一种是HttpUrlConnection，所以今天就来写两个Demo，来练习这两种网络连接方式。</p>
+<hr>
+<h2 id="使用HttpClient_来连接网络">使用HttpClient 来连接网络</h2><p>HttpClient 是Apache 的一个Http 协议类库，Android 类库对其进行了封装，可以直接使用。</p>
+<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpClientActivity.java"></script>
+<hr>
+<h2 id="使用HttpUrlConnection_来连接网络">使用HttpUrlConnection 来连接网络</h2><p>Url（Uniform Resource Locator）：统一资源定位符，不仅仅只有网址。</p>
+<h3 id="一个URL_有多个部分组成：">一个URL 有多个部分组成：</h3><figure class="highlight puppet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://username:<span class="literal">password</span>@<span class="keyword">host</span>:<span class="number">8080</span>/<span class="literal">directory</span>/<span class="keyword">file</span>?query<span class="comment">#ref</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Example value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocol（协议）</td>
+<td>http</td>
+</tr>
+<tr>
+<td>Authority</td>
+<td>username:password@host:8080</td>
+</tr>
+<tr>
+<td>User Info（用户信息）</td>
+<td>username:password</td>
+</tr>
+<tr>
+<td>Host（主机名）</td>
+<td>host</td>
+</tr>
+<tr>
+<td>Port（端口）</td>
+<td>8080</td>
+</tr>
+<tr>
+<td>File（文件）</td>
+<td>/directory/file?query</td>
+</tr>
+<tr>
+<td>Path（路径）</td>
+<td>/directory/file</td>
+</tr>
+<tr>
+<td>Query（语句）</td>
+<td>query</td>
+</tr>
+<tr>
+<td>Ref</td>
+<td>ref</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>支持的协议有：File，Ftp，Http，Https，Jar</p>
+<h3 id="URL_的构造方法">URL 的构造方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">URL(String spec) <span class="comment">// 通过一个字符串传入URL 比如</span></span><br><span class="line"><span class="keyword">new</span> URL(<span class="string">"http://www.google.com.hk"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="使用Url_对象获取UrlConnection（HttpURLConnection_的父类）_对象">使用Url 对象获取UrlConnection（HttpURLConnection 的父类） 对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">URLConnection <span class="title">openConnection</span><span class="params">()</span> <span class="comment">// 获取URLConnection</span></span><br><span class="line">URLConnection <span class="title">openConnection</span><span class="params">(Proxy proxy)</span> <span class="comment">// 通过指定的端口获取URLConnection</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="通过URL_获取输入流对象">通过URL 获取输入流对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">final</span> InputStream <span class="title">openStream</span><span class="params">()</span></span>; <span class="comment">// 等同于openConnection().getInputStream(types)</span></span><br></pre></td></tr></table></figure>
+<h3 id="获取URL_的各种属性">获取URL 的各种属性</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">getPath()，getPort()......等等其他方法</span><br><span class="line">也可以使用equal(Object o); 来判断两个URL 对象是否相同</span><br></pre></td></tr></table></figure>
+<h3 id="获取HttpURLConnection_对象">获取HttpURLConnection 对象</h3><p>通过URL.openConnection() 方法获取URLConnection 对象，强制转换为HttpURLConnection</p>
+<h3 id="通过HttpURLConnection_对象获取输入输出流">通过HttpURLConnection 对象获取输入输出流</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getOutputStream();</span><br><span class="line">getInputStream();</span><br><span class="line"><span class="comment">// 关闭此连接</span></span><br><span class="line">disconnect();</span><br></pre></td></tr></table></figure>
+<h3 id="最后一个例子">最后一个例子</h3><p>这个例子实现了通过HttpURLConnection 访问给定的网址访问网页<br>并将返回的数据通过流对象打印在控制台中</p>
+<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpUrlConnActivity.java"></script>
+<h3 id="错误总结：">错误总结：</h3><p>如果连接网络操写在主线程内会出现：android.os.NetworkOnMainThreadException 异常<br>因此新建一个线程子类，在OnclickListener 中启动线程类。</p>
+<hr>
+<h2 id="第三方类库">第三方类库</h2><p>对于在Android 上Http 第三方类库也有很多，优化的时候可以参考：</p>
 <ul>
-<li><a href="http://developer.android.com/training/monitoring-device-state/connectivity-monitoring.html" target="_blank" rel="external">Determining and Monitoring the Connectivity Status</a></li>
-<li><a href="http://stackoverflow.com/questions/4238921/detect-whether-there-is-an-internet-connection-available-on-android" target="_blank" rel="external">Detect whether there is an Internet connection available on Android [duplicate]</a></li>
+<li>HttpClient：在早起版本，比较稳定，bug 少，但随着升级，bug 变多。</li>
+<li>HttpURLConnection：轻量级，API 简单，优化，后期版本bug 少，就目前看来，比HttpClient 更合适。</li>
+</ul>
+<h3 id="Volley">Volley</h3><ul>
+<li><a href="https://developers.google.com/events/io/sessions/325304728" target="_blank" rel="external">Volley: Easy, Fast Networking for Android</a></li>
+<li><a href="https://android.googlesource.com/platform/frameworks/volley/" target="_blank" rel="external">platform/frameworks/volley - Git at Google</a></li>
+<li><a href="http://www.javacodegeeks.com/2013/11/android-volley-dynamic-listview-asynctask-comparison.html" target="_blank" rel="external">Android Volley dynamic ListView: AsyncTask comparison | Java Code Geeks</a></li>
+<li><a href="http://www.technotalkative.com/android-volley-library-example/" target="_blank" rel="external">Android – Volley library example</a></li>
+</ul>
+<h3 id="Retrofit">Retrofit</h3><h3 id="OkHttp">OkHttp</h3><h3 id="android-async-http">android-async-http</h3><hr>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://www.vogella.com/tutorials/AndroidNetworking/article.html#networkoverview" target="_blank" rel="external">Android Networking - Tutorial</a></li>
+<li><a href="http://developer.android.com/reference/java/net/HttpURLConnection.html" target="_blank" rel="external">HttpURLConnection - Android SDK - Android Developers</a></li>
+<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
+<li><a href="http://instructure.github.io/blog/2013/12/09/volley-vs-retrofit/" target="_blank" rel="external">Android Async HTTP Clients: Volley vs Retrofit</a></li>
+<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
+<li><a href="http://liangruijun.blog.51cto.com/3061169/803097" target="_blank" rel="external">【Android进阶学习】Http编程之HttpClient</a></li>
+<li><a href="http://www.cppblog.com/iuranus/archive/2010/07/04/119311.html" target="_blank" rel="external">HttpClient基础</a></li>
 </ul>
 
       
@@ -202,9 +278,9 @@
           
             <a href="/tags/android/"> #android </a>
           
-            <a href="/tags/network/"> #network </a>
+            <a href="/tags/http/"> #http </a>
           
-            <a href="/tags/samples/"> #samples </a>
+            <a href="/tags/network/"> #network </a>
           
         </div>
       
@@ -213,13 +289,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/">Android 开发工具之Codota——搜索最好的Android 代码</a>
+              <a href="/2015/01/19/android-add-to-actionbar-back-button/">为ActionBar 添加返回按钮</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/01/19/android-add-to-actionbar-back-button/">为ActionBar 添加返回按钮</a>
+              <a href="/2014/11/11/http-protocol-network-programming-of-android/">Android 网络编程之HTTP 协议</a>
             
           </div>
         </div>
@@ -239,8 +315,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/02/02/android-check-network-available/"
-               data-title="Android 中判断网络状态是否连接" data-url="http://yoursite.com/2015/02/02/android-check-network-available/">
+          <div class="ds-thread" data-thread-key="2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/"
+               data-title="Android 网络编程之Httpclient 和HttpUrlConnection" data-url="http://yoursite.com/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/">
           </div>
         
       </div>
@@ -362,7 +438,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在Activity_中判断网络状态"><span class="nav-number">1.</span> <span class="nav-text">在Activity 中判断网络状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用单例模式来判断网络"><span class="nav-number">2.</span> <span class="nav-text">使用单例模式来判断网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用HttpClient_来连接网络"><span class="nav-number">1.</span> <span class="nav-text">使用HttpClient 来连接网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用HttpUrlConnection_来连接网络"><span class="nav-number">2.</span> <span class="nav-text">使用HttpUrlConnection 来连接网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一个URL_有多个部分组成："><span class="nav-number">2.1.</span> <span class="nav-text">一个URL 有多个部分组成：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL_的构造方法"><span class="nav-number">2.2.</span> <span class="nav-text">URL 的构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Url_对象获取UrlConnection（HttpURLConnection_的父类）_对象"><span class="nav-number">2.3.</span> <span class="nav-text">使用Url 对象获取UrlConnection（HttpURLConnection 的父类） 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过URL_获取输入流对象"><span class="nav-number">2.4.</span> <span class="nav-text">通过URL 获取输入流对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取URL_的各种属性"><span class="nav-number">2.5.</span> <span class="nav-text">获取URL 的各种属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取HttpURLConnection_对象"><span class="nav-number">2.6.</span> <span class="nav-text">获取HttpURLConnection 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过HttpURLConnection_对象获取输入输出流"><span class="nav-number">2.7.</span> <span class="nav-text">通过HttpURLConnection 对象获取输入输出流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后一个例子"><span class="nav-number">2.8.</span> <span class="nav-text">最后一个例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误总结："><span class="nav-number">2.9.</span> <span class="nav-text">错误总结：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三方类库"><span class="nav-number">3.</span> <span class="nav-text">第三方类库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Volley"><span class="nav-number">3.1.</span> <span class="nav-text">Volley</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Retrofit"><span class="nav-number">3.2.</span> <span class="nav-text">Retrofit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OkHttp"><span class="nav-number">3.3.</span> <span class="nav-text">OkHttp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android-async-http"><span class="nav-number">3.4.</span> <span class="nav-text">android-async-http</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
