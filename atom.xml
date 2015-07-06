@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-07-02T10:22:02.000Z</updated>
+  <updated>2015-07-06T16:24:23.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Android 开发工具之ALFI（Android Library Finder）]]></title>
+    <link href="http://yoursite.com/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"/>
+    <id>http://yoursite.com/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</id>
+    <published>2015-07-06T16:12:37.000Z</published>
+    <updated>2015-07-06T16:24:23.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
+</blockquote>
+<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于Android 应用是新的构建系统（虽然有点慢，不过我已经找到解决方案），但是一个很酷的特点是依赖管理可以从远程仓库自动下载，使它们能在你的应用中使用。基本上，你只需在<code>build.gradle</code> 文件中添加一行就可以将类库添加到你的项目中，很容易，对吧？</p>
+<hr>
+<h2 id="在Android_Studio_来添加依赖类库">在Android Studio 来添加依赖类库</h2><ul>
+<li>在Module 点击右键。</li>
+<li>选择打开Module 设置（Open Module Settings）。</li>
+<li>切换到Dependencies（依赖） 标签。</li>
+<li>点击右边的“<code>+</code>” 按钮。</li>
+<li>选择Libary Dependencies（类库依赖）。</li>
+<li>输入要要搜索的类库。</li>
+<li>在搜索结果中，选择要依赖的类库。</li>
+</ul>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1389/1*S0xNtJxa4cz-2-PpmDfBzA.png" alt="Android Studio module properties"></p>
+<p>然后就在Module 文件夹下的<code>build.gradle</code> 文件就有多出一行刚刚添加的依赖库。</p>
+<hr>
+<h2 id="使用GradlePlease_在线搜索类库">使用GradlePlease 在线搜索类库</h2><ul>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">http://gradleplease.appspot.com/</a></li>
+</ul>
+<p>如果你想在网页中体验的话，可以打开上面的网站，输入你要寻找的类库，它仅仅能显示一个结果，但是，你要现实两个，三个呢？</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1048/1*aBG37_BY975lZIqc9NN8Pw.png" alt="gradleplease"></p>
+<hr>
+<h2 id="使用ALFI（Android_Library_Finder）">使用ALFI（Android Library Finder）</h2><p>来试试<a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">ALFI</a>：<br><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*F0qdIxZLLVTmG5Zl5Eu3uw.png" alt="[https://github.com/cesarferreira/alfi](https://github.com/cesarferreira/alfi)"></p>
+<h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install alfi</span><br></pre></td></tr></table></figure>
+<h3 id="搜索：">搜索：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">alfi</span> picasso</span><br></pre></td></tr></table></figure>
+<ul>
+<li>打开终端，或者打开Android Studio 的终端（前提是已经配置过）。</li>
+<li>输入： <code>alfi 类库名字</code>。</li>
+<li>选择合适的依赖库。</li>
+<li>粘贴到你的<code>build.gralde</code>。</li>
+</ul>
+<p>仅仅只需要几个步骤，没有UI，一次就出来了很多结果。</p>
+<p><img src="http://ww2.sinaimg.cn/large/68622377gw1etthxcv4t2j20pp0d2dni.jpg" alt="alfi picasso"></p>
+<p>又比如我们想知道Android 支持类库都有哪些？<br>我们可以输入<code>alfi com.android.support</code> 来获取。</p>
+<hr>
+<h2 id="参考">参考</h2><ul>
+<li>本文整理来自：<a href="https://medium.com/the-engineering-team/android-library-finder-6c208ba16023" target="_blank" rel="external">Android Library Finder - Fastest way to get your dependencies</a></li>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">Gradle Please</a></li>
+<li><a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">alfi - Android Library Finder | Github</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/" target="_blank" rel="external">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
+</blockquote>
+<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于And]]>
+    </summary>
+    
+      <category term="alfi" scheme="http://yoursite.com/tags/alfi/"/>
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android Studio 入门指南（Slides）]]></title>

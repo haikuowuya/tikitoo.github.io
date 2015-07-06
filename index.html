@@ -152,6 +152,117 @@
           
           
             
+              <a class="post-title-link" href="/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/">
+                Android 开发工具之ALFI（Android Library Finder）
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-07-07
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
+</blockquote>
+<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于Android 应用是新的构建系统（虽然有点慢，不过我已经找到解决方案），但是一个很酷的特点是依赖管理可以从远程仓库自动下载，使它们能在你的应用中使用。基本上，你只需在<code>build.gradle</code> 文件中添加一行就可以将类库添加到你的项目中，很容易，对吧？</p>
+<hr>
+<h2 id="在Android_Studio_来添加依赖类库">在Android Studio 来添加依赖类库</h2><ul>
+<li>在Module 点击右键。</li>
+<li>选择打开Module 设置（Open Module Settings）。</li>
+<li>切换到Dependencies（依赖） 标签。</li>
+<li>点击右边的“<code>+</code>” 按钮。</li>
+<li>选择Libary Dependencies（类库依赖）。</li>
+<li>输入要要搜索的类库。</li>
+<li>在搜索结果中，选择要依赖的类库。</li>
+</ul>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1389/1*S0xNtJxa4cz-2-PpmDfBzA.png" alt="Android Studio module properties"></p>
+<p>然后就在Module 文件夹下的<code>build.gradle</code> 文件就有多出一行刚刚添加的依赖库。</p>
+<hr>
+<h2 id="使用GradlePlease_在线搜索类库">使用GradlePlease 在线搜索类库</h2><ul>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">http://gradleplease.appspot.com/</a></li>
+</ul>
+<p>如果你想在网页中体验的话，可以打开上面的网站，输入你要寻找的类库，它仅仅能显示一个结果，但是，你要现实两个，三个呢？</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1048/1*aBG37_BY975lZIqc9NN8Pw.png" alt="gradleplease"></p>
+<hr>
+<h2 id="使用ALFI（Android_Library_Finder）">使用ALFI（Android Library Finder）</h2><p>来试试<a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">ALFI</a>：<br><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*F0qdIxZLLVTmG5Zl5Eu3uw.png" alt="[https://github.com/cesarferreira/alfi](https://github.com/cesarferreira/alfi)"></p>
+<h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install alfi</span><br></pre></td></tr></table></figure>
+<h3 id="搜索：">搜索：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">alfi</span> picasso</span><br></pre></td></tr></table></figure>
+<ul>
+<li>打开终端，或者打开Android Studio 的终端（前提是已经配置过）。</li>
+<li>输入： <code>alfi 类库名字</code>。</li>
+<li>选择合适的依赖库。</li>
+<li>粘贴到你的<code>build.gralde</code>。</li>
+</ul>
+<p>仅仅只需要几个步骤，没有UI，一次就出来了很多结果。</p>
+<p><img src="http://ww2.sinaimg.cn/large/68622377gw1etthxcv4t2j20pp0d2dni.jpg" alt="alfi picasso"></p>
+<p>又比如我们想知道Android 支持类库都有哪些？<br>我们可以输入<code>alfi com.android.support</code> 来获取。</p>
+<hr>
+<h2 id="参考">参考</h2><ul>
+<li>本文整理来自：<a href="https://medium.com/the-engineering-team/android-library-finder-6c208ba16023" target="_blank" rel="external">Android Library Finder - Fastest way to get your dependencies</a></li>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">Gradle Please</a></li>
+<li><a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">alfi - Android Library Finder | Github</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/" target="_blank" rel="external">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2015/07/02/html-embed-slides-com-test/">
                 Android Studio 入门指南（Slides）
               </a>
@@ -1260,95 +1371,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/">
-                Android 开发工具之Codota——搜索最好的Android 代码
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-04
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/04/codota-search-of-the-best-android-tools-android-code/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Find Great Code Examples</span><br><span class="line">Our crawler extracts coding patterns <span class="built_in">from</span> <span class="operator">a</span> vast <span class="built_in">number</span> <span class="operator">of</span> code projects. </span><br><span class="line">Search here <span class="keyword">for</span> <span class="operator">the</span> best code examples <span class="built_in">from</span> over <span class="number">7</span> million sources</span><br></pre></td></tr></table></figure>
-<p>上面是<a href="https://www.codota.com/" target="_blank" rel="external">Codota</a> 官方介绍的<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">最好的代码实例，我们的抓取工具从大量的代码项目中抓取了大量的代码模式，</span><br><span class="line"></span><br><span class="line">你可以从这里搜索超过七百万精品代码实例；</span><br></pre></td></tr></table></figure></p>
-<p><br></p>
-<h2 id="Codota_的特性">Codota 的特性</h2><hr>
-<ul>
-<li><p>的确，正如codota 官方所说，的确是精品，他的搜索源，不仅只有Github，而且还有知<br>名博客和开发者网站，让你搜索一个东西，不用在找上半天；</p>
-</li>
-<li><p>除了<code>搜索功能</code>，首页的下方还罗列比较流行的类库，还提供保存代码的<code>CodeBox</code>，同时还提供了Chrome 插件和Android Studio 插件，最后通过Google，Github，Facebook 任意一个授权登录即可使用；</p>
-</li>
-<li><p>而且当你点击搜索的结果（Java class）的时候，右侧会显示<code>UML 视图</code>，而且左边的代码如果点击会有高亮现实，而且还会显示<code>Doc</code>，并提供了API Doc 的链接。<br><img src="http://blog.codota.com/wp-content/uploads/2014/05/related-scrshot.png" alt=""></p>
-</li>
-</ul>
-<p><br></p>
-<h2 id="Chrome_插件">Chrome 插件</h2><hr>
-<p>而且Codota 还提供了Chrome 插件，通过插件可以对Github，Stackoverflow 的代码，进行<code>查看</code>，<code>分享</code>，也可以保存在<code>CodeBox</code> 中。<br><img src="http://blog.codota.com/wp-content/uploads/2013/06/livecode-normal1.png" alt=""></p>
-<p><br></p>
-<h2 id="Android_Studio_插件">Android Studio 插件</h2><hr>
-<p>这么好的工具，怎么可能会没有Android Studio 插件呢？直接在<code>plugin</code> 中搜索<code>codota</code>，安装后重启Android Studio 即可；重启之后，<code>Ctrl + K</code> 或者<code>⌘ + K</code>（OS X）即可打开<code>Codota 视图</code>，需要注意的是，这个时候会请求一个<code>token</code>，会在浏览器中打开，直接复制，就可以使用了。<br><img src="http://assets.codota.com/android-studio-plugin/installation/images/image02.png" alt=""></p>
-<p><br></p>
-<h2 id="最后">最后</h2><hr>
-<p>那就一睹为快吧，Codota 的官网：</p>
-<ul>
-<li><a href="https://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a></li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1387,7 +1409,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1401,7 +1423,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="android,http,network," />
+  <meta name="keywords" content="alfi,android,tools," />
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-  <title> Android 网络编程之Httpclient 和HttpUrlConnection // Tikitoo Blog </title>
+  <title> Android 开发工具之ALFI（Android Library Finder） // Tikitoo Blog </title>
 </head>
 
 <body>
@@ -150,7 +150,7 @@
           
           
             
-              Android 网络编程之Httpclient 和HttpUrlConnection
+              Android 开发工具之ALFI（Android Library Finder）
             
           
         </h1>
@@ -158,7 +158,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2014-11-13
+          发表于 2015-07-07
         </span>
 
         
@@ -167,8 +167,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/"></span>
+            <a href="/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"></span>
             </a>
           </span>
           
@@ -182,92 +182,52 @@
       
 
       
-        <p>我们知道在Android 中有两种方式来访问网络，一种是HttpClient，一种是HttpUrlConnection，所以今天就来写两个Demo，来练习这两种网络连接方式。</p>
+        <blockquote>
+<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
+</blockquote>
+<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于Android 应用是新的构建系统（虽然有点慢，不过我已经找到解决方案），但是一个很酷的特点是依赖管理可以从远程仓库自动下载，使它们能在你的应用中使用。基本上，你只需在<code>build.gradle</code> 文件中添加一行就可以将类库添加到你的项目中，很容易，对吧？</p>
 <hr>
-<h2 id="使用HttpClient_来连接网络">使用HttpClient 来连接网络</h2><p>HttpClient 是Apache 的一个Http 协议类库，Android 类库对其进行了封装，可以直接使用。</p>
-<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpClientActivity.java"></script>
+<h2 id="在Android_Studio_来添加依赖类库">在Android Studio 来添加依赖类库</h2><ul>
+<li>在Module 点击右键。</li>
+<li>选择打开Module 设置（Open Module Settings）。</li>
+<li>切换到Dependencies（依赖） 标签。</li>
+<li>点击右边的“<code>+</code>” 按钮。</li>
+<li>选择Libary Dependencies（类库依赖）。</li>
+<li>输入要要搜索的类库。</li>
+<li>在搜索结果中，选择要依赖的类库。</li>
+</ul>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1389/1*S0xNtJxa4cz-2-PpmDfBzA.png" alt="Android Studio module properties"></p>
+<p>然后就在Module 文件夹下的<code>build.gradle</code> 文件就有多出一行刚刚添加的依赖库。</p>
 <hr>
-<h2 id="使用HttpUrlConnection_来连接网络">使用HttpUrlConnection 来连接网络</h2><p>Url（Uniform Resource Locator）：统一资源定位符，不仅仅只有网址。</p>
-<h3 id="一个URL_有多个部分组成：">一个URL 有多个部分组成：</h3><figure class="highlight puppet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://username:<span class="literal">password</span>@<span class="keyword">host</span>:<span class="number">8080</span>/<span class="literal">directory</span>/<span class="keyword">file</span>?query<span class="comment">#ref</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Example value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Protocol（协议）</td>
-<td>http</td>
-</tr>
-<tr>
-<td>Authority</td>
-<td>username:password@host:8080</td>
-</tr>
-<tr>
-<td>User Info（用户信息）</td>
-<td>username:password</td>
-</tr>
-<tr>
-<td>Host（主机名）</td>
-<td>host</td>
-</tr>
-<tr>
-<td>Port（端口）</td>
-<td>8080</td>
-</tr>
-<tr>
-<td>File（文件）</td>
-<td>/directory/file?query</td>
-</tr>
-<tr>
-<td>Path（路径）</td>
-<td>/directory/file</td>
-</tr>
-<tr>
-<td>Query（语句）</td>
-<td>query</td>
-</tr>
-<tr>
-<td>Ref</td>
-<td>ref</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p>支持的协议有：File，Ftp，Http，Https，Jar</p>
-<h3 id="URL_的构造方法">URL 的构造方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">URL(String spec) <span class="comment">// 通过一个字符串传入URL 比如</span></span><br><span class="line"><span class="keyword">new</span> URL(<span class="string">"http://www.google.com.hk"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="使用Url_对象获取UrlConnection（HttpURLConnection_的父类）_对象">使用Url 对象获取UrlConnection（HttpURLConnection 的父类） 对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">URLConnection <span class="title">openConnection</span><span class="params">()</span> <span class="comment">// 获取URLConnection</span></span><br><span class="line">URLConnection <span class="title">openConnection</span><span class="params">(Proxy proxy)</span> <span class="comment">// 通过指定的端口获取URLConnection</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="通过URL_获取输入流对象">通过URL 获取输入流对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">final</span> InputStream <span class="title">openStream</span><span class="params">()</span></span>; <span class="comment">// 等同于openConnection().getInputStream(types)</span></span><br></pre></td></tr></table></figure>
-<h3 id="获取URL_的各种属性">获取URL 的各种属性</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">getPath()，getPort()......等等其他方法</span><br><span class="line">也可以使用equal(Object o); 来判断两个URL 对象是否相同</span><br></pre></td></tr></table></figure>
-<h3 id="获取HttpURLConnection_对象">获取HttpURLConnection 对象</h3><p>通过URL.openConnection() 方法获取URLConnection 对象，强制转换为HttpURLConnection</p>
-<h3 id="通过HttpURLConnection_对象获取输入输出流">通过HttpURLConnection 对象获取输入输出流</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getOutputStream();</span><br><span class="line">getInputStream();</span><br><span class="line"><span class="comment">// 关闭此连接</span></span><br><span class="line">disconnect();</span><br></pre></td></tr></table></figure>
-<h3 id="最后一个例子">最后一个例子</h3><p>这个例子实现了通过HttpURLConnection 访问给定的网址访问网页<br>并将返回的数据通过流对象打印在控制台中</p>
-<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpUrlConnActivity.java"></script>
-<h3 id="错误总结：">错误总结：</h3><p>如果连接网络操写在主线程内会出现：android.os.NetworkOnMainThreadException 异常<br>因此新建一个线程子类，在OnclickListener 中启动线程类。</p>
+<h2 id="使用GradlePlease_在线搜索类库">使用GradlePlease 在线搜索类库</h2><ul>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">http://gradleplease.appspot.com/</a></li>
+</ul>
+<p>如果你想在网页中体验的话，可以打开上面的网站，输入你要寻找的类库，它仅仅能显示一个结果，但是，你要现实两个，三个呢？</p>
+<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1048/1*aBG37_BY975lZIqc9NN8Pw.png" alt="gradleplease"></p>
 <hr>
-<h2 id="第三方类库">第三方类库</h2><p>对于在Android 上Http 第三方类库也有很多，优化的时候可以参考：</p>
+<h2 id="使用ALFI（Android_Library_Finder）">使用ALFI（Android Library Finder）</h2><p>来试试<a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">ALFI</a>：<br><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*F0qdIxZLLVTmG5Zl5Eu3uw.png" alt="[https://github.com/cesarferreira/alfi](https://github.com/cesarferreira/alfi)"></p>
+<h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install alfi</span><br></pre></td></tr></table></figure>
+<h3 id="搜索：">搜索：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">alfi</span> picasso</span><br></pre></td></tr></table></figure>
 <ul>
-<li>HttpClient：在早起版本，比较稳定，bug 少，但随着升级，bug 变多。</li>
-<li>HttpURLConnection：轻量级，API 简单，优化，后期版本bug 少，就目前看来，比HttpClient 更合适。</li>
+<li>打开终端，或者打开Android Studio 的终端（前提是已经配置过）。</li>
+<li>输入： <code>alfi 类库名字</code>。</li>
+<li>选择合适的依赖库。</li>
+<li>粘贴到你的<code>build.gralde</code>。</li>
 </ul>
-<h3 id="Volley">Volley</h3><ul>
-<li><a href="https://developers.google.com/events/io/sessions/325304728" target="_blank" rel="external">Volley: Easy, Fast Networking for Android</a></li>
-<li><a href="https://android.googlesource.com/platform/frameworks/volley/" target="_blank" rel="external">platform/frameworks/volley - Git at Google</a></li>
-<li><a href="http://www.javacodegeeks.com/2013/11/android-volley-dynamic-listview-asynctask-comparison.html" target="_blank" rel="external">Android Volley dynamic ListView: AsyncTask comparison | Java Code Geeks</a></li>
-<li><a href="http://www.technotalkative.com/android-volley-library-example/" target="_blank" rel="external">Android – Volley library example</a></li>
-</ul>
-<h3 id="Retrofit">Retrofit</h3><h3 id="OkHttp">OkHttp</h3><h3 id="android-async-http">android-async-http</h3><hr>
+<p>仅仅只需要几个步骤，没有UI，一次就出来了很多结果。</p>
+<p><img src="http://ww2.sinaimg.cn/large/68622377gw1etthxcv4t2j20pp0d2dni.jpg" alt="alfi picasso"></p>
+<p>又比如我们想知道Android 支持类库都有哪些？<br>我们可以输入<code>alfi com.android.support</code> 来获取。</p>
+<hr>
 <h2 id="参考">参考</h2><ul>
-<li><a href="http://www.vogella.com/tutorials/AndroidNetworking/article.html#networkoverview" target="_blank" rel="external">Android Networking - Tutorial</a></li>
-<li><a href="http://developer.android.com/reference/java/net/HttpURLConnection.html" target="_blank" rel="external">HttpURLConnection - Android SDK - Android Developers</a></li>
-<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
-<li><a href="http://instructure.github.io/blog/2013/12/09/volley-vs-retrofit/" target="_blank" rel="external">Android Async HTTP Clients: Volley vs Retrofit</a></li>
-<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
-<li><a href="http://liangruijun.blog.51cto.com/3061169/803097" target="_blank" rel="external">【Android进阶学习】Http编程之HttpClient</a></li>
-<li><a href="http://www.cppblog.com/iuranus/archive/2010/07/04/119311.html" target="_blank" rel="external">HttpClient基础</a></li>
+<li>本文整理来自：<a href="https://medium.com/the-engineering-team/android-library-finder-6c208ba16023" target="_blank" rel="external">Android Library Finder - Fastest way to get your dependencies</a></li>
+<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">Gradle Please</a></li>
+<li><a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">alfi - Android Library Finder | Github</a></li>
 </ul>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/" target="_blank" rel="external">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
 
       
     </div>
@@ -276,11 +236,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/alfi/"> #alfi </a>
+          
             <a href="/tags/android/"> #android </a>
           
-            <a href="/tags/http/"> #http </a>
-          
-            <a href="/tags/network/"> #network </a>
+            <a href="/tags/tools/"> #tools </a>
           
         </div>
       
@@ -289,13 +249,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/01/19/android-add-to-actionbar-back-button/">为ActionBar 添加返回按钮</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2014/11/11/http-protocol-network-programming-of-android/">Android 网络编程之HTTP 协议</a>
+              <a href="/2015/07/02/html-embed-slides-com-test/">Android Studio 入门指南（Slides）</a>
             
           </div>
         </div>
@@ -315,8 +273,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/"
-               data-title="Android 网络编程之Httpclient 和HttpUrlConnection" data-url="http://yoursite.com/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/">
+          <div class="ds-thread" data-thread-key="2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"
+               data-title="Android 开发工具之ALFI（Android Library Finder）" data-url="http://yoursite.com/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/">
           </div>
         
       </div>
@@ -438,7 +396,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用HttpClient_来连接网络"><span class="nav-number">1.</span> <span class="nav-text">使用HttpClient 来连接网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用HttpUrlConnection_来连接网络"><span class="nav-number">2.</span> <span class="nav-text">使用HttpUrlConnection 来连接网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一个URL_有多个部分组成："><span class="nav-number">2.1.</span> <span class="nav-text">一个URL 有多个部分组成：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URL_的构造方法"><span class="nav-number">2.2.</span> <span class="nav-text">URL 的构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Url_对象获取UrlConnection（HttpURLConnection_的父类）_对象"><span class="nav-number">2.3.</span> <span class="nav-text">使用Url 对象获取UrlConnection（HttpURLConnection 的父类） 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过URL_获取输入流对象"><span class="nav-number">2.4.</span> <span class="nav-text">通过URL 获取输入流对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取URL_的各种属性"><span class="nav-number">2.5.</span> <span class="nav-text">获取URL 的各种属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取HttpURLConnection_对象"><span class="nav-number">2.6.</span> <span class="nav-text">获取HttpURLConnection 对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过HttpURLConnection_对象获取输入输出流"><span class="nav-number">2.7.</span> <span class="nav-text">通过HttpURLConnection 对象获取输入输出流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后一个例子"><span class="nav-number">2.8.</span> <span class="nav-text">最后一个例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误总结："><span class="nav-number">2.9.</span> <span class="nav-text">错误总结：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三方类库"><span class="nav-number">3.</span> <span class="nav-text">第三方类库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Volley"><span class="nav-number">3.1.</span> <span class="nav-text">Volley</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Retrofit"><span class="nav-number">3.2.</span> <span class="nav-text">Retrofit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OkHttp"><span class="nav-number">3.3.</span> <span class="nav-text">OkHttp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android-async-http"><span class="nav-number">3.4.</span> <span class="nav-text">android-async-http</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#在Android_Studio_来添加依赖类库"><span class="nav-number">1.</span> <span class="nav-text">在Android Studio 来添加依赖类库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用GradlePlease_在线搜索类库"><span class="nav-number">2.</span> <span class="nav-text">使用GradlePlease 在线搜索类库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用ALFI（Android_Library_Finder）"><span class="nav-number">3.</span> <span class="nav-text">使用ALFI（Android Library Finder）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索："><span class="nav-number">3.2.</span> <span class="nav-text">搜索：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
