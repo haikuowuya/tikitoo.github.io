@@ -162,6 +162,83 @@
           
           
             
+              <a class="post-title-link" href="/2015/07/23/ubuntu-atom-zh-display-squre/">
+                Atom 在Ubuntu 中文显示乱码（方块）解决方法
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-07-23
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/07/23/ubuntu-atom-zh-display-squre/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/23/ubuntu-atom-zh-display-squre/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
+<p>因为是Atom 官方没有提供对中文的显示，所以就自己找解决办法吧，不过网上的大神，已经找到了解决方法。之前在网络上有人说在设置中字体设置为<code>文泉驿正黑</code> 字体，就可以显示了，但是我设置了，但还是显示方块，今天又在网络上看到的，因为Ubuntu 系统默认是没有安装<code>文泉驿正黑</code> 字体的，需要我们手工安装来安装。</p>
+<p>我们可以使用下面的方式来安装：<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install ttf-wqy-*</span><br></pre></td></tr></table></figure></p>
+<p>安装了之后，使用快捷键 <code>Ctrl + ,</code> 打开设置。在<code>Edit Settings</code> 中的<code>Font Family</code> 中输入<code>&#39;DejaVu Sans Mono&#39;, &#39;文泉驿正黑&#39;</code> 即可。然后在编辑框中中文就可以正常显示了。</p>
+<p>今天又测试了Markdown 预览界面，中文还是显示方块，又去找方法了。</p>
+<p>在设置界面，打开左边<code>Open Settings Folder</code>，然后打开<code>style.less</code> 文件，添加以下内容即可。</p>
+<p><strong>style.less</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@font-family:</span> <span class="string">'DejaVu Sans Mono'</span>, <span class="string">'文泉驿正黑'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class">.markdown-preview</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  <span class="tag">atom-text-editor</span><span class="pseudo">::shadow</span> *&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>除了编辑框，Markdown 预览能正常显示中文外，其他地方可能也会显示不正常，这个时候，我们去网上搜索，基本上就是在配置中添加一些属性即可。</p>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://atom-china.org/t/topic/116" target="_blank" rel="external">中文字体问题&amp;讨论</a></li>
+<li><a href="http://atom-china.org/t/linux/85/3" target="_blank" rel="external">Linux 下中文显示成方块的解决方案</a></li>
+</ul>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/">
                 Android 开发工具之ALFI（Android Library Finder）
               </a>
@@ -1209,178 +1286,6 @@
 
 
     
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/11/how-do-i-self-study-android-2015/">
-                我是如何自学Android，资料分享（2015）
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-11
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/11/how-do-i-self-study-android-2015/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/11/how-do-i-self-study-android-2015/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>自己学了两三个月的Android，最近花了一周左右的时间写了个App——<a href="https://github.com/Tikitoo/Diigoer" target="_blank" rel="external">Diigoer（已开源）</a>，又花了一两周时间找工作，收到了两个Offer，也算是对自己学习的一种认可吧；我刚开始学习总结的——《<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a>》，如果是初学Android 的话，不应该错过的，而今天这篇分享好这篇文章，相对于第一次写的会有所提升，所以建议先把上一篇看了，再来看这一篇；<br>那下面就切入正题吧，之前重复的就不再介绍了，相对于第一季，自己对Android 的认识更加深了（算是入门了吧），干货更多了，更加通俗易懂了，英文资料会多一点；而自己学习过程中发现的一些好资源，分享给你们，希望对你们的有一些帮助；</p>
-<h2 id="Java_学习">Java 学习</h2><hr>
-<p>我要再次强调，一定要有Java 基础（虽然现在使用其他语言也可以开发Android，但毕竟是很小众），也不要认为学习Java 两三周就可以不用管了，这会在以后的深入学习中暴露出问题，所以Java 基础一定要牢固，当然我也不是说，Java 学的特别好，才能去学习Android，毕竟学习是循序渐进的，所以在以后的学习中要注意，对于Java 系统的学习，我有一下几个推荐；</p>
-<blockquote>
-<ul>
-<li><a href="http://introcs.cs.princeton.edu/java/home/" target="_blank" rel="external">Introduction to Programming in Java: An Interdisciplinary Approach</a><br>普林斯顿的公开课，也有书籍，我觉得可以直接跟着公开课学习就OK 啦；</li>
-<li><a href="http://www.tutorialspoint.com/java/" target="_blank" rel="external">Java Tutorial - TutorialSpoint</a><br>TutorialSpoint 是一个专门技术教程网站，其他教程也可以去看学习；当然你想离线观看，网站还提供了PDF 版<ul>
-<li><a href="http://www.tutorialspoint.com/java/java_tutorial.pdf" target="_blank" rel="external">Java Tutorial PDF</a></li>
-</ul>
-</li>
-<li><a href="http://math.hws.edu/eck/cs124/downloads/javanotes7.pdf" target="_blank" rel="external">Javanotes 7.0 — Title Page</a><br>这个是霍巴特威廉史密斯学院的一本书，跟着JDK 版本，已经发行了好多版本；</li>
-</ul>
-</blockquote>
-<p>由于篇幅有限，所以在这里就不累赘了，以后会专门写一篇文章来说Java；</p>
-<h2 id="Android_系列教程">Android 系列教程</h2><hr>
-<p>这一段时间，发现了好多学习资源，自己收藏了，不敢独享，所以拿出来和大家分享，如果您发现不错的学习资源，欢迎留言；<br>而学习的过程中，也忽略了一些问题，比如自己学习的不系统，如果您也是自学的话，一定要注意这个问题，我觉得，除了看官方文档和大牛的博客之外，最重要就找一本好书，把自己的知识系统化；</p>
-<h3 id="入门指南">入门指南</h3><hr>
-<ul>
-<li><a href="developer.android.com/docs/training/index.html">Getting Started | Android Developers</a></li>
-<li><a href="http://halfapp.com/blog/get-started-programming-android-apps/" target="_blank" rel="external">How to get started programming Android apps | HalfApp</a></li>
-<li><a href="http://www.reddit.com/r/Android/comments/1w3woc/a_step_by_step_guide_about_how_to_get_started_and/" target="_blank" rel="external">A step by step guide about how to get started and involved in Android Development - Reddit</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a></li>
-<li><a href="http://drakeet.me/android_base_road" target="_blank" rel="external">我推荐的 Android 基础学习路线</a></li>
-<li><a href="http://mmclub.github.io/blog/2014/04/03/start-learning-android/" target="_blank" rel="external">Android入门杂谈</a></li>
-</ul>
-<h3 id="书籍推荐">书籍推荐</h3><hr>
-<p>首先自己没有很系统地去看一本书，所以我也是搜索，或者实在知乎上别人推荐的，所以，要根据自己的情况，适合自己的书来看；</p>
-<ul>
-<li><a href="http://commonsware.com/Android/" target="_blank" rel="external"> The Busy Coder’s Guide to Android Development</a><br>这是大牛CommonsGuy 开源的一本书，它的更新非常及时，基本上就是跟着SDK 更新的，下载PDF 可以在这里（<a href="http://commonsware.com/Android/4-2-free" target="_blank" rel="external">Four-to-Free Guarantee</a>）下载，书籍中源码可以在Github（<a href="https://github.com/commonsguy/cw-omnibus" target="_blank" rel="external">commonsguy/cw-omnibus</a>） 中查看；</li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">Best Android Books and Resources 2014</a><br>这篇文章主要介绍了Android 书籍和开发资源；</li>
-</ul>
-<h3 id="公开课">公开课</h3><hr>
-<ul>
-<li><a href="https://www.udacity.com/course/ud853" target="_blank" rel="external">How to Develop Android Apps Online Course - Udacity</a></li>
-<li><a href="https://class.coursera.org/android-001/lecture" target="_blank" rel="external">Programming Mobile Applications for Android (Coursera)</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLB03EA9545DD188C3" target="_blank" rel="external">Android Development For Absolute Beginners - YouTube</a></li>
-</ul>
-<h3 id="系列教程">系列教程</h3><hr>
-<ul>
-<li><a href="https://github.com/thecodepath/android_guides/wiki" target="_blank" rel="external">Home · codepath/android_guides Wiki - codepath</a><br>Android 指南，它不仅介绍怎么创建一个最简单的App Demo，循序渐进教你使用各种流行的框架，对于即将工作的同学来说是很用用的；Demo 很有实战意义；</li>
-<li><a href="http://www.tutorialspoint.com/android/index.htm" target="_blank" rel="external">Android tutorial - TutorialSpoint</a><br>是不是特别熟悉呀，对上面提到过，教程特别通俗易懂，代码实例也不错；</li>
-<li><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a><br>教程挺通俗易懂</li>
-<li><a href="http://androidhive.info/" target="_blank" rel="external">AndroidHive | Tutorials, Games, Apps, Tips |</a><br>博主是印度人，博客主要是以教程为主，质量较高，而且会分享比较新的东西；</li>
-<li><a href="http://www.codelearn.org/android-tutorial/" target="_blank" rel="external">Android Tutorial | Interactive and Step by step tutorial to learn Android</a></li>
-<li><a href="https://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code Category</a></li>
-<li><a href="http://www.learn2crack.com/category/androidprogramming" target="_blank" rel="external">Android Programming Archives - Learn2Crack</a></li>
-<li><a href="https://www.mysliderule.com/learning-paths/android/learn/" target="_blank" rel="external">Android Learning Path | SlideRule</a></li>
-</ul>
-<h3 id="大牛博客推荐">大牛博客推荐</h3><hr>
-<ul>
-<li><a href="https://github.com/android-cn/android-dev-cn" target="_blank" rel="external">android-cn/android-dev-cn</a><br>主要介绍国内Android 开发大牛；</li>
-<li><a href="https://github.com/android-cn/android-dev-com" target="_blank" rel="external">android-cn/android-dev-com</a><br>主要介绍国外Android 开发大牛；</li>
-<li><a href="http://www.quora.com/What-are-must-read-Android-developer-blogs" target="_blank" rel="external">What are must-read Android developer blogs? - Quora</a><br>Quora 上的回答</li>
-<li><a href="http://www.zhihu.com/question/19775981" target="_blank" rel="external">有哪些 Android 大牛的 blog 值得推荐？ - 知乎</a><br>知乎上的回答</li>
-</ul>
-<h3 id="开源App">开源App</h3><hr>
-<ul>
-<li><a href="https://f-droid.org/" target="_blank" rel="external">F-Droid | Free and Open Source Android App Repository</a><br>F-Droid 是一个Android 开源App 仓库</li>
-<li><a href="http://blog.tisa7.com/android_open_source_projects" target="_blank" rel="external">Android优秀开源项目 - 小猪爬爬</a></li>
-<li><a href="https://android-arsenal.com/" target="_blank" rel="external">The Android Arsenal - A categorized directory of free libraries and tools for Android</a><br>在这里，找到最新最流行的Android 开源类库</li>
-<li><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Trinea/android-open-project - Trinea</a><br>大牛Trinea 写的Android 开源项目汇总</li>
-</ul>
-<h3 id="开发工具">开发工具</h3><hr>
-<ul>
-<li><a href="http://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a><br>一个Android 代码搜索引擎；前两天发现了这个工具就爱不释手，写了篇文章——《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，让你参考入门。</li>
-<li><a href="http://www.gradleware.com/" target="_blank" rel="external">Gradle</a><br>知乎上我回答的《<a href="http://www.zhihu.com/question/27866554/answer/38427122" target="_blank" rel="external">如何从eclipse转入android studio,感觉Gradle什么的很难理解的。有什么教程吗? - Tikitoo 的回答 - 知乎</a>》，可以参考。</li>
-<li><a href="">Android Studio</a><br>从Google 的态度就可以看出，Android Studio 就是未来，而且在最近发布了正式版，教程在网上也不少。</li>
-<li><a href="http://androiduiux.com" target="_blank" rel="external">Android User Interface | User Experience | Inspiration source for Android Designers and Developers</a></li>
-<li><a href="http://www.android-app-patterns.com/" target="_blank" rel="external">Android App Patterns</a></li>
-<li><a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder - 400,000+ free and premium icons</a><br>一个Icon 搜索引擎</li>
-<li><a href="https://github.com/google/material-design-icons" target="_blank" rel="external">google/material-design-icons - github</a><br>Google 把官方的Material Design 1000+ 的Icon 开源了，不仅仅只有Android 版，而且还有Web 和iOS，真是业界良心呀。</li>
-<li><a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">inferjay/AndroidDevTools</a><br>inferjay 总结的开发工具，并且提供了国内的镜像。</li>
-<li><a href="https://www.genymotion.com/" target="_blank" rel="external">Genymotion - A faster Android emulator</a><br>Genymotion 是Android 的虚拟机，比官方的快了不知多少啊，它是基于Virtual Box，并且提供了插件。</li>
-</ul>
-<h3 id="订阅">订阅</h3><hr>
-<ul>
-<li><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周刊</a></li>
-<li><a href="http://www.androidweekly.cn/" target="_blank" rel="external">Android开发技术周报</a></li>
-<li><a href="https://github.com/nemoTyrant/manong#ANDROID" target="_blank" rel="external">码农周刊 - Android</a></li>
-</ul>
-<h3 id="资源">资源</h3><hr>
-<ul>
-<li><a href="http://www.androidauthority.com/best-resources-android-development-372414/" target="_blank" rel="external">Best resources for Android development</a></li>
-<li><a href="http://www.bongizmo.com/blog/android-resources-each-developer-should-know/" target="_blank" rel="external">Resources every Android developer must know</a><br>中文版——《<a href="http://www.importnew.com/3988.html" target="_blank" rel="external">Android开发者必知的开发资源 - ImportNew</a><br>》，译者是ImportNew - 黄小非</li>
-<li><a href="http://yeungeek.com/awesome-resources/" target="_blank" rel="external">开发资源 | Android 沉思录</a></li>
-<li><a href="http://www.apptentive.com/blog/programming-resources-for-android-developers/" target="_blank" rel="external">Android Developer Resources, Tutorials, and References — Being Apptentive</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.cnblogs.com/mainroadlee/p/android_resources_list.html" target="_blank" rel="external">Android开发者资源大汇总 - Android开发周刊 - 博客园</a></li>
-<li><a href="https://github.com/snowdream/awesome-android" target="_blank" rel="external">awesome-android - github</a></li>
-<li><a href="https://plus.google.com/+KevinDarty/posts/Qex6Ae6zhZW" target="_blank" rel="external">Where To Start - Learning Android Development the Right Way - Kevin Darty - Google+</a></li>
-<li><a href="http://www.reddit.com/r/androiddev/wiki/resources" target="_blank" rel="external">resources - androiddev reddit</a></li>
-<li><a href="http://zhuanlan.zhihu.com/anzhuo/19657543" target="_blank" rel="external">Android自学资料汇总</a></li>
-<li><a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">Android 学习之路</a></li>
-</ul>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://www.quora.com/What-are-the-best-resources-to-learn-Android-development" target="_blank" rel="external">http://www.quora.com/What-are-the-best-resources-to-learn-Android-development</a></li>
-<li><a href="http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#" target="_blank" rel="external">http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#</a></li>
-<li><a href="http://www.sitepoint.com/12-android-tutorials-beginners/" target="_blank" rel="external">http://www.sitepoint.com/12-android-tutorials-beginners/</a></li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">http://nimooli.com/blog/best-android-books-2014/</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
   </div>
 
   
@@ -1419,7 +1324,7 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">18</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1433,7 +1338,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

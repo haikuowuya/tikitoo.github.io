@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-07-06T16:24:27.000Z</updated>
+  <updated>2015-07-23T03:59:43.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Atom 在Ubuntu 中文显示乱码（方块）解决方法]]></title>
+    <link href="http://yoursite.com/2015/07/23/ubuntu-atom-zh-display-squre/"/>
+    <id>http://yoursite.com/2015/07/23/ubuntu-atom-zh-display-squre/</id>
+    <published>2015-07-23T03:56:23.000Z</published>
+    <updated>2015-07-23T03:59:43.000Z</updated>
+    <content type="html"><![CDATA[<p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
+<p>因为是Atom 官方没有提供对中文的显示，所以就自己找解决办法吧，不过网上的大神，已经找到了解决方法。之前在网络上有人说在设置中字体设置为<code>文泉驿正黑</code> 字体，就可以显示了，但是我设置了，但还是显示方块，今天又在网络上看到的，因为Ubuntu 系统默认是没有安装<code>文泉驿正黑</code> 字体的，需要我们手工安装来安装。</p>
+<p>我们可以使用下面的方式来安装：<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install ttf-wqy-*</span><br></pre></td></tr></table></figure></p>
+<p>安装了之后，使用快捷键 <code>Ctrl + ,</code> 打开设置。在<code>Edit Settings</code> 中的<code>Font Family</code> 中输入<code>&#39;DejaVu Sans Mono&#39;, &#39;文泉驿正黑&#39;</code> 即可。然后在编辑框中中文就可以正常显示了。</p>
+<p>今天又测试了Markdown 预览界面，中文还是显示方块，又去找方法了。</p>
+<p>在设置界面，打开左边<code>Open Settings Folder</code>，然后打开<code>style.less</code> 文件，添加以下内容即可。</p>
+<p><strong>style.less</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@font-family:</span> <span class="string">'DejaVu Sans Mono'</span>, <span class="string">'文泉驿正黑'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class">.markdown-preview</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  <span class="tag">atom-text-editor</span><span class="pseudo">::shadow</span> *&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>除了编辑框，Markdown 预览能正常显示中文外，其他地方可能也会显示不正常，这个时候，我们去网上搜索，基本上就是在配置中添加一些属性即可。</p>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://atom-china.org/t/topic/116" target="_blank" rel="external">中文字体问题&amp;讨论</a></li>
+<li><a href="http://atom-china.org/t/linux/85/3" target="_blank" rel="external">Linux 下中文显示成方块的解决方案</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
+<p>因为是Atom 官方]]>
+    </summary>
+    
+      <category term="Atom" scheme="http://yoursite.com/tags/Atom/"/>
+    
+      <category term="Ubuntu" scheme="http://yoursite.com/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android 开发工具之ALFI（Android Library Finder）]]></title>
@@ -1146,6 +1176,40 @@
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
       <category term="转载" scheme="http://yoursite.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Genymotion 启动问题，显示 unable to start the genymotion virtual device]]></title>
+    <link href="http://yoursite.com/2014/11/08/genymotion-unable-to-start-the-genymotion-virtual-device/"/>
+    <id>http://yoursite.com/2014/11/08/genymotion-unable-to-start-the-genymotion-virtual-device/</id>
+    <published>2014-11-08T05:35:16.000Z</published>
+    <updated>2015-07-11T05:38:40.000Z</updated>
+    <content type="html"><![CDATA[<p>启动Genymotion 显示</p>
+<blockquote>
+<p> <code>unable to start the genymotion virtual device</code>。</p>
+</blockquote>
+<p>解决办法：<br></p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/19922077/genymotion-unable-to-start-the-genymotion-virtual-device" target="_blank" rel="external">http://stackoverflow.com/questions/19922077/genymotion-unable-to-start-the-genymotion-virtual-device</a></li>
+</ul>
+<p>首先去VirtualBox 中查看系统设置中所选择的 <code>网络</code> 是否打开，并看网络服务器的IP 配置；然后去查看虚拟机的各项设置，比如内存是不是太大，或者是显存是不是太小，确认无误后，方可启动；</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>启动Genymotion 显示</p>
+<blockquote>
+<p> <code>unable to start the genymotion virtual device</code>。</p>
+</blockquote>
+<p>解决办法：<br></p>
+<ul>
+]]>
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+      <category term="genymotion" scheme="http://yoursite.com/tags/genymotion/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
