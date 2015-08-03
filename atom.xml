@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-07-23T03:59:43.000Z</updated>
+  <updated>2015-08-03T09:17:00.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Tikitoo：来使用工具来提高效率吧]]></title>
+    <link href="http://yoursite.com/2015/08/03/my-liqi/"/>
+    <id>http://yoursite.com/2015/08/03/my-liqi/</id>
+    <published>2015-08-03T09:06:11.000Z</published>
+    <updated>2015-08-03T09:17:00.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="介绍一下你自己和所做的工作。">介绍一下你自己和所做的工作。</h2><p>我是梁义发，网络Id 为Tikitoo。我2014 年毕业，后来自学了Android 开发，现在算是入门Android 开发吧。我也是一名互联网爱好者，也爱写文章。</p>
+<h2 id="硬件">硬件</h2><ul>
+<li>一台在大学买的笔记本，安装了Ubuntu，类Unix 还是适合开发的。</li>
+<li>Meizu Note 2，觉得魅族的设计，交互体验都不错的。</li>
+<li>入门 Kindle，现在也慢慢开始养成读书的习惯了。</li>
+<li>其实还是穷呀，以后会入手Macbook，机械键盘，人体工学椅。我觉得这些在长期看来都会提升幸福感的。</li>
+<li>明知道自己在硬件是没有优势，所以就在软件上下工夫了。</li>
+</ul>
+<h2 id="软件">软件</h2><ul>
+<li>开发：使用Android Studio，文本编辑器使用Sublime，现在切换到了Atom。使用WIFI ADB 连接Wifi 来测试应用，很实用。当然还有一些小工具就不说了。</li>
+<li>效率工具：有Chrome，Evernote，Pocket，Pushbullet，IFTTT，Keep，SimpleNote，这些工具，会让工作学习更高效。</li>
+<li>生活中：也会有像快图，Timi 记账，闹钟One，Google 相册，Mailbox，我是个软件控啦，不过这些软件真的让你省心不少。</li>
+<li>生活知识类：比如丁香医生，知性，我觉得生活的常识应该去了解的。</li>
+</ul>
+<h2 id="你最理想的工作环境是什么？">你最理想的工作环境是什么？</h2><p>弹性的工作时间，不太拥挤而且舒适的桌椅，墙上不应该是光秃禿的，包含一些公司的文化是极好的。</p>
+<h2 id="你平时获得工作灵感的方式有哪些？">你平时获得工作灵感的方式有哪些？</h2><p>其实作为一个开发人员，最重要的是对自身专业技能的提升，当然也应该对互联网行业的了解，自己也应该有对它的看法。</p>
+<ul>
+<li>提升专业技能，主要就是看官方文档，学会使用Google，Stackoverflow，也会使用Feedly 订阅博客，也会看像Android Weekly，开发者头条等等。还有看技术博客来提升自己的专业技能。</li>
+<li>微博，知乎，会读一些像36Kr，iFanr 的科技博客，来获取互联网信息。</li>
+</ul>
+<h2 id="推荐一件生活中的利器给大家">推荐一件生活中的利器给大家</h2><p>Keep：Keep 一个健身App，它会提供一些不同难度的健身教程，就算是以前没有锻炼过的人，也没有太多违和感，我也希望作为技术人员，能坚持锻炼身体。</p>
+<p>本文参与了「利器社群计划」，发现更多创造者和他们的工具：<a href="http://liqi.io/community/" target="_blank" rel="external">http://liqi.io/community/</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="介绍一下你自己和所做的工作。">介绍一下你自己和所做的工作。</h2><p>我是梁义发，网络Id 为Tikitoo。我2014 年毕业，后来自学了Android 开发，现在算是入门Android 开发吧。我也是一名互联网爱好者，也爱写文章。</p>
+<h2 id=]]>
+    </summary>
+    
+      <category term="Tools" scheme="http://yoursite.com/tags/Tools/"/>
+    
+      <category term="利器" scheme="http://yoursite.com/tags/%E5%88%A9%E5%99%A8/"/>
+    
+      <category term="效率" scheme="http://yoursite.com/tags/%E6%95%88%E7%8E%87/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Atom 在Ubuntu 中文显示乱码（方块）解决方法]]></title>
@@ -1346,173 +1388,6 @@
       <category term="android" scheme="http://yoursite.com/tags/android/"/>
     
       <category term="tutorial" scheme="http://yoursite.com/tags/tutorial/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 学习之路（转载）]]></title>
-    <link href="http://yoursite.com/2014/10/27/learn-android-from-rookie/"/>
-    <id>http://yoursite.com/2014/10/27/learn-android-from-rookie/</id>
-    <published>2014-10-27T11:13:29.000Z</published>
-    <updated>2015-07-01T09:06:18.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>本文作者：<a href="https://github.com/stormzhang" target="_blank" rel="external">Stormzhang</a><br>转载来自：<a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/</a></p>
-</blockquote>
-<p>QQ交流群：383323653 (入群理由填写我的GitHub账号(<code>stormzhang</code>))<br>收到一些朋友的微博私信，说能不能给Android新手们一些指导，我只能说指导谈不上，毕竟我也很多东西正在学习中，与此同时一大学同学准备转行Android，可以说是从头开始，那么我就姑且以一个过来人的身份给一些建议吧，只希望在学习的过程中能够少走写弯路吧。</p>
-<p><br></p>
-<h3 id="硬件">硬件</h3><hr>
-<ul>
-<li><strong>电脑–推荐Mac</strong><br>首先声明我不是果粉，个人Windows，Linux，Mac OX系统均用过， 只能说Windows上面的开发工具简直难以恭维，尤其命令行超级难用，而Linux自己必须得花不少时间在折腾中，更是不适合新手了，Max OS是我认为迄今为止最好用的系统，没有之一， 所以如果你不差钱的话，强烈建议入手一台Mac，推荐Pro系列， 当然它的价格确实比较昂贵，如果暂时入手有困难，推荐以后手头宽裕的时候再入手吧，会带给你质的体验。(Google的工程师们都在用Mac，应该比较有说服力吧)</li>
-</ul>
-<ul>
-<li><strong>手机–推荐Nexus 5</strong><br>做Android开发最难以忍受的就是那龟速的模拟器，强烈推荐入手我Google的Nexus系列，原生rom，性价比超高，有条件的推荐再入手一台小米或三星之类的，不是因为他们有多好用，而是因为目前市场上这两个品牌的手机份额最大，实际开发中可能需要进行适配与测试，总之你需要有台Android手机。你可能还需要知道魅族手机有个SmartBar的东东，虽然我认为确实很SB。最后你实在还是要用模拟器的话，那么姑且就给你推荐一款比较快速的模拟器吧—-Genymotion, 具体的见我这篇博客《<a href="http://stormzhang.github.io/android/2013/12/04/android-genymotion/" target="_blank" rel="external">一个强大的Android模拟器Genymotion</a>》。</li>
-</ul>
-<p><br></p>
-<h3 id="开发环境">开发环境</h3><hr>
-<ul>
-<li><p><strong><a href="http://developer.android.com/sdk/index.html" target="_blank" rel="external"> Eclipse ADT</a></strong><br>Google帮你集成了一个完整的Android开发环境，包含一个定制的Eclipse + ADT plugin，以及最新的SDK及源码</p>
-</li>
-<li><p><strong><a href="http://www.jetbrains.com/idea/" target="_blank" rel="external">IntelliJ IDEA</a></strong><br>相比与Eclipse更推荐使用IDEA，以后可以无缝过渡到Android Studio</p>
-</li>
-<li><p><strong><a href="http://developer.android.com/sdk/installing/studio.html" target="_blank" rel="external">Android Studio</a></strong><br>首先说明这个不适合新手们使用，但是你必须知道这是Google最新推出的Android开发工具，基于IDEA，编译依赖<a href="http://www.gradle.org/" target="_blank" rel="external">Gradle</a>，目前还没有推出1.0的正式版，但是你依然可以业余项目熟悉了解下，因为这也许是Android开发工具的未来</p>
-</li>
-<li><p><strong>翻墙</strong><br>俗话说，不会翻墙的程序员不是好程序员，尤其最近Google各项服务被屏蔽，以上IDE的下载也就都需要翻墙，这里推荐一个靠谱的VPN吧，支持多设备MAC，Windows，Android，iPhone等，如果和小伙伴们一起合买的话每月只要几块钱，圈内的朋友们都在用，如果你通过下面链接购买的话，你和我的账户都会增加10元钱。<br><strong><a href="http://refyt.com/?r=a9b90a505050781a" target="_blank" rel="external">云梯VPN</a></strong></p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="如果无论如何你都不想翻墙的话，这里github上可以直接下载以上Android开发工具">如果无论如何你都不想翻墙的话，这里github上可以直接下载以上Android开发工具</h3><hr>
-<ul>
-<li><a href="https://github.com/inferjay/AndroidDevTools/" target="_blank" rel="external">AndroidDevTools</a></li>
-</ul>
-<h3 id="Google_Android官方教程">Google Android官方教程</h3><hr>
-<ul>
-<li><a href="http://hukai.me/android-training-course-in-chinese/index.html" target="_blank" rel="external">Android Training Course in Chinese</a></li>
-</ul>
-<p><br></p>
-<h3 id="Android基础">Android基础</h3><hr>
-<p>上面可能是一个比较全面系统的培训教程，对于新手们可能对某些需要着重掌握的东西比较迷茫，于是整理下个人认为新手们必须要掌握的知识点，顺便也会附带相应觉得不错的讲解博客地址。</p>
-<ul>
-<li><p><a href="http://blog.csdn.net/android_tutor/article/details/5772285" target="_blank" rel="external">两分钟彻底让你明白Android Activity生命周期(图文)!</a><br>Activity实际开发中使用频率最高，这个必须要理解</p>
-</li>
-<li><p><a href="http://www.cnblogs.com/bravestarrhu/archive/2012/05/02/2479461.html" target="_blank" rel="external">Android四大基本组件介绍与生命周期</a><br>Android中的四大组件必须得知道，也是面试常问到的</p>
-</li>
-<li><p><a href="http://www.cnblogs.com/noTice520/archive/2011/12/05/2276379.html" target="_blank" rel="external">ListView的基本使用与优化</a><br>ListView是所有控件中最常使用且对新手来说比较复杂的用法，各种Adapter的使用以及ListView的优化都是必须掌握的</p>
-</li>
-<li><p><a href="http://blog.csdn.net/zhangjg_blog/article/details/10901293" target="_blank" rel="external">Android系统用于Activity的标准Intent</a><br>Intent解决了Android中四大组件的通讯，非常有用，这篇博客收集整理了系统的标准Intent</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/android/2014/05/16/android-screen-adaptation/" target="_blank" rel="external">Android 屏幕适配</a><br>介绍一些Android屏幕适配的基础</p>
-</li>
-<li><p><a href="http://blog.csdn.net/liuhe688/article/details/6715983" target="_blank" rel="external">Android中SQLite应用详解</a><br>Android中的SQLite需要掌握，这篇博客很适合新手</p>
-</li>
-<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/8881711" target="_blank" rel="external">Android Fragment完全解析</a><br>3.0之后新加的Fragment，必须要掌握，目前使用的场景也是越来越普遍了</p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="Android中级">Android中级</h3><hr>
-<ul>
-<li><p><a href="http://blog.csdn.net/android_tutor/article/details/4952960" target="_blank" rel="external">Android应用程序的生命周期</a><br>Android的应用程序的生命周期需要理解，面试也是经常会被问的</p>
-</li>
-<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/12921889" target="_blank" rel="external">带你一步步深入了解View</a><br>View做为UI开发中最常用到的，必须要深入理解</p>
-</li>
-<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11952435" target="_blank" rel="external">Android Service完全解析</a><br>Service作为Android四大组件之一，在每一个应用程序中都扮演着非常重要的角色</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/android/2014/05/22/android-gson/" target="_blank" rel="external">Android Gson</a><br>目前比较常用比较流行的数据格式就是json了，这篇博客教你如何使用Google Gson库来进行json解析</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/android/2014/04/10/android-optimize-layout/" target="_blank" rel="external">Android 布局优化</a><br>Android开发中经常会用到xml布局，那么布局优化方面的知识更是需要掌握的了</p>
-</li>
-<li><p><a href="http://blog.csdn.net/android_tutor/article/details/5740845" target="_blank" rel="external">Android中Intent传递对象的两种方法(Serializable,Parcelable)</a><br>详细讲解了Android中Intent中如何传递对象</p>
-</li>
-<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11711405" target="_blank" rel="external">Android异步消息处理机制完全解析</a><br>Android开发中异步操作是经常使用的，必须理解掌握</p>
-</li>
-<li><p><a href="http://blog.csdn.net/guolin_blog/article/details/11711405" target="_blank" rel="external">Android AsyncTask完全解析</a><br>Android异步操作的另一种方法</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/openandroid/2013/11/15/android-custom-loading/" target="_blank" rel="external">Android Custom Loading</a><br>很早的一个小demo，教你如果做一个App的Loading动画</p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="Android进阶">Android进阶</h3><hr>
-<ul>
-<li><p><a href="http://stormzhang.github.io/android/2014/02/28/android-gradle/" target="_blank" rel="external">Android Gradle</a><br>Google官方Android新的构建系统，可以很方便的管理依赖、编译打包等</p>
-</li>
-<li><p><a href="http://www.trinea.cn/android/android-performance-demo/" target="_blank" rel="external">Android 性能优化</a><br>一系列的性能调优教程，让你的代码以及App更畅通！</p>
-</li>
-<li><p><a href="https://github.com/stormzhang/9GAG" target="_blank" rel="external">一个完整的开源项目–9GAG</a><br>一个开源客户端，教你使用Studio、Gradle以及一些流行的开源库快速开发一个不错的Android客户端</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/android/2014/06/05/android-awesome-resources/" target="_blank" rel="external">整理的Android开发资源</a><br>自己整理的一些Android开发资源，包括开发、工具、设计等，相信会对你有用的</p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="Android设计">Android设计</h3><hr>
-<p>在开发一款Android App之前，你需要了解下Android平台的设计规范，这里有一系列关于Android Design的讲解以及Google最新推出的Material Design中文翻译版</p>
-<ul>
-<li><p><a href="http://www.geekpark.net/tag/Android%20Design" target="_blank" rel="external">Android Design</a></p>
-</li>
-<li><p><a href="http://design.1sters.com/" target="_blank" rel="external">Material Design</a></p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="Android兼容库">Android兼容库</h3><hr>
-<p>在了解了设计规范准备着手开发你的App时，你还需要考虑你的App支持的版本，如果是全新的App，从目前的市场份额来看，建议直接支持4.0+，虽然2.3的份额仍然有一部分，但是这部分真正用来使用App的人又能有多少呢。当然如果你的公司必须要求支持2.x的版本，那么也不用担心，下面整理了几个满足你适配的一些兼容库:</p>
-<ul>
-<li><p><a href="https://github.com/JakeWharton/ActionBarSherlock" target="_blank" rel="external">ActionBarSherlock</a><br>大神JakeWharton的一个ActionBar的兼容库，支持在2.x版本使用ActionBar</p>
-</li>
-<li><p><a href="http://stormzhang.github.io/android/2013/12/13/android-actionbar-compact/" target="_blank" rel="external">ActionBar Compact</a><br>在这之前使用ActionBar基本都会使用上述JakeWharton的兼容库，但是目前Google有了自己的一套ActionBar兼容库，推荐使用ActionBar Compact，具体介绍及使用方法详见我的这篇博客</p>
-</li>
-<li><p><a href="http://nineoldandroids.com/" target="_blank" rel="external">NineOldAndroids</a><br>Android 3.0之前开放的一些新的动画api–Property Animation，大神JakeWharton的又一大作，可以让你在2.x版本的sdk可以使用属性动画.</p>
-</li>
-<li><p><a href="http://developer.android.com/reference/android/support/v4/app/package-summary.html" target="_blank" rel="external">Android Support V4</a><br>如果需要兼容2.x的版本，在使用如下类的时候你需要使用v4包下的，如Fragment, FragmentManager, FragmentActivity, FragmentPagerAdapter, CursorLoader, LoaderManager, AsyncTaskLoader，当然v4包下面除了以上还有一些新的控件你必须知道</p>
-</li>
-<li><p><a href="http://my.oschina.net/summerpxy/blog/211835" target="_blank" rel="external">Navigation Drawer(导航抽屉)</a><br>在这之前在Android上实现一个抽屉导航你可能会用到<a href="https://github.com/jfeinstein10/SlidingMenu" target="_blank" rel="external">SlidingMenu</a>开源库，如今你可以使用官方的DrawerLayout控件很容易实现</p>
-</li>
-<li><p><a href="http://my.oschina.net/summerpxy/blog/211835" target="_blank" rel="external">SlidingPaneLayout</a><br>SlidingPaneLayout是V4包中新添加的组件，可以实现两列面板的切换, 具体使用与效果见博客链接</p>
-</li>
-<li><p><a href="https://github.com/stormzhang/SwipeRefreshLayoutDemo" target="_blank" rel="external">SwipeRefreshLayout</a><br>SwipeRefreshLayout是Google在support v4 19.1版本的library更新的一个下拉刷新组件,使用起来很方便,可以很方便的实现Google Now的效果</p>
-</li>
-</ul>
-<p><br></p>
-<h3 id="Android开发必知的一些开源库">Android开发必知的一些开源库</h3><hr>
-<p>说到开源库就不得不提<a href="https://github.com/" target="_blank" rel="external">GitHub</a>，只能说是目前最活跃的开源社区，不知道的赶紧去注册个账号使用起来，绝对是你快速提升技术的利器。</p>
-<blockquote>
-<p><strong><a href="https://android.googlesource.com/platform/frameworks/volley" target="_blank" rel="external">Volley</a></strong><br>App开发中免不了要和服务端进行交互，而volley是Google官方推出的一个开源的网络通信库，它能使网络通信更简单，更快速。</p>
-<ul>
-<li><a href="http://blog.csdn.net/guolin_blog/article/details/17482095" target="_blank" rel="external">Volley完全解析</a></li>
-<li><a href="https://github.com/stormzhang/AndroidVolley" target="_blank" rel="external">Android volley sample</a></li>
-</ul>
-<hr>
-<p><strong><a href="http://github.com/pardom/ActiveAndroid" target="_blank" rel="external">ActiveAndroid</a></strong><br>ActiveAndroid算是一个轻量级的ORM(对象关系映射(Object Relation Mapping))框架，简单地通过如save()和delete()等方法来做到增删改查等操作。</p>
-<ul>
-<li><a href="http://stormzhang.github.io/openandroid/android/sqlite/2013/12/20/android-orm-tools-activeandroid/" target="_blank" rel="external">ActiveAndroid–Android轻量级ORM框架</a></li>
-</ul>
-<hr>
-<p><strong><a href="http://square.github.io/retrofit/" target="_blank" rel="external">Retrofit</a></strong><br>Retrofit和Java领域的ORM概念类似， ORM把结构化数据转换为Java对象，而Retrofit 把REST API返回的数据转化为Java对象方便操作。同时还封装了网络代码的调用。</p>
-<ul>
-<li><a href="http://blog.chengyunfeng.com/?p=491" target="_blank" rel="external">Retrofit – Java(Android) 的REST 接口封装类库</a></li>
-</ul>
-<hr>
-<p><strong><a href="http://stormzhang.github.io/android/openandroid/2013/12/01/android-universal-image-loader/" target="_blank" rel="external">Android-Universal-Image-Loader</a></strong><br>Android-Universal-Image-Loader是一个强大的开源图片异步加载库，该项目的目的是提供一个可重复使用的仪器为异步图像加载，缓存和显示。</p>
-<ul>
-<li><a href="http://stormzhang.github.io/android/openandroid/2013/12/01/android-universal-image-loader/" target="_blank" rel="external">Android-Universal-Image-Loader</a></li>
-</ul>
-</blockquote>
-<p><br></p>
-<h3 id="Android开源项目分类汇总"><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Android开源项目分类汇总</a></h3><hr>
-<p>非常全面的GitHub开源项目汇总，不需要重复发明轮子，尽情遨游在开源世界里吧</p>
-<p><br></p>
-<h3 id="关于作者">关于作者</h3><hr>
-<p>非科班转投编程，Android开发者，Google脑残粉，热爱开源，分享Android方面的知识、技术、见闻</p>
-<p>Weibo: <a href="http://weibo.com/zhangqi8" target="_blank" rel="external">googdev</a></p>
-<p>GitHub: <a href="https://github.com/stormzhang" target="_blank" rel="external">stormzhang</a></p>
-<p>Company &amp; App: <a href="http://www.boohee.com/app/" target="_blank" rel="external">薄荷</a></p>
-<p>Android微信公众账号<br>推荐大家关注我的微信公众账号AndroidDeveloper, 专注Android技术分享，保证绝对干货！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote>
-<p>本文作者：<a href="https://github.com/stormzhang" target="_blank" rel="external">Stormzhang</a><br>转载来自：<a href="http://stormzhan]]>
-    </summary>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-      <category term="转载" scheme="http://yoursite.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
