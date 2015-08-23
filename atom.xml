@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-08-03T09:24:47.000Z</updated>
+  <updated>2015-08-23T07:09:06.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -16,11 +16,96 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[写给Android 开发的入门教程]]></title>
+    <link href="http://yoursite.com/2015/08/23/android-developer-tutorial/"/>
+    <id>http://yoursite.com/2015/08/23/android-developer-tutorial/</id>
+    <published>2015-08-23T06:45:34.000Z</published>
+    <updated>2015-08-23T07:09:06.000Z</updated>
+    <content type="html"><![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较好的资源，所以今天就把它整理成博客了，再好好整理一些好的资料分享给大家。其实我觉得，相对于稍微有点经验的人来说，初学者更需要指导，因为初学者没有好的知识体系，所以会走不少弯路，所以我就以我的经验，和在微博，论坛上大家公认的资料整理出来，也希望能帮到大家。</p>
+<hr>
+<h2 id="Java">Java</h2><ul>
+<li><a href="http://item.jd.com/10100190.html" target="_blank" rel="external">O’Reilly：Head First Java（中文版）</a></li>
+<li><a href="http://yun.baidu.com/s/1dD5RRQ5" target="_blank" rel="external">Mars 的Java4Android</a></li>
+</ul>
+<p>其实我倒觉得，初学者可以读一些浅显易懂的书，在以后的学习中，可以再加以巩固，可以读一些深一点的书。</p>
+<hr>
+<h2 id="Android_书籍">Android 书籍</h2><ul>
+<li><a href="http://item.jd.com/11504254.html" target="_blank" rel="external">郭霖《第一行代码》</a></li>
+<li><a href="http://item.jd.com/11431307.html" target="_blank" rel="external">Brian Hardy，Bill Phillips《 Android编程权威指南》</a></li>
+</ul>
+<p>这两本特别适合初学者开入门的。不管是我自身还是从论坛，微博上，对它们的评论都不错。</p>
+<hr>
+<h2 id="Android_教程">Android 教程</h2><ul>
+<li><a href="http://developer.android.com/training/index.html" target="_blank" rel="external">Android 官方入门指南</a></li>
+<li><a href="http://hukai.me/android-training-course-in-chinese/" target="_blank" rel="external">序言 | Android官方培训课程中文版(v0.9.4)</a></li>
+<li><a href="https://github.com/codepath/android_guides/wiki" target="_blank" rel="external">Home · codepath/android_guides Wiki · GitHub</a></li>
+</ul>
+<p>对于教程，我的观点是能读官方，就不要读其他，第二个是官方指南的中文版，算是中文翻译中比较好的了。<br>而Codepath 的入门指南，也可以和官方相比，也是不逊色的，相比较官方的，它的教程更具有实战意义，每一个都是一个小Demo，做完会让你很有成就感。</p>
+<hr>
+<h2 id="Android_视频">Android 视频</h2><ul>
+<li><a href="http://marschen.com/portal.php" target="_blank" rel="external">Mars——Android 开发视频教程</a></li>
+<li><a href="http://pan.baidu.com/s/1qWAWU52" target="_blank" rel="external">黎活明——8天快速掌握Android视频</a></li>
+<li><a href="http://www.imooc.com/course/programdetail/pid/33" target="_blank" rel="external">慕课网——Android 开发视频</a></li>
+<li><a href="http://android.jikexueyuan.com/" target="_blank" rel="external">极客学院——Android开发,安卓开发教程</a></li>
+</ul>
+<p>这些你都不知道，就有点孤陋寡闻了。</p>
+<hr>
+<h2 id="Android_开发工具">Android 开发工具</h2><ul>
+<li><p><a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">inferjay/AndroidDevTools</a><br>对于不能科学上网来说，可以使用这里提供的国内镜像来下载各种开发工具和SDK。</p>
+</li>
+<li><p>Android Studio<br>如果之前还有纠结的话，那么现在你还不使用Android Studio，就说不过去了。Bug 也变得少了，性能优化，版本迭代也特别快。对于以前没有使用过AS 的人来说，当然学习曲线也是比较陡峭的。我推荐两篇文章可以来入门，以后遇到的问题，可以到时候来搜索解决。</p>
+<ul>
+<li><a href="http://stormzhang.com/" target="_blank" rel="external">Stormzhang - Android Studio系列教程</a></li>
+<li><a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">Tikitoo - Android Studio 入门指南</a></li>
+</ul>
+<hr>
+<h2 id="Android_开源App">Android 开源App</h2></li>
+<li><a href="https://github.com/googlesamples?utf8=%E2%9C%93&amp;query=android" target="_blank" rel="external">Search Android - Google Samples</a><br>谷歌官方会经常推出一些Android 新技术的Demo，比如每年的IO App 等等。</li>
+<li>Android Apidemos<br>下载SDK 之后，会在 <code>&lt;sdk-insall-folder&gt;/samples/</code> 中查看系统自带的好多Demo。</li>
+<li><a href="http://www.zhihu.com/question/26687642" target="_blank" rel="external">有没有适合 Android 开发初学者的 App 源码推荐？</a><br>知乎上有好多大牛推荐的，也可以值得关注一下，找到适合自己的来练练手。</li>
+</ul>
+<hr>
+<h2 id="Android_学习经验分享">Android 学习经验分享</h2><p>还有一些大牛对入门者的入门文章，我觉得对于初学者来说，会避免不少弯路。</p>
+<ul>
+<li><a href="http://www.stormzhang.com/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">StormZhang - Android学习之路</a></li>
+<li><a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">Tikitoo - 我是如何自学Android，资料分享</a></li>
+<li><a href="http://drakeet.me/android_base_road" target="_blank" rel="external">Drakeet - 我推荐的 Android 基础学习路线</a></li>
+<li><a href="https://github.com/futurice" target="_blank" rel="external">futurice</a><a href="https://github.com/futurice/android-best-practices" target="_blank" rel="external">android-best-practices - Github</a></li>
+</ul>
+<hr>
+<h2 id="总结">总结</h2><p>作为一个程序员，学会科学上网应该是一种本能，这样就会减少很多不必要的麻烦。</p>
+<p>要善于利用搜索引擎，StackOverflow。使用英文关键词搜索，你遇到的99% 的问题，别人都会遇到。</p>
+<p>要时刻关注Android 的最新动态。比如Android 的官方博客，还有各种Android Weekly，在微博，知乎关注一些Android 牛人，看他们分享的东西和回答的问题，要让自己与时俱进，才不会被淘汰。</p>
+<p>加一些QQ 群，有不会可以问问，相互交流。</p>
+<p>Alway Be Coding。当敲的代码多了，你的能力才能慢慢提升，切忌眼高手低。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/08/23/android-developer-tutorial/" target="_blank" rel="external">http://tikitoo.me/2015/08/23/android-developer-tutorial/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较]]>
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="Android 入门" scheme="http://yoursite.com/tags/Android-%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="Android 开发" scheme="http://yoursite.com/tags/Android-%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Android 教程" scheme="http://yoursite.com/tags/Android-%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="自学Android" scheme="http://yoursite.com/tags/%E8%87%AA%E5%AD%A6Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Tikitoo：来使用利器来提高效率吧]]></title>
     <link href="http://yoursite.com/2015/08/03/my-liqi/"/>
     <id>http://yoursite.com/2015/08/03/my-liqi/</id>
     <published>2015-08-03T09:06:11.000Z</published>
-    <updated>2015-08-03T09:24:47.000Z</updated>
+    <updated>2015-08-03T09:35:05.000Z</updated>
     <content type="html"><![CDATA[<h2 id="介绍一下你自己和所做的工作。">介绍一下你自己和所做的工作。</h2><p>我是梁义发，网络ID 为Tikitoo。我2014 年毕业，后来自学了Android 开发，现在算是入门Android 开发吧。我也是一名互联网爱好者，也爱写文章。</p>
 <h2 id="硬件：">硬件：</h2><ul>
 <li>一台在大学买的笔记本，安装了Ubuntu，类Unix 还是适合开发的。</li>
@@ -1252,142 +1337,6 @@
       <category term="genymotion" scheme="http://yoursite.com/tags/genymotion/"/>
     
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[我是如何自学Android，资料分享]]></title>
-    <link href="http://yoursite.com/2014/10/27/how-do-i-self-study-android/"/>
-    <id>http://yoursite.com/2014/10/27/how-do-i-self-study-android/</id>
-    <published>2014-10-27T14:15:00.000Z</published>
-    <updated>2015-07-01T09:04:34.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p><a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">我是如何自学Android，资料分享（2015 版）</a> 已经完成，我的建议是先把这一篇看完，再看2015 版的，欢迎<code>喜欢</code>，<code>收藏</code>。</p>
-</blockquote>
-<p>最近知乎上有网友问我怎么自学Android，其实说实在的，我学的也一塌糊涂，当然在学习过程也积累了一些知识，对于以前没接触过Android的朋友，或者刚入门Android 的朋友，这篇文章作为入门，那是再合适不过了，希望对刚入门Android的朋友有帮助，接下来，就不罗嗦啦。</p>
-<blockquote>
-<p>本文主要有以下几个步骤：<br><code>1.</code>  Java 基础；<br><code>2.</code> 搭建Android 开发环境；<br><code>3.</code> 了解Android 运行原理以及一个工程项目结构；<br><code>4.</code> 如何系统学习Android；<br><code>5.</code> 推荐一些实用的资源<br><code>6.</code> 总结</p>
-</blockquote>
-<p><br></p>
-<h3 id="首先呢？当然要有Java_基础；"><strong>首先呢？当然要有Java 基础；</strong></h3><hr>
-<p>我大学的专业就是Java，但由于没学好，刚开始学Android 的时候，挺吃力的，后来又去补Java 基础去了；<br>因为Android SDK 是基于Java 开发的，使用的语言是Java，如果有了Java 基础，学Android 就会事半功倍；比如在Android 中要使用到的接口，抽象类，类型转换，继承，覆盖，匿名内部类，多线程，这些都是Java 语言的，如果以前没有基础过，学Android 会很郁闷的；</p>
-<p>当然如果你有C++ 基础，当然也可以基于NDK 开发，可以不使用Java；</p>
-<p><strong>对于没有Java 基础的朋友，我推荐一些资料：</strong></p>
-<blockquote>
-<p>Mars 的Java4Android：<a href="http://yun.baidu.com/s/1dD5RRQ5" target="_blank" rel="external">http://yun.baidu.com/s/1dD5RRQ5</a><br>极客学院推出的Android 专题：<a href="http://android.jikexueyuan.com/" target="_blank" rel="external">http://android.jikexueyuan.com/</a></p>
-</blockquote>
-<p><br></p>
-<h3 id="搭建环境">搭建环境</h3><hr>
-<p>Android 开发IDE选择，有Eclipse，IntelliJ IDEA，Android Studio（基于IntelliJ IDEA 社区版开发的），Eclipse 和 Android Studio 是免费的；<br>对于初学者我推荐使用Eclipse，因为Eclipse 成熟，遇到问题，搜索也容易找到答案；以后可以尝试不同的IDE；</p>
-<p><strong>搭建环境的步骤：*</strong></p>
-<blockquote>
-<ol>
-<li>Eclipse安装；</li>
-<li>Android SDK安装（Android 开发工具包）；</li>
-<li>ADT安装（Eclipse 的插件，使Eclipse 能够开发Android）；</li>
-<li>创建AVD（在电脑创建一个虚拟手机）；</li>
-</ol>
-<p>详细步骤：<a href="http://www.cnblogs.com/skynet/archive/2010/04/12/1709892.html" target="_blank" rel="external">Android开发之旅：环境搭建及HelloWorld</a></p>
-<p>在这里会有很多工具，可能刚入门的会比较模糊，可以参考：<a href="http://tikitoo.github.io/blog/2014/10/12/android-tools/" target="_blank" rel="external">Android 开发，各种工具</a></p>
-</blockquote>
-<p>如果最终虚拟的手机屏幕能够显示主界面，则表示成功；</p>
-<p><br></p>
-<h3 id="了解Android_运行原理，一个工程的项目结构">了解Android 运行原理，一个工程的项目结构</h3><hr>
-<ul>
-<li><p>项目结构推荐慕课网的视频教程：<a href="http://www.imooc.com/video/1442" target="_blank" rel="external">Android 项目结构介绍</a></p>
-</li>
-<li><p><a href="http://tonyqus.blog.51cto.com/2676222/1305405" target="_blank" rel="external">Android项目目录结构介绍</a></p>
-</li>
-<li><a href="http://www.cnblogs.com/skynet/archive/2010/04/13/1711479.html" target="_blank" rel="external">Android开发之旅：HelloWorld项目的目录结构</a></li>
-</ul>
-<p><br></p>
-<h3 id="系统学习Android">系统学习Android</h3><hr>
-<p>有了上面的学习，对Android 也有了初步的认识，接下来可以系统地学习Android 啦，网上资料也很多啦，书籍也很多，视频也很多，我觉得首先要《<a href="https://developer.android.com/guide/index.html" target="_blank" rel="external">官方API Guide</a>》；然后手上准备一本书，可以当做字典，不会可以看看；如果看官方文档，有难度，看书进度太慢，可以看视频，跟着视频学，做一下东西，有什么不会的问题，可以Google 搜索；</p>
-<p>如果说到细的知识点，比如四大组件，UI，多媒体处理，信号连接，数据存储，我在这里就不多介绍了；主要介绍了一些学习资料；</p>
-<blockquote>
-<p><strong>官方文档</strong></p>
-<ul>
-<li><p>官方指南：<a href="https://developer.android.com/guide/index.html" target="_blank" rel="external">Introduction to Android | Android Developers</a></p>
-</li>
-<li><p>Android API：<a href="https://developer.android.com/reference/packages.html" target="_blank" rel="external">Android API| Android Developers</a></p>
-</li>
-<li><p>官方中文文档： <a href="http://hukai.me/android-training-course-in-chinese/index.html" target="_blank" rel="external">序言 | Google Android官方培训课程中文版(v0.5)</a></p>
-</li>
-</ul>
-<hr>
-<p><strong>书推荐</strong></p>
-<ul>
-<li><p>《<a href="">Head first Android Developer</a>》；</p>
-</li>
-<li><p>《<a href="">Pro Android</a>》；</p>
-</li>
-</ul>
-<hr>
-<p><strong>视频教程</strong></p>
-<ul>
-<li><p><a href="http://marschen.com/portal.php" target="_blank" rel="external">Mars——Android 开发视频教程</a></p>
-</li>
-<li><p><a href="http://pan.baidu.com/s/1qWAWU52" target="_blank" rel="external">黎活明——8天快速掌握Android视频</a></p>
-</li>
-<li><p><a href="http://www.imooc.com/course/list" target="_blank" rel="external">慕课网——Android 开发视频</a></p>
-</li>
-<li><p><a href="http://android.jikexueyuan.com/" target="_blank" rel="external">极客学院——Android开发,安卓开发教程,android教程,安卓软件开发教程,安卓开发视频教程,安卓开发环境搭建</a></p>
-</li>
-</ul>
-<hr>
-<p><strong>博客推荐</strong></p>
-<ul>
-<li><p><strong><a href="http://yeungeek.com/android%E5%BC%80%E5%8F%91%E5%A4%A7%E7%89%9B%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">android开发大牛博客</a></strong> <br></p>
-</li>
-<li><p><a href="http://blog.csdn.net/hellogv" target="_blank" rel="external">hellogv的专栏 - 博客频道</a> <br></p>
-</li>
-<li><p><a href="http://blog.csdn.net/android_tutor" target="_blank" rel="external">Android_Tutor的专栏 - 博客频道</a> <br></p>
-</li>
-<li><p><a href="http://stormzhang.github.io/" target="_blank" rel="external">Storm’ blog</a> <br></p>
-</li>
-<li><p><a href="http://blog.csdn.net/column/details/flowingflying02.html" target="_blank" rel="external">恺风（Wei）之Android专栏</a> <br></p>
-</li>
-<li><p><a href="http://blog.csdn.net/luoshengyang" target="_blank" rel="external">老罗的Android之旅 - 博客频道</a> <br></p>
-</li>
-</ul>
-<hr>
-<p><strong>网站推荐</strong></p>
-<ul>
-<li><p><a href="http://www.importnew.com/" target="_blank" rel="external">ImportNew - 专注Java &amp; Android 技术分享</a></p>
-</li>
-<li><p><a href="http://blog.jobbole.com/category/android/" target="_blank" rel="external">Android - 博客 - 伯乐在线</a></p>
-</li>
-<li><p><a href="http://www.androidchina.net/" target="_blank" rel="external">Android开发中文站关注Android，关注开发者</a></p>
-</li>
-</ul>
-</blockquote>
-<p><br></p>
-<h3 id="总结">总结</h3><hr>
-<ol>
-<li><p>当然Github 上有很多开源的项目，多看看源码，自己才能快速提升；《<a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Android开源项目分类汇总</a>》，这里几乎汇总了github 上所有的开源项目，可以自己找些慢慢学；</p>
-</li>
-<li><p>然而学习是乏味的事，坚持到最后是不易的；</p>
-</li>
-<li><p>要善于利用搜索引擎，遇到不会的问题，要使用Google 搜索；对了，作为一个开发者，要学会自备梯子；</p>
-</li>
-<li><p>还有学Android，要时刻关注Android 的最新动态，比如最新发布的Android 5.0 棒棒糖版，去了解他的新特性；</p>
-</li>
-<li><p>加一些QQ 群，有不会可以问问，相互交流；</p>
-</li>
-</ol>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">http://www.jianshu.com/p/2ee0e74abbdf</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote>
-<p><a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">我是如何自学Android，资料分享（2015 版）</a> 已经完成，我的建议是先把这一]]>
-    </summary>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-      <category term="tutorial" scheme="http://yoursite.com/tags/tutorial/"/>
     
   </entry>
   
