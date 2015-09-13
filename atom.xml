@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-08-23T07:09:06.000Z</updated>
+  <updated>2015-09-13T10:52:42.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -16,11 +16,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[android-studio-live-templates.md]]></title>
+    <link href="http://yoursite.com/2015/09/13/android-studio-live-templates-md/"/>
+    <id>http://yoursite.com/2015/09/13/android-studio-live-templates-md/</id>
+    <published>2015-09-13T10:22:43.000Z</published>
+    <updated>2015-09-13T10:52:42.000Z</updated>
+    <content type="html"><![CDATA[<p>在Android Studio 中，我们会发现有时候我们有一些打出一些拼写就会出来一些东西。</p>
+<p>比如：<em>psvm</em><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>那么这个是怎么实现的呢？</p>
+<p>其实Android Studio 中有一个叫<strong>Live Templates</strong> 的东西。在设置中直接搜索就可以找到。<br>默认的中，系统已经有很多很方便的配置。当然我们也可以自己来编辑。</p>
+<p>Bignerdranch 有一篇文章可以来了解看看</p>
+<ul>
+<li><a href="https://www.bignerdranch.com/blog/android-studio-live-templates/" target="_blank" rel="external">Android Studio Live Templates | Big Nerd Ranch</a></li>
+</ul>
+<p>更多的详细介绍，可以上IDEA 的官方文档来仔细查看</p>
+<ul>
+<li><a href="https://www.jetbrains.com/idea/help/live-templates.html" target="_blank" rel="external">Live Templates</a></li>
+</ul>
+<p>更赞的是，开发大牛把提前配置好的文件放在Github 上了，我等菜鸟就慢慢享用吧。</p>
+<ul>
+<li><a href="https://github.com/keyboardsurfer/idea-live-templates" target="_blank" rel="external">keyboardsurfer/idea-live-templates</a></li>
+</ul>
+<p>然后将文件放在一下文件夹下即可。<br><img src="http://ww3.sinaimg.cn/large/68622377gw1ew10t6z7lyj214f0c0q61.jpg" alt=""></p>
+<p>其实还是有点懒，以后有空写一篇详细的教程吧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在Android Studio 中，我们会发现有时候我们有一些打出一些拼写就会出来一些东西。</p>
+<p>比如：<em>psvm</em><br><figure class="highlight java"><table><tr><td class="gutter"><p]]>
+    </summary>
+    
+      <category term="android studio" scheme="http://yoursite.com/tags/android-studio/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[写给Android 开发的入门教程]]></title>
     <link href="http://yoursite.com/2015/08/23/android-developer-tutorial/"/>
     <id>http://yoursite.com/2015/08/23/android-developer-tutorial/</id>
     <published>2015-08-23T06:45:34.000Z</published>
-    <updated>2015-08-23T07:09:06.000Z</updated>
+    <updated>2015-08-23T07:09:07.000Z</updated>
     <content type="html"><![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较好的资源，所以今天就把它整理成博客了，再好好整理一些好的资料分享给大家。其实我觉得，相对于稍微有点经验的人来说，初学者更需要指导，因为初学者没有好的知识体系，所以会走不少弯路，所以我就以我的经验，和在微博，论坛上大家公认的资料整理出来，也希望能帮到大家。</p>
 <hr>
 <h2 id="Java">Java</h2><ul>
@@ -1303,40 +1337,6 @@
       <category term="java" scheme="http://yoursite.com/tags/java/"/>
     
       <category term="转载" scheme="http://yoursite.com/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Genymotion 启动问题，显示 unable to start the genymotion virtual device]]></title>
-    <link href="http://yoursite.com/2014/11/08/genymotion-unable-to-start-the-genymotion-virtual-device/"/>
-    <id>http://yoursite.com/2014/11/08/genymotion-unable-to-start-the-genymotion-virtual-device/</id>
-    <published>2014-11-08T05:35:16.000Z</published>
-    <updated>2015-07-11T05:38:40.000Z</updated>
-    <content type="html"><![CDATA[<p>启动Genymotion 显示</p>
-<blockquote>
-<p> <code>unable to start the genymotion virtual device</code>。</p>
-</blockquote>
-<p>解决办法：<br></p>
-<ul>
-<li><a href="http://stackoverflow.com/questions/19922077/genymotion-unable-to-start-the-genymotion-virtual-device" target="_blank" rel="external">http://stackoverflow.com/questions/19922077/genymotion-unable-to-start-the-genymotion-virtual-device</a></li>
-</ul>
-<p>首先去VirtualBox 中查看系统设置中所选择的 <code>网络</code> 是否打开，并看网络服务器的IP 配置；然后去查看虚拟机的各项设置，比如内存是不是太大，或者是显存是不是太小，确认无误后，方可启动；</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>启动Genymotion 显示</p>
-<blockquote>
-<p> <code>unable to start the genymotion virtual device</code>。</p>
-</blockquote>
-<p>解决办法：<br></p>
-<ul>
-]]>
-    </summary>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-      <category term="genymotion" scheme="http://yoursite.com/tags/genymotion/"/>
-    
-      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
