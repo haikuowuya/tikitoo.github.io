@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-09-27T12:01:49.000Z</updated>
+  <updated>2015-09-27T12:01:50.000Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2015/09/27/android-studio-the-very-useful-plugins/"/>
     <id>http://yoursite.com/2015/09/27/android-studio-the-very-useful-plugins/</id>
     <published>2015-09-27T11:49:59.000Z</published>
-    <updated>2015-09-27T12:01:49.000Z</updated>
+    <updated>2015-09-27T12:01:50.000Z</updated>
     <content type="html"><![CDATA[<p>我要回答了。你们只负责点赞吧。</p>
 <p>上面有好多大牛的推荐有很多不错。</p>
 <p><strong>Android ButterKnife Zelezny</strong><br>不想写findViewById() 就用ButterKnife，ButterKnife 的注释不想写就用这个插件。</p>
