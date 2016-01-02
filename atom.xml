@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2016-01-02T13:45:45.129Z</updated>
+  <updated>2016-01-02T13:45:48.885Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,52 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[开发者必备的网站]]></title>
-    <link href="http://yoursite.com/2016/01/02/2015-11-02-developer-website/"/>
-    <id>http://yoursite.com/2016/01/02/2015-11-02-developer-website/</id>
-    <published>2016-01-02T13:43:09.000Z</published>
-    <updated>2016-01-02T13:45:45.129Z</updated>
-    <content type="html"><![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。</p>
-<p>我觉得，作为程序员，开发者，科学上网应该就像人的尊严一样，没有它，你写代码都会浑身不舒服。</p>
-<h2 id="Google">Google</h2><hr>
-<p>不管是新手程序员还是老手程序员，工作和学习过程中都会遇到一些问题，那么遇到问题利用Google 搜索估计是最快解决方案。<br>而且Google 的结果，让你很容易解决问题。关键是Google 不做恶，没广告。</p>
-<h2 id="Github">Github</h2><hr>
-<p>作为全世界最大的同性交流网站（代码托管平台），上面有各种大牛，作为新手的我只能默默地去撸大牛的代码，期待能和大牛的差距一步步减少。除了学习之外，你也可以利用闲暇的时间来来将自己的开源项目放在上面，从侧面也是对自己的宣传，对找工作也有帮助。<br>类似的有国外的Bitbucket，gitcafe，coding.net 等等。</p>
-<h2 id="StackOverflow">StackOverflow</h2><hr>
-<p>最大的技术问答网站，Google 搜索技术问题，结果很大的比例都来自StackOverflow，而且可能我们折腾好久的问题，大牛的一句话都点中要害。</p>
-<h2 id="HackNews">HackNews</h2><hr>
-<p>Hacker News 是一家关于计算机黑客和创业公司的社会化新闻网站，你可以讲自己写的博客或者对一些业界新闻拿出来来讨论。就算自己在上面多看看也是很涨见识的。而且我注意到，国外的很多人的博客都不留评论框，一般写完文章，就会放在HackNews 讨论。国内也有类似的网站。<a href="http://news.dbanotes.net/" target="_blank" rel="external">Startup News</a>。</p>
-<h2 id="InfoQ"><a href="http://www.infoq.com/cn/" target="_blank" rel="external">InfoQ</a></h2><hr>
-<p>InfoQ 是一个面对开发的服务网站，而他的自我介绍：促进软件开发领域知识与创新的传播。在上面你会看到很多专业人士分享的专业知识，他们分享的东西，可能是一般开发者很难接触到的。由InfoQ 主办的Qcon，ArchSummit 大会，也是非常值得一去的。</p>
-<h2 id="V2ex"><a href="http://v2ex.com/" target="_blank" rel="external">V2ex</a></h2><hr>
-<p>我觉得V2ex 算是一个程序员吐槽，交流的网站。反正上面由好多好多程序员。而且有个专栏叫《酷工作》，反正由好多求职和招聘的。</p>
-<h2 id="SegmentFault"><a href="http://segmentfault.com/" target="_blank" rel="external">SegmentFault</a></h2><hr>
-<p>SegmentFault 是一个面向开发者的技术问答社区，你可以在上面问答，写博客，线下交流活动等等。</p>
-<h2 id="开源中国">开源中国</h2><hr>
-<p>开源中国是目前中国最大的开源技术社区，为IT 开发者提供了一个发现、使用、并交流开源技术的平台。</p>
-<h2 id="技术博客">技术博客</h2><hr>
-<p>我们在学习过程中，很多时候都是看别人的技术博客来成长的，当然技术博客网站由很多。比如CSDN，cnBlogs，51CTO，itEyes 等等。</p>
-<h2 id="Mooc">Mooc</h2><hr>
-<p>Mooc 翻译为中文叫做在线网络公开课，Mooc　的愿景是让那些没有机会接受正式教育的人能接受教育，主要做技术的Mooc　也有很多。比如像国外的coursera，edx，udacity，国内由像慕课网，极客学院等等。</p>
-<h2 id="开发者服务网站">开发者服务网站</h2><hr>
-<p>这个标题可能叫可能叫的不太准确，<br><a href="gold.xitu.io/">稀土掘金</a>：挖掘最优质的互联网技术。它主要邀请一些业界比较资深的开发者，作为联合编辑来推荐文章，文章质量有了保证。<br><a href="http://toutiao.io/" target="_blank" rel="external">开发者头条</a>：程序员的首选阅读分享平台。<br><a href="blog.jobbole.com/">博乐在线</a>：一个专注于IT互联网的聚合分享站点。<br>当然其他的也很多啦，比如像ImportNew，酷勤网等等。</p>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://upload-images.jianshu.io/upload_images/40592-601c7227c6c7e33f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。<]]>
-    </summary>
-    
-      <category term="website" scheme="http://yoursite.com/tags/website/"/>
-    
-      <category term="网站" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Android 开发者必备的书单]]></title>
@@ -114,6 +68,52 @@
     <summary type="html">
     <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
     </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[开发者必备的网站]]></title>
+    <link href="http://yoursite.com/2015/11/02/2015-11-02-developer-website/"/>
+    <id>http://yoursite.com/2015/11/02/2015-11-02-developer-website/</id>
+    <published>2015-11-02T13:43:09.000Z</published>
+    <updated>2016-01-02T13:47:12.519Z</updated>
+    <content type="html"><![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。</p>
+<p>我觉得，作为程序员，开发者，科学上网应该就像人的尊严一样，没有它，你写代码都会浑身不舒服。</p>
+<h2 id="Google">Google</h2><hr>
+<p>不管是新手程序员还是老手程序员，工作和学习过程中都会遇到一些问题，那么遇到问题利用Google 搜索估计是最快解决方案。<br>而且Google 的结果，让你很容易解决问题。关键是Google 不做恶，没广告。</p>
+<h2 id="Github">Github</h2><hr>
+<p>作为全世界最大的同性交流网站（代码托管平台），上面有各种大牛，作为新手的我只能默默地去撸大牛的代码，期待能和大牛的差距一步步减少。除了学习之外，你也可以利用闲暇的时间来来将自己的开源项目放在上面，从侧面也是对自己的宣传，对找工作也有帮助。<br>类似的有国外的Bitbucket，gitcafe，coding.net 等等。</p>
+<h2 id="StackOverflow">StackOverflow</h2><hr>
+<p>最大的技术问答网站，Google 搜索技术问题，结果很大的比例都来自StackOverflow，而且可能我们折腾好久的问题，大牛的一句话都点中要害。</p>
+<h2 id="HackNews">HackNews</h2><hr>
+<p>Hacker News 是一家关于计算机黑客和创业公司的社会化新闻网站，你可以讲自己写的博客或者对一些业界新闻拿出来来讨论。就算自己在上面多看看也是很涨见识的。而且我注意到，国外的很多人的博客都不留评论框，一般写完文章，就会放在HackNews 讨论。国内也有类似的网站。<a href="http://news.dbanotes.net/" target="_blank" rel="external">Startup News</a>。</p>
+<h2 id="InfoQ"><a href="http://www.infoq.com/cn/" target="_blank" rel="external">InfoQ</a></h2><hr>
+<p>InfoQ 是一个面对开发的服务网站，而他的自我介绍：促进软件开发领域知识与创新的传播。在上面你会看到很多专业人士分享的专业知识，他们分享的东西，可能是一般开发者很难接触到的。由InfoQ 主办的Qcon，ArchSummit 大会，也是非常值得一去的。</p>
+<h2 id="V2ex"><a href="http://v2ex.com/" target="_blank" rel="external">V2ex</a></h2><hr>
+<p>我觉得V2ex 算是一个程序员吐槽，交流的网站。反正上面由好多好多程序员。而且有个专栏叫《酷工作》，反正由好多求职和招聘的。</p>
+<h2 id="SegmentFault"><a href="http://segmentfault.com/" target="_blank" rel="external">SegmentFault</a></h2><hr>
+<p>SegmentFault 是一个面向开发者的技术问答社区，你可以在上面问答，写博客，线下交流活动等等。</p>
+<h2 id="开源中国">开源中国</h2><hr>
+<p>开源中国是目前中国最大的开源技术社区，为IT 开发者提供了一个发现、使用、并交流开源技术的平台。</p>
+<h2 id="技术博客">技术博客</h2><hr>
+<p>我们在学习过程中，很多时候都是看别人的技术博客来成长的，当然技术博客网站由很多。比如CSDN，cnBlogs，51CTO，itEyes 等等。</p>
+<h2 id="Mooc">Mooc</h2><hr>
+<p>Mooc 翻译为中文叫做在线网络公开课，Mooc　的愿景是让那些没有机会接受正式教育的人能接受教育，主要做技术的Mooc　也有很多。比如像国外的coursera，edx，udacity，国内由像慕课网，极客学院等等。</p>
+<h2 id="开发者服务网站">开发者服务网站</h2><hr>
+<p>这个标题可能叫可能叫的不太准确，<br><a href="gold.xitu.io/">稀土掘金</a>：挖掘最优质的互联网技术。它主要邀请一些业界比较资深的开发者，作为联合编辑来推荐文章，文章质量有了保证。<br><a href="http://toutiao.io/" target="_blank" rel="external">开发者头条</a>：程序员的首选阅读分享平台。<br><a href="blog.jobbole.com/">博乐在线</a>：一个专注于IT互联网的聚合分享站点。<br>当然其他的也很多啦，比如像ImportNew，酷勤网等等。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://upload-images.jianshu.io/upload_images/40592-601c7227c6c7e33f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。<]]>
+    </summary>
+    
+      <category term="website" scheme="http://yoursite.com/tags/website/"/>
+    
+      <category term="网站" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
