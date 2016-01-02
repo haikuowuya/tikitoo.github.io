@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com//"/>
-  <updated>2015-09-27T12:01:50.000Z</updated>
+  <updated>2016-01-02T13:45:45.129Z</updated>
   <id>http://yoursite.com//</id>
   
   <author>
@@ -14,6 +14,108 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[开发者必备的网站]]></title>
+    <link href="http://yoursite.com/2016/01/02/2015-11-02-developer-website/"/>
+    <id>http://yoursite.com/2016/01/02/2015-11-02-developer-website/</id>
+    <published>2016-01-02T13:43:09.000Z</published>
+    <updated>2016-01-02T13:45:45.129Z</updated>
+    <content type="html"><![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。</p>
+<p>我觉得，作为程序员，开发者，科学上网应该就像人的尊严一样，没有它，你写代码都会浑身不舒服。</p>
+<h2 id="Google">Google</h2><hr>
+<p>不管是新手程序员还是老手程序员，工作和学习过程中都会遇到一些问题，那么遇到问题利用Google 搜索估计是最快解决方案。<br>而且Google 的结果，让你很容易解决问题。关键是Google 不做恶，没广告。</p>
+<h2 id="Github">Github</h2><hr>
+<p>作为全世界最大的同性交流网站（代码托管平台），上面有各种大牛，作为新手的我只能默默地去撸大牛的代码，期待能和大牛的差距一步步减少。除了学习之外，你也可以利用闲暇的时间来来将自己的开源项目放在上面，从侧面也是对自己的宣传，对找工作也有帮助。<br>类似的有国外的Bitbucket，gitcafe，coding.net 等等。</p>
+<h2 id="StackOverflow">StackOverflow</h2><hr>
+<p>最大的技术问答网站，Google 搜索技术问题，结果很大的比例都来自StackOverflow，而且可能我们折腾好久的问题，大牛的一句话都点中要害。</p>
+<h2 id="HackNews">HackNews</h2><hr>
+<p>Hacker News 是一家关于计算机黑客和创业公司的社会化新闻网站，你可以讲自己写的博客或者对一些业界新闻拿出来来讨论。就算自己在上面多看看也是很涨见识的。而且我注意到，国外的很多人的博客都不留评论框，一般写完文章，就会放在HackNews 讨论。国内也有类似的网站。<a href="http://news.dbanotes.net/" target="_blank" rel="external">Startup News</a>。</p>
+<h2 id="InfoQ"><a href="http://www.infoq.com/cn/" target="_blank" rel="external">InfoQ</a></h2><hr>
+<p>InfoQ 是一个面对开发的服务网站，而他的自我介绍：促进软件开发领域知识与创新的传播。在上面你会看到很多专业人士分享的专业知识，他们分享的东西，可能是一般开发者很难接触到的。由InfoQ 主办的Qcon，ArchSummit 大会，也是非常值得一去的。</p>
+<h2 id="V2ex"><a href="http://v2ex.com/" target="_blank" rel="external">V2ex</a></h2><hr>
+<p>我觉得V2ex 算是一个程序员吐槽，交流的网站。反正上面由好多好多程序员。而且有个专栏叫《酷工作》，反正由好多求职和招聘的。</p>
+<h2 id="SegmentFault"><a href="http://segmentfault.com/" target="_blank" rel="external">SegmentFault</a></h2><hr>
+<p>SegmentFault 是一个面向开发者的技术问答社区，你可以在上面问答，写博客，线下交流活动等等。</p>
+<h2 id="开源中国">开源中国</h2><hr>
+<p>开源中国是目前中国最大的开源技术社区，为IT 开发者提供了一个发现、使用、并交流开源技术的平台。</p>
+<h2 id="技术博客">技术博客</h2><hr>
+<p>我们在学习过程中，很多时候都是看别人的技术博客来成长的，当然技术博客网站由很多。比如CSDN，cnBlogs，51CTO，itEyes 等等。</p>
+<h2 id="Mooc">Mooc</h2><hr>
+<p>Mooc 翻译为中文叫做在线网络公开课，Mooc　的愿景是让那些没有机会接受正式教育的人能接受教育，主要做技术的Mooc　也有很多。比如像国外的coursera，edx，udacity，国内由像慕课网，极客学院等等。</p>
+<h2 id="开发者服务网站">开发者服务网站</h2><hr>
+<p>这个标题可能叫可能叫的不太准确，<br><a href="gold.xitu.io/">稀土掘金</a>：挖掘最优质的互联网技术。它主要邀请一些业界比较资深的开发者，作为联合编辑来推荐文章，文章质量有了保证。<br><a href="http://toutiao.io/" target="_blank" rel="external">开发者头条</a>：程序员的首选阅读分享平台。<br><a href="blog.jobbole.com/">博乐在线</a>：一个专注于IT互联网的聚合分享站点。<br>当然其他的也很多啦，比如像ImportNew，酷勤网等等。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://upload-images.jianshu.io/upload_images/40592-601c7227c6c7e33f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。<]]>
+    </summary>
+    
+      <category term="website" scheme="http://yoursite.com/tags/website/"/>
+    
+      <category term="网站" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android 开发者必备的书单]]></title>
+    <link href="http://yoursite.com/2016/01/02/2016-01-02-android-book/"/>
+    <id>http://yoursite.com/2016/01/02/2016-01-02-android-book/</id>
+    <published>2016-01-02T13:39:41.000Z</published>
+    <updated>2016-01-02T13:45:48.885Z</updated>
+    <content type="html"><![CDATA[<p>大家好，最近一段时间，Android 方面的书籍可谓是百花齐放，这几本书的作者都是在一线互联网公司奋斗的工程师，他们把多年的工作经验，身心耕植，汇聚成一本书。作为菜鸟的我们，只有一睹大神的风采了。所以借这个周末，我也列举了一些书，作为一个Android 开发工程师，这些书都是不可多得的好书，书中知识迟早是要掌握的。</p>
+<p>我们都知道开发Android App 是用Java 语言的，当然你也可以使用其他语言来开发Android，当然主流还基本上都是用Java，所以先来给大家推荐几本Java 书籍，这几本书籍不必都看完采取学习Android，但随着学习的深入，就有点捉襟见肘了，所以要提升Java 的技能的。</p>
+<h2 id="《深入浅出Java》"><a href="">《深入浅出Java》</a></h2><p>作为入门书籍，深入浅出系列，一直是浅显易懂，所以作为入门太合适不过了。<br><img src="http://upload-images.jianshu.io/upload_images/40592-d09723fefd39c7ea.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Think_in_Java_（Java_编程思想）》"><a href="">《Think in Java （Java 编程思想）》</a></h2><p>如果你是初学者，可以跳过这本书，但你稍微有点经验，这本书就逃脱不过了，当你觉得Java 水品想要从菜鸟向大神进阶，那就拿这本书自虐吧。<br><img src="http://upload-images.jianshu.io/upload_images/40592-2b0caeb9fe998f49.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《第一行代码》"><a href="">《第一行代码》</a></h2><p>郭霖大神的书，之前自学，看他的博客也使受益匪浅。书中讲述了Android 中基本的内容，比如四大组件，数据存储，网络请求，数据库等。如果你想快速入门Android，那么这本书你不该错过。<br><img src="http://upload-images.jianshu.io/upload_images/40592-2c5a62efea4e60f1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Android_Programming:_The_Big_Nerd_Ranch_Guide_(2nd_Edition)（Android_编程：权威指南）》"><a href="">《Android Programming: The Big Nerd Ranch Guide (2nd Edition)（Android 编程：权威指南）》</a></h2><p>这本书是国外知名培训机构Bignerdranch（我想说，这才叫培训机构，国内的xx，我就无力吐槽了） 出的入门书籍，书中以项目为主题，从最项目相关的知识点开始，循序渐进，从最简单的，慢慢来提升。<br><img src="http://upload-images.jianshu.io/upload_images/40592-2fe0a56b324408f2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Head_First_Android_Development（深入浅出Android_开发）》"><a href="">《Head First Android Development（深入浅出Android 开发）》</a></h2><p>又一深入浅出系列的书，不过这本好像还没有翻译成中文，书中的内容也是很基础的，和《第一行代码》中讲的内容重合度很高，如果你英文不错，你可以来尝试来读。<br><img src="http://upload-images.jianshu.io/upload_images/40592-7d4eaf9e79b70976.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Android_群英传》"><a href="">《Android 群英传》</a></h2><p>作者名宜生，在群里被我们唤作医生，不过医生的博客何在慕课网的教学视频，都是非常值得读的，他出的书，也是非常值得看的。作为进阶书，书中不仅将的新手比较难以掌握的View 绘制，性能优化，也讲述Android Studio 的使用和Android 5.0 的新特性。<br><img src="http://upload-images.jianshu.io/upload_images/40592-cdf6c11dfa4663ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Android_开发艺术探索》"><a href="">《Android 开发艺术探索》</a></h2><p>作为新手，从写UI，使用框架，写多了就像小学生交作业一样，也仅仅停留在了只会使用的层面上，那么这本书，则带你去更深次的去理解Android 开发，让你开发更加得心应手，书中讲解View 的工作原理和事件体系，性能分析，深入理解动画，JNI 等等。<br><img src="http://upload-images.jianshu.io/upload_images/40592-8d06b1c699e927d7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Android_设计模式源码分析》"><a href="">《Android 设计模式源码分析》</a></h2><p>在Android 中，总有一些代码使用感觉很熟悉，比如像AlertDialog，对的，在Android 中一样有大量使用设计模式。这本书深入分析Android 源码中使用到的设计模式。<br><img src="http://upload-images.jianshu.io/upload_images/40592-ed866630bfeca94f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《Android_开发精要》"><a href="">《Android 开发精要》</a></h2><p>作者是豌豆荚Android 负责人范怀宇，书的内容， 从Android 源码中抽次剥茧的“精华”和“要点”，虽然书本不是特别厚，但拿着这本书就像武功宝典，书中的内容吃透了，你就练就了盖世神功。<br><img src="http://upload-images.jianshu.io/upload_images/40592-d03439c94c22ba8c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="《App_研发录》"><a href="">《App 研发录》</a></h2><p>这本书相对于其他书，这本显得更加特别独特，其他都是讲的纯Android 技术，这本书从更加宏观的角度，讲怎么规范开发，让开发更高效，比如重构，封装网络库，还分析了一些经典的场景，崩溃分析，持续集成（CI）等等。<br><img src="http://upload-images.jianshu.io/upload_images/40592-58c3586a8b4d0dbc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>市面上的书多如牦牛，能发现一本好书也是不易的。上面的书，也希望能为大家Android 开发有一些帮助，当然了，书中的有些内容，随着时间的迁移，书中的内容也会变得落后，所以除了看书，我们也应该时刻关注Android 官方的博客和Android 发布的新版本，还有关注微博上的大牛和订阅一些头条日报来学习新技术。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://mp.weixin.qq.com/s?__biz=MzA4MTg4MjkzMw==&amp;mid=401674870&amp;idx=1&amp;sn=f71177cb600a78e70a3fa3616e42cc2a#rd" target="_blank" rel="external">Android 开发者必备的书单</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://upload-images.jianshu.io/upload_images/40592-601c7227c6c7e33f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>大家好，最近一段时间，Android 方面的书籍可谓是百花齐放，这几本书的作者都是在一线互联网公司奋斗的工程师，他们把多年的工作经验，身心耕植，汇聚成一本书。作为菜鸟的我们，只有一睹大神的风采了。所以借这个周末，我也列举了一些书，作为一个Android 开发工程师，这些书都]]>
+    </summary>
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+      <category term="书单" scheme="http://yoursite.com/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://yoursite.com/2016/01/02/hello-world/"/>
+    <id>http://yoursite.com/2016/01/02/hello-world/</id>
+    <published>2016-01-02T13:22:49.781Z</published>
+    <updated>2015-07-01T02:47:05.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎]]></title>
@@ -96,7 +198,7 @@
     <link href="http://yoursite.com/2015/08/23/android-developer-tutorial/"/>
     <id>http://yoursite.com/2015/08/23/android-developer-tutorial/</id>
     <published>2015-08-23T06:45:34.000Z</published>
-    <updated>2015-08-23T07:09:07.000Z</updated>
+    <updated>2016-01-02T13:36:28.360Z</updated>
     <content type="html"><![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较好的资源，所以今天就把它整理成博客了，再好好整理一些好的资料分享给大家。其实我觉得，相对于稍微有点经验的人来说，初学者更需要指导，因为初学者没有好的知识体系，所以会走不少弯路，所以我就以我的经验，和在微博，论坛上大家公认的资料整理出来，也希望能帮到大家。</p>
 <hr>
 <h2 id="Java">Java</h2><ul>
@@ -366,28 +468,6 @@
       <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2015/07/01/hello-world/"/>
-    <id>http://yoursite.com/2015/07/01/hello-world/</id>
-    <published>2015-07-01T02:47:05.000Z</published>
-    <updated>2015-07-01T02:47:05.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
   </entry>
   
@@ -1057,7 +1137,7 @@
     <link href="http://yoursite.com/2015/02/02/android-check-network-available/"/>
     <id>http://yoursite.com/2015/02/02/android-check-network-available/</id>
     <published>2015-02-02T07:45:12.000Z</published>
-    <updated>2015-07-02T07:48:54.000Z</updated>
+    <updated>2016-01-02T13:36:12.725Z</updated>
     <content type="html"><![CDATA[<h2 id="在Activity_中判断网络状态">在Activity 中判断网络状态</h2><p>在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=NetworkUtils.java"></script></p>
 <p>当然了，也别忘记要在清单文件注册获取网络状态的权限。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=AndroidManifest.xml"></script></p>
 <h2 id="使用单例模式来判断网络">使用单例模式来判断网络</h2><hr>
@@ -1077,8 +1157,6 @@
     
       <category term="network" scheme="http://yoursite.com/tags/network/"/>
     
-      <category term="samples" scheme="http://yoursite.com/tags/samples/"/>
-    
   </entry>
   
   <entry>
@@ -1086,7 +1164,7 @@
     <link href="http://yoursite.com/2015/01/19/android-add-to-actionbar-back-button/"/>
     <id>http://yoursite.com/2015/01/19/android-add-to-actionbar-back-button/</id>
     <published>2015-01-19T14:07:06.000Z</published>
-    <updated>2015-07-01T14:08:46.000Z</updated>
+    <updated>2016-01-02T13:45:51.613Z</updated>
     <content type="html"><![CDATA[<p>前几天做App 的时候，做的比较仓促，就没有添加返回按钮，还有就是MainActivity 的Theme 怎么传递到其他Activity 中，今天无意中看到官方的Train，所以就记下来啦，顺便吧ActionBar，Menu 也复习复习；</p>
 <h2 id="添加Action_Buttons">添加Action Buttons</h2><p>首先我们要创建<code>menu</code> 文件，我们可以为顶部添加Menu，<code>showAsAction</code> 是显示的类型，ifRoom 会自动匹配是否有实体键，always 是一直隐藏，但是使用Support Library<code>android:showAsAction=&quot;ifRoom&quot;</code> 会提示错误，所以在menu 中添加<code>xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</code> 属性，改为<code>app:showAsAction=&quot;ifRoom&quot;</code> 就没有错误；</p>
 <p><code>res/menu/main_activity_actions.xml</code><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">menu</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span> &gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Search, should appear as action button --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_search"</span></span><br><span class="line">          <span class="attribute">android:icon</span>=<span class="value">"@drawable/ic_action_search"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_search"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"ifRoom"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Settings, should always be in the overflow --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_settings"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_settings"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"never"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">menu</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -1094,11 +1172,11 @@
 <h2 id="为Action_Button_添加响应事件">为Action Button 添加响应事件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> id = item.getItemId();</span><br><span class="line">    <span class="comment">//当点击不同的menu item 是执行不同的操作</span></span><br><span class="line">    <span class="keyword">switch</span> (id) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_search:</span><br><span class="line">            openSearch();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_settings:</span><br><span class="line">            openSettings();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="为ActionBar_顶部添加返回按钮">为ActionBar 顶部添加返回按钮</h2><p>首先要在AndroidManifest 文件中配置</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">application</span> <span class="attribute">...</span> &gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">&lt;!-- The main/home activity (it has no parent activity) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> <span class="attribute">...</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- A child of the main activity --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.DisplayMessageActivity"</span></span><br><span class="line">        <span class="attribute">android:label</span>=<span class="value">"@string/title_activity_display_message"</span></span><br><span class="line">        <span class="attribute">android:parentActivityName</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> &gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Parent activity meta-data to support 4.0 and lower --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"android.support.PARENT_ACTIVITY"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">application</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>然后在onCrate 中设置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.activity_displaymessage);</span><br><span class="line">    <span class="comment">// 3.0+ </span></span><br><span class="line">    getSupportActionBar().setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br><span class="line">    <span class="comment">// If your minSdkVersion is 11 or higher, instead use:</span></span><br><span class="line">    <span class="comment">// getActionBar().setDisplayHomeAsUpEnabled(true);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后在onCrate 中设置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.activity_displaymessage);</span><br><span class="line">    <span class="comment">// 3.0+</span></span><br><span class="line">    getSupportActionBar().setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br><span class="line">    <span class="comment">// If your minSdkVersion is 11 or higher, instead use:</span></span><br><span class="line">    <span class="comment">// getActionBar().setDisplayHomeAsUpEnabled(true);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="最后的效果图">最后的效果图</h2><p><img src="http://tikitoo.qiniudn.com/android_training_back_activity.png" alt="http://tikitoo.qiniudn.com/android_training_back_activity.png"></p>
 <h2 id="为下一个Activity_传递MainActivity_Theme">为下一个Activity 传递MainActivity Theme</h2><p>需要注意的是，<code>setTheme</code> 方法在<code>setContentView</code> 之前；其实就是利用Intent 将Theme 传递到下一个Activity；</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> MAIN_THEME_STYLE_ID = R.style.Theme_AppCompat_Light;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String MAIN_THEME_STYLE = <span class="string">"Theme_AppCompat_Light"</span>;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setTheme(R.style.Theme_AppCompat_Light);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onToBackActivity</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">        Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, BackActivity.class);</span><br><span class="line">        intent.putExtra(MAIN_THEME_STYLE, MAIN_THEME_STYLE_ID);</span><br><span class="line">        startActivity(intent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="在下一个Activity_获取Theme">在下一个Activity 获取Theme</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BackActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> style_id;</span><br><span class="line">    </span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        getMainIntent();</span><br><span class="line">        setTheme(style_id);</span><br><span class="line">        setContentView(R.layout.activity_back);</span><br><span class="line"></span><br><span class="line">        getSupportActionBar().setDisplayShowCustomEnabled(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getMainIntent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Intent intent = getIntent();</span><br><span class="line">        style_id = intent.getIntExtra(MainActivity.MAIN_THEME_STYLE, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="在下一个Activity_获取Theme">在下一个Activity 获取Theme</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BackActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> style_id;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        getMainIntent();</span><br><span class="line">        setTheme(style_id);</span><br><span class="line">        setContentView(R.layout.activity_back);</span><br><span class="line"></span><br><span class="line">        getSupportActionBar().setDisplayShowCustomEnabled(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getMainIntent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Intent intent = getIntent();</span><br><span class="line">        style_id = intent.getIntExtra(MainActivity.MAIN_THEME_STYLE, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="原文地址">原文地址</h2><ul>
 <li><p><a href="https://github.com/Tikitoo/blog/issues/29" target="_blank" rel="external">Android 学习为ActionBar 添加返回按钮 · Issue #29 · Tikitoo/blog</a></p>
 </li>
@@ -1111,172 +1189,7 @@
 <h2 id="添加Act]]>
     </summary>
     
-      <category term="actionbar" scheme="http://yoursite.com/tags/actionbar/"/>
-    
       <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 网络编程之Httpclient 和HttpUrlConnection]]></title>
-    <link href="http://yoursite.com/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/"/>
-    <id>http://yoursite.com/2014/11/13/httpclient-and-httpurlconnection-network-programming-of-android/</id>
-    <published>2014-11-13T10:59:23.000Z</published>
-    <updated>2015-07-03T11:04:34.000Z</updated>
-    <content type="html"><![CDATA[<p>我们知道在Android 中有两种方式来访问网络，一种是HttpClient，一种是HttpUrlConnection，所以今天就来写两个Demo，来练习这两种网络连接方式。</p>
-<hr>
-<h2 id="使用HttpClient_来连接网络">使用HttpClient 来连接网络</h2><p>HttpClient 是Apache 的一个Http 协议类库，Android 类库对其进行了封装，可以直接使用。</p>
-<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpClientActivity.java"></script>
-<hr>
-<h2 id="使用HttpUrlConnection_来连接网络">使用HttpUrlConnection 来连接网络</h2><p>Url（Uniform Resource Locator）：统一资源定位符，不仅仅只有网址。</p>
-<h3 id="一个URL_有多个部分组成：">一个URL 有多个部分组成：</h3><figure class="highlight puppet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://username:<span class="literal">password</span>@<span class="keyword">host</span>:<span class="number">8080</span>/<span class="literal">directory</span>/<span class="keyword">file</span>?query<span class="comment">#ref</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Example value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Protocol（协议）</td>
-<td>http</td>
-</tr>
-<tr>
-<td>Authority</td>
-<td>username:password@host:8080</td>
-</tr>
-<tr>
-<td>User Info（用户信息）</td>
-<td>username:password</td>
-</tr>
-<tr>
-<td>Host（主机名）</td>
-<td>host</td>
-</tr>
-<tr>
-<td>Port（端口）</td>
-<td>8080</td>
-</tr>
-<tr>
-<td>File（文件）</td>
-<td>/directory/file?query</td>
-</tr>
-<tr>
-<td>Path（路径）</td>
-<td>/directory/file</td>
-</tr>
-<tr>
-<td>Query（语句）</td>
-<td>query</td>
-</tr>
-<tr>
-<td>Ref</td>
-<td>ref</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<p>支持的协议有：File，Ftp，Http，Https，Jar</p>
-<h3 id="URL_的构造方法">URL 的构造方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">URL(String spec) <span class="comment">// 通过一个字符串传入URL 比如</span></span><br><span class="line"><span class="keyword">new</span> URL(<span class="string">"http://www.google.com.hk"</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="使用Url_对象获取UrlConnection（HttpURLConnection_的父类）_对象">使用Url 对象获取UrlConnection（HttpURLConnection 的父类） 对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">URLConnection <span class="title">openConnection</span><span class="params">()</span> <span class="comment">// 获取URLConnection</span></span><br><span class="line">URLConnection <span class="title">openConnection</span><span class="params">(Proxy proxy)</span> <span class="comment">// 通过指定的端口获取URLConnection</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="通过URL_获取输入流对象">通过URL 获取输入流对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">final</span> InputStream <span class="title">openStream</span><span class="params">()</span></span>; <span class="comment">// 等同于openConnection().getInputStream(types)</span></span><br></pre></td></tr></table></figure>
-<h3 id="获取URL_的各种属性">获取URL 的各种属性</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">getPath()，getPort()......等等其他方法</span><br><span class="line">也可以使用equal(Object o); 来判断两个URL 对象是否相同</span><br></pre></td></tr></table></figure>
-<h3 id="获取HttpURLConnection_对象">获取HttpURLConnection 对象</h3><p>通过URL.openConnection() 方法获取URLConnection 对象，强制转换为HttpURLConnection</p>
-<h3 id="通过HttpURLConnection_对象获取输入输出流">通过HttpURLConnection 对象获取输入输出流</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">getOutputStream();</span><br><span class="line">getInputStream();</span><br><span class="line"><span class="comment">// 关闭此连接</span></span><br><span class="line">disconnect();</span><br></pre></td></tr></table></figure>
-<h3 id="最后一个例子">最后一个例子</h3><p>这个例子实现了通过HttpURLConnection 访问给定的网址访问网页<br>并将返回的数据通过流对象打印在控制台中</p>
-<script src="//gist.github.com/fb82a18a00c83b7ae8ac.js?file=HttpUrlConnActivity.java"></script>
-<h3 id="错误总结：">错误总结：</h3><p>如果连接网络操写在主线程内会出现：android.os.NetworkOnMainThreadException 异常<br>因此新建一个线程子类，在OnclickListener 中启动线程类。</p>
-<hr>
-<h2 id="第三方类库">第三方类库</h2><p>对于在Android 上Http 第三方类库也有很多，优化的时候可以参考：</p>
-<ul>
-<li>HttpClient：在早起版本，比较稳定，bug 少，但随着升级，bug 变多。</li>
-<li>HttpURLConnection：轻量级，API 简单，优化，后期版本bug 少，就目前看来，比HttpClient 更合适。</li>
-</ul>
-<h3 id="Volley">Volley</h3><ul>
-<li><a href="https://developers.google.com/events/io/sessions/325304728" target="_blank" rel="external">Volley: Easy, Fast Networking for Android</a></li>
-<li><a href="https://android.googlesource.com/platform/frameworks/volley/" target="_blank" rel="external">platform/frameworks/volley - Git at Google</a></li>
-<li><a href="http://www.javacodegeeks.com/2013/11/android-volley-dynamic-listview-asynctask-comparison.html" target="_blank" rel="external">Android Volley dynamic ListView: AsyncTask comparison | Java Code Geeks</a></li>
-<li><a href="http://www.technotalkative.com/android-volley-library-example/" target="_blank" rel="external">Android – Volley library example</a></li>
-</ul>
-<h3 id="Retrofit">Retrofit</h3><h3 id="OkHttp">OkHttp</h3><h3 id="android-async-http">android-async-http</h3><hr>
-<h2 id="参考">参考</h2><ul>
-<li><a href="http://www.vogella.com/tutorials/AndroidNetworking/article.html#networkoverview" target="_blank" rel="external">Android Networking - Tutorial</a></li>
-<li><a href="http://developer.android.com/reference/java/net/HttpURLConnection.html" target="_blank" rel="external">HttpURLConnection - Android SDK - Android Developers</a></li>
-<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
-<li><a href="http://instructure.github.io/blog/2013/12/09/volley-vs-retrofit/" target="_blank" rel="external">Android Async HTTP Clients: Volley vs Retrofit</a></li>
-<li><a href="http://blog.csdn.net/guolin_blog/article/details/12452307" target="_blank" rel="external">Android访问网络，使用HttpURLConnection还是HttpClient？</a></li>
-<li><a href="http://liangruijun.blog.51cto.com/3061169/803097" target="_blank" rel="external">【Android进阶学习】Http编程之HttpClient</a></li>
-<li><a href="http://www.cppblog.com/iuranus/archive/2010/07/04/119311.html" target="_blank" rel="external">HttpClient基础</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>我们知道在Android 中有两种方式来访问网络，一种是HttpClient，一种是HttpUrlConnection，所以今天就来写两个Demo，来练习这两种网络连接方式。</p>
-<hr>
-<h2 id="使用HttpClient_来连接网络">使用HttpClient]]>
-    </summary>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-      <category term="http" scheme="http://yoursite.com/tags/http/"/>
-    
-      <category term="network" scheme="http://yoursite.com/tags/network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 网络编程之HTTP 协议]]></title>
-    <link href="http://yoursite.com/2014/11/11/http-protocol-network-programming-of-android/"/>
-    <id>http://yoursite.com/2014/11/11/http-protocol-network-programming-of-android/</id>
-    <published>2014-11-11T10:00:54.000Z</published>
-    <updated>2015-07-03T11:04:59.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="请求响应机制">请求响应机制</h2><hr>
-<p>我们平常上网，输入网址，请求数据，服务器收到请求数据后，给我们响应，返回一个网页，我们看到网页；这个一个请求，一个响应，使用的就是Http 协议，请求响应机制。</p>
-<p>我们可以使用Chrome 浏览器快捷键<code>Ctrl + Shift + I</code> 来打开来查看。</p>
-<p><strong>Request Headers（请求头）：</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp</span><br><span class="line">Accept-Encoding:gzip,deflate,sdch</span><br><span class="line">Accept-Language:zh-CN,zh;q=0.8,zh-TW;q=0.6,en;q=0.4 // 支持的语言</span><br><span class="line">// ... other</span><br></pre></td></tr></table></figure></p>
-<p><strong>Response Header（响应头）：</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Connection:keep-alive</span><br><span class="line">Date:Mon, 10 Nov 2014 08:43:53 GMT</span><br><span class="line">Last-Modified:Thu, 24 Jul 2014 16:28:21 GMT</span><br><span class="line">Server:nginx/1.0.10</span><br><span class="line">// ... other</span><br></pre></td></tr></table></figure></p>
-<h2 id="获取详细的请求头（Request_Headers）和响应头（Response_Headers）以及自定义_请求信息">获取详细的请求头（Request Headers）和响应头（Response Headers）以及自定义 请求信息</h2><hr>
-<script src="//gist.github.com/1075faa4368aa28deec2.js?file=MyActivity.java"></script>
-<h2 id="Http_请求的种类">Http 请求的种类</h2><hr>
-<h3 id="Http_请求的种类-1">Http 请求的种类</h3><ul>
-<li>GET：通过URL 得到资源</li>
-<li>POST：向服务器提交内容</li>
-<li>PUT：用于修改某个内容</li>
-<li>DELETE：用于删除某个内容</li>
-<li>OPTIONS：查看服务器性能</li>
-<li>TRACE：远程诊断服务器</li>
-</ul>
-<h3 id="Get_与Post_的区别">Get 与Post 的区别</h3><ul>
-<li>GET：从服务器取回数据，幂等，也可提交小数据，不超过2k；通过URL，明信片<br><a href="http://127.0.0.1:8080/index.html?name=zhangsan&amp;pwd=123456" target="_blank" rel="external">http://127.0.0.1:8080/index.html?name=zhangsan&amp;pwd=123456</a></li>
-<li>POST：向服务器提交数据，提交大数据，打包；将数据放置在请求体一封信</li>
-</ul>
-<h2 id="通过Get_方式提交数据（到服务器）">通过Get 方式提交数据（到服务器）</h2><hr>
-<h3 id="Tomcat_服务器搭建">Tomcat 服务器搭建</h3><p>学习过JavaEE 的同学，应该很熟悉的，没有学习过也不要紧，通过Google 来搜索也就五分钟就搞定了。</p>
-<ul>
-<li>去官网下载加压包（非安装版）；</li>
-<li>配置环境变量</li>
-</ul>
-<p>使用手机客户端，在输入框输入姓名密码，传到后端服务器并输出：</p>
-<ul>
-<li><a href="http://192.168.56.1:8081/MyWeb/mail.jsp?name=trt&amp;pwd=123456" target="_blank" rel="external">http://192.168.56.1:8081/MyWeb/mail.jsp?name=trt&amp;pwd=123456</a></li>
-</ul>
-<p>写mail.jsp 文件的时候，注意格式，先使用Chrome Dev Tools 测试，返回的请求头和响应头，还有Preview 中是否有数据（第一行），因为response 返回后，使用readLine() 读取数据，如果返回的数据第一行没有数据，则读入的空。</p>
-<script src="//gist.github.com/1075faa4368aa28deec2.js?file=ReqActivity.java"></script>
-<h2 id="通过Post_方式提交数据（到服务器）">通过Post 方式提交数据（到服务器）</h2><hr>
-<p>Post 和Get 的区别在上面已经说过了，尤其是提交敏感信息（比如用户密码）。一定是要通过Post 来提交服务器的。</p>
-<script src="//gist.github.com/1075faa4368aa28deec2.js?file=PostThread.java"></script>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="请求响应机制">请求响应机制</h2><hr>
-<p>我们平常上网，输入网址，请求数据，服务器收到请求数据后，给我们响应，返回一个网页，我们看到网页；这个一个请求，一个响应，使用的就是Http 协议，请求响应机制。</p>
-<p>我们可以使用Chrome 浏览器快]]>
-    </summary>
-    
-      <category term="android" scheme="http://yoursite.com/tags/android/"/>
-    
-      <category term="http" scheme="http://yoursite.com/tags/http/"/>
-    
-      <category term="network" scheme="http://yoursite.com/tags/network/"/>
     
   </entry>
   
