@@ -1,28 +1,49 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
 
 
 
@@ -30,18 +51,55 @@
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="Android 开发工程师，互联网爱好者。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tikitoo Blog">
+<meta property="og:url" content="http://tikitoo.me/page/2/index.html">
+<meta property="og:site_name" content="Tikitoo Blog">
+<meta property="og:description" content="Android 开发工程师，互联网爱好者。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tikitoo Blog">
+<meta name="twitter:description" content="Android 开发工程师，互联网爱好者。">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    analytics: {
-      google: ''
-    },
-    sidebar: 'post'
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
+</script>
+
+  <title> Tikitoo Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72517765-1', 'auto');
+  ga('send', 'pageview');
 </script>
 
 
@@ -57,37 +115,32 @@
 
 
 
-  <title> Tikitoo Blog </title>
-</head>
 
-<body>
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
 
-  <div class="container one-column 
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
    page-home 
-">
+ ">
     <div class="headband"></div>
 
-    <div id="header" class="header">
-      <div class="header-inner">
-        <h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
       <span class="site-title">Tikitoo Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
 
 <div class="site-nav-toggle">
   <button>
@@ -97,7 +150,7 @@
   </button>
 </div>
 
-<div class="site-nav">
+<nav class="site-nav">
   
 
   
@@ -105,1308 +158,1095 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/">
-            <i class="menu-item-icon icon-home"></i> <br />
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
             首页
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about">
-            <i class="menu-item-icon icon-about"></i> <br />
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
-          <a href="/archives">
-            <i class="menu-item-icon icon-archives"></i> <br />
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
             归档
           </a>
         </li>
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags">
-            <i class="menu-item-icon icon-tags"></i> <br />
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
             标签
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-recommend">
-          <a href="/recommend">
-            <i class="menu-item-icon icon-recommend"></i> <br />
-            推荐
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
           </a>
         </li>
       
         
         <li class="menu-item menu-item-resources">
-          <a href="/resources">
-            <i class="menu-item-icon icon-resources"></i> <br />
+          <a href="/resources" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
             资源
           </a>
         </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            朋友们
+          </a>
+        </li>
+      
+
+      
+      
       
     </ul>
   
 
   
-</div>
+</nav>
 
+ </div>
+    </header>
 
-      </div>
-    </div>
-
-    <div id="main" class="main">
+    <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
-  <div id="posts" class="posts-expand">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+
+    
+
+    
     
       
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/07/01/User-github-hexo-build-blog/">
-                使用Github + Hexo 来搭建自己的博客
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-07-01
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/07/01/User-github-hexo-build-blog/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/01/User-github-hexo-build-blog/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
       
 
       
-        
-          <p>发现Hexo 一个主题不错，就尝试着Hexo 来搭建博客，在搭建的过程中也有不少坑，不过看了很多大牛详细的教程，终于把Hexo 博客搭建好了，所以就来总结总结。</p>
-<p>Hexo 是一个基于Node.js 的一个博客框架。它支持Markdown 和大多数Octopress 插件。</p>
-<h3 id="安装">安装</h3><p>前提是你要安装npm，然后使用npm 来安装<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -<span class="keyword">g</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="初始化">初始化</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
-<h3 id="创建一个文章">创建一个文章</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">"hello world"</span></span><br></pre></td></tr></table></figure>
-<h3 id="生成静态博客">生成静态博客</h3><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">ge</span><span class="label">nerate</span></span><br></pre></td></tr></table></figure>
-<h3 id="开启服务">开启服务</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span></span><br><span class="line">hexo <span class="keyword">server</span></span></span><br></pre></td></tr></table></figure>
-<p>然后在浏览器中打开：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>.</p>
-<h3 id="部署到远程服务器（Github）">部署到远程服务器（Github）</h3><p>需要在配置文件（_config.yml）中添加一下配置远程仓库信息。<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="keyword">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</span><br></pre></td></tr></table></figure></p>
-<p>然后就可以部署了。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line">hexo deploy</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="使用自己的域名">使用自己的域名</h3><p>添加CNAME 绑定域名的话，直接将CNAME 文件放在<code>source 文件</code>夹下即可。</p>
-<h3 id="添加README_文件">添加README 文件</h3><p>和上面创建CNAME 文件一样，但是有一点要注意的是，README 文件后面不能跟后缀<code>.md</code>，因为跟了后缀<code>.md</code> 会被编译为html 文件，提交Github 就不起作用了。</p>
-<h3 id="添加Github_Gist_代码段">添加Github Gist 代码段</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gist gist-<span class="property">id</span>  [<span class="type">file</span>-<span class="property">name</span>] %&#125;</span><br></pre></td></tr></table></figure>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
+    
 
     
       
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/">
-                是时候把Android 项目切换到Android Studio
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-06-14
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/14/it-is-time-to-switch-to-android-studio-android-project/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="http://ww4.sinaimg.cn/large/68622377gw1et3o1cgo1pj20qo0bogmb.jpg" alt="Support for C/C++"><br>前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。</p>
-<h2 id="我的经历">我的经历</h2><hr>
-<p>当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高我们的生产效率。所以当我转做Android 开发的时候，自然而然地使用Android Studio 开发，当然遇到好多问题，不过最终我都克服了，现在使用Android Studio 虽然算不上得心应手，但对于平常的开发还是绰绰有余，也能解决掉平常遇到的小问题。</p>
-<h2 id="Android_Studio在国内为什么这么不流行？">Android Studio在国内为什么这么不流行？</h2><hr>
-<p>当然我也知道，Android Studio 在国内为什么这么不流行？我总结几点原因，之前在微博上和大牛们有讨论过。</p>
-<ul>
-<li><p><strong>国内的网络环境。</strong>对于下载，安装，更新都需要科学上网，初学者遇到这些问题基本上都会退缩；就算当初能科学上网，我也是遇到一大堆问题。</p>
-</li>
-<li><p><strong>学习成本高。</strong>基本上国内的开发者的博客，入门教程大都是基于Eclipse，Android Studio 的教程少之又少，所以资源少，所以让初学者望而却步。</p>
-</li>
-<li><p><strong>从业者和教育者的固步自封。</strong>基本上，Android 开发的不管大小公司，很少有公司使用Android Studio 来开发，再加上大家已经习惯使用Eclipse 开发，不愿意脱离熟悉的环境。市面上的Android 开发书籍，基本上都是以Eclipse 作为开发环境来讲解样例的，所以综上来说，没有人带头使用，造就了Android Studio 没有流行的原因。也只是稍微有点觉悟的公司都使用Android Studio 开发。</p>
-</li>
-<li><p><strong>Android Studio 没有稳定的版本，并且不支持C/C++ 开发。</strong>直到2014 年 12 月才终于发布了正式版（1.0）。在这之前，时常会出现一些Bug。不过随着Android Studio 正式版的发布，到Google I/O 2015 的1.3 的发布，支持C/C++ 等众多特性，我们看到Android Studio 变得更加健壮，也让Android 开发者有信心切换到Android Studio。</p>
-</li>
-</ul>
-<p>对于以上的几个问题，我都已经找到了解决办法。</p>
-<ul>
-<li>作为一个程序员，第一步就要学会科学上网，至于方法，自行搜索，如果找不到，劝你还是不要做程序员了。</li>
-<li>至于说Android Studio 的教程，我会在文章结尾推荐大家一些教程，对于入门，熟悉使用也是足够了。</li>
-<li>对于从业者和教育者，我建议大家去关注微博上的大牛，关注Github 的Android 开发者，他们都在使用Android Studio，有什么问题，可以向他们请教。我也希望，作为一个Android 开发者，也向周围的人推荐使用Android Studio。</li>
-</ul>
-<h2 id="Android_Studio_VS_Eclipse">Android Studio VS Eclipse</h2><hr>
-<p>至于说Android Studio 和Eclipse 孰优孰劣，网上大牛们已经很多讨论了，更多请看，我就不多谈论了。</p>
-<ul>
-<li><a href="http://www.infoq.com/cn/news/2013/11/why-drop-eclipse-use-intellij" target="_blank" rel="external">我们为何放弃Eclipse，投奔IntelliJ IDEA</a></li>
-<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse</a></li>
-<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？</a></li>
-</ul>
-<p>也有人担心Android Studio 编译速度慢，不过以后就不用担心了，Android Studio 1.3 重写了编译系统，采用和Eclispe 一样的编译原理，所以我们就不用担心Android Studio 的速度了，我也亲自测试了，真的快了好多。</p>
-<p>Google 官方也停止了ADT 的更新。那么使用Eclipse 就意味着好多新特性不能使用。而Android Studio 几乎每周都有更新，而且众多服务的集成，让开发者开发更加便捷，专注。</p>
-<p>如果你上Github 的话，目前现在流行的开源Android 项目已经没有采用Eclipse，基本上全部采用Android Studio，而且Android Studio 集成Git 插件，从Github Clone 项目特别方便，而且可以直接运行。</p>
-<h3 id="介绍Android_Studio_1-3_的新特性">介绍Android Studio 1.3 的新特性</h3><p>如果说Android Studio 1.0 可以勉强够用，那么Android Studio 1.3 相比1.0 就是质的改变，支持C/C++，支持SVG 图片自动生成不同分辨率的图片，增加主题编辑器，以后编辑主题，你也可以实时预览了等等很多。更多请看。</p>
-<ul>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a></li>
-</ul>
-<h2 id="怎么将Eclipse_项目切换到Android_Studio？">怎么将Eclipse 项目切换到Android Studio？</h2><hr>
-<p>不用急，Google 官方已经给出了两种解决方式解决方案。</p>
-<h3 id="第一种">第一种</h3><p>直接选择目录，next 一直到最后，我们的Eclipse 的项目就到了Android Studio 上了，需要注意的是，这样导入的项目还是会保留Eclipse 的构建方式，比如我们在Eclipse 上使用Ant 构建，迁移后还是会是会用Ant 构建。</p>
-<p><img src="http://ww1.sinaimg.cn/large/68622377gw1et3ljatc2vj20m50hq40y.jpg" alt="导入Eclipse ADT"></p>
-<h3 id="第二种">第二种</h3><p>首先，我们在Eclipse 将项目导出为Gradle 项目。<br><img src="http://ww1.sinaimg.cn/large/68622377gw1et3lme261sj209q0ajmyw.jpg" alt="选择导出"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1et3lmdqdx5j20el07djs8.jpg" alt="导出Gradle 项目"><br>然后在Android Studio 直接打开build.grade 即可。<br>这样，项目就变成了Gradle 构建了。</p>
-<p>当然了，如果项目比较庞大，特别是商业项目，直接切换，难免会有很多问题，不过这是难免的，切换过来，也会一段时间内不太适应，不过当你适应了Android Studio 的便捷的开发，就会对它不离不弃了。</p>
-<p>上面的两种方式是官方提供的方式，如果英文过关的话，可以看英文原文。</p>
-<ul>
-<li><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a></li>
-</ul>
-<h2 id="参考以及文章推荐">参考以及文章推荐</h2><hr>
-<p>最后，关于Android Studio 我感觉不错的文章，推荐给你。</p>
-<ul>
-<li><p><a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">Android Studio 入门指南</a><br>这是我写的文章，主要是给初学者搭建Android Studio 开发环境来看的。</p>
-</li>
-<li><p><a href="http://stormzhang.com/" target="_blank" rel="external">Android Studio系列教程</a><br>这篇是大牛StormZhang 写的系列Android Studio 教程，深入浅出，通俗易懂。</p>
-</li>
-<li><p><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a><br>这篇是官方给出的从Eclipse 迁移项目到Android Studio 的两种解决方式。</p>
-</li>
-</ul>
-<ul>
-<li><a href="http://robovm.com/google-io-summary-whats-new-in-android-development-tools/" target="_blank" rel="external">Google I/O Summary: What’s new in Android Development Tools</a></li>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a><br>上面两篇，都是对Google IO 2015 的总结，一个中文，一个英文，就看你喜欢看哪个了。中文是大牛代码家总结的。<br><br></li>
-<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇）</a></li>
-<li><a href="http://android-studio.org/index.php/docs/guide" target="_blank" rel="external">Android Studio 使用指南 | Android Studio 中文教程</a></li>
-<li><a href="http://www.jianshu.com/p/470730011d85" target="_blank" rel="external">从Eclipse中导入项目到AndroidStudio中</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/fe6af27c12ed" target="_blank" rel="external">http://www.jianshu.com/p/fe6af27c12ed</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/04/20/android-studio-getting-guide/">
-                Android Studio 入门指南
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-20
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/20/android-studio-getting-guide/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/20/android-studio-getting-guide/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>作为一个Android 开发者，你应该很了解Android Studio，如果你现在还不了解，没关系，那么从现在开始，我们一起来了解了解Andoid Studio。</p>
-<blockquote>
-<p>Android Studio 是Google 官方在2013 Google I/O 大会（2013 年5月）上发布的全新Andrid 开发IDE（基于Intellij IDEA），在2014 年12 月发布第一个稳定版（1.0），目前最新版本为1.2 Beta 3；依托与Intellij IDEA，它更智能，提示功能更强，默认使用Gradle 构建，布局文件实时预览等等。</p>
-</blockquote>
-<p>更多Android Studio 的优点请移步：<a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse ADT</a><br><img src="http://blogldc.s3.amazonaws.com/wp-content/uploads/2014/12/studio-hero.jpg" alt="Android Studio（题图来自网络）"></p>
-<h2 id="Android_SDK_安装">Android  SDK 安装</h2><hr>
-<p>官方下载：<a href="https://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">SDK Tools - Android Developer</a><br>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools#sdk-tools" target="_blank" rel="external">SDK Tools - AndroidDevTools</a><br>有了SDK Tools 就可以配置，就可以安装Andrid SDK 了，打开Android SDK Manager</p>
-<p><img src="http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png" alt="Windows SDK Manager（题图来自 [http://www.android.pk](http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png)）"></p>
-<p><img src="http://ww2.sinaimg.cn/mw690/68622377gw1erbmsv7jjdj20pr0hfgpr.jpg" alt="Linux SDK Manager"></p>
-<p>打开SDK Manager，如果有代理或者VPN 可以直接下载，一般要勾选Tools，Extras；SDK 版本不用全部更新。由于国内连接速度很慢，可以参考这篇文章来使用国内的镜像来下载。</p>
-<ul>
-<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
-</ul>
-<p><img src="http://tutorchen.qiniudn.com/sdk-manager.png" alt="SDK Manager"></p>
-<h2 id="Android_Studio_下载和安装">Android Studio 下载和安装</h2><hr>
-<h3 id="下载">下载</h3><p>下载之前，你要确保已经安装JDK 和Android SDK。<br>由于国内不能直接下载，所以我在这里提供两种下载方式，一种是官网，另一种是国内的镜像网站。</p>
-<ul>
-<li>官网下载：<a href="http://tools.android.com/download/studio" target="_blank" rel="external">Android Studio Download</a></li>
-<li>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">AndroidDevTools - Github</a>。</li>
-</ul>
-<h3 id="安装">安装</h3><p>下载完之后，如果是安装包，可以直接安装即可；如果是解压包，可以解压后，直接运行。</p>
-<ul>
-<li>Windows 运行 <code>安装目录/studio.exe</code> 文件。</li>
-<li>Mac / Linux 运行 <code>安装目录/bin/studio.sh</code>。</li>
-</ul>
-<p>打开之后，会进入设置页面，如果没有安装SDK，选择Standard（标准）。如果已经安装过了SDK 就选择Custom（自定义），然后选择SDK 安装目录即可。<br><img src="http://stormzhang.com/image/studio_wizard2.png" alt="选择SDK（[题图来自 StoreZhang 的博客](http://stormzhang.com/)）"><br>然后一直Next 就好了。</p>
-<h2 id="Gradle_的安装和配置">Gradle 的安装和配置</h2><hr>
-<p>由于Android Studio 默认使用Gradle 构建，而gradle 在国内访问速度离奇的慢，所以我们就自己安装了。</p>
-<ul>
-<li>官方下载Gradle：<a href="http://gradle.org/downloads" target="_blank" rel="external">Gradle - Download</a></li>
-<li>国内下载Gradle： <a href="https://github.com/inferjay/AndroidDevTools#gradle" target="_blank" rel="external">Gradle - AndroidDevTools</a></li>
-</ul>
-<p>详细安装：<a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></p>
-<h2 id="使用Android_Studio构建第一个Android_程序">使用Android Studio构建第一个Android 程序</h2><hr>
-<p><img src="http://stormzhang.com/image/studio_wizard6.png" alt="Android Studio Setup（[题图来自StoreZhang 的博客](http://stormzhang.com/)）"><br>据说第一次创建项目的时候，会卡在那里，有大牛找到的解决办法，就是配置离线Gradle，因为上面我们已经下载过Gradle 了，可以直接拿来用。<br>可以把gradle-2.1-all.zip（不解压）<br>Windows 放在<code>C:\Users\xxx\.gradle\wrapper\dists\......</code> 目录中（如图所示）。<br>Mac/Linux 放在 <code>~/.gradle\wrapper\dists\......</code>。</p>
-<p><img src="http://xyzphoto.qiniudn.com/wordpress_13_QQ%E6%88%AA%E5%9B%BE20140918233902.png" alt="Windows Gradle"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1erbmsuj5qhj20pr09utac.jpg" alt="Linux Gradle"></p>
-<p>然后再次创建Project 就不会卡了。</p>
-<h3 id="一个Android_项目的目录文件的作用">一个Android 项目的目录文件的作用</h3><p><img src="http://ww3.sinaimg.cn/mw690/68622377gw1erbmsu0ddcj21fj0tcqcg.jpg" alt="Android Project Folder"></p>
-<p>一个Project 创建后，大概的文件目录就是这样的。<br>因为在Android Studio每个Project，相当于Eclipse 的WorkSpace；每个Module（上图的app 目录）相当于Eclipse 的Project。</p>
-<ul>
-<li><strong>settings.gradle</strong>： 每个Moudle 要在这里注册</li>
-<li><strong>build.gradle</strong>：每个Project 的配置</li>
-<li><strong>app</strong>：每个Module</li>
-<li><strong>app/build.gradle</strong>：每个Module 配置文件，比如依赖的类库，SDK 版本</li>
-<li><strong>app/src/</strong>：源码和资源文件都在这里；我们写的文件都在这里面。</li>
-<li><strong>app/libs/</strong>：添加类库。</li>
-</ul>
-<h2 id="工程和文件结构">工程和文件结构</h2><hr>
-<p><img src="https://www.jetbrains.com/img/webhelp/uiEditor.png" alt="题图来自 [Jetbrains 官方文档](https://www.jetbrains.com/img/webhelp/uiEditor.png)"></p>
-<ol>
-<li>文件编辑区域</li>
-<li>编辑区域左边（显示行号的）</li>
-<li>输入提示区域</li>
-<li>文档切换区域<ul>
-<li><code>Alt + Left</code> 或者<code>Alt + Right</code>，不同的Tab 切换</li>
-<li><code>Ctrl + Tab</code>：切换不同的区域</li>
-</ul>
-</li>
-<li>其他功能区域</li>
-</ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/68622377gw1erbugxjgb0j20fs06vgm1.jpg" alt="Android Studio 工具栏设置（题图来自 [大猫知乎的回答](http://www.zhihu.com/question/28110006/answer/39433946)）"></p>
-<p><em>新建文件或者插入方法</em><br><code>ALT + INSERT</code>（<code>COMMAND + N</code> Mac）</p>
-<ul>
-<li>在<code>编辑区</code>域是插入方法（构造方法，Get Set 方法等等）；</li>
-<li>在<code>工程结构</code>新建文件</li>
-</ul>
-<h2 id="罗列一些常用的快捷键">罗列一些常用的快捷键</h2><hr>
-<table>
-<thead>
-<tr>
-<th>全局快捷键（比较重要的）</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ALT + ENTER</td>
-<td>工程快速修复</td>
-</tr>
-<tr>
-<td>CTRL + SHIFT + A</td>
-<td>快速查找</td>
-</tr>
-<tr>
-<td>CTRL + ALT + L (Win)</td>
-<td>格式化代码（我的锁屏的快捷键占了）</td>
-</tr>
-<tr>
-<td>CTRL + Q (Win)</td>
-<td>查看文档</td>
-</tr>
-<tr>
-<td>SHIFT + ESC</td>
-<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>编辑区快捷键</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + B / F4</td>
-<td>查看源码</td>
-</tr>
-<tr>
-<td>CTRL + Q</td>
-<td>查看文档</td>
-</tr>
-<tr>
-<td>SHIFT + ESC</td>
-<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
-</tr>
-<tr>
-<td>ATRL + /</td>
-<td>上下文联想</td>
-</tr>
-<tr>
-<td>ALT + LEFT / RIGHT</td>
-<td>不同文档左右切换</td>
-</tr>
-<tr>
-<td>ALT + TOP / BOTTOM</td>
-<td>跳转到上一个 / 下一方法</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>注释</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + /</td>
-<td>注视当前行</td>
-</tr>
-<tr>
-<td>CTRL + SHIFT + /</td>
-<td>文档注视</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>复制 / 粘贴</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + C</td>
-<td>复制该行</td>
-</tr>
-<tr>
-<td>CTRL + V</td>
-<td>粘贴</td>
-</tr>
-<tr>
-<td>CTRL + X</td>
-<td>剪切</td>
-</tr>
-<tr>
-<td>CTRL + Y</td>
-<td>删除该行</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">查找</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Ctrl+Shift+A</td>
-<td>查找所有行为</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + F</td>
-<td>查找当前编辑的文档</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + R</td>
-<td>查找并替代</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + N</td>
-<td>查找类（class）</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + SHIFT + N</td>
-<td>查找文件</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Git_使用">Git 使用</h2><hr>
-<p>由于Android Studio 已经自带了Git 插件，所以我们就不需要去下载了，只需要在本机下载Git 安装即可。<br>然后将可执行文件配置在Android Studio 即可。<br><img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/AndroidStudio_3_7.png" alt="Git（题图来自网络）"></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio系列教程——下载与安装</a></li>
-<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？ - 知乎</a></li>
-<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇） - 简书</a></li>
-<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
-<li><a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></li>
-<li><a href="https://github.com/inferjay/AndroidDevTools/" target="_blank" rel="external">inferjay/AndroidDevTools</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">http://www.jianshu.com/p/36cfa1614d23</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/04/18/android-the-development-of-essential-little-knowledge/">
-                Android 开发必备小知识点
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-18
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/18/android-the-development-of-essential-little-knowledge/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/18/android-the-development-of-essential-little-knowledge/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <ul>
-<li><p><a href="http://stackoverflow.com/questions/11285961/how-to-make-a-background-transparent-20-in-android" target="_blank" rel="external">RGB 颜色透明度</a><br>Android 中使用RGB 来表示颜色，如果想要表示透明度，在六位十六进制的前面<code>添加两位十六进制表示透明度</code>。</p>
-</li>
-<li><p><a href="http://www.materialui.co/colors" target="_blank" rel="external">Material Color</a><br>对开发人员，选择一个颜色真的很不容易，那就让设计师帮你挑选吧。</p>
-</li>
-<li><p><a href="http://stackoverflow.com/questions/19691530/valid-values-for-androidfontfamily-and-what-they-map-to" target="_blank" rel="external">Android 系统默认字体</a><br>Android 系统默认字体只有很少，从Android 16（Android 4.1）默认提供了一些字体，可以引用。</p>
-</li>
-</ul>
-<ul>
-<li><p><a href="http://blog.csdn.net/top_code/article/details/8588703" target="_blank" rel="external">Android px、dp、sp之间相互转换</a><br>在Android 中设置在Java 文件中设置属性，有的方法只提供一种形式的尺寸（比如px），所以这个时候就需要我们去相互转化。</p>
-</li>
-<li><p><a href="http://androidpixels.net/" target="_blank" rel="external">AndroidPixels</a><br>AndroidPixels 是一个px，sp 相互转化的工具。</p>
-</li>
-<li><p><a href="http://www.stormzhang.com/android/2015/03/29/android-support-library/" target="_blank" rel="external">Android Support兼容包详解</a><br>Android 中有不同版本的系统，对于老的版本想要支持新的系统的功能，Android 使用Support 包来解决的。</p>
-</li>
-<li><p><a href="http://www.cnblogs.com/vanezkw/articles/3383744.html" target="_blank" rel="external">Android 多屏适配</a><br>Android 手机，平板有不同的尺寸，不同的尺寸又相差很多，所以要对不同的尺寸的手机进行适配。</p>
-</li>
-</ul>
-<hr>
-<p>更多的以后补充。。。。。。</p>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/748c10304d08" target="_blank" rel="external">http://www.jianshu.com/p/748c10304d08</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/">
-                作为移动开发者，你应该了解Baas（后端即服务）
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-12
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="http://cdn.pingwest.com/wp-content/uploads/2014/12/BaaS.jpg" alt="Baas（题图来自 [PingWest](http://www.pingwest.com/baas/)）"></p>
-<p>作为开发者，了解新技术，新的工具是必不可少的，有时候发现一个好的开发工具，使用起来非常顺手，效率也提高了， 然而如果不了解新的技术，不了解这个行业的发展趋势，那样的后果是不堪回首的，反正，与时俱变是没有错啦，所以今天就来说说每个移动开发者都应该知道的Baas。</p>
-<h2 id="那么什么是Baas？">那么什么是Baas？</h2><hr>
-<p>前一段时间在知乎上看到AVOSCloud（现在改名叫LeanCloud 了），不知道这是什么东西，偶尔在微博看到有人说在用， 昨天有无意间看到了，就索性把这个弄清楚了，这个东西叫Baas（又称mBaas），全称叫Backend as a Service（后端作为一种服务）， 怎么说呢，为移动应用开发者提供后端服务； 作为一个移动应用开发者（Android &amp; iPhone），除了开发应用程序，还要做后台的服务器端，当然，大多移动应用开发者并非都懂后端开发， 这让一个应用应用开发者开发一款应用不容易，然而有了Baas，开发者就可以不用管后端开发了，Baas 提供商，提供了我们最常用的功能，比如数据存储，应用分析，IM 等功能，让开发者把主要精力放在应用本身，大大提高了效率； 当然也不一定是移动应用开发者，当然也可以Web 开发，当初Baas 主要是为了解决移动应用开发者的后端服务问题，Baas 也提供其他的服务；</p>
-<h2 id="那么Baas_都提供哪些服务呢？">那么Baas 都提供哪些服务呢？</h2><hr>
-<p>以<a href="https://www.parse.com/" target="_blank" rel="external">Parse</a> 为例，主要有以下功能：</p>
-<ul>
-<li>消息推送</li>
-<li>数据分析</li>
-<li>保存数据到云平台</li>
-<li>简单的社交服务</li>
-<li>本地数据储存</li>
-<li>在云服务上运行客户端代码</li>
-<li>后台工作</li>
-<li>实时查看应用程序的数据，数据推送，日志等</li>
-</ul>
-<p>其实可以吐槽一下，其实实现的功能比较基础的，一般有后端开发经验的开发者，也不是什么难事，但是自己要搭建服务器，还要一系列的服务要实现， 也是费时费工，有这样的服务，提供的简单的API，使用起来上手非常容易，也提供了一些 Demo，只要自己在服务后台创建应用，申请API_ID，API_KEY就可以使用。</p>
-<h2 id="Baas_服务商都有哪些呢？">Baas 服务商都有哪些呢？</h2><hr>
-<blockquote>
-<p>2013年4月，Facebook收购Parse；2014年6月，苹果在一年一度的WWDC上发布了CloudKit；等到了2014年10月份，Google也出手收购了Firebase。<br>——来自 <a href="http://www.pingwest.com/baas/" target="_blank" rel="external">PingWest</a></p>
-</blockquote>
-<p>从巨头的态度，就已经看出他们对Baas 的态度，能让移动开发更家简单，才会吸引更多的开发者；当然Baas 的厂商也是层出不穷，而且提供的功能也有各部相同，所以作为一个移动开发者，选择一个适合自己的服务尤为重要，所以接下来就给大家介绍几个知名的Baas 服务，以及他们的提供的功能。</p>
-<blockquote>
-<h2 id="Appcelerator_Cloud"><a href="http://www.appcelerator.com/cloud/" target="_blank" rel="external">Appcelerator Cloud</a></h2><p>它要依赖Appcelerator Titanium SDK 一起使用，官方宣称目前共有265728526 设备运行着Appcelerator Cloud 服务提供的应用程序，客户不乏有Ebay，vmWare；</p>
-<h3 id="Parse"><a href="https://www.parse.com/" target="_blank" rel="external">Parse</a></h3><hr>
-<p>也算是特别出名的，刚刚介绍Baas 的时候，就拿它当例子，他的出名更归功于跟了Facebook；</p>
-<h3 id="UserGrid"><a href="http://usergrid.incubator.apache.org/" target="_blank" rel="external">UserGrid</a></h3><hr>
-<p>Apache 提供了一个Baas 框架，支持多平台，</p>
-<h3 id="LeanCloud（AVOSCloud）"><a href="https://leancloud.cn/" target="_blank" rel="external">LeanCloud（AVOSCloud）</a></h3><hr>
-<p>LeanCloud 和Facebook Parse 提供的重合度很高</p>
-<ul>
-<li>社交IM 服务</li>
-<li>消息推送服务</li>
-<li>数据分析</li>
-<li>支持任何类型的结构化 / 半结构化数据，还有地理位置存储</li>
-<li>并且提供CDN 存储</li>
-<li>云代码</li>
-<li>集成GitHub、Bitbucket 或 CSDNCode</li>
-<li>对每一个应用，每个月免费提供 500 万次的请求配额</li>
-</ul>
-</blockquote>
-<p>除了上面这些，国外的比如<a href="http://www.kinvey.com/" target="_blank" rel="external">Kinvey</a>，<a href="https://www.stackmob.com/" target="_blank" rel="external">StackMob</a>，<a href="http://www.applicasa.com/" target="_blank" rel="external">Applicasa</a>，名气都是很大，他们提供的功能大都很全，很强大，当然也有提供专有的服务，比如消息推送，IM，分享等等，就不意义介绍了。</p>
-<p>下面就说说国内的，国内的Baas 服务随着国内移动开发的的热潮，也如雨后春笋般发展，比如：</p>
-<ul>
-<li><strong><a href="http://www.umeng.com/" target="_blank" rel="external">友盟</a></strong>，提供了应用分析，消息推送社会化分析，如果你仔细注意，友盟已经被阿里收购，也看出国内的巨头也对Baas 足够的重视；</li>
-<li><strong><a href="http://sharesdk.mob.com/" target="_blank" rel="external">Mob - ShareSDK</a></strong>，又比如专门做社会化分享的，几乎集成了国内外的主流社交网站；</li>
-<li><strong><a href="https://www.jpush.cn/" target="_blank" rel="external">极光推送</a></strong>，专门做推送服务；</li>
-</ul>
-<p>除了上面的这些，还有其他的比如应用测试，应用分析等等很多，就不一一列举了。</p>
-<p>到了最后，选择一款适合的自己的Baas 服务也是不易的，比如要考虑到以后发展的扩展，各种Baas 的对比，Baas 服务的安全问题等等都是我们该考虑的问题。</p>
-<p><br></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://www.pingwest.com/baas/" target="_blank" rel="external">你可能没听说过的BaaS，却是Facebook、苹果和Google同时盯上的领域</a></li>
-<li><a href="http://www.infoq.com/cn/articles/the-definition-development-and-future-of-baas-services" target="_blank" rel="external">BaaS服务的定义、发展以及未来</a></li>
-<li><a href="http://tikitoo.github.io/blog/cloud%20platform/2014/11/28/baas-detail.html" target="_blank" rel="external">了解Baas（Backend as a Service） - Tikitoo Blog</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/48384a8831de" target="_blank" rel="external">http://www.jianshu.com/p/48384a8831de</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/22/10-great-learning-android-development-of-the-site/">
-                10个很棒的学习Android 开发的网站
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-22
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/22/10-great-learning-android-development-of-the-site/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/22/10-great-learning-android-development-of-the-site/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>看到<a href="http://www.jianshu.com/users/eFsf4z/latest_articles" target="_blank" rel="external">江湖旅人</a> 写的《<a href="http://www.jianshu.com/p/ff96a8e5abdb" target="_blank" rel="external">10个很棒的学习iOS开发的网站 - 简书</a>》，所以就忍不住写Android 啦，也希望对大家有帮助。<br>我推荐的网站，都是我在学习Android 开发过程中发现的好网站，给初学者一些建议，少走一些弯路。</p>
-<h2 id="Android_Developers"><a href="https://developer.android.com/index.html" target="_blank" rel="external">Android Developers</a></h2><hr>
-<p>作为一个Android 开发者，官网的资料当然不可错过，从设计，培训，指南，文档，都不应该错过，在以后的学习过程中慢慢理解体会。<br><img src="http://ww4.sinaimg.cn/large/68622377jw1epljqud94bj21fj0tcaiz.jpg" alt="Android Developer"></p>
-<h2 id="Android_Guides_-_CodePath"><a href="http://guides.codepath.com/android" target="_blank" rel="external">Android Guides  - CodePath</a></h2><hr>
-<p>CodePath 是国外一个技术培训机构，主要培训iOS 和Android 开发，而CodePath 将Android Guides 放在Github，已经获得了4000+ 个赞，对于Android 初学这特别适合，而且浅显易懂。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqvisahj21fj0tck65.jpg" alt="CodePath"></p>
-<h2 id="Android_tutorial_-_TutorialSpoint"><a href="http://www.tutorialspoint.com/android/" target="_blank" rel="external">Android tutorial - TutorialSpoint</a></h2><hr>
-<p>TutorialSpoint 是一个专业的技术教程网站，基本上我们所熟知的热门技术，都能在这里找到教程，知识点覆盖的特别全，而且代码风格也很不错，同时也适合初学着；更人性化的是，所有教程提供离线PDF 下载。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwixt2j21fj0tc17a.jpg" alt="Tutorial Spoint"></p>
-<h2 id="Android_Development_-_Vogella"><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a></h2><hr>
-<p>Vogella 提供的Android 开发教程也是可圈可点的，可能知识点覆盖不是特别全，但是单个知识点，Vogella 讲解的还是很详细的。</p>
-<p><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwiqdej21fj0tck8z.jpg" alt="Vogella"></p>
-<h2 id="AndroidHive"><a href="http://www.androidhive.info/" target="_blank" rel="external">AndroidHive</a></h2><hr>
-<p>AndroidHive 是一个个人博客，主要写Android 开发的教程，虽然只是一个人，但却提供了绘图，到写教程，功能视频演示，也表现出了博主的专业与敬业，博主写的东西也是跟随新技术，可实用性特别强。<br><img src="http://ww2.sinaimg.cn/large/68622377jw1epljqxvulzj21fj0tcwot.jpg" alt="Android Hive"></p>
-<h2 id="Android_SDK_-_Tuts+_Code"><a href="http://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code</a></h2><hr>
-<p>Tuts+ 是一个技术教程，课程和电子书的网站，基本上热门的技术都提供了，他的教程主要是免费的，而课程，电子书是有偿的，由于其专业性，大多教程都是高精华的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqyixf0j21fj0tcdq4.jpg" alt="Tuts Plus"></p>
-<h2 id="Lynda"><a href="http://www.lynda.com/" target="_blank" rel="external">Lynda</a></h2><hr>
-<p>Lynda 是一个在线学习网站，该网站提供技术，设计等很多的课程。</p>
-<p><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqzu0n2j21fj0tctn7.jpg" alt="Lynda"></p>
-<h2 id="Android_Questions_-_Stack_Overflow"><a href="http://stackoverflow.com/questions/tagged/android" target="_blank" rel="external">Android Questions - Stack Overflow</a></h2><hr>
-<p>Stackoverflow 是一个技术在线问答网站，几乎平常遇到的所有技术网站，在这里都能找到答案，而且你提问的问题，上面有很多大牛会很热心回答。</p>
-<p><img src="http://ww4.sinaimg.cn/large/68622377jw1epljr0g5zjj21fj0tck6a.jpg" alt="Stackoverflow"></p>
-<h2 id="Search_·_android_-_Github"><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=android" target="_blank" rel="external">Search · android - Github</a></h2><hr>
-<p>Github 是一个基于Git 的代码托管工具，几乎所有知名的开源软件都选择Github 来托管，而很多Android 开发者也都选择Github，几乎常见的Demo 在Github 都能找到类似的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljr0ys5xj21fj0tc44x.jpg" alt="Github"></p>
-<h2 id="Android_Archives_|_Java_Code_Geeks"><a href="http://www.javacodegeeks.com/tutorials/android-tutorials/android-core-tutorials/" target="_blank" rel="external">Android Archives | Java Code Geeks</a></h2><hr>
-<p>Java Code Geeks 主要是一个Java 教程的网站，而他提供的Android 教程，一步一步，还有配图，使初学者没有太大压力。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljr1kqqoj21fj0tcakk.jpg" alt="Java Code Geeks"></p>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/85cb02292acc" target="_blank" rel="external">http://www.jianshu.com/p/85cb02292acc</a><br>非商业转载请在「<code>开头</code>」注明作者「<code>详细信息</code>」和「<code>本文出处</code>」。</p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/11/how-do-i-self-study-android-2015/">
-                我是如何自学Android，资料分享（2015）
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-11
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/11/how-do-i-self-study-android-2015/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/11/how-do-i-self-study-android-2015/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>自己学了两三个月的Android，最近花了一周左右的时间写了个App——<a href="https://github.com/Tikitoo/Diigoer" target="_blank" rel="external">Diigoer（已开源）</a>，又花了一两周时间找工作，收到了两个Offer，也算是对自己学习的一种认可吧；我刚开始学习总结的——《<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a>》，如果是初学Android 的话，不应该错过的，而今天这篇分享好这篇文章，相对于第一次写的会有所提升，所以建议先把上一篇看了，再来看这一篇；<br>那下面就切入正题吧，之前重复的就不再介绍了，相对于第一季，自己对Android 的认识更加深了（算是入门了吧），干货更多了，更加通俗易懂了，英文资料会多一点；而自己学习过程中发现的一些好资源，分享给你们，希望对你们的有一些帮助；</p>
-<h2 id="Java_学习">Java 学习</h2><hr>
-<p>我要再次强调，一定要有Java 基础（虽然现在使用其他语言也可以开发Android，但毕竟是很小众），也不要认为学习Java 两三周就可以不用管了，这会在以后的深入学习中暴露出问题，所以Java 基础一定要牢固，当然我也不是说，Java 学的特别好，才能去学习Android，毕竟学习是循序渐进的，所以在以后的学习中要注意，对于Java 系统的学习，我有一下几个推荐；</p>
-<blockquote>
-<ul>
-<li><a href="http://introcs.cs.princeton.edu/java/home/" target="_blank" rel="external">Introduction to Programming in Java: An Interdisciplinary Approach</a><br>普林斯顿的公开课，也有书籍，我觉得可以直接跟着公开课学习就OK 啦；</li>
-<li><a href="http://www.tutorialspoint.com/java/" target="_blank" rel="external">Java Tutorial - TutorialSpoint</a><br>TutorialSpoint 是一个专门技术教程网站，其他教程也可以去看学习；当然你想离线观看，网站还提供了PDF 版<ul>
-<li><a href="http://www.tutorialspoint.com/java/java_tutorial.pdf" target="_blank" rel="external">Java Tutorial PDF</a></li>
-</ul>
-</li>
-<li><a href="http://math.hws.edu/eck/cs124/downloads/javanotes7.pdf" target="_blank" rel="external">Javanotes 7.0 — Title Page</a><br>这个是霍巴特威廉史密斯学院的一本书，跟着JDK 版本，已经发行了好多版本；</li>
-</ul>
-</blockquote>
-<p>由于篇幅有限，所以在这里就不累赘了，以后会专门写一篇文章来说Java；</p>
-<h2 id="Android_系列教程">Android 系列教程</h2><hr>
-<p>这一段时间，发现了好多学习资源，自己收藏了，不敢独享，所以拿出来和大家分享，如果您发现不错的学习资源，欢迎留言；<br>而学习的过程中，也忽略了一些问题，比如自己学习的不系统，如果您也是自学的话，一定要注意这个问题，我觉得，除了看官方文档和大牛的博客之外，最重要就找一本好书，把自己的知识系统化；</p>
-<h3 id="入门指南">入门指南</h3><hr>
-<ul>
-<li><a href="developer.android.com/docs/training/index.html">Getting Started | Android Developers</a></li>
-<li><a href="http://halfapp.com/blog/get-started-programming-android-apps/" target="_blank" rel="external">How to get started programming Android apps | HalfApp</a></li>
-<li><a href="http://www.reddit.com/r/Android/comments/1w3woc/a_step_by_step_guide_about_how_to_get_started_and/" target="_blank" rel="external">A step by step guide about how to get started and involved in Android Development - Reddit</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a></li>
-<li><a href="http://drakeet.me/android_base_road" target="_blank" rel="external">我推荐的 Android 基础学习路线</a></li>
-<li><a href="http://mmclub.github.io/blog/2014/04/03/start-learning-android/" target="_blank" rel="external">Android入门杂谈</a></li>
-</ul>
-<h3 id="书籍推荐">书籍推荐</h3><hr>
-<p>首先自己没有很系统地去看一本书，所以我也是搜索，或者实在知乎上别人推荐的，所以，要根据自己的情况，适合自己的书来看；</p>
-<ul>
-<li><a href="http://commonsware.com/Android/" target="_blank" rel="external"> The Busy Coder’s Guide to Android Development</a><br>这是大牛CommonsGuy 开源的一本书，它的更新非常及时，基本上就是跟着SDK 更新的，下载PDF 可以在这里（<a href="http://commonsware.com/Android/4-2-free" target="_blank" rel="external">Four-to-Free Guarantee</a>）下载，书籍中源码可以在Github（<a href="https://github.com/commonsguy/cw-omnibus" target="_blank" rel="external">commonsguy/cw-omnibus</a>） 中查看；</li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">Best Android Books and Resources 2014</a><br>这篇文章主要介绍了Android 书籍和开发资源；</li>
-</ul>
-<h3 id="公开课">公开课</h3><hr>
-<ul>
-<li><a href="https://www.udacity.com/course/ud853" target="_blank" rel="external">How to Develop Android Apps Online Course - Udacity</a></li>
-<li><a href="https://class.coursera.org/android-001/lecture" target="_blank" rel="external">Programming Mobile Applications for Android (Coursera)</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLB03EA9545DD188C3" target="_blank" rel="external">Android Development For Absolute Beginners - YouTube</a></li>
-</ul>
-<h3 id="系列教程">系列教程</h3><hr>
-<ul>
-<li><a href="https://github.com/thecodepath/android_guides/wiki" target="_blank" rel="external">Home · codepath/android_guides Wiki - codepath</a><br>Android 指南，它不仅介绍怎么创建一个最简单的App Demo，循序渐进教你使用各种流行的框架，对于即将工作的同学来说是很用用的；Demo 很有实战意义；</li>
-<li><a href="http://www.tutorialspoint.com/android/index.htm" target="_blank" rel="external">Android tutorial - TutorialSpoint</a><br>是不是特别熟悉呀，对上面提到过，教程特别通俗易懂，代码实例也不错；</li>
-<li><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a><br>教程挺通俗易懂</li>
-<li><a href="http://androidhive.info/" target="_blank" rel="external">AndroidHive | Tutorials, Games, Apps, Tips |</a><br>博主是印度人，博客主要是以教程为主，质量较高，而且会分享比较新的东西；</li>
-<li><a href="http://www.codelearn.org/android-tutorial/" target="_blank" rel="external">Android Tutorial | Interactive and Step by step tutorial to learn Android</a></li>
-<li><a href="https://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code Category</a></li>
-<li><a href="http://www.learn2crack.com/category/androidprogramming" target="_blank" rel="external">Android Programming Archives - Learn2Crack</a></li>
-<li><a href="https://www.mysliderule.com/learning-paths/android/learn/" target="_blank" rel="external">Android Learning Path | SlideRule</a></li>
-</ul>
-<h3 id="大牛博客推荐">大牛博客推荐</h3><hr>
-<ul>
-<li><a href="https://github.com/android-cn/android-dev-cn" target="_blank" rel="external">android-cn/android-dev-cn</a><br>主要介绍国内Android 开发大牛；</li>
-<li><a href="https://github.com/android-cn/android-dev-com" target="_blank" rel="external">android-cn/android-dev-com</a><br>主要介绍国外Android 开发大牛；</li>
-<li><a href="http://www.quora.com/What-are-must-read-Android-developer-blogs" target="_blank" rel="external">What are must-read Android developer blogs? - Quora</a><br>Quora 上的回答</li>
-<li><a href="http://www.zhihu.com/question/19775981" target="_blank" rel="external">有哪些 Android 大牛的 blog 值得推荐？ - 知乎</a><br>知乎上的回答</li>
-</ul>
-<h3 id="开源App">开源App</h3><hr>
-<ul>
-<li><a href="https://f-droid.org/" target="_blank" rel="external">F-Droid | Free and Open Source Android App Repository</a><br>F-Droid 是一个Android 开源App 仓库</li>
-<li><a href="http://blog.tisa7.com/android_open_source_projects" target="_blank" rel="external">Android优秀开源项目 - 小猪爬爬</a></li>
-<li><a href="https://android-arsenal.com/" target="_blank" rel="external">The Android Arsenal - A categorized directory of free libraries and tools for Android</a><br>在这里，找到最新最流行的Android 开源类库</li>
-<li><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Trinea/android-open-project - Trinea</a><br>大牛Trinea 写的Android 开源项目汇总</li>
-</ul>
-<h3 id="开发工具">开发工具</h3><hr>
-<ul>
-<li><a href="http://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a><br>一个Android 代码搜索引擎；前两天发现了这个工具就爱不释手，写了篇文章——《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，让你参考入门。</li>
-<li><a href="http://www.gradleware.com/" target="_blank" rel="external">Gradle</a><br>知乎上我回答的《<a href="http://www.zhihu.com/question/27866554/answer/38427122" target="_blank" rel="external">如何从eclipse转入android studio,感觉Gradle什么的很难理解的。有什么教程吗? - Tikitoo 的回答 - 知乎</a>》，可以参考。</li>
-<li><a href="">Android Studio</a><br>从Google 的态度就可以看出，Android Studio 就是未来，而且在最近发布了正式版，教程在网上也不少。</li>
-<li><a href="http://androiduiux.com" target="_blank" rel="external">Android User Interface | User Experience | Inspiration source for Android Designers and Developers</a></li>
-<li><a href="http://www.android-app-patterns.com/" target="_blank" rel="external">Android App Patterns</a></li>
-<li><a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder - 400,000+ free and premium icons</a><br>一个Icon 搜索引擎</li>
-<li><a href="https://github.com/google/material-design-icons" target="_blank" rel="external">google/material-design-icons - github</a><br>Google 把官方的Material Design 1000+ 的Icon 开源了，不仅仅只有Android 版，而且还有Web 和iOS，真是业界良心呀。</li>
-<li><a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">inferjay/AndroidDevTools</a><br>inferjay 总结的开发工具，并且提供了国内的镜像。</li>
-<li><a href="https://www.genymotion.com/" target="_blank" rel="external">Genymotion - A faster Android emulator</a><br>Genymotion 是Android 的虚拟机，比官方的快了不知多少啊，它是基于Virtual Box，并且提供了插件。</li>
-</ul>
-<h3 id="订阅">订阅</h3><hr>
-<ul>
-<li><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周刊</a></li>
-<li><a href="http://www.androidweekly.cn/" target="_blank" rel="external">Android开发技术周报</a></li>
-<li><a href="https://github.com/nemoTyrant/manong#ANDROID" target="_blank" rel="external">码农周刊 - Android</a></li>
-</ul>
-<h3 id="资源">资源</h3><hr>
-<ul>
-<li><a href="http://www.androidauthority.com/best-resources-android-development-372414/" target="_blank" rel="external">Best resources for Android development</a></li>
-<li><a href="http://www.bongizmo.com/blog/android-resources-each-developer-should-know/" target="_blank" rel="external">Resources every Android developer must know</a><br>中文版——《<a href="http://www.importnew.com/3988.html" target="_blank" rel="external">Android开发者必知的开发资源 - ImportNew</a><br>》，译者是ImportNew - 黄小非</li>
-<li><a href="http://yeungeek.com/awesome-resources/" target="_blank" rel="external">开发资源 | Android 沉思录</a></li>
-<li><a href="http://www.apptentive.com/blog/programming-resources-for-android-developers/" target="_blank" rel="external">Android Developer Resources, Tutorials, and References — Being Apptentive</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.cnblogs.com/mainroadlee/p/android_resources_list.html" target="_blank" rel="external">Android开发者资源大汇总 - Android开发周刊 - 博客园</a></li>
-<li><a href="https://github.com/snowdream/awesome-android" target="_blank" rel="external">awesome-android - github</a></li>
-<li><a href="https://plus.google.com/+KevinDarty/posts/Qex6Ae6zhZW" target="_blank" rel="external">Where To Start - Learning Android Development the Right Way - Kevin Darty - Google+</a></li>
-<li><a href="http://www.reddit.com/r/androiddev/wiki/resources" target="_blank" rel="external">resources - androiddev reddit</a></li>
-<li><a href="http://zhuanlan.zhihu.com/anzhuo/19657543" target="_blank" rel="external">Android自学资料汇总</a></li>
-<li><a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">Android 学习之路</a></li>
-</ul>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://www.quora.com/What-are-the-best-resources-to-learn-Android-development" target="_blank" rel="external">http://www.quora.com/What-are-the-best-resources-to-learn-Android-development</a></li>
-<li><a href="http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#" target="_blank" rel="external">http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#</a></li>
-<li><a href="http://www.sitepoint.com/12-android-tutorials-beginners/" target="_blank" rel="external">http://www.sitepoint.com/12-android-tutorials-beginners/</a></li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">http://nimooli.com/blog/best-android-books-2014/</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/">
-                Android 开发工具之Codota——搜索最好的Android 代码
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-04
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/04/codota-search-of-the-best-android-tools-android-code/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Find Great Code Examples</span><br><span class="line">Our crawler extracts coding patterns <span class="built_in">from</span> <span class="operator">a</span> vast <span class="built_in">number</span> <span class="operator">of</span> code projects. </span><br><span class="line">Search here <span class="keyword">for</span> <span class="operator">the</span> best code examples <span class="built_in">from</span> over <span class="number">7</span> million sources</span><br></pre></td></tr></table></figure>
-<p>上面是<a href="https://www.codota.com/" target="_blank" rel="external">Codota</a> 官方介绍的<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">最好的代码实例，我们的抓取工具从大量的代码项目中抓取了大量的代码模式，</span><br><span class="line"></span><br><span class="line">你可以从这里搜索超过七百万精品代码实例；</span><br></pre></td></tr></table></figure></p>
-<p><br></p>
-<h2 id="Codota_的特性">Codota 的特性</h2><hr>
-<ul>
-<li><p>的确，正如codota 官方所说，的确是精品，他的搜索源，不仅只有Github，而且还有知<br>名博客和开发者网站，让你搜索一个东西，不用在找上半天；</p>
-</li>
-<li><p>除了<code>搜索功能</code>，首页的下方还罗列比较流行的类库，还提供保存代码的<code>CodeBox</code>，同时还提供了Chrome 插件和Android Studio 插件，最后通过Google，Github，Facebook 任意一个授权登录即可使用；</p>
-</li>
-<li><p>而且当你点击搜索的结果（Java class）的时候，右侧会显示<code>UML 视图</code>，而且左边的代码如果点击会有高亮现实，而且还会显示<code>Doc</code>，并提供了API Doc 的链接。<br><img src="http://blog.codota.com/wp-content/uploads/2014/05/related-scrshot.png" alt=""></p>
-</li>
-</ul>
-<p><br></p>
-<h2 id="Chrome_插件">Chrome 插件</h2><hr>
-<p>而且Codota 还提供了Chrome 插件，通过插件可以对Github，Stackoverflow 的代码，进行<code>查看</code>，<code>分享</code>，也可以保存在<code>CodeBox</code> 中。<br><img src="http://blog.codota.com/wp-content/uploads/2013/06/livecode-normal1.png" alt=""></p>
-<p><br></p>
-<h2 id="Android_Studio_插件">Android Studio 插件</h2><hr>
-<p>这么好的工具，怎么可能会没有Android Studio 插件呢？直接在<code>plugin</code> 中搜索<code>codota</code>，安装后重启Android Studio 即可；重启之后，<code>Ctrl + K</code> 或者<code>⌘ + K</code>（OS X）即可打开<code>Codota 视图</code>，需要注意的是，这个时候会请求一个<code>token</code>，会在浏览器中打开，直接复制，就可以使用了。<br><img src="http://assets.codota.com/android-studio-plugin/installation/images/image02.png" alt=""></p>
-<p><br></p>
-<h2 id="最后">最后</h2><hr>
-<p>那就一睹为快吧，Codota 的官网：</p>
-<ul>
-<li><a href="https://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a></li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/02/02/android-check-network-available/">
-                Android 中判断网络状态是否连接
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-02-02
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/02/02/android-check-network-available/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/02/android-check-network-available/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="在Activity_中判断网络状态">在Activity 中判断网络状态</h2><p>在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=NetworkUtils.java"></script></p>
-<p>当然了，也别忘记要在清单文件注册获取网络状态的权限。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=AndroidManifest.xml"></script></p>
-<h2 id="使用单例模式来判断网络">使用单例模式来判断网络</h2><hr>
-<p>当然上面的代码也有弊端，获取getSystemService() 方法必须是有默认上下文的，才可以获取的，但是获取网络状态又是很频繁，我们将它抽离出来，放到工具类中。我们通过getInstance() 传入上下文。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=SingleNetworkUtils.java"></script></p>
-<p>最后我们在Activity 中就可这样使用了。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=MainActivity.java"></script></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://developer.android.com/training/monitoring-device-state/connectivity-monitoring.html" target="_blank" rel="external">Determining and Monitoring the Connectivity Status</a></li>
-<li><a href="http://stackoverflow.com/questions/4238921/detect-whether-there-is-an-internet-connection-available-on-android" target="_blank" rel="external">Detect whether there is an Internet connection available on Android [duplicate]</a></li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/01/19/android-add-to-actionbar-back-button/">
-                为ActionBar 添加返回按钮
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-01-19
-        </span>
-
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/01/19/android-add-to-actionbar-back-button/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/01/19/android-add-to-actionbar-back-button/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>前几天做App 的时候，做的比较仓促，就没有添加返回按钮，还有就是MainActivity 的Theme 怎么传递到其他Activity 中，今天无意中看到官方的Train，所以就记下来啦，顺便吧ActionBar，Menu 也复习复习；</p>
-<h2 id="添加Action_Buttons">添加Action Buttons</h2><p>首先我们要创建<code>menu</code> 文件，我们可以为顶部添加Menu，<code>showAsAction</code> 是显示的类型，ifRoom 会自动匹配是否有实体键，always 是一直隐藏，但是使用Support Library<code>android:showAsAction=&quot;ifRoom&quot;</code> 会提示错误，所以在menu 中添加<code>xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;</code> 属性，改为<code>app:showAsAction=&quot;ifRoom&quot;</code> 就没有错误；</p>
-<p><code>res/menu/main_activity_actions.xml</code><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">menu</span> <span class="attribute">xmlns:android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span> &gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Search, should appear as action button --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_search"</span></span><br><span class="line">          <span class="attribute">android:icon</span>=<span class="value">"@drawable/ic_action_search"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_search"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"ifRoom"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Settings, should always be in the overflow --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">item</span> <span class="attribute">android:id</span>=<span class="value">"@+id/action_settings"</span></span><br><span class="line">          <span class="attribute">android:title</span>=<span class="value">"@string/action_settings"</span></span><br><span class="line">          <span class="attribute">android:showAsAction</span>=<span class="value">"never"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">menu</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="添加ActionBar">添加ActionBar</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onCreateOptionsMenu</span><span class="params">(Menu menu)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// Inflate the menu; this adds items to the action bar if it is present.</span></span><br><span class="line">        getMenuInflater().inflate(R.menu.menu_main, menu);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="为Action_Button_添加响应事件">为Action Button 添加响应事件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onOptionsItemSelected</span><span class="params">(MenuItem item)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> id = item.getItemId();</span><br><span class="line">    <span class="comment">//当点击不同的menu item 是执行不同的操作</span></span><br><span class="line">    <span class="keyword">switch</span> (id) &#123;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_search:</span><br><span class="line">            openSearch();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> R.id.action_settings:</span><br><span class="line">            openSettings();</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">super</span>.onOptionsItemSelected(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="为ActionBar_顶部添加返回按钮">为ActionBar 顶部添加返回按钮</h2><p>首先要在AndroidManifest 文件中配置</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">application</span> <span class="attribute">...</span> &gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">&lt;!-- The main/home activity (it has no parent activity) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> <span class="attribute">...</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- A child of the main activity --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">activity</span></span><br><span class="line">        <span class="attribute">android:name</span>=<span class="value">"com.example.myfirstapp.DisplayMessageActivity"</span></span><br><span class="line">        <span class="attribute">android:label</span>=<span class="value">"@string/title_activity_display_message"</span></span><br><span class="line">        <span class="attribute">android:parentActivityName</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> &gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Parent activity meta-data to support 4.0 and lower --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">meta-data</span></span><br><span class="line">            <span class="attribute">android:name</span>=<span class="value">"android.support.PARENT_ACTIVITY"</span></span><br><span class="line">            <span class="attribute">android:value</span>=<span class="value">"com.example.myfirstapp.MainActivity"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">activity</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">application</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>然后在onCrate 中设置<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.activity_displaymessage);</span><br><span class="line">    <span class="comment">// 3.0+</span></span><br><span class="line">    getSupportActionBar().setDisplayHomeAsUpEnabled(<span class="keyword">true</span>);</span><br><span class="line">    <span class="comment">// If your minSdkVersion is 11 or higher, instead use:</span></span><br><span class="line">    <span class="comment">// getActionBar().setDisplayHomeAsUpEnabled(true);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="最后的效果图">最后的效果图</h2><p><img src="http://tikitoo.qiniudn.com/android_training_back_activity.png" alt="http://tikitoo.qiniudn.com/android_training_back_activity.png"></p>
-<h2 id="为下一个Activity_传递MainActivity_Theme">为下一个Activity 传递MainActivity Theme</h2><p>需要注意的是，<code>setTheme</code> 方法在<code>setContentView</code> 之前；其实就是利用Intent 将Theme 传递到下一个Activity；</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> MAIN_THEME_STYLE_ID = R.style.Theme_AppCompat_Light;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String MAIN_THEME_STYLE = <span class="string">"Theme_AppCompat_Light"</span>;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setTheme(R.style.Theme_AppCompat_Light);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onToBackActivity</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">        Intent intent = <span class="keyword">new</span> Intent(<span class="keyword">this</span>, BackActivity.class);</span><br><span class="line">        intent.putExtra(MAIN_THEME_STYLE, MAIN_THEME_STYLE_ID);</span><br><span class="line">        startActivity(intent);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="在下一个Activity_获取Theme">在下一个Activity 获取Theme</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BackActivity</span> <span class="keyword">extends</span> <span class="title">ActionBarActivity</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> style_id;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        getMainIntent();</span><br><span class="line">        setTheme(style_id);</span><br><span class="line">        setContentView(R.layout.activity_back);</span><br><span class="line"></span><br><span class="line">        getSupportActionBar().setDisplayShowCustomEnabled(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">getMainIntent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Intent intent = getIntent();</span><br><span class="line">        style_id = intent.getIntExtra(MainActivity.MAIN_THEME_STYLE, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="原文地址">原文地址</h2><ul>
-<li><p><a href="https://github.com/Tikitoo/blog/issues/29" target="_blank" rel="external">Android 学习为ActionBar 添加返回按钮 · Issue #29 · Tikitoo/blog</a></p>
-</li>
-<li><p>转载请<code>注明出处</code></p>
-</li>
-</ul>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-  </div>
 
   
-  <div class="pagination">
-    <a class="extend prev" rel="prev" href="/">&laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&raquo;</a>
-  </div>
+  
 
+  
+  
+  
 
-        </div>
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
 
         
-      </div>
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/07/02/html-embed-slides-com-test/" itemprop="url">
+                  Android Studio 入门指南（Slides）
+                </a>
+              
+            
+          </h1>
+        
 
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-02T18:14:58+08:00" content="2015-07-02">
+              2015-07-02
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/02/html-embed-slides-com-test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/02/html-embed-slides-com-test/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
+      
+
+      
+        
+          
+          This is Html embed slides.com.
+
+
+          
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/07/02/html-embed-slides-com-test/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/07/01/User-github-hexo-build-blog/" itemprop="url">
+                  使用Github + Hexo 来搭建自己的博客
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-07-01T12:47:18+08:00" content="2015-07-01">
+              2015-07-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/07/01/User-github-hexo-build-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/01/User-github-hexo-build-blog/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          发现Hexo 一个主题不错，就尝试着Hexo 来搭建博客，在搭建的过程中也有不少坑，不过看了很多大牛详细的教程，终于把Hexo 博客搭建好了，所以就来总结总结。
+Hexo 是一个基于Node.js 的一个博客框架。它支持Markdown 和大多数Octopress 插件。
+安装前提是你要安装npm，
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/07/01/User-github-hexo-build-blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/" itemprop="url">
+                  是时候把Android 项目切换到Android Studio
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-06-14T15:44:38+08:00" content="2015-06-14">
+              2015-06-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/14/it-is-time-to-switch-to-android-studio-android-project/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。
+我的经历
+当我还是Java 程序员的时候，我就在使用Intell
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/04/20/android-studio-getting-guide/" itemprop="url">
+                  Android Studio 入门指南
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-04-20T06:23:42+08:00" content="2015-04-20">
+              2015-04-20
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/20/android-studio-getting-guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/20/android-studio-getting-guide/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          作为一个Android 开发者，你应该很了解Android Studio，如果你现在还不了解，没关系，那么从现在开始，我们一起来了解了解Andoid Studio。
+
+Android Studio 是Google 官方在2013 Google I/O 大会（2013 年5月）上发布的全新Andrid
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/20/android-studio-getting-guide/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/04/18/android-the-development-of-essential-little-knowledge/" itemprop="url">
+                  Android 开发必备小知识点
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-04-18T09:15:05+08:00" content="2015-04-18">
+              2015-04-18
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/18/android-the-development-of-essential-little-knowledge/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/18/android-the-development-of-essential-little-knowledge/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+RGB 颜色透明度Android 中使用RGB 来表示颜色，如果想要表示透明度，在六位十六进制的前面添加两位十六进制表示透明度。
+
+Material Color对开发人员，选择一个颜色真的很不容易，那就让设计师帮你挑选吧。
+
+Android 系统默认字体Android 系统默认字体只有很少，从An
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/18/android-the-development-of-essential-little-knowledge/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/" itemprop="url">
+                  作为移动开发者，你应该了解Baas（后端即服务）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-04-12T11:17:00+08:00" content="2015-04-12">
+              2015-04-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+作为开发者，了解新技术，新的工具是必不可少的，有时候发现一个好的开发工具，使用起来非常顺手，效率也提高了， 然而如果不了解新的技术，不了解这个行业的发展趋势，那样的后果是不堪回首的，反正，与时俱变是没有错啦，所以今天就来说说每个移动开发者都应该知道的Baas。
+那么什么是Baas？
+前一段时间在知
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/02/22/10-great-learning-android-development-of-the-site/" itemprop="url">
+                  10个很棒的学习Android 开发的网站
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-02-22T13:47:08+08:00" content="2015-02-22">
+              2015-02-22
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/22/10-great-learning-android-development-of-the-site/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/22/10-great-learning-android-development-of-the-site/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          看到江湖旅人 写的《10个很棒的学习iOS开发的网站 - 简书》，所以就忍不住写Android 啦，也希望对大家有帮助。我推荐的网站，都是我在学习Android 开发过程中发现的好网站，给初学者一些建议，少走一些弯路。
+Android Developers
+作为一个Android 开发者，官网的资料
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/22/10-great-learning-android-development-of-the-site/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/02/11/how-do-i-self-study-android-2015/" itemprop="url">
+                  我是如何自学Android，资料分享（2015）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-02-11T09:37:16+08:00" content="2015-02-11">
+              2015-02-11
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/11/how-do-i-self-study-android-2015/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/11/how-do-i-self-study-android-2015/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          自己学了两三个月的Android，最近花了一周左右的时间写了个App——Diigoer（已开源），又花了一两周时间找工作，收到了两个Offer，也算是对自己学习的一种认可吧；我刚开始学习总结的——《我是如何自学Android，资料分享》，如果是初学Android 的话，不应该错过的，而今天这篇分享好
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/11/how-do-i-self-study-android-2015/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/" itemprop="url">
+                  Android 开发工具之Codota——搜索最好的Android 代码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-02-04T00:18:09+08:00" content="2015-02-04">
+              2015-02-04
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/04/codota-search-of-the-best-android-tools-android-code/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          123Find Great Code ExamplesOur crawler extracts coding patterns from a vast number of code projects. Search here for the best code examples from over 
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/04/codota-search-of-the-best-android-tools-android-code/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/02/02/android-check-network-available/" itemprop="url">
+                  Android 中判断网络状态是否连接
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-02-02T15:45:12+08:00" content="2015-02-02">
+              2015-02-02
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/02/android-check-network-available/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/02/android-check-network-available/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          在Activity 中判断网络状态在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。
+当然了，也别忘记要在清单文件注册获取网络状态的权限。
+使用单例模式来判断网络
+当然上面的代码也有弊端，获取getSystemService() 方法必须
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/02/02/android-check-network-available/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -1416,21 +1256,25 @@
     </div>
   </div>
 
-  <div id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
       
 
-      <div class="site-overview">
-        <div class="site-author motion-element">
-          <img class="site-author-image" src="http://ww1.sinaimg.cn/mw690/68622377jw1etahntwg7pj2050050q2q.jpg" alt="Tikitoo" />
-          <p class="site-author-name">Tikitoo</p>
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww1.sinaimg.cn/mw690/68622377jw1etahntwg7pj2050050q2q.jpg"
+               alt="Tikitoo" />
+          <p class="site-author-name" itemprop="name">Tikitoo</p>
+          <p class="site-description motion-element" itemprop="description">Android 开发工程师，互联网爱好者。</p>
         </div>
-        <p class="site-description motion-element"></p>
-        <div class="site-state motion-element">
+        <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1444,17 +1288,17 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-count">34</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
 
-        </div>
+        </nav>
 
         
           <div class="feed-link motion-element">
-            <a href="/atom.xml">
-              <i class="menu-item-icon icon-feed"></i>
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
               RSS
             </a>
           </div>
@@ -1464,28 +1308,52 @@
           
             
               <span class="links-of-author-item">
-              <a href="https://github.com/tikitoo" target="_blank">github</a>
-            </span>
+                <a href="https://github.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Github
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="https://twitter.com/tikitoo" target="_blank">twitter</a>
-            </span>
+                <a href="https://twitter.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://weibo.com/lyf0306" target="_blank">weibo</a>
-            </span>
+                <a href="http://weibo.com/lyf0306" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://douban.com/people/tikitoo" target="_blank">douban</a>
-            </span>
+                <a href="http://douban.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-douban"></i> Douban
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.zhihu.com/people/tikitoo" target="_blank">zhihu</a>
-            </span>
+                <a href="http://www.zhihu.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-zhihu"></i> Zhihu
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.jianshu.com/users/c35153600475/latest_articles" target="_blank">jianshu</a>
-            </span>
+                <a href="http://www.jianshu.com/users/c35153600475/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-jianshu"></i> Jianshu
+                  
+                </a>
+              </span>
             
           
         </div>
@@ -1496,27 +1364,29 @@
         <div class="links-of-author motion-element">
           
         </div>
-        
-      </div>
+
+      </section>
 
       
 
     </div>
-  </div>
+  </aside>
 
 
-    </div>
+        
+      </div>
+    </main>
 
-    <div id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">
+        <div class="copyright" >
   
-  &copy; &nbsp; 
-  2016
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-heart"></i>
+    <i class="icon-next-heart fa fa-heart"></i>
   </span>
-  <span class="author">Tikitoo</span>
+  <span class="author" itemprop="copyrightHolder">Tikitoo</span>
 </div>
 
 <div class="powered-by">
@@ -1526,53 +1396,66 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
 
 
       </div>
-    </div>
+    </footer>
 
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
-  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
   <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
 
-
-
-  <script type="text/javascript" src="/js/search-toggle.js"></script>
 
   
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-    });
-  </script>
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
 
   
 
   
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
   
 
   
@@ -1584,6 +1467,7 @@
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0]
@@ -1592,10 +1476,19 @@
   </script>
 
   
+    
+  
+
+
+
 
 
   
   
+
+  
+  
+
 
 </body>
 </html>
