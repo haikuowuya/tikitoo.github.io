@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://tikitoo.me//"/>
-  <updated>2016-01-20T13:17:32.686Z</updated>
+  <updated>2016-01-23T13:50:27.564Z</updated>
   <id>http://tikitoo.me//</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[每周阅读清单：程序员修炼，兴趣，TED]]></title>
+    <link href="http://tikitoo.me/2016/01/23/reading-list_programmer_interest_ted/"/>
+    <id>http://tikitoo.me/2016/01/23/reading-list_programmer_interest_ted/</id>
+    <published>2016-01-23T13:43:30.000Z</published>
+    <updated>2016-01-23T13:50:27.564Z</updated>
+    <content type="html"><![CDATA[<p>不知不觉快要过年了，估计大家也都比较忙吧。这一周也上了六天，刚好今天你晚上有点空闲时间，就来总结这周工作和学习发现的好东西和好文章，来分享给大家。<br>我平常获取技术和文章大都在微博，微信，遇到好的博客都会使用Feedly 来订阅，遇到好的文章来不及看都会放在Pocket 来看。今天阅读清单也到了第二期了，也希望能给大家一些帮助。</p>
+<h2 id="技术文章">技术文章</h2><hr>
+<ul>
+<li><p><a href="http://www.race604.com/android-weekly-30/" target="_blank" rel="external">Android 周报（第 30 期）</a><br>这个是<a href="http://weibo.com/devandroid" target="_blank" rel="external">@Android 笔记</a> 维护的，推荐了性能优化，APK 瘦身等其他方面的文章。有空大家可以去看看，跟着大牛们涨涨经验。</p>
+</li>
+<li><p><a href="https://imququ.com/post/four-ways-to-post-data-in-http.html" target="_blank" rel="external">四种常见的 POST 提交数据方式</a><br>可能服务端和前端对这些特别熟悉，做客户端也应该去了解 Post 的提交方式，application/x-www-form-urlencoded，multipart/form-data，application/json，text/xml。</p>
+</li>
+<li><p><a href="http://www.ruanyifeng.com/blog/2015/12/git-workflow.html" target="_blank" rel="external">Git 工作流程</a><br><a href="http://www.ruanyifeng.com/" target="_blank" rel="external">阮一峰</a>老师写的Git 工作流程，讲了Git flow，Github flow，Gitlab flow 三种工作流程，Git flow 实用与我们工作中，Github flow 适用于我们开源项目中，Gitlab flow 将两者综合起来。</p>
+</li>
+<li><p><a href="http://tech.glowing.com/cn/advices-to-junior-developers/" target="_blank" rel="external">如何提升你的能力？给年轻程序员的几条建议</a><br>一个八年工作经验给年轻程序员的建议与经验。打造你的工具箱，高效的开发环境。开阔你的视野，构建你的技术体系。重视沟通能力的培养。累积你的人脉。寻找发挥你才华的平台。</p>
+</li>
+</ul>
+<h2 id="互联网">互联网</h2><hr>
+<ul>
+<li><a href="https://www.zhihu.com/question/39377598" target="_blank" rel="external">微信应用号将会对开发者有哪些影响？</a><br>微信应用号，什么鬼？难道又是一个Hybrid App？让我们期待吧。网上也有很多讨论的文章，在这里就不多说了。</li>
+</ul>
+<h2 id="人文">人文</h2><hr>
+<ul>
+<li><p><a href="">什么是【真正的】兴趣爱好？以及它有啥好处？</a><br>其实我们所谓自己感兴趣的东西，其实不过是随便说说，也可能是说给人听的。看了这篇文章，你会很受启发。有条件科学上网的可以自己使用Google 搜一下吧。</p>
+</li>
+<li><p><a href="http://www.huxiu.com/article/31102/1.html" target="_blank" rel="external">人类创造未来的思想先锋：这些 TED 演示深深震撼着我们</a><br>作者作为一个中国的在美国的留学生，自己也见证了TED 的舞台上这么多年让人惊叹的科技和事情。利用仿生学让下肢残废的人重新站立起来，甚至让舞者重新站在舞台上。乔布斯在TED第一次展示他的Macintosh 电脑。 Sun 公司最先介绍了Java 语言，现在已经是编程语言的中流砥柱。</p>
+</li>
+</ul>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学的公众号，更多分享..."></p>
+<center>Tikitoo 的公众号，更多分享…</center>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>不知不觉快要过年了，估计大家也都比较忙吧。这一周也上了六天，刚好今天你晚上有点空闲时间，就来总结这周工作和学习发现的好东西和好文章，来分享给大家。<br>我平常获取技术和文章大都在微博，微信，遇到好的博客都会使用Feedly 来订阅，遇到好的文章来不及看都会放在Pocket]]>
+    </summary>
+    
+      <category term="阅读清单" scheme="http://tikitoo.me/tags/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android 中WebView 的使用]]></title>
@@ -1198,33 +1239,6 @@
       <category term="Tools" scheme="http://tikitoo.me/tags/Tools/"/>
     
       <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 中判断网络状态是否连接]]></title>
-    <link href="http://tikitoo.me/2015/02/02/android-check-network-available/"/>
-    <id>http://tikitoo.me/2015/02/02/android-check-network-available/</id>
-    <published>2015-02-02T07:45:12.000Z</published>
-    <updated>2016-01-02T13:36:12.725Z</updated>
-    <content type="html"><![CDATA[<h2 id="在Activity_中判断网络状态">在Activity 中判断网络状态</h2><p>在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=NetworkUtils.java"></script></p>
-<p>当然了，也别忘记要在清单文件注册获取网络状态的权限。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=AndroidManifest.xml"></script></p>
-<h2 id="使用单例模式来判断网络">使用单例模式来判断网络</h2><hr>
-<p>当然上面的代码也有弊端，获取getSystemService() 方法必须是有默认上下文的，才可以获取的，但是获取网络状态又是很频繁，我们将它抽离出来，放到工具类中。我们通过getInstance() 传入上下文。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=SingleNetworkUtils.java"></script></p>
-<p>最后我们在Activity 中就可这样使用了。<br><script src="//gist.github.com/384bc47db18c2c37f8a4.js?file=MainActivity.java"></script></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://developer.android.com/training/monitoring-device-state/connectivity-monitoring.html" target="_blank" rel="external">Determining and Monitoring the Connectivity Status</a></li>
-<li><a href="http://stackoverflow.com/questions/4238921/detect-whether-there-is-an-internet-connection-available-on-android" target="_blank" rel="external">Detect whether there is an Internet connection available on Android [duplicate]</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="在Activity_中判断网络状态">在Activity 中判断网络状态</h2><p>在Android 中，我们经常会判断网络，Anddroid 官方提供了这样的解决方式，可以用来判断是否连接网络。<br><script src="//gist.github.c]]>
-    </summary>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-      <category term="network" scheme="http://tikitoo.me/tags/network/"/>
     
   </entry>
   
