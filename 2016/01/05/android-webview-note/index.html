@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="总结,生活," />
+  <meta name="keywords" content="Android,WebView," />
 
 
 
@@ -59,25 +59,25 @@
 
 
 
-<meta name="description" content="如果说2014 年是迷茫，那么2015 年就是懵懂，我希望2016 是成长。
-
-读过的书苏东坡传从零到一硅谷百年史暗时间简明HTTP 指南HTTP 权威指南（未完）Head First Java第一行代码
-看过的电影宋家王朝港囧辛亥革命天若有情我是路人甲饮食男女饮食男女（新）重返二十岁罗马假日西西里的美丽传说四大名捕四大名捕2太平轮上卧虎藏龙大上海一个人的武林庞贝末日我想和你好好的分手合约第一次天">
+<meta name="description" content="我们都知道Webview 是用来加载网页的，底层使用Webkit 来实现的。首先要在清单文件里注册网络请求权限
+1&amp;lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&amp;gt;
+如果使用外部程序（浏览器）打开
+123Uri uri = Uri.parse(&quot;http://www.example.com&quot;); Intent i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2015 年——懵懵懂懂，跌跌撞撞">
-<meta property="og:url" content="http://tikitoo.me/2015/12/26/2015-12-26-2015-summer/index.html">
+<meta property="og:title" content="Android 中WebView 的使用">
+<meta property="og:url" content="http://tikitoo.me/2016/01/05/android-webview-note/index.html">
 <meta property="og:site_name" content="Tikitoo Blog">
-<meta property="og:description" content="如果说2014 年是迷茫，那么2015 年就是懵懂，我希望2016 是成长。
-
-读过的书苏东坡传从零到一硅谷百年史暗时间简明HTTP 指南HTTP 权威指南（未完）Head First Java第一行代码
-看过的电影宋家王朝港囧辛亥革命天若有情我是路人甲饮食男女饮食男女（新）重返二十岁罗马假日西西里的美丽传说四大名捕四大名捕2太平轮上卧虎藏龙大上海一个人的武林庞贝末日我想和你好好的分手合约第一次天">
-<meta property="og:updated_time" content="2016-01-07T14:29:06.609Z">
+<meta property="og:description" content="我们都知道Webview 是用来加载网页的，底层使用Webkit 来实现的。首先要在清单文件里注册网络请求权限
+1&amp;lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&amp;gt;
+如果使用外部程序（浏览器）打开
+123Uri uri = Uri.parse(&quot;http://www.example.com&quot;); Intent i">
+<meta property="og:updated_time" content="2016-01-20T13:17:32.686Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2015 年——懵懵懂懂，跌跌撞撞">
-<meta name="twitter:description" content="如果说2014 年是迷茫，那么2015 年就是懵懂，我希望2016 是成长。
-
-读过的书苏东坡传从零到一硅谷百年史暗时间简明HTTP 指南HTTP 权威指南（未完）Head First Java第一行代码
-看过的电影宋家王朝港囧辛亥革命天若有情我是路人甲饮食男女饮食男女（新）重返二十岁罗马假日西西里的美丽传说四大名捕四大名捕2太平轮上卧虎藏龙大上海一个人的武林庞贝末日我想和你好好的分手合约第一次天">
+<meta name="twitter:title" content="Android 中WebView 的使用">
+<meta name="twitter:description" content="我们都知道Webview 是用来加载网页的，底层使用Webkit 来实现的。首先要在清单文件里注册网络请求权限
+1&amp;lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&amp;gt;
+如果使用外部程序（浏览器）打开
+123Uri uri = Uri.parse(&quot;http://www.example.com&quot;); Intent i">
 
 
 
@@ -95,7 +95,7 @@
   };
 </script>
 
-  <title> 2015 年——懵懵懂懂，跌跌撞撞 | Tikitoo Blog </title>
+  <title> Android 中WebView 的使用 | Tikitoo Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -264,7 +264,7 @@
             
             
               
-                2015 年——懵懵懂懂，跌跌撞撞
+                Android 中WebView 的使用
               
             
           </h1>
@@ -276,8 +276,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-26T13:35:16+08:00" content="2015-12-26">
-              2015-12-26
+            <time itemprop="dateCreated" datetime="2016-01-05T23:39:41+08:00" content="2016-01-05">
+              2016-01-05
             </time>
           </span>
 
@@ -287,8 +287,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/26/2015-12-26-2015-summer/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/26/2015-12-26-2015-summer/" itemprop="commentsCount"></span>
+                <a href="/2016/01/05/android-webview-note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/05/android-webview-note/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -309,19 +309,46 @@
       
 
       
-        <blockquote>
-<p>如果说2014 年是迷茫，那么2015 年就是懵懂，我希望2016 是成长。</p>
-</blockquote>
-<h2 id="读过的书">读过的书</h2><p>苏东坡传<br>从零到一<br>硅谷百年史<br>暗时间<br>简明HTTP 指南<br>HTTP 权威指南（未完）<br>Head First Java<br>第一行代码</p>
-<h2 id="看过的电影">看过的电影</h2><p>宋家王朝<br>港囧<br>辛亥革命<br>天若有情<br>我是路人甲<br>饮食男女<br>饮食男女（新）<br>重返二十岁<br>罗马假日<br>西西里的美丽传说<br>四大名捕<br>四大名捕2<br>太平轮上<br>卧虎藏龙<br>大上海<br>一个人的武林<br>庞贝末日<br>我想和你好好的<br>分手合约<br>第一次<br>天堂口<br>一路惊喜<br>心花路放<br>宫锁沉香<br>钟馗伏魔：雪妖魔灵<br>模仿游戏<br>重庆森林<br>太极<br>太极2<br>天堂电影院<br>美丽人生</p>
-<h2 id="看过的电视剧">看过的电视剧</h2><p>琅琊榜<br>好大一个家<br>京华烟云</p>
-<p>发现书没有读过几本，电影几乎快达到每周一部了，电视剧就是感觉很好的才会去看。双十一买了很多书都还没有看多少，不过相对于以前还是好一点，所以与其无聊随便看东西，不如提前把好东西都预备好，觉得自己没事就来看吧，而不是看到好东西，就想过眼云烟一样。</p>
-<h2 id="工作">工作</h2><p>今年有两份工作</p>
-<p><strong>琥珀天气</strong><br>我自学Android 之后的第一份工作（实习），公司使用很少而且很老的开源库，没有自定义View，代码混乱。并不是说我离开了吐槽公司，我在这个公司整天加班，收获多少，住的地方离得很远，整天劳累我也无力做其他的事情。当然我也并没有多少努力，最后的结果就是我被辞退。<br>第一份实习结束，我又开始找工作了，感觉也挺难找的，一份实习并没有为我加分多少，虽然面试了不少，但是在Java 基础，Android 基础上还是有欠缺，有的公司一上来就给一道算法题，就没有了然后了。</p>
-<p><strong>绿葡科技</strong><br>就是我现在的工作，是一个外包公司，也不单单是一个外包公司，还有自己的合作的项目（就是以后的升级迭代都负责），刚开始的一两个项目，进步还是挺大的，也熟悉的逻辑，使用很新很成熟的开源项目和框架，自己代码的质量也有所提高，最近的一段时间相对于比较闲，自己好像也懒散下来了。老大作为技术，这一点对做技术还是会好一点，至少技术这边不会被边缘化。自己做技术也有自己的学习空间。放任的管理就是只能自律，自我学习。</p>
-<h2 id="社交">社交</h2><p>微博：粉丝已经达到了2.5k。上半年浪费在了很多时间，下半年理性了很多，别人的微博，要有自己的判断力，然后转发。鸡汤类的基本上都取消了关注。<br>简书：2k，因为一篇关于大学生的App，被简书主页推荐了，余温一直持续到现在，粉丝一直在涨。以后非技术文章还是会在简书上写。<br>知乎：1.1k，也是一两个回答，都有一千左右个赞，现在回答少了，看的也少了，知乎的东西现在受影响的也比较多，所以就是少上。<br>微信公众号：1.1k，微信现在联系人有两百个人，有一般是不认识的吧。有公共号关注者加我的，也有我加别人的，看到别人的生活，对自己也是一个激励吧。<br>Github：几十个关注。这一年基本上什么都没有。</p>
-<h2 id="生活">生活</h2><p>多了一台魅蓝Note 2：上一部手机用了两年多，基本也废了。这台也让我体验很多的App，手机作为常用的工具，也不会天天抱着它。<br>Kindle 低配版，一直用它读了几本书，几百块不多读几本书，都亏了。<br>网易云音乐：这是几年发现最好的东西之一吧，烦躁的时候，听听歌，让自己静下来吧。<br>搬了一次家，不太顺利，不过现在环境也适合一个人静静的思考，做一些自己喜欢的使用。<br>现在也偶尔做饭，发现做饭食材的新鲜度和火候都很重要。<br>原来成长就是与自己相处，和自己相处好了，看待四周也就会好了许多。<br>原来有些东西再也回不去了，有些事情，你也不得不做。</p>
-<h2 id="认知，眼界">认知，眼界</h2><p>曾经自己认为很崇拜的人，正确的东西，后来发现不是那样。<br>曾经感觉谷歌什么都很好，后来才发现，谷歌也变成了一个大公司，很多产品并不是很好，做的很多实用并不是让人很理解。<br>三观：孔老夫子的儒家思想，几千年后一直在中国人的心中一直扎根生长，三从四德，大男子主义，女人被这个时代弱化等等。我们口口声说男人比女人强，其实都是儒家思想的表现。<br>要么赚很多很多的钱，要么读好多好多的书，要么让自己涨涨阅历，见识。<br>不要让自己局限在当前的周围人中，看看国外发生了什么，看看国外的同行人在做什么，这对以后的选择，会有很多的帮助。<br>如果你认为一个很值得假如的公司，不如提早观察观察吧，这个公司的人，产品，用户，投资人，增长速度，是否快速迭代，创始人整天在做什么，其实选公司就是在追随常创始人。</p>
+        <p>我们都知道Webview 是用来加载网页的，底层使用Webkit 来实现的。首先要在清单文件里注册网络请求权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.INTERNET"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>如果使用外部程序（浏览器）打开</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Uri uri = Uri.parse(<span class="string">"http://www.example.com"</span>);</span><br><span class="line"> Intent intent = <span class="keyword">new</span> Intent(Intent.ACTION_VIEW, uri);</span><br><span class="line"> startActivity(intent);</span><br></pre></td></tr></table></figure>
+<h2 id="如果使用WebView_来打开">如果使用WebView 来打开</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WebView webview = <span class="keyword">new</span> WebView(<span class="keyword">this</span>);</span><br><span class="line">setContentView(webview);</span><br><span class="line">webview.loadUrl(<span class="string">"http://www.zhihu.com"</span>); <span class="comment">// notice http://</span></span><br></pre></td></tr></table></figure>
+<h2 id="加载网页">加载网页</h2><p>一共有四种不同的方法，基本上一看就一目了然。可以使用字符串或者网页，设置MimeType 和编码。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span>	<span class="title">loadData</span><span class="params">(String data, String mimeType, String encoding)</span></span><br><span class="line"><span class="keyword">void</span>	<span class="title">loadDataWithBaseURL</span><span class="params">(String baseUrl, String data, String mimeType, String encoding, String historyUrl)</span></span><br><span class="line"><span class="keyword">void</span>	<span class="title">loadUrl</span><span class="params">(String url)</span></span><br><span class="line"><span class="keyword">void</span>	<span class="title">loadUrl</span><span class="params">(String url, Map&lt;String, String&gt; additionalHttpHeaders)</span></span></span><br></pre></td></tr></table></figure>
+<p>之前遇到过一个问题，比如我们有个Base Url 后面的参数需要动态来传，我们可以使用Uri 的构造器来拼凑（当然你也可以手拼字符串）。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mUrl = <span class="keyword">new</span> Uri.Builder()</span><br><span class="line">      .encodedPath(BASE_URL + <span class="string">"/user"</span>)</span><br><span class="line">      .appendQueryParameter(<span class="string">"age"</span>, age)</span><br><span class="line">      .appendQueryParameter(<span class="string">"sex"</span>, sex)</span><br><span class="line">      .appendQueryParameter(<span class="string">"token"</span>, token)</span><br><span class="line">      .build().toString();</span><br></pre></td></tr></table></figure>
+<h2 id="设置一些高级的属性（比如：JS）">设置一些高级的属性（比如：JS）</h2><p>当WebView 第一次初始化，会获得一组默认值。<br> 我们可以使用WebView.getSettings() 方法来获取Settings 对象，来自定义设置一些属性。<br>当WebView 被摧毁，调用WebView.getSettings()，将会抛出IllegalStateException。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">WebSettings webSettings = myWebView.getSettings();</span><br><span class="line">webSettings.setJavaScriptEnabled(<span class="keyword">true</span>);</span><br></pre></td></tr></table></figure>
+<p>一般会有set 和get 两组方法，有设置JS，缩放，字体大小，use-agent，保存表单数据等等其他属性。</p>
+<h2 id="监听状态">监听状态</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myWebView.setWebViewClient(<span class="keyword">new</span> WebViewClient());</span><br></pre></td></tr></table></figure>
+<p>我们可以继承WebViewClient，重写下面的一些方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">shouldOverrideUrlLoading</span><span class="params">(WebView view, String url)</span> <span class="comment">// 可以重写</span></span><br><span class="line"><span class="keyword">void</span> <span class="title">onPageStarted</span><span class="params">(WebView view, String url, Bitmap favicon)</span> <span class="comment">// 初始化一些数据</span></span><br><span class="line"><span class="keyword">void</span> <span class="title">onPageFinished</span><span class="params">(WebView view, String url)</span> <span class="comment">// 网页加载完成</span></span></span><br></pre></td></tr></table></figure>
+<p>shouldOverrideUrlLoading() 方法，我们可以设置404 页面，在js 中传输数据，在这里捕获，特殊处理。例如：在网页中打开App，就可以处理。</p>
+<p>除了上面常用的，还有拦截请求，获取的错误，重写键盘事件，认证等等。</p>
+<p>我们 也可以使用WebChromeClient，加载WebView 的一些属性，比如alert，prompt，进度条，可以让WebView 更加丰富。</p>
+<h2 id="和JS_交流">和JS 交流</h2><p><strong>在Java 代码中调用JS</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String value = <span class="string">"javascript:call()"</span>;</span><br><span class="line">mWebView.loadUrl(value);</span><br></pre></td></tr></table></figure>
+<p>除了上面这样，我们也可以给方法传出参数，进行计算。<br><strong>在JS 代码中调用Java</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function sumToJava(num1, num2) &#123;</span><br><span class="line">        window.android.onSumResult(num1 + num2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="annotation">@JavascriptInterface</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onSumResult</span><span class="params">(<span class="keyword">int</span> result)</span> </span>&#123;</span><br><span class="line">    WebViewActivity.<span class="keyword">this</span>.showToast(<span class="string">"result: "</span> + result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>需要注意的是@JavascriptInterface 需要将TargetSDK 设置为17 或者更高，而且也有安全问题。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="openscad"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showAndroidToast</span><span class="params">()</span> &#123;</span></span><br><span class="line">        window.android.showToast<span class="params">(<span class="string">"Hello Android!"</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">save</span><span class="params">()</span> &#123;</span></span><br><span class="line">        alert<span class="params">(<span class="string">"3242"</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">call</span><span class="params">(num)</span> &#123;</span></span><br><span class="line">        alert<span class="params">(num)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">sumToJava</span><span class="params">(num1, num2)</span> &#123;</span></span><br><span class="line">        window.android.onSumResult<span class="params">(num1 + num2)</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mWebView.setWebViewClient(<span class="keyword">new</span> WebViewClient());</span><br><span class="line">mWebView.addJavascriptInterface(<span class="keyword">new</span> WebAppInterface(<span class="keyword">this</span>), <span class="string">"android"</span>); <span class="comment">// js 中的名字</span></span><br><span class="line">mWebView.setWebChromeClient(<span class="keyword">new</span> WebChromeClient() &#123;&#125;);</span><br><span class="line"></span><br><span class="line">String save = <span class="string">"javascript:save()"</span>;</span><br><span class="line">String call = <span class="string">"javascript:call(\""</span> + <span class="string">"content"</span> + <span class="string">"\")"</span>;</span><br><span class="line">call = <span class="string">"javascript:sumToJava(1, 2)"</span>;</span><br><span class="line">mWebView.loadUrl(call);</span><br></pre></td></tr></table></figure>
+<p>如果我们不适用@JavascriptInterface，可以使用WebView 重写shouldOverrideUrlLoading(WebView view, String url)，将发送的链接捕获处理。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">openApp</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.location = open_app:<span class="comment">//com.android.camera;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://constgu.iteye.com/blog/1744106" target="_blank" rel="external">【原创】【源码分析】Android平台webkit组件java层代码分析 - - ITeye技术网站</a></li>
+<li><a href="http://developer.android.com/intl/zh-cn/guide/webapps/webview.html" target="_blank" rel="external">Building Web Apps in WebView - Android Developers</a></li>
+</ul>
+<ul>
+<li><a href="http://developer.android.com/intl/zh-cn/reference/android/webkit/WebSettings.html" target="_blank" rel="external">WebSettings - Android Developers</a></li>
+<li><a href="http://droidyue.com/blog/2014/09/20/interaction-between-java-and-javascript-in-android/" target="_blank" rel="external">Android中Java和JavaScript交互 - 技术小黑屋</a></li>
+<li><a href="http://kymjs.com/code/2015/05/03/01/" target="_blank" rel="external">深入讲解WebView——上 - 开源实验室-张涛</a></li>
+<li><a href="http://kymjs.com/code/2015/05/04/01/" target="_blank" rel="external">深入讲解WebView——下 - 开源实验室-张涛</a></li>
+<li><a href="http://www.pedant.cn/2014/09/10/webview-optimize-points/" target="_blank" rel="external">Android WebView开发问题及优化汇总 - 书呆子精神院</a></li>
+<li><a href="http://rensanning.iteye.com/blog/2043049" target="_blank" rel="external">Android中JavaScript和Native之间的Bridge</a></li>
+</ul>
 
       
     </div>
@@ -330,9 +357,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/总结/" rel="tag">#总结</a>
+            <a href="/tags/Android/" rel="tag">#Android</a>
           
-            <a href="/tags/生活/" rel="tag">#生活</a>
+            <a href="/tags/WebView/" rel="tag">#WebView</a>
           
         </div>
       
@@ -341,16 +368,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/02/2015-11-02-developer-website/" rel="next" title="开发者必备的网站">
-                <i class="fa fa-chevron-left"></i> 开发者必备的网站
+              <a href="/2016/01/02/android-book/" rel="next" title="Android 开发者必备的书单">
+                <i class="fa fa-chevron-left"></i> Android 开发者必备的书单
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/02/2016-01-02-android-book/" rel="prev" title="Android 开发者必备的书单">
-                Android 开发者必备的书单 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/23/reading-list_programmer_interest_ted/" rel="prev" title="每周阅读清单：程序员修炼，兴趣，TED">
+                每周阅读清单：程序员修炼，兴趣，TED <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -377,8 +404,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/26/2015-12-26-2015-summer/"
-           data-title="2015 年——懵懵懂懂，跌跌撞撞" data-url="http://tikitoo.me/2015/12/26/2015-12-26-2015-summer/">
+      <div class="ds-thread" data-thread-key="2016/01/05/android-webview-note/"
+           data-title="Android 中WebView 的使用" data-url="http://tikitoo.me/2016/01/05/android-webview-note/">
       </div>
     
   </div>
@@ -526,7 +553,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#读过的书"><span class="nav-number">1.</span> <span class="nav-text">读过的书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看过的电影"><span class="nav-number">2.</span> <span class="nav-text">看过的电影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看过的电视剧"><span class="nav-number">3.</span> <span class="nav-text">看过的电视剧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作"><span class="nav-number">4.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#社交"><span class="nav-number">5.</span> <span class="nav-text">社交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生活"><span class="nav-number">6.</span> <span class="nav-text">生活</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#认知，眼界"><span class="nav-number">7.</span> <span class="nav-text">认知，眼界</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#如果使用WebView_来打开"><span class="nav-number">1.</span> <span class="nav-text">如果使用WebView 来打开</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加载网页"><span class="nav-number">2.</span> <span class="nav-text">加载网页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置一些高级的属性（比如：JS）"><span class="nav-number">3.</span> <span class="nav-text">设置一些高级的属性（比如：JS）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#监听状态"><span class="nav-number">4.</span> <span class="nav-text">监听状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#和JS_交流"><span class="nav-number">5.</span> <span class="nav-text">和JS 交流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
