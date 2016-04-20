@@ -1,0 +1,873 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Android,Tool,工具," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Tikitoo Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。
+Vysor
+Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。
+Vector Asset
+Android Studio 在1.4 支持了Vec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这些小工具让你的Android 开发更高效（上）">
+<meta property="og:url" content="http://tikitoo.me/2016/03/20/android_develop_tools_01/index.html">
+<meta property="og:site_name" content="Tikitoo Blog">
+<meta property="og:description" content="在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。
+Vysor
+Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。
+Vector Asset
+Android Studio 在1.4 支持了Vec">
+<meta property="og:image" content="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-9a704beee150c2a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-1433b4e60b8b8e71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-9714c72797a8e3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-43298a1788b6a78a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-034b173b38d6b356.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-d0aec032399a8771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-38283da81e70dd77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-1d7ebc1e1847ec62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-f6175994f86152fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-f6a7aded4578f6f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-6f1e985193840cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-754d22d059e1c924.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-666c275c9ff35095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-5bcfe02e30b57743.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-04-20T12:49:45.707Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="这些小工具让你的Android 开发更高效（上）">
+<meta name="twitter:description" content="在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。
+Vysor
+Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。
+Vector Asset
+Android Studio 在1.4 支持了Vec">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 这些小工具让你的Android 开发更高效（上） | Tikitoo Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72517765-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?dd585a1672bc69dcafe1cab0ae54376a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tikitoo Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resources">
+          <a href="/resources" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            朋友们
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                这些小工具让你的Android 开发更高效（上）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-20T08:54:41+08:00" content="2016-03-20">
+              2016-03-20
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/20/android_develop_tools_01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/20/android_develop_tools_01/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](https://www.airpair.com/android/android-tools-every-android-developer-should-know-about)"><br>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
+<h2 id="Vysor"><a href="https://chrome.google.com/webstore/detail/vysor-beta/gidgenkbbabolejbgbpnhbimgjbffefm" target="_blank" rel="external">Vysor</a></h2><hr>
+<p>Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。<br><img src="http://upload-images.jianshu.io/upload_images/40592-9a704beee150c2a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Vector_Asset"><a href="">Vector Asset</a></h2><hr>
+<p>Android Studio 在1.4 支持了VectorAsset，所谓VectorAsset；它可以帮助你在Android 项目中添加Material Icon 和SVG 图片来作为一个Drawable 资源来使用。不过唯一一点的缺陷就是没有搜索功能，如果你想精心挑选Material Icon ，可以打来网页版<a href="https://design.google.com/icons/" target="_blank" rel="external">https://design.google.com/icons/</a> 来选择，也可以下载SVG 和Png 格式。对于VectorAsset 的好处，它的文件更小，更容易适配不同的屏幕。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1433b4e60b8b8e71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h2 id="Stetho"><a href="https://github.com/facebook/stetho" target="_blank" rel="external">Stetho</a></h2><hr>
+<p>Stetho 是一个Android 开发调试小工具，它可以让你使用Chrome Develop Tools 来可以来查看Sqlite 数据库和SharePreferences，而且可以查看网络连接的数据。在Chrome 输入框输入<strong>chrome://inspect</strong>，点击inspect 就可以开始了。如果使用OkHttp 需要添加拦截器StethoInterceptor。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-9714c72797a8e3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="OctoTree"><a href="https://github.com/buunguyen/octotree" target="_blank" rel="external">OctoTree</a></h2><hr>
+<p>OctoTree 是一个浏览器插件，它可以让你在Github 看代码时，左边栏会出现一个树状结构，就像我们在IDE 一样。当我们看一个项目的结构，或者想看具体的某个文件，这样就会很方便。<br><img src="http://upload-images.jianshu.io/upload_images/40592-43298a1788b6a78a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Chrome_ADB"><a href="https://chrome.google.com/webstore/detail/chromeadb/fhdoijgfljahinnpbolfdimpcfoicmnm/related" target="_blank" rel="external">Chrome ADB</a></h2><hr>
+<p>Chrome ADB 是一个使用Chrome 来调试Android 的小工具，它除了提供了安装，卸载，清理数据的基本功能，而且还提供了主页，返回，锁屏的虚拟键功能，也可以看各个应用占用的内存（不得不点名批评一下微信，关闭都还占用100M 内存，不知道你要干嘛）。它还有Android 的App，两者交互一定更有意思。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-034b173b38d6b356.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="TinyPng"><a href="https://tinypng.com/" target="_blank" rel="external">TinyPng</a></h2><hr>
+<p>TinyPng 是一个图片压缩工具，可能有些人感觉这个工具应该给设计师使用，我觉得也是。不过有些时候，设计师给你出了个1920* 1080 的启动页，一张图片，1M 左右，我也是泪奔了，感觉设计师说话的时间，估计我们都压缩完了，自己动手，丰衣足食。而且它还提供了API，对不同语言都还有提供了插件，比如Java 就提供了Maven 的支持。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-d0aec032399a8771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="PostMan"><a href="https://www.getpostman.com/" target="_blank" rel="external">PostMan</a></h2><hr>
+<p>PostMan 是一个API 调试工具，它提供Chrome App 和Mac App，除了提供基本的API 测试功能， 它还可以添加各种的Auth 认证，响应结果可以选择不同类型，比如HTML，JSON 等，可以设置通用的Header，还可以将之前测试的添加到一个集合，而且也可以同步到服务器，而且最近还添加了团队服务，想想服务器端写完测试你就能看到结果，而不是给你API 文档（当然API 文档还是要有的），这画面太美，我不敢想象。当然它的功能也远远不止这些，它还有专业版，想尝试更多的东西可以体验一下。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-38283da81e70dd77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Genymotion_虚拟机"><a href="https://www.genymotion.com/#!/" target="_blank" rel="external">Genymotion 虚拟机</a></h2><hr>
+<p>刚开始做开发的时候，每次使用官方的虚拟机，都想吐槽一下，但是发现了Genymotion 之后，这一切都变化了，它的速度几乎可以和真机媲美了，当然如果有真机，当然还是推荐使用真机测试。据说官方模拟器2.0 很快，不知道是不是又吹牛逼。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1d7ebc1e1847ec62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Json2POJO"><a href="http://www.jsonschema2pojo.org/" target="_blank" rel="external">Json2POJO</a></h2><hr>
+<p>Json2POJO 是可以将一个Json 字符串转换成Java 的POJO 类的网页工具，而且可以选择转换器，比如我们使用Retrofit 可以选择Jackson，Gson，而且可以选择重写get，set 方法，还有hashcode，equals 和toString 方法，可以省去了不少手写的时间。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6175994f86152fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Android_Pixel"><a href="http://androidpixels.net/" target="_blank" rel="external">Android Pixel</a></h2><hr>
+<p>AndroidPixel 是一个简单的将不同的分辨率的换算工具，只要你有一个尺寸的大小，其他的尺寸大小就可以得出，当然dp 这样的单位，可以解决一部分问题，但是大多还要需要微调，这时AndroidPixel 就起到了作用。这个工具来自上一个公司同事告诉我的。</p>
+<h2 id="Android_Arsenal"><a href="http://android-arsenal.com/" target="_blank" rel="external">Android Arsenal</a></h2><hr>
+<p>Android Arsenal 主要是推荐Github 上一些流行的Android 开源项目，基本上最近热门的Android 开源项目都会出现在这里，它还对不同类库进行了分类。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6a7aded4578f6f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Codota"><a href="https://www.codota.com/" target="_blank" rel="external">Codota</a></h2><hr>
+<p>Codota 是一款Android 代码搜索工具，Codota 目前已经收录超过七百万精品代码实例；具体的详细介绍请看文章《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，而且发现好的代码段，可以自己收藏。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6f1e985193840cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="AndroidAssetStudio"><a href="http://romannurik.github.io/AndroidAssetStudio/index.html" target="_blank" rel="external">AndroidAssetStudio</a></h2><hr>
+<p>Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。<br><img src="http://upload-images.jianshu.io/upload_images/40592-754d22d059e1c924.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="WiFi_ADB"><a href="https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb&amp;hl=zh_CN" target="_blank" rel="external">WiFi ADB</a></h2><hr>
+<p>WiFi ADB 是一个通过无线网络来使电脑和手机连接的手机App（可以去Google Play 搜索类似的），当我们做测试的时候，只需在手机上打开，电脑只需在命令行输入 <code>adb connect xxx.xxx.xxx.xxx:5555</code>，电脑可以连接手机，就可以通过无线网络来调试开发的应用。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-666c275c9ff35095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="ES_Explorer"><a href="http://www.estrongs.com/" target="_blank" rel="external">ES Explorer</a></h2><hr>
+<p>ES Explorer 是一款文件管理器，但实际它又不仅仅是一款文件管理器，在获得Root 之后，它的功能更强大了，它可以浏览受限制的文件目录；而且提供了一系列小工具，比如下载器；还有集成了众多云储存服务。<br><img src="http://upload-images.jianshu.io/upload_images/40592-5bcfe02e30b57743.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>是不是感觉好多都没有提到，点击下方关注我的公众号，查看下篇吧。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学(AndroidMate)的公众号，更多分享..."></p>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/Tool/" rel="tag">#Tool</a>
+          
+            <a href="/tags/工具/" rel="tag">#工具</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/19/android_handler_looper/" rel="next" title="Android 中 Handler，Looper，HandlerThread 的使用">
+                <i class="fa fa-chevron-left"></i> Android 中 Handler，Looper，HandlerThread 的使用
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/07/android_develop_tools_02/" rel="prev" title="这些小工具让你的Android 开发更高效（下）">
+                这些小工具让你的Android 开发更高效（下） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/20/android_develop_tools_01/"
+           data-title="这些小工具让你的Android 开发更高效（上）" data-url="http://tikitoo.me/2016/03/20/android_develop_tools_01/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww1.sinaimg.cn/mw690/68622377jw1etahntwg7pj2050050q2q.jpg"
+               alt="Tikitoo" />
+          <p class="site-author-name" itemprop="name">Tikitoo</p>
+          <p class="site-description motion-element" itemprop="description">Android 开发工程师，互联网爱好者。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lyf0306" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-douban"></i> Douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-zhihu"></i> Zhihu
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/c35153600475/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-jianshu"></i> Jianshu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vysor"><span class="nav-number">1.</span> <span class="nav-text">Vysor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vector_Asset"><span class="nav-number">2.</span> <span class="nav-text">Vector Asset</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stetho"><span class="nav-number">3.</span> <span class="nav-text">Stetho</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OctoTree"><span class="nav-number">4.</span> <span class="nav-text">OctoTree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chrome_ADB"><span class="nav-number">5.</span> <span class="nav-text">Chrome ADB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TinyPng"><span class="nav-number">6.</span> <span class="nav-text">TinyPng</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PostMan"><span class="nav-number">7.</span> <span class="nav-text">PostMan</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Genymotion_虚拟机"><span class="nav-number">8.</span> <span class="nav-text">Genymotion 虚拟机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Json2POJO"><span class="nav-number">9.</span> <span class="nav-text">Json2POJO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android_Pixel"><span class="nav-number">10.</span> <span class="nav-text">Android Pixel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android_Arsenal"><span class="nav-number">11.</span> <span class="nav-text">Android Arsenal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Codota"><span class="nav-number">12.</span> <span class="nav-text">Codota</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AndroidAssetStudio"><span class="nav-number">13.</span> <span class="nav-text">AndroidAssetStudio</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WiFi_ADB"><span class="nav-number">14.</span> <span class="nav-text">WiFi ADB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ES_Explorer"><span class="nav-number">15.</span> <span class="nav-text">ES Explorer</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tikitoo</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tikitoo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>

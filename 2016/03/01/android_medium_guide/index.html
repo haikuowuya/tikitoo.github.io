@@ -1,0 +1,866 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Android,Guide,指南," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Tikitoo Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 开发进阶指南">
+<meta property="og:url" content="http://tikitoo.me/2016/03/01/android_medium_guide/index.html">
+<meta property="og:site_name" content="Tikitoo Blog">
+<meta property="og:description" content="之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-04-19T15:53:08.902Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android 开发进阶指南">
+<meta name="twitter:description" content="之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Android 开发进阶指南 | Tikitoo Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72517765-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?dd585a1672bc69dcafe1cab0ae54376a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tikitoo Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resources">
+          <a href="/resources" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            朋友们
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android 开发进阶指南
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-01T07:22:41+08:00" content="2016-03-01">
+              2016-03-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/01/android_medium_guide/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/01/android_medium_guide/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想要写一篇文章的想法，等了一两周才开始动手。</p>
+<h2 id="新手学习遇到瓶颈">新手学习遇到瓶颈</h2><hr>
+<p>我觉得新手做的更多是重复的工作，可能接触好的项目，前一两个月会觉得学到好的东西，但是随着公司的东西慢慢熟悉，也就变成日复一日的重复劳动，然后慢慢感觉也就学习遇到了瓶颈，而一些太难的东西又不太情愿去琢磨，比如读Android 源码，你使用Handler Loopeer 感觉很巧妙，可以仔细研究一下；还有就是很多第三方开源库你使用起来很方便，如果这个时候你仔细阅读源码，也一定能感受它的设计的巧妙。因此，我多方搜集，整理出来了以下几条，有一定经验接下来要做的事。</p>
+<ul>
+<li>解决问题的能力。可能老手的遇到的Bug 可能比你写的代码都多。</li>
+<li>阅读和理解源码。新手可能就是使用API，而老手会去阅读源码，理解开源项目或者Android 系统的源码，理解他们的架构。</li>
+<li>深入理解Java 和Android 。Android 应用层的东西基本上基于Java，想要写好Android，Java 已经要过关。</li>
+<li>了解编译原理等CS基本知识。我觉得这一条是每个程序员应该必备的。比如像计算机网络（HTTP，TCP/IP），算法与数据结构。<br>下面我会分别按照这几点给大家详细讲解（其实是来看看大牛们的演讲）。</li>
+</ul>
+<h2 id="解决问题的能力">解决问题的能力</h2><hr>
+<p>我觉得这个我没有能力回答，不过之前有幸听过一个演讲，@阿拉神农 邓凡平老师在北京GDG DevFest 的一个演讲，说过你进入一个项目组，不要惧怕问题和Bug，你把很多问题解决了，你的技术也会上升到一个层次。邓老师在文中也提到了怎么学，学到什么程度，以及学什么，还专门提到多线程，网络（HTTP，TCP/IP）编程，设计模式这些基础东西，就算Android 有一天不行了，这些东西也一样会被吸收借鉴的。<br>关于演讲的内容：《Android开发进阶之旅》<br><a href="http://weibo.com/1826440077/D36AAiF2G。" target="_blank" rel="external">http://weibo.com/1826440077/D36AAiF2G。</a></p>
+<blockquote>
+<p>注：邓老师从事软件开发有十余年，之前是做底层开发，现在在做应用层的开发，他也是《深入理解Android》系列书籍的主要作者之一。</p>
+</blockquote>
+<h2 id="阅读和理解源码">阅读和理解源码</h2><hr>
+<p>这个问题我也没有多大能力去回答，也读过一些开源库的源码，像Retrofit，Volley，还有像Handler Loopeer 的机制，其他的虽然阅读过，但是没有理解太深，这也是我以后努力的方向。还有人问问什么要读源码，我想说，如果你写写XML 布局文件，会用用API，一个实习生两三个月就和你差不多了，你还有什么资历说你很有经验，知其然知其所以然说的就是这样的意思，阅读和理解源码让你更好使用API，解决问题的能力也大有提高，也有了造轮子的能力。当然了跳槽面试的时候也可以吹牛逼了。</p>
+<p>下面的两篇文章是Kaede 的博客上两篇文章，他也有自己的知乎专栏——《中二病也要开发Android》。Kaede 在文中阐述了，为什么要阅读Android 源码，以及该怎么读，还有要读哪些，对于源码接触不太多的同学有个参考，也推荐一些大牛的博客，站在巨人的肩上，有了前人的参考，也会事倍功半的。</p>
+<ul>
+<li><a href="http://kaedea.com/2016/02/08/android-about-source-code/" target="_blank" rel="external">有没有必要阅读Android源码</a><br><a href="http://kaedea.com/2016/02/08/android-about-source-code/" target="_blank" rel="external">http://kaedea.com/2016/02/08/android-about-source-code/</a></li>
+<li><a href="http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/" target="_blank" rel="external">阅读Android源码的一些姿势</a><br><a href="http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/" target="_blank" rel="external">http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/</a></li>
+</ul>
+<h2 id="深入理解Java">深入理解Java</h2><hr>
+<p>Java语言相对来说比C++ 简单很多，但是对于经常写业务代码的人，对于如何写出优雅的java代码以及如何辨别垃圾代码，还有Java的内存模型/GC，并发机制，虚拟机执行流程肯定不甚了解，因此，这个阶段，我打算大致搞清楚Java语言本身，顺便从这个角度切入编程语言本身；主要如下：</p>
+<ol>
+<li>学习如何写更好的Java 代码，《Effective Java》值得一读。</li>
+<li>什么样的Java 代码是有问题的？《Java解惑》；怎么改写代码？《重构》</li>
+<li>学习一些没有接触过的Java 高级库，NIO/AIO, concurrent/forkjoin等，有机会使用到工作过程中。  </li>
+<li>了解Java 虚拟机 《深入理解Java 虚拟机》《实战Java 虚拟机》；从这里，可以知道很多JVM 的运行原理，内存模型，class 文件格式，Java 并发原理，虚拟机执行引擎等相当多的东西；虽然说Android 的虚拟机Dalvik 和ART（ART 也许称不上虚拟机）使用的不是标准的HotSpot 但是，我相信原理都差不多。</li>
+</ol>
+<p>但是，Java平台的技术栈远非这么一点，学无止境；走到这一步，我觉得对于Java语言已经算得上掌握了，于是主要目标转向编程语言本身。</p>
+<h2 id="深入Android">深入Android</h2><hr>
+<p>这一块有很多人分享过经验，其实无非那么几点，我就简单重申一下吧。</p>
+<ol>
+<li>IPC机制，Binder和匿名共享内存等</li>
+<li>四大组件启动，工作原理</li>
+<li>View系统，绘制原理，事件分发</li>
+<li>动画框架，原理</li>
+<li>多线程机制，消息机制 AsyncTask，Thread/Handler</li>
+<li>系统启动过程，system_server启动过程</li>
+<li>Window系统，Window创建过程</li>
+<li>资源管理系统，资源加载机制等  </li>
+</ol>
+<p>《Android 开发艺术探索》这本书确实不错，适合中级程序员。个人感觉《Android 内核剖析》挺不错的，虽然有点过时了也买不到书了。  《Android 源码设计模式》，在Android 的源码中都有什么使用哪些设计模式，也让你更深入去理解源码。<br>当你搞清楚了这些，基本上你写的什么代码在Android 上层是怎么运作的都了然于胸；FrameWork 层的任何问题也拦不住你的脚步了；不过这个阶段，仅仅是了解了Android 系统Framework 层的原理，对于怎么写代码，对于语言本身，对于Android 系统底层的原理依然很迷惑，没事，已经看到了光了，一步一步来。</p>
+<p>除了Android 源码值得读的，还有第三方的开源库也是值得一读的，有的开源库甚至比官方的更加好用，比如像我们常用的Retrofit，OkHttp，Picasso，Volley，EventBus，Dagger，我们基本上都能熟悉使用，<a href="https://github.com/Trinea" target="_blank" rel="external">Trinea</a> 和一些大牛在Github 做的一个项目，专门分析了开源项目，我们可以参考着来看。</p>
+<ul>
+<li><a href="https://github.com/android-cn" target="_blank" rel="external">android-cn</a>/<a href="https://github.com/android-cn/android-open-project-analysis" target="_blank" rel="external">android-open-project-analysis</a><br><a href="https://github.com/android-cn/android-open-project-analysis" target="_blank" rel="external">https://github.com/android-cn/android-open-project-analysis</a></li>
+</ul>
+<p>我觉得新手阅读源码的姿势还是有点弱，当然站在巨人的肩膀就会事半功倍，所以看看大牛写的文章还是很~(≧▽≦)/~涨姿势的。</p>
+<h2 id="了解编译原理等CS基本知识">了解编译原理等CS基本知识</h2><hr>
+<p>推荐一下R 大的书单吧：<a href="http://zhuanlan.zhihu.com/hllvm/20130808。" target="_blank" rel="external">http://zhuanlan.zhihu.com/hllvm/20130808。</a><br>当然由于定位不一样，我肯定不会像他一样专门搞搞基语言虚拟机（主要是我没那个水平！），仅供参考；我自己目前看的几本书如下：《编程语言实现模式》《深入理解计算机系统》《SICP》《编译器设计》；然后由于在学Haskell，所以在追github上一个项目，sdiehl/write-you-a-haskell ；具体怎么做还是边走边瞧。<br>后面的我也不敢说太多，目前打算是希望深入了解Linux内核，以前看过《深度探索Linux 操作系统:系统构建和原理解析》；打算看《深入Linux内核》《Unix环境高级编程》；只要越过了浮躁期，其实目标还是很明确的；知道自己该学习什么，也知道大致该怎么做；感觉自己走在正确的路上，越来越接近那个目标，每天都充满希望。</p>
+<h2 id="参考">参考</h2><hr>
+<ul>
+<li><a href="http://blog.csdn.net/column/details/androiddept.html" target="_blank" rel="external">Android开发高手进阶教程</a><br><a href="http://blog.csdn.net/column/details/androiddept.html" target="_blank" rel="external">http://blog.csdn.net/column/details/androiddept.html</a></li>
+<li><a href="https://www.zhihu.com/question/39009692" target="_blank" rel="external">怎样的Android开发毕业生可以算达到优秀的水平？</a><br><a href="https://www.zhihu.com/question/39009692" target="_blank" rel="external">https://www.zhihu.com/question/39009692</a></li>
+<li><a href="http://blog.csdn.net/singwhatiwanna/article/details/42343847" target="_blank" rel="external">android学习路线：如何成长为高级工程师</a><br><a href="http://blog.csdn.net/singwhatiwanna/article/details/42343847" target="_blank" rel="external">http://blog.csdn.net/singwhatiwanna/article/details/42343847</a></li>
+<li><a href="https://github.com/android-cn/android-open-project-analysis/" target="_blank" rel="external">android-cn/android-open-project-analysis</a><br><a href="https://github.com/android-cn/android-open-project-analysis/" target="_blank" rel="external">https://github.com/android-cn/android-open-project-analysis/</a></li>
+</ul>
+<p>本文部分章节参考来自<a href="https://www.zhihu.com/people/tian-weishu" target="_blank" rel="external">weishu</a> 在知乎上面的回答，如果你觉得本文不错，也可以点击链接可以给打点个赞，在这里多谢了。</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/37549641/answer/83217748" target="_blank" rel="external">Android 程序猿如何继续深入的研究技术层的知识？ - weishu 的回答 - 知乎</a><br><a href="https://www.zhihu.com/question/37549641/answer/83217748" target="_blank" rel="external">https://www.zhihu.com/question/37549641/answer/83217748</a></li>
+</ul>
+<p>本篇文章能够完成，参考了weishu，邓凡平老师，kaedea，Trinea，当然也看了很多博客，在这里特别感谢他们，本人资历尚且有限，写过过程中难免会有疏漏，还请见谅。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学(AndroidMate)的公众号，更多分享..."></p>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/Guide/" rel="tag">#Guide</a>
+          
+            <a href="/tags/指南/" rel="tag">#指南</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/29/What-new-technologies-have-android/" rel="next" title="Android 开发有哪些新技术出现？">
+                <i class="fa fa-chevron-left"></i> Android 开发有哪些新技术出现？
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/14/android_asynctask_use_and_problem/" rel="prev" title="AsyncTask 的使用和注意的问题">
+                AsyncTask 的使用和注意的问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/01/android_medium_guide/"
+           data-title="Android 开发进阶指南" data-url="http://tikitoo.me/2016/03/01/android_medium_guide/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww1.sinaimg.cn/mw690/68622377jw1etahntwg7pj2050050q2q.jpg"
+               alt="Tikitoo" />
+          <p class="site-author-name" itemprop="name">Tikitoo</p>
+          <p class="site-description motion-element" itemprop="description">Android 开发工程师，互联网爱好者。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lyf0306" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-douban"></i> Douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-zhihu"></i> Zhihu
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/c35153600475/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-jianshu"></i> Jianshu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#新手学习遇到瓶颈"><span class="nav-number">1.</span> <span class="nav-text">新手学习遇到瓶颈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决问题的能力"><span class="nav-number">2.</span> <span class="nav-text">解决问题的能力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阅读和理解源码"><span class="nav-number">3.</span> <span class="nav-text">阅读和理解源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入理解Java"><span class="nav-number">4.</span> <span class="nav-text">深入理解Java</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深入Android"><span class="nav-number">5.</span> <span class="nav-text">深入Android</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#了解编译原理等CS基本知识"><span class="nav-number">6.</span> <span class="nav-text">了解编译原理等CS基本知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tikitoo</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tikitoo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>

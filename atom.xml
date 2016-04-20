@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://tikitoo.me//"/>
-  <updated>2016-01-30T04:25:47.213Z</updated>
+  <updated>2016-04-20T12:49:47.862Z</updated>
   <id>http://tikitoo.me//</id>
   
   <author>
@@ -14,6 +14,272 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[这些小工具让你的Android 开发更高效（下）]]></title>
+    <link href="http://tikitoo.me/2016/04/07/android_develop_tools_02/"/>
+    <id>http://tikitoo.me/2016/04/07/android_develop_tools_02/</id>
+    <published>2016-04-06T23:41:41.000Z</published>
+    <updated>2016-04-20T12:49:47.862Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](https://www.airpair.com/android/android-tools-every-android-developer-should-know-about)"><br>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
+<h2 id="Vysor"><a href="https://chrome.google.com/webstore/detail/vysor-beta/gidgenkbbabolejbgbpnhbimgjbffefm" target="_blank" rel="external">Vysor</a></h2><hr>
+<p>Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。<br><img src="http://upload-images.jianshu.io/upload_images/40592-9a704beee150c2a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Vector_Asset"><a href="">Vector Asset</a></h2><hr>
+<p>Android Studio 在1.4 支持了VectorAsset，所谓VectorAsset；它可以帮助你在Android 项目中添加Material Icon 和SVG 图片来作为一个Drawable 资源来使用。不过唯一一点的缺陷就是没有搜索功能，如果你想精心挑选Material Icon ，可以打来网页版<a href="https://design.google.com/icons/" target="_blank" rel="external">https://design.google.com/icons/</a> 来选择，也可以下载SVG 和Png 格式。对于VectorAsset 的好处，它的文件更小，更容易适配不同的屏幕。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1433b4e60b8b8e71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h2 id="Stetho"><a href="https://github.com/facebook/stetho" target="_blank" rel="external">Stetho</a></h2><hr>
+<p>Stetho 是一个Android 开发调试小工具，它可以让你使用Chrome Develop Tools 来可以来查看Sqlite 数据库和SharePreferences，而且可以查看网络连接的数据。在Chrome 输入框输入<strong>chrome://inspect</strong>，点击inspect 就可以开始了。如果使用OkHttp 需要添加拦截器StethoInterceptor。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-9714c72797a8e3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="OctoTree"><a href="https://github.com/buunguyen/octotree" target="_blank" rel="external">OctoTree</a></h2><hr>
+<p>OctoTree 是一个浏览器插件，它可以让你在Github 看代码时，左边栏会出现一个树状结构，就像我们在IDE 一样。当我们看一个项目的结构，或者想看具体的某个文件，这样就会很方便。<br><img src="http://upload-images.jianshu.io/upload_images/40592-43298a1788b6a78a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Chrome_ADB"><a href="https://chrome.google.com/webstore/detail/chromeadb/fhdoijgfljahinnpbolfdimpcfoicmnm/related" target="_blank" rel="external">Chrome ADB</a></h2><hr>
+<p>Chrome ADB 是一个使用Chrome 来调试Android 的小工具，它除了提供了安装，卸载，清理数据的基本功能，而且还提供了主页，返回，锁屏的虚拟键功能，也可以看各个应用占用的内存（不得不点名批评一下微信，关闭都还占用100M 内存，不知道你要干嘛）。它还有Android 的App，两者交互一定更有意思。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-034b173b38d6b356.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="TinyPng"><a href="https://tinypng.com/" target="_blank" rel="external">TinyPng</a></h2><hr>
+<p>TinyPng 是一个图片压缩工具，可能有些人感觉这个工具应该给设计师使用，我觉得也是。不过有些时候，设计师给你出了个1920* 1080 的启动页，一张图片，1M 左右，我也是泪奔了，感觉设计师说话的时间，估计我们都压缩完了，自己动手，丰衣足食。而且它还提供了API，对不同语言都还有提供了插件，比如Java 就提供了Maven 的支持。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-d0aec032399a8771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="PostMan"><a href="https://www.getpostman.com/" target="_blank" rel="external">PostMan</a></h2><hr>
+<p>PostMan 是一个API 调试工具，它提供Chrome App 和Mac App，除了提供基本的API 测试功能， 它还可以添加各种的Auth 认证，响应结果可以选择不同类型，比如HTML，JSON 等，可以设置通用的Header，还可以将之前测试的添加到一个集合，而且也可以同步到服务器，而且最近还添加了团队服务，想想服务器端写完测试你就能看到结果，而不是给你API 文档（当然API 文档还是要有的），这画面太美，我不敢想象。当然它的功能也远远不止这些，它还有专业版，想尝试更多的东西可以体验一下。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-38283da81e70dd77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Genymotion_虚拟机"><a href="https://www.genymotion.com/#!/" target="_blank" rel="external">Genymotion 虚拟机</a></h2><hr>
+<p>刚开始做开发的时候，每次使用官方的虚拟机，都想吐槽一下，但是发现了Genymotion 之后，这一切都变化了，它的速度几乎可以和真机媲美了，当然如果有真机，当然还是推荐使用真机测试。据说官方模拟器2.0 很快，不知道是不是又吹牛逼。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1d7ebc1e1847ec62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Json2POJO"><a href="http://www.jsonschema2pojo.org/" target="_blank" rel="external">Json2POJO</a></h2><hr>
+<p>Json2POJO 是可以将一个Json 字符串转换成Java 的POJO 类的网页工具，而且可以选择转换器，比如我们使用Retrofit 可以选择Jackson，Gson，而且可以选择重写get，set 方法，还有hashcode，equals 和toString 方法，可以省去了不少手写的时间。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6175994f86152fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Android_Pixel"><a href="http://androidpixels.net/" target="_blank" rel="external">Android Pixel</a></h2><hr>
+<p>AndroidPixel 是一个简单的将不同的分辨率的换算工具，只要你有一个尺寸的大小，其他的尺寸大小就可以得出，当然dp 这样的单位，可以解决一部分问题，但是大多还要需要微调，这时AndroidPixel 就起到了作用。这个工具来自上一个公司同事告诉我的。</p>
+<h2 id="Android_Arsenal"><a href="http://android-arsenal.com/" target="_blank" rel="external">Android Arsenal</a></h2><hr>
+<p>Android Arsenal 主要是推荐Github 上一些流行的Android 开源项目，基本上最近热门的Android 开源项目都会出现在这里，它还对不同类库进行了分类。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6a7aded4578f6f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Codota"><a href="https://www.codota.com/" target="_blank" rel="external">Codota</a></h2><hr>
+<p>Codota 是一款Android 代码搜索工具，Codota 目前已经收录超过七百万精品代码实例；具体的详细介绍请看文章《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，而且发现好的代码段，可以自己收藏。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6f1e985193840cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="AndroidAssetStudio"><a href="http://romannurik.github.io/AndroidAssetStudio/index.html" target="_blank" rel="external">AndroidAssetStudio</a></h2><hr>
+<p>Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。<br><img src="http://upload-images.jianshu.io/upload_images/40592-754d22d059e1c924.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="WiFi_ADB"><a href="https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb&amp;hl=zh_CN" target="_blank" rel="external">WiFi ADB</a></h2><hr>
+<p>WiFi ADB 是一个通过无线网络来使电脑和手机连接的手机App（可以去Google Play 搜索类似的），当我们做测试的时候，只需在手机上打开，电脑只需在命令行输入 <code>adb connect xxx.xxx.xxx.xxx:5555</code>，电脑可以连接手机，就可以通过无线网络来调试开发的应用。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-666c275c9ff35095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="ES_Explorer"><a href="http://www.estrongs.com/" target="_blank" rel="external">ES Explorer</a></h2><hr>
+<p>ES Explorer 是一款文件管理器，但实际它又不仅仅是一款文件管理器，在获得Root 之后，它的功能更强大了，它可以浏览受限制的文件目录；而且提供了一系列小工具，比如下载器；还有集成了众多云储存服务。<br><img src="http://upload-images.jianshu.io/upload_images/40592-5bcfe02e30b57743.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>是不是感觉好多都没有提到，点击下方关注我的公众号，查看下篇吧。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学(AndroidMate)的公众号，更多分享..."></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](ht]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+    
+      <category term="Tool" scheme="http://tikitoo.me/tags/Tool/"/>
+    
+      <category term="工具" scheme="http://tikitoo.me/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[这些小工具让你的Android 开发更高效（上）]]></title>
+    <link href="http://tikitoo.me/2016/03/20/android_develop_tools_01/"/>
+    <id>http://tikitoo.me/2016/03/20/android_develop_tools_01/</id>
+    <published>2016-03-20T00:54:41.000Z</published>
+    <updated>2016-04-20T12:49:45.707Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](https://www.airpair.com/android/android-tools-every-android-developer-should-know-about)"><br>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
+<h2 id="Vysor"><a href="https://chrome.google.com/webstore/detail/vysor-beta/gidgenkbbabolejbgbpnhbimgjbffefm" target="_blank" rel="external">Vysor</a></h2><hr>
+<p>Vysor 是一个可以将手机的屏幕投影到电脑上，当然也可以操作，当我们做分享或者演示的时候，这个工具起到了作用。<br><img src="http://upload-images.jianshu.io/upload_images/40592-9a704beee150c2a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Vector_Asset"><a href="">Vector Asset</a></h2><hr>
+<p>Android Studio 在1.4 支持了VectorAsset，所谓VectorAsset；它可以帮助你在Android 项目中添加Material Icon 和SVG 图片来作为一个Drawable 资源来使用。不过唯一一点的缺陷就是没有搜索功能，如果你想精心挑选Material Icon ，可以打来网页版<a href="https://design.google.com/icons/" target="_blank" rel="external">https://design.google.com/icons/</a> 来选择，也可以下载SVG 和Png 格式。对于VectorAsset 的好处，它的文件更小，更容易适配不同的屏幕。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1433b4e60b8b8e71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h2 id="Stetho"><a href="https://github.com/facebook/stetho" target="_blank" rel="external">Stetho</a></h2><hr>
+<p>Stetho 是一个Android 开发调试小工具，它可以让你使用Chrome Develop Tools 来可以来查看Sqlite 数据库和SharePreferences，而且可以查看网络连接的数据。在Chrome 输入框输入<strong>chrome://inspect</strong>，点击inspect 就可以开始了。如果使用OkHttp 需要添加拦截器StethoInterceptor。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-9714c72797a8e3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="OctoTree"><a href="https://github.com/buunguyen/octotree" target="_blank" rel="external">OctoTree</a></h2><hr>
+<p>OctoTree 是一个浏览器插件，它可以让你在Github 看代码时，左边栏会出现一个树状结构，就像我们在IDE 一样。当我们看一个项目的结构，或者想看具体的某个文件，这样就会很方便。<br><img src="http://upload-images.jianshu.io/upload_images/40592-43298a1788b6a78a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Chrome_ADB"><a href="https://chrome.google.com/webstore/detail/chromeadb/fhdoijgfljahinnpbolfdimpcfoicmnm/related" target="_blank" rel="external">Chrome ADB</a></h2><hr>
+<p>Chrome ADB 是一个使用Chrome 来调试Android 的小工具，它除了提供了安装，卸载，清理数据的基本功能，而且还提供了主页，返回，锁屏的虚拟键功能，也可以看各个应用占用的内存（不得不点名批评一下微信，关闭都还占用100M 内存，不知道你要干嘛）。它还有Android 的App，两者交互一定更有意思。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-034b173b38d6b356.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="TinyPng"><a href="https://tinypng.com/" target="_blank" rel="external">TinyPng</a></h2><hr>
+<p>TinyPng 是一个图片压缩工具，可能有些人感觉这个工具应该给设计师使用，我觉得也是。不过有些时候，设计师给你出了个1920* 1080 的启动页，一张图片，1M 左右，我也是泪奔了，感觉设计师说话的时间，估计我们都压缩完了，自己动手，丰衣足食。而且它还提供了API，对不同语言都还有提供了插件，比如Java 就提供了Maven 的支持。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-d0aec032399a8771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="PostMan"><a href="https://www.getpostman.com/" target="_blank" rel="external">PostMan</a></h2><hr>
+<p>PostMan 是一个API 调试工具，它提供Chrome App 和Mac App，除了提供基本的API 测试功能， 它还可以添加各种的Auth 认证，响应结果可以选择不同类型，比如HTML，JSON 等，可以设置通用的Header，还可以将之前测试的添加到一个集合，而且也可以同步到服务器，而且最近还添加了团队服务，想想服务器端写完测试你就能看到结果，而不是给你API 文档（当然API 文档还是要有的），这画面太美，我不敢想象。当然它的功能也远远不止这些，它还有专业版，想尝试更多的东西可以体验一下。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-38283da81e70dd77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Genymotion_虚拟机"><a href="https://www.genymotion.com/#!/" target="_blank" rel="external">Genymotion 虚拟机</a></h2><hr>
+<p>刚开始做开发的时候，每次使用官方的虚拟机，都想吐槽一下，但是发现了Genymotion 之后，这一切都变化了，它的速度几乎可以和真机媲美了，当然如果有真机，当然还是推荐使用真机测试。据说官方模拟器2.0 很快，不知道是不是又吹牛逼。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-1d7ebc1e1847ec62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Json2POJO"><a href="http://www.jsonschema2pojo.org/" target="_blank" rel="external">Json2POJO</a></h2><hr>
+<p>Json2POJO 是可以将一个Json 字符串转换成Java 的POJO 类的网页工具，而且可以选择转换器，比如我们使用Retrofit 可以选择Jackson，Gson，而且可以选择重写get，set 方法，还有hashcode，equals 和toString 方法，可以省去了不少手写的时间。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6175994f86152fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Android_Pixel"><a href="http://androidpixels.net/" target="_blank" rel="external">Android Pixel</a></h2><hr>
+<p>AndroidPixel 是一个简单的将不同的分辨率的换算工具，只要你有一个尺寸的大小，其他的尺寸大小就可以得出，当然dp 这样的单位，可以解决一部分问题，但是大多还要需要微调，这时AndroidPixel 就起到了作用。这个工具来自上一个公司同事告诉我的。</p>
+<h2 id="Android_Arsenal"><a href="http://android-arsenal.com/" target="_blank" rel="external">Android Arsenal</a></h2><hr>
+<p>Android Arsenal 主要是推荐Github 上一些流行的Android 开源项目，基本上最近热门的Android 开源项目都会出现在这里，它还对不同类库进行了分类。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-f6a7aded4578f6f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="Codota"><a href="https://www.codota.com/" target="_blank" rel="external">Codota</a></h2><hr>
+<p>Codota 是一款Android 代码搜索工具，Codota 目前已经收录超过七百万精品代码实例；具体的详细介绍请看文章《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，而且发现好的代码段，可以自己收藏。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6f1e985193840cfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="AndroidAssetStudio"><a href="http://romannurik.github.io/AndroidAssetStudio/index.html" target="_blank" rel="external">AndroidAssetStudio</a></h2><hr>
+<p>Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。<br><img src="http://upload-images.jianshu.io/upload_images/40592-754d22d059e1c924.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="WiFi_ADB"><a href="https://play.google.com/store/apps/details?id=com.ttxapps.wifiadb&amp;hl=zh_CN" target="_blank" rel="external">WiFi ADB</a></h2><hr>
+<p>WiFi ADB 是一个通过无线网络来使电脑和手机连接的手机App（可以去Google Play 搜索类似的），当我们做测试的时候，只需在手机上打开，电脑只需在命令行输入 <code>adb connect xxx.xxx.xxx.xxx:5555</code>，电脑可以连接手机，就可以通过无线网络来调试开发的应用。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-666c275c9ff35095.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="ES_Explorer"><a href="http://www.estrongs.com/" target="_blank" rel="external">ES Explorer</a></h2><hr>
+<p>ES Explorer 是一款文件管理器，但实际它又不仅仅是一款文件管理器，在获得Root 之后，它的功能更强大了，它可以浏览受限制的文件目录；而且提供了一系列小工具，比如下载器；还有集成了众多云储存服务。<br><img src="http://upload-images.jianshu.io/upload_images/40592-5bcfe02e30b57743.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>是不是感觉好多都没有提到，点击下方关注我的公众号，查看下篇吧。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学(AndroidMate)的公众号，更多分享..."></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](ht]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+    
+      <category term="Tool" scheme="http://tikitoo.me/tags/Tool/"/>
+    
+      <category term="工具" scheme="http://tikitoo.me/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android 中 Handler，Looper，HandlerThread 的使用]]></title>
+    <link href="http://tikitoo.me/2016/03/19/android_handler_looper/"/>
+    <id>http://tikitoo.me/2016/03/19/android_handler_looper/</id>
+    <published>2016-03-19T03:23:41.000Z</published>
+    <updated>2016-04-20T12:48:36.080Z</updated>
+    <content type="html"><![CDATA[<p>Android 中非UI 线程（WorkThread）不能操作UI 线程（MainThread），那线程之间通信我们该怎么办？在Java 我们可以通过多线程来处理，但是Java 的多线程晦涩难懂，所以Android 的引入了Handler，Looper 的机制来处理线程间的通信。</p>
+<p>其实网上有很多人都写过Handler，Looper 的教程，但是看别人的东西就像看过猪跑，和吃过猪肉的感觉完全不一样（这个恰当可能不太恰当，各位还是不要对号入座），所以我就自己来重新梳理梳理以便于自己理解更加深刻。</p>
+<p>先来看看他们的工作流程吧<br><img src="http://ww4.sinaimg.cn/large/68622377gw1f33gi2ukg1j209l069dgd.jpg" alt="图片来自http://anany.me/2015/04/12/handler/"></p>
+<p>handler 发送Message 给MessageQueue，Looper 来轮询消息，如果有Message，然后再发送给Handler，Handler 拿到消息就可以所在的线程执行了。</p>
+<p>一般就两种情况，MainThread 发送给WorkThread 和WorkThread 发送给MainThread，特别常用的情景就是我们在WorkThread 执行一些耗时的操作（网络请求，文件读写），返回的数据来更新MainThread，下面写个例子看一下。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> WHAT_ONE = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">Handler mMainHandler = <span class="keyword">new</span> Handler() &#123;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">            <span class="keyword">case</span> WHAT_ONE:</span><br><span class="line">                Toast.makeText(HandlerActivity.<span class="keyword">this</span>, <span class="string">"what one"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">super</span>.handleMessage(msg);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sendToMain</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    runOnUiThread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">        <span class="annotation">@Override</span></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            mMainHandler.sendEmptyMessage(WHAT_ONE);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在主线程创建一个Handler 重写handlerMessage(Message msg) 方法，然后使用<br>handler 发送消息给Handler，在handlerMessage() 来处理，如果发送很多消息它是怎么区别的，其实Message 对象中有个what 字段，比这这个例子sendEmptyMessage() 就是发送一个空消息，只需要传一个what 字段，以便于Handler 接收消息来区分，发送消息这一块下面会详细讲。</p>
+<hr>
+<p>另一种就是WorkThread 发送给MainThread<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> LooperThread looperThread;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LooperThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> Handler mWorkHandler;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.run();</span><br><span class="line">        Looper.prepare();</span><br><span class="line">        mWorkHandler = <span class="keyword">new</span> Handler() &#123;</span><br><span class="line">            <span class="annotation">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">handleMessage</span><span class="params">(Message msg)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">switch</span> (msg.what) &#123;</span><br><span class="line">                    <span class="keyword">case</span> WHAT_ONE:</span><br><span class="line">                        mMainHandler.sendEmptyMessage(msg.what);</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">super</span>.handleMessage(msg);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        Looper.loop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sendToWork</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    looperThread = <span class="keyword">new</span> LooperThread();</span><br><span class="line">    looperThread.start();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sendToWork2</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (looperThread.mWorkHandler != <span class="keyword">null</span>) &#123;</span><br><span class="line">        looperThread.mWorkHandler.sendEmptyMessage(WHAT_ONE);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这个和上面的感觉有点不同，我们会创建一个线程，在run() 中创建Handler，然而发现会多调用了两个方法Looper.prepare() 和Looper.loop() 这两个方法是干什么用的。但发现上面第一个并没有调用这两个方法，其实并不是没有调用，只是在它的父类中ActivityThread 的main() 方法已经调用了。接下来就看看这两个方法到底干了什么。</p>
+<h3 id="Looper-prepare()">Looper.prepare()</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">prepare</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    prepare(<span class="keyword">true</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">prepare</span><span class="params">(<span class="keyword">boolean</span> quitAllowed)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (sThreadLocal.get() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"Only one Looper may be created per thread"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    sThreadLocal.set(<span class="keyword">new</span> Looper(quitAllowed));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// sThreadLocal.get() will return null unless you've called prepare().</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> ThreadLocal&lt;Looper&gt; sThreadLocal = <span class="keyword">new</span> ThreadLocal&lt;Looper&gt;();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实例化Looper</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">Looper</span><span class="params">(<span class="keyword">boolean</span> quitAllowed)</span> </span>&#123;</span><br><span class="line">    mQueue = <span class="keyword">new</span> MessageQueue(quitAllowed);</span><br><span class="line">    mThread = Thread.currentThread();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>会发现将实例化一个Looper 传给给sThreadLocal，只有sThreadLocal 为空的时候，才会传一个Looper那么就说sThreadLocal 只有一个Looper，如果在WorkThread 多次调用或者不调用都会报<strong>Only one Looper may be created per thread</strong>。<br>而sThreadLocal 在全局已经初始化了，ThreadLocal 允许我们创建只能一个当前线程属于的对象当前读写的变量，就算其他线程中调用，也执行get 和set 方法，也无法获取这个的值，因此ThreadLocal 和Looper 是一一对应的。</p>
+<p>Looper 实例化会创建一个MessageQueue 对象，它主要就是消息队列，来存储消息的。</p>
+<h3 id="Looper-loop()">Looper.loop()</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="annotation">@Nullable</span> <span class="function">Looper <span class="title">myLooper</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sThreadLocal.get();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">final</span> Looper me = myLooper();</span><br><span class="line">    <span class="keyword">if</span> (me == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"No Looper; Looper.prepare() wasn't called on this thread."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">final</span> MessageQueue queue = me.mQueue;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (;;) &#123;</span><br><span class="line">        Message msg = queue.next(); <span class="comment">// might block</span></span><br><span class="line">        <span class="keyword">if</span> (msg == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">// No message indicates that the message queue is quitting.</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 最后会调用handlermMessage()</span></span><br><span class="line">        msg.target.dispatchMessage(msg);</span><br><span class="line"></span><br><span class="line">        msg.recycleUnchecked();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Handle system messages here.</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchMessage</span><span class="params">(Message msg)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (msg.callback != <span class="keyword">null</span>) &#123;</span><br><span class="line">        handleCallback(msg);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (mCallback != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (mCallback.handleMessage(msg)) &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        handleMessage(msg);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>看上面的loop() 的代码，我把一些不管紧要的代码都去掉了，核心代码基本上就这些了，首先我们会调用myLooper() 的方法，获取Looper 对象，然后再获取MessagQueue，然后就开始轮训了，获取Message，target 字段就是Handler 对象，因为每次发送消息都会讲当前的Handler 传送过去，dispatchMessage 最后调用handleMessage()。然后我们就在handleMessage() 根据what 字段来识别不同地方发送消息，然后做出相应的动作。</p>
+<p>更深入的可以阅读下面的参考。</p>
+<h2 id="参考">参考</h2><hr>
+<p><a href="http://anany.me/2015/04/12/handler/#" target="_blank" rel="external">http://anany.me/2015/04/12/handler/#</a><br><a href="http://developer.android.com/intl/zh-cn/reference/android/os/Handler.html" target="_blank" rel="external">http://developer.android.com/intl/zh-cn/reference/android/os/Handler.html</a><br><a href="http://blog.dreamtobe.cn/2016/03/11/android_handler_looper" target="_blank" rel="external">http://blog.dreamtobe.cn/2016/03/11/android_handler_looper</a><br><a href="https://hit-alibaba.github.io/interview/Android/basic/Android-handler-thread-looper.html" target="_blank" rel="external">https://hit-alibaba.github.io/interview/Android/basic/Android-handler-thread-looper.html</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Android 中非UI 线程（WorkThread）不能操作UI 线程（MainThread），那线程之间通信我们该怎么办？在Java 我们可以通过多线程来处理，但是Java 的多线程晦涩难懂，所以Android 的引入了Handler，Looper 的机制来处理线程间的]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[AsyncTask 的使用和注意的问题]]></title>
+    <link href="http://tikitoo.me/2016/03/14/android_asynctask_use_and_problem/"/>
+    <id>http://tikitoo.me/2016/03/14/android_asynctask_use_and_problem/</id>
+    <published>2016-03-14T00:05:41.000Z</published>
+    <updated>2016-04-19T15:17:21.543Z</updated>
+    <content type="html"><![CDATA[<p>AsyncTask 算是我们比较经常使用的一个系统类了，我们知道费UI 线程是不能更新UI 的，当我们做一些耗时的操作只能借助Handler，Looper 来实现，比如我们从网络下载东西，想要进度条来更新，自己实现会很麻烦。然而使用AsyncTask 处理起来会非常轻松。<br>它来做一些异步处理的请求，然后可以很轻松地更新UI。<br>它是一个抽象类，就说明它是不具体的，我们要使用它，肯定要实现他的抽象方法。<br>我们继承会发现AsyncTask<params, progress,="" result=""> 枚举有三个不同的变量，这个我们可以跟着他的不同的方法的参数和返回值来一块看会更加清晰。</params,></p>
+<p>onPreExecute()：在执行任务之前可以做一些初始化操作。<br>Result doInBackground(Params…)：唯一的一个抽象方法，我们可以在这个方法执行耗时的操作。然后可以来更新UI。<br>onPostExecute(Result result())：doInBackground() 方法的返回值会传给方法的参数。doInBackground() 执行完执行此方法。<br>publishProgress(Progress… values)：在doInBackground() 方法中调用此方法，比如下载东西会随着下载的进度一直变化，将参数传给onProgressUpdate 方法，可以在onProgressUpdate 方法中更新的UI。<br>onProgressUpdate(Progress… values)：更新UI。<br>execute(Params…)：最后调用此方法就开始执行了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Task</span> <span class="keyword">extends</span> <span class="title">AsyncTask</span>&lt;<span class="title">String</span>, <span class="title">Integer</span>, <span class="title">Bitmap</span>&gt;() </span>&#123;</span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPreExecute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onPreExecute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> Bitmap <span class="title">doInBackground</span><span class="params">(String... params)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                Thread.sleep(<span class="number">500</span>);</span><br><span class="line">                publishProgress(i);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">                Thread.interrupted();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPostExecute</span><span class="params">(Bitmap bitmap)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onPostExecute(bitmap);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onProgressUpdate</span><span class="params">(Integer... values)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onProgressUpdate(values);</span><br><span class="line">        AsyncActivity.mProgressBar.setProgress(values[<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="annotation">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCancelled</span><span class="params">(Bitmap bitmap)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCancelled(bitmap);</span><br><span class="line">        bitmap.recycle();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Task().execute(str);</span><br></pre></td></tr></table></figure>
+<p>cancel(boolean)：可以随时取消任务。<br>isCancelled()：判断任务是否取消<br>onCancelled(Result result)：doInBackground() 执行完成后，并且cancel() 之后执行。</p>
+<p>除了doInBackground() 方法，其他都是执行在UI 线程的。而doInBackground() 执行完可以来更新UI。</p>
+<p>AsyncTask 中几个重要的概念<br>AsyncTask 的原理是当多个任务，有一个默认的线程池SerialExecutor 来执行异步任务，然后在 子线程执行doInBackground 方法，<br>AsyncTaskResult 一个持有AsyncTaskResult 持有AsyncTask，Result，然后通过Handler 发送AsyncTaskResult  对象再来更新UI 线程。<br>FutureTask ：异步任务的取消和获取结果<br>ThreadPoolExecutor：默认的一个线程池，你也可以使用executeOnExecutor() 方法传入自定义的线程池。</p>
+<h2 id="问题以及缺陷">问题以及缺陷</h2><p>默认线程池设定的又最大线程数，一旦超出（默认为128）再提交任务，将会抛出RejectedExecutionException。<br>内存泄露：AsyncTask 使用线程池来处，线程的声明周期是很不稳定，而且还要用来更新UI，一旦Activity 被destoy，将会造成内存泄露。所以使用时要讲持有对象使用弱引用。</p>
+<h2 id="参考">参考</h2><hr>
+<p><a href="http://blog.csdn.net/guolin_blog/article/details/11711405" target="_blank" rel="external">http://blog.csdn.net/guolin_blog/article/details/11711405</a><br><a href="http://www.cnblogs.com/dolphin0520/p/3949310.html" target="_blank" rel="external">http://www.cnblogs.com/dolphin0520/p/3949310.html</a><br><a href="http://blog.csdn.net/amurocrash/article/details/50876229" target="_blank" rel="external">http://blog.csdn.net/amurocrash/article/details/50876229</a><br><a href="http://developer.android.com/intl/zh-cn/reference/android/os/AsyncTask.html" target="_blank" rel="external">http://developer.android.com/intl/zh-cn/reference/android/os/AsyncTask.html</a><br><a href="http://www.cnblogs.com/dolphin0520/p/3949310.html" target="_blank" rel="external">http://www.cnblogs.com/dolphin0520/p/3949310.html</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>AsyncTask 算是我们比较经常使用的一个系统类了，我们知道费UI 线程是不能更新UI 的，当我们做一些耗时的操作只能借助Handler，Looper 来实现，比如我们从网络下载东西，想要进度条来更新，自己实现会很麻烦。然而使用AsyncTask 处理起来会非常轻松。<]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Android 开发进阶指南]]></title>
+    <link href="http://tikitoo.me/2016/03/01/android_medium_guide/"/>
+    <id>http://tikitoo.me/2016/03/01/android_medium_guide/</id>
+    <published>2016-02-29T23:22:41.000Z</published>
+    <updated>2016-04-19T15:53:08.902Z</updated>
+    <content type="html"><![CDATA[<p>之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想要写一篇文章的想法，等了一两周才开始动手。</p>
+<h2 id="新手学习遇到瓶颈">新手学习遇到瓶颈</h2><hr>
+<p>我觉得新手做的更多是重复的工作，可能接触好的项目，前一两个月会觉得学到好的东西，但是随着公司的东西慢慢熟悉，也就变成日复一日的重复劳动，然后慢慢感觉也就学习遇到了瓶颈，而一些太难的东西又不太情愿去琢磨，比如读Android 源码，你使用Handler Loopeer 感觉很巧妙，可以仔细研究一下；还有就是很多第三方开源库你使用起来很方便，如果这个时候你仔细阅读源码，也一定能感受它的设计的巧妙。因此，我多方搜集，整理出来了以下几条，有一定经验接下来要做的事。</p>
+<ul>
+<li>解决问题的能力。可能老手的遇到的Bug 可能比你写的代码都多。</li>
+<li>阅读和理解源码。新手可能就是使用API，而老手会去阅读源码，理解开源项目或者Android 系统的源码，理解他们的架构。</li>
+<li>深入理解Java 和Android 。Android 应用层的东西基本上基于Java，想要写好Android，Java 已经要过关。</li>
+<li>了解编译原理等CS基本知识。我觉得这一条是每个程序员应该必备的。比如像计算机网络（HTTP，TCP/IP），算法与数据结构。<br>下面我会分别按照这几点给大家详细讲解（其实是来看看大牛们的演讲）。</li>
+</ul>
+<h2 id="解决问题的能力">解决问题的能力</h2><hr>
+<p>我觉得这个我没有能力回答，不过之前有幸听过一个演讲，@阿拉神农 邓凡平老师在北京GDG DevFest 的一个演讲，说过你进入一个项目组，不要惧怕问题和Bug，你把很多问题解决了，你的技术也会上升到一个层次。邓老师在文中也提到了怎么学，学到什么程度，以及学什么，还专门提到多线程，网络（HTTP，TCP/IP）编程，设计模式这些基础东西，就算Android 有一天不行了，这些东西也一样会被吸收借鉴的。<br>关于演讲的内容：《Android开发进阶之旅》<br><a href="http://weibo.com/1826440077/D36AAiF2G。" target="_blank" rel="external">http://weibo.com/1826440077/D36AAiF2G。</a></p>
+<blockquote>
+<p>注：邓老师从事软件开发有十余年，之前是做底层开发，现在在做应用层的开发，他也是《深入理解Android》系列书籍的主要作者之一。</p>
+</blockquote>
+<h2 id="阅读和理解源码">阅读和理解源码</h2><hr>
+<p>这个问题我也没有多大能力去回答，也读过一些开源库的源码，像Retrofit，Volley，还有像Handler Loopeer 的机制，其他的虽然阅读过，但是没有理解太深，这也是我以后努力的方向。还有人问问什么要读源码，我想说，如果你写写XML 布局文件，会用用API，一个实习生两三个月就和你差不多了，你还有什么资历说你很有经验，知其然知其所以然说的就是这样的意思，阅读和理解源码让你更好使用API，解决问题的能力也大有提高，也有了造轮子的能力。当然了跳槽面试的时候也可以吹牛逼了。</p>
+<p>下面的两篇文章是Kaede 的博客上两篇文章，他也有自己的知乎专栏——《中二病也要开发Android》。Kaede 在文中阐述了，为什么要阅读Android 源码，以及该怎么读，还有要读哪些，对于源码接触不太多的同学有个参考，也推荐一些大牛的博客，站在巨人的肩上，有了前人的参考，也会事倍功半的。</p>
+<ul>
+<li><a href="http://kaedea.com/2016/02/08/android-about-source-code/" target="_blank" rel="external">有没有必要阅读Android源码</a><br><a href="http://kaedea.com/2016/02/08/android-about-source-code/" target="_blank" rel="external">http://kaedea.com/2016/02/08/android-about-source-code/</a></li>
+<li><a href="http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/" target="_blank" rel="external">阅读Android源码的一些姿势</a><br><a href="http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/" target="_blank" rel="external">http://kaedea.com/2016/02/09/android-about-source-code-how-to-read/</a></li>
+</ul>
+<h2 id="深入理解Java">深入理解Java</h2><hr>
+<p>Java语言相对来说比C++ 简单很多，但是对于经常写业务代码的人，对于如何写出优雅的java代码以及如何辨别垃圾代码，还有Java的内存模型/GC，并发机制，虚拟机执行流程肯定不甚了解，因此，这个阶段，我打算大致搞清楚Java语言本身，顺便从这个角度切入编程语言本身；主要如下：</p>
+<ol>
+<li>学习如何写更好的Java 代码，《Effective Java》值得一读。</li>
+<li>什么样的Java 代码是有问题的？《Java解惑》；怎么改写代码？《重构》</li>
+<li>学习一些没有接触过的Java 高级库，NIO/AIO, concurrent/forkjoin等，有机会使用到工作过程中。  </li>
+<li>了解Java 虚拟机 《深入理解Java 虚拟机》《实战Java 虚拟机》；从这里，可以知道很多JVM 的运行原理，内存模型，class 文件格式，Java 并发原理，虚拟机执行引擎等相当多的东西；虽然说Android 的虚拟机Dalvik 和ART（ART 也许称不上虚拟机）使用的不是标准的HotSpot 但是，我相信原理都差不多。</li>
+</ol>
+<p>但是，Java平台的技术栈远非这么一点，学无止境；走到这一步，我觉得对于Java语言已经算得上掌握了，于是主要目标转向编程语言本身。</p>
+<h2 id="深入Android">深入Android</h2><hr>
+<p>这一块有很多人分享过经验，其实无非那么几点，我就简单重申一下吧。</p>
+<ol>
+<li>IPC机制，Binder和匿名共享内存等</li>
+<li>四大组件启动，工作原理</li>
+<li>View系统，绘制原理，事件分发</li>
+<li>动画框架，原理</li>
+<li>多线程机制，消息机制 AsyncTask，Thread/Handler</li>
+<li>系统启动过程，system_server启动过程</li>
+<li>Window系统，Window创建过程</li>
+<li>资源管理系统，资源加载机制等  </li>
+</ol>
+<p>《Android 开发艺术探索》这本书确实不错，适合中级程序员。个人感觉《Android 内核剖析》挺不错的，虽然有点过时了也买不到书了。  《Android 源码设计模式》，在Android 的源码中都有什么使用哪些设计模式，也让你更深入去理解源码。<br>当你搞清楚了这些，基本上你写的什么代码在Android 上层是怎么运作的都了然于胸；FrameWork 层的任何问题也拦不住你的脚步了；不过这个阶段，仅仅是了解了Android 系统Framework 层的原理，对于怎么写代码，对于语言本身，对于Android 系统底层的原理依然很迷惑，没事，已经看到了光了，一步一步来。</p>
+<p>除了Android 源码值得读的，还有第三方的开源库也是值得一读的，有的开源库甚至比官方的更加好用，比如像我们常用的Retrofit，OkHttp，Picasso，Volley，EventBus，Dagger，我们基本上都能熟悉使用，<a href="https://github.com/Trinea" target="_blank" rel="external">Trinea</a> 和一些大牛在Github 做的一个项目，专门分析了开源项目，我们可以参考着来看。</p>
+<ul>
+<li><a href="https://github.com/android-cn" target="_blank" rel="external">android-cn</a>/<a href="https://github.com/android-cn/android-open-project-analysis" target="_blank" rel="external">android-open-project-analysis</a><br><a href="https://github.com/android-cn/android-open-project-analysis" target="_blank" rel="external">https://github.com/android-cn/android-open-project-analysis</a></li>
+</ul>
+<p>我觉得新手阅读源码的姿势还是有点弱，当然站在巨人的肩膀就会事半功倍，所以看看大牛写的文章还是很~(≧▽≦)/~涨姿势的。</p>
+<h2 id="了解编译原理等CS基本知识">了解编译原理等CS基本知识</h2><hr>
+<p>推荐一下R 大的书单吧：<a href="http://zhuanlan.zhihu.com/hllvm/20130808。" target="_blank" rel="external">http://zhuanlan.zhihu.com/hllvm/20130808。</a><br>当然由于定位不一样，我肯定不会像他一样专门搞搞基语言虚拟机（主要是我没那个水平！），仅供参考；我自己目前看的几本书如下：《编程语言实现模式》《深入理解计算机系统》《SICP》《编译器设计》；然后由于在学Haskell，所以在追github上一个项目，sdiehl/write-you-a-haskell ；具体怎么做还是边走边瞧。<br>后面的我也不敢说太多，目前打算是希望深入了解Linux内核，以前看过《深度探索Linux 操作系统:系统构建和原理解析》；打算看《深入Linux内核》《Unix环境高级编程》；只要越过了浮躁期，其实目标还是很明确的；知道自己该学习什么，也知道大致该怎么做；感觉自己走在正确的路上，越来越接近那个目标，每天都充满希望。</p>
+<h2 id="参考">参考</h2><hr>
+<ul>
+<li><a href="http://blog.csdn.net/column/details/androiddept.html" target="_blank" rel="external">Android开发高手进阶教程</a><br><a href="http://blog.csdn.net/column/details/androiddept.html" target="_blank" rel="external">http://blog.csdn.net/column/details/androiddept.html</a></li>
+<li><a href="https://www.zhihu.com/question/39009692" target="_blank" rel="external">怎样的Android开发毕业生可以算达到优秀的水平？</a><br><a href="https://www.zhihu.com/question/39009692" target="_blank" rel="external">https://www.zhihu.com/question/39009692</a></li>
+<li><a href="http://blog.csdn.net/singwhatiwanna/article/details/42343847" target="_blank" rel="external">android学习路线：如何成长为高级工程师</a><br><a href="http://blog.csdn.net/singwhatiwanna/article/details/42343847" target="_blank" rel="external">http://blog.csdn.net/singwhatiwanna/article/details/42343847</a></li>
+<li><a href="https://github.com/android-cn/android-open-project-analysis/" target="_blank" rel="external">android-cn/android-open-project-analysis</a><br><a href="https://github.com/android-cn/android-open-project-analysis/" target="_blank" rel="external">https://github.com/android-cn/android-open-project-analysis/</a></li>
+</ul>
+<p>本文部分章节参考来自<a href="https://www.zhihu.com/people/tian-weishu" target="_blank" rel="external">weishu</a> 在知乎上面的回答，如果你觉得本文不错，也可以点击链接可以给打点个赞，在这里多谢了。</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/37549641/answer/83217748" target="_blank" rel="external">Android 程序猿如何继续深入的研究技术层的知识？ - weishu 的回答 - 知乎</a><br><a href="https://www.zhihu.com/question/37549641/answer/83217748" target="_blank" rel="external">https://www.zhihu.com/question/37549641/answer/83217748</a></li>
+</ul>
+<p>本篇文章能够完成，参考了weishu，邓凡平老师，kaedea，Trinea，当然也看了很多博客，在这里特别感谢他们，本人资历尚且有限，写过过程中难免会有疏漏，还请见谅。</p>
+<hr>
+<p><img src="http://upload-images.jianshu.io/upload_images/40592-6ac98c0d478a5ae7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安卓同学(AndroidMate)的公众号，更多分享..."></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+    
+      <category term="Guide" scheme="http://tikitoo.me/tags/Guide/"/>
+    
+      <category term="指南" scheme="http://tikitoo.me/tags/%E6%8C%87%E5%8D%97/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Android 开发有哪些新技术出现？]]></title>
@@ -722,540 +988,6 @@
       <category term="Android Studio" scheme="http://tikitoo.me/tags/Android-Studio/"/>
     
       <category term="Tools" scheme="http://tikitoo.me/tags/Tools/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android Studio 入门指南]]></title>
-    <link href="http://tikitoo.me/2015/04/20/android-studio-getting-guide/"/>
-    <id>http://tikitoo.me/2015/04/20/android-studio-getting-guide/</id>
-    <published>2015-04-19T22:23:42.000Z</published>
-    <updated>2015-07-01T09:02:50.000Z</updated>
-    <content type="html"><![CDATA[<p>作为一个Android 开发者，你应该很了解Android Studio，如果你现在还不了解，没关系，那么从现在开始，我们一起来了解了解Andoid Studio。</p>
-<blockquote>
-<p>Android Studio 是Google 官方在2013 Google I/O 大会（2013 年5月）上发布的全新Andrid 开发IDE（基于Intellij IDEA），在2014 年12 月发布第一个稳定版（1.0），目前最新版本为1.2 Beta 3；依托与Intellij IDEA，它更智能，提示功能更强，默认使用Gradle 构建，布局文件实时预览等等。</p>
-</blockquote>
-<p>更多Android Studio 的优点请移步：<a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse ADT</a><br><img src="http://blogldc.s3.amazonaws.com/wp-content/uploads/2014/12/studio-hero.jpg" alt="Android Studio（题图来自网络）"></p>
-<h2 id="Android_SDK_安装">Android  SDK 安装</h2><hr>
-<p>官方下载：<a href="https://developer.android.com/sdk/index.html#Other" target="_blank" rel="external">SDK Tools - Android Developer</a><br>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools#sdk-tools" target="_blank" rel="external">SDK Tools - AndroidDevTools</a><br>有了SDK Tools 就可以配置，就可以安装Andrid SDK 了，打开Android SDK Manager</p>
-<p><img src="http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png" alt="Windows SDK Manager（题图来自 [http://www.android.pk](http://www.android.pk/blog/wp-content/uploads/2011/10/Android-4.0-SDK-Folder.png)）"></p>
-<p><img src="http://ww2.sinaimg.cn/mw690/68622377gw1erbmsv7jjdj20pr0hfgpr.jpg" alt="Linux SDK Manager"></p>
-<p>打开SDK Manager，如果有代理或者VPN 可以直接下载，一般要勾选Tools，Extras；SDK 版本不用全部更新。由于国内连接速度很慢，可以参考这篇文章来使用国内的镜像来下载。</p>
-<ul>
-<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
-</ul>
-<p><img src="http://tutorchen.qiniudn.com/sdk-manager.png" alt="SDK Manager"></p>
-<h2 id="Android_Studio_下载和安装">Android Studio 下载和安装</h2><hr>
-<h3 id="下载">下载</h3><p>下载之前，你要确保已经安装JDK 和Android SDK。<br>由于国内不能直接下载，所以我在这里提供两种下载方式，一种是官网，另一种是国内的镜像网站。</p>
-<ul>
-<li>官网下载：<a href="http://tools.android.com/download/studio" target="_blank" rel="external">Android Studio Download</a></li>
-<li>国内镜像：<a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">AndroidDevTools - Github</a>。</li>
-</ul>
-<h3 id="安装">安装</h3><p>下载完之后，如果是安装包，可以直接安装即可；如果是解压包，可以解压后，直接运行。</p>
-<ul>
-<li>Windows 运行 <code>安装目录/studio.exe</code> 文件。</li>
-<li>Mac / Linux 运行 <code>安装目录/bin/studio.sh</code>。</li>
-</ul>
-<p>打开之后，会进入设置页面，如果没有安装SDK，选择Standard（标准）。如果已经安装过了SDK 就选择Custom（自定义），然后选择SDK 安装目录即可。<br><img src="http://stormzhang.com/image/studio_wizard2.png" alt="选择SDK（[题图来自 StoreZhang 的博客](http://stormzhang.com/)）"><br>然后一直Next 就好了。</p>
-<h2 id="Gradle_的安装和配置">Gradle 的安装和配置</h2><hr>
-<p>由于Android Studio 默认使用Gradle 构建，而gradle 在国内访问速度离奇的慢，所以我们就自己安装了。</p>
-<ul>
-<li>官方下载Gradle：<a href="http://gradle.org/downloads" target="_blank" rel="external">Gradle - Download</a></li>
-<li>国内下载Gradle： <a href="https://github.com/inferjay/AndroidDevTools#gradle" target="_blank" rel="external">Gradle - AndroidDevTools</a></li>
-</ul>
-<p>详细安装：<a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></p>
-<h2 id="使用Android_Studio构建第一个Android_程序">使用Android Studio构建第一个Android 程序</h2><hr>
-<p><img src="http://stormzhang.com/image/studio_wizard6.png" alt="Android Studio Setup（[题图来自StoreZhang 的博客](http://stormzhang.com/)）"><br>据说第一次创建项目的时候，会卡在那里，有大牛找到的解决办法，就是配置离线Gradle，因为上面我们已经下载过Gradle 了，可以直接拿来用。<br>可以把gradle-2.1-all.zip（不解压）<br>Windows 放在<code>C:\Users\xxx\.gradle\wrapper\dists\......</code> 目录中（如图所示）。<br>Mac/Linux 放在 <code>~/.gradle\wrapper\dists\......</code>。</p>
-<p><img src="http://xyzphoto.qiniudn.com/wordpress_13_QQ%E6%88%AA%E5%9B%BE20140918233902.png" alt="Windows Gradle"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1erbmsuj5qhj20pr09utac.jpg" alt="Linux Gradle"></p>
-<p>然后再次创建Project 就不会卡了。</p>
-<h3 id="一个Android_项目的目录文件的作用">一个Android 项目的目录文件的作用</h3><p><img src="http://ww3.sinaimg.cn/mw690/68622377gw1erbmsu0ddcj21fj0tcqcg.jpg" alt="Android Project Folder"></p>
-<p>一个Project 创建后，大概的文件目录就是这样的。<br>因为在Android Studio每个Project，相当于Eclipse 的WorkSpace；每个Module（上图的app 目录）相当于Eclipse 的Project。</p>
-<ul>
-<li><strong>settings.gradle</strong>： 每个Moudle 要在这里注册</li>
-<li><strong>build.gradle</strong>：每个Project 的配置</li>
-<li><strong>app</strong>：每个Module</li>
-<li><strong>app/build.gradle</strong>：每个Module 配置文件，比如依赖的类库，SDK 版本</li>
-<li><strong>app/src/</strong>：源码和资源文件都在这里；我们写的文件都在这里面。</li>
-<li><strong>app/libs/</strong>：添加类库。</li>
-</ul>
-<h2 id="工程和文件结构">工程和文件结构</h2><hr>
-<p><img src="https://www.jetbrains.com/img/webhelp/uiEditor.png" alt="题图来自 [Jetbrains 官方文档](https://www.jetbrains.com/img/webhelp/uiEditor.png)"></p>
-<ol>
-<li>文件编辑区域</li>
-<li>编辑区域左边（显示行号的）</li>
-<li>输入提示区域</li>
-<li>文档切换区域<ul>
-<li><code>Alt + Left</code> 或者<code>Alt + Right</code>，不同的Tab 切换</li>
-<li><code>Ctrl + Tab</code>：切换不同的区域</li>
-</ul>
-</li>
-<li>其他功能区域</li>
-</ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/68622377gw1erbugxjgb0j20fs06vgm1.jpg" alt="Android Studio 工具栏设置（题图来自 [大猫知乎的回答](http://www.zhihu.com/question/28110006/answer/39433946)）"></p>
-<p><em>新建文件或者插入方法</em><br><code>ALT + INSERT</code>（<code>COMMAND + N</code> Mac）</p>
-<ul>
-<li>在<code>编辑区</code>域是插入方法（构造方法，Get Set 方法等等）；</li>
-<li>在<code>工程结构</code>新建文件</li>
-</ul>
-<h2 id="罗列一些常用的快捷键">罗列一些常用的快捷键</h2><hr>
-<table>
-<thead>
-<tr>
-<th>全局快捷键（比较重要的）</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ALT + ENTER</td>
-<td>工程快速修复</td>
-</tr>
-<tr>
-<td>CTRL + SHIFT + A</td>
-<td>快速查找</td>
-</tr>
-<tr>
-<td>CTRL + ALT + L (Win)</td>
-<td>格式化代码（我的锁屏的快捷键占了）</td>
-</tr>
-<tr>
-<td>CTRL + Q (Win)</td>
-<td>查看文档</td>
-</tr>
-<tr>
-<td>SHIFT + ESC</td>
-<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>编辑区快捷键</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + B / F4</td>
-<td>查看源码</td>
-</tr>
-<tr>
-<td>CTRL + Q</td>
-<td>查看文档</td>
-</tr>
-<tr>
-<td>SHIFT + ESC</td>
-<td>当切换非编辑区域时，关闭该区域，返回编辑区域</td>
-</tr>
-<tr>
-<td>ATRL + /</td>
-<td>上下文联想</td>
-</tr>
-<tr>
-<td>ALT + LEFT / RIGHT</td>
-<td>不同文档左右切换</td>
-</tr>
-<tr>
-<td>ALT + TOP / BOTTOM</td>
-<td>跳转到上一个 / 下一方法</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>注释</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + /</td>
-<td>注视当前行</td>
-</tr>
-<tr>
-<td>CTRL + SHIFT + /</td>
-<td>文档注视</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>复制 / 粘贴</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CTRL + C</td>
-<td>复制该行</td>
-</tr>
-<tr>
-<td>CTRL + V</td>
-<td>粘贴</td>
-</tr>
-<tr>
-<td>CTRL + X</td>
-<td>剪切</td>
-</tr>
-<tr>
-<td>CTRL + Y</td>
-<td>删除该行</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">查找</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Ctrl+Shift+A</td>
-<td>查找所有行为</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + F</td>
-<td>查找当前编辑的文档</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + R</td>
-<td>查找并替代</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + N</td>
-<td>查找类（class）</td>
-</tr>
-<tr>
-<td style="text-align:left">Ctrl + SHIFT + N</td>
-<td>查找文件</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Git_使用">Git 使用</h2><hr>
-<p>由于Android Studio 已经自带了Git 插件，所以我们就不需要去下载了，只需要在本机下载Git 安装即可。<br>然后将可执行文件配置在Android Studio 即可。<br><img src="https://raw.githubusercontent.com/CharonChui/Pictures/master/AndroidStudio_3_7.png" alt="Git（题图来自网络）"></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio系列教程——下载与安装</a></li>
-<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？ - 知乎</a></li>
-<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇） - 简书</a></li>
-<li><a href="http://chenqichao.me/2014/12/22/109-Android-SDK-Download/" target="_blank" rel="external">如何让你的Android SDK下载或者升级快如闪电 | ChenQichao’s Blog</a></li>
-<li><a href="https://github.com/Tikitoo/blog/issues/11" target="_blank" rel="external">Gradle Install Guide（安装指南） · Issue #11 · Tikitoo/blog</a></li>
-<li><a href="https://github.com/inferjay/AndroidDevTools/" target="_blank" rel="external">inferjay/AndroidDevTools</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">http://www.jianshu.com/p/36cfa1614d23</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>作为一个Android 开发者，你应该很了解Android Studio，如果你现在还不了解，没关系，那么从现在开始，我们一起来了解了解Andoid Studio。</p>
-<blockquote>
-<p>Android Studio 是Google 官方在2013 Goo]]>
-    </summary>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-      <category term="guide" scheme="http://tikitoo.me/tags/guide/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 开发必备小知识点]]></title>
-    <link href="http://tikitoo.me/2015/04/18/android-the-development-of-essential-little-knowledge/"/>
-    <id>http://tikitoo.me/2015/04/18/android-the-development-of-essential-little-knowledge/</id>
-    <published>2015-04-18T01:15:05.000Z</published>
-    <updated>2015-07-01T09:02:34.000Z</updated>
-    <content type="html"><![CDATA[<ul>
-<li><p><a href="http://stackoverflow.com/questions/11285961/how-to-make-a-background-transparent-20-in-android" target="_blank" rel="external">RGB 颜色透明度</a><br>Android 中使用RGB 来表示颜色，如果想要表示透明度，在六位十六进制的前面<code>添加两位十六进制表示透明度</code>。</p>
-</li>
-<li><p><a href="http://www.materialui.co/colors" target="_blank" rel="external">Material Color</a><br>对开发人员，选择一个颜色真的很不容易，那就让设计师帮你挑选吧。</p>
-</li>
-<li><p><a href="http://stackoverflow.com/questions/19691530/valid-values-for-androidfontfamily-and-what-they-map-to" target="_blank" rel="external">Android 系统默认字体</a><br>Android 系统默认字体只有很少，从Android 16（Android 4.1）默认提供了一些字体，可以引用。</p>
-</li>
-</ul>
-<ul>
-<li><p><a href="http://blog.csdn.net/top_code/article/details/8588703" target="_blank" rel="external">Android px、dp、sp之间相互转换</a><br>在Android 中设置在Java 文件中设置属性，有的方法只提供一种形式的尺寸（比如px），所以这个时候就需要我们去相互转化。</p>
-</li>
-<li><p><a href="http://androidpixels.net/" target="_blank" rel="external">AndroidPixels</a><br>AndroidPixels 是一个px，sp 相互转化的工具。</p>
-</li>
-<li><p><a href="http://www.stormzhang.com/android/2015/03/29/android-support-library/" target="_blank" rel="external">Android Support兼容包详解</a><br>Android 中有不同版本的系统，对于老的版本想要支持新的系统的功能，Android 使用Support 包来解决的。</p>
-</li>
-<li><p><a href="http://www.cnblogs.com/vanezkw/articles/3383744.html" target="_blank" rel="external">Android 多屏适配</a><br>Android 手机，平板有不同的尺寸，不同的尺寸又相差很多，所以要对不同的尺寸的手机进行适配。</p>
-</li>
-</ul>
-<hr>
-<p>更多的以后补充。。。。。。</p>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/748c10304d08" target="_blank" rel="external">http://www.jianshu.com/p/748c10304d08</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<ul>
-<li><p><a href="http://stackoverflow.com/questions/11285961/how-to-make-a-background-transparent-20-in-android" target="_blank" rel="ex]]>
-    </summary>
-    
-      <category term="Tools" scheme="http://tikitoo.me/tags/Tools/"/>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[作为移动开发者，你应该了解Baas（后端即服务）]]></title>
-    <link href="http://tikitoo.me/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/"/>
-    <id>http://tikitoo.me/2015/04/12/as-a-moblile-developer-you-should-know-baas-backend-as-a-service/</id>
-    <published>2015-04-12T03:17:00.000Z</published>
-    <updated>2015-07-01T09:49:10.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://cdn.pingwest.com/wp-content/uploads/2014/12/BaaS.jpg" alt="Baas（题图来自 [PingWest](http://www.pingwest.com/baas/)）"></p>
-<p>作为开发者，了解新技术，新的工具是必不可少的，有时候发现一个好的开发工具，使用起来非常顺手，效率也提高了， 然而如果不了解新的技术，不了解这个行业的发展趋势，那样的后果是不堪回首的，反正，与时俱变是没有错啦，所以今天就来说说每个移动开发者都应该知道的Baas。</p>
-<h2 id="那么什么是Baas？">那么什么是Baas？</h2><hr>
-<p>前一段时间在知乎上看到AVOSCloud（现在改名叫LeanCloud 了），不知道这是什么东西，偶尔在微博看到有人说在用， 昨天有无意间看到了，就索性把这个弄清楚了，这个东西叫Baas（又称mBaas），全称叫Backend as a Service（后端作为一种服务）， 怎么说呢，为移动应用开发者提供后端服务； 作为一个移动应用开发者（Android &amp; iPhone），除了开发应用程序，还要做后台的服务器端，当然，大多移动应用开发者并非都懂后端开发， 这让一个应用应用开发者开发一款应用不容易，然而有了Baas，开发者就可以不用管后端开发了，Baas 提供商，提供了我们最常用的功能，比如数据存储，应用分析，IM 等功能，让开发者把主要精力放在应用本身，大大提高了效率； 当然也不一定是移动应用开发者，当然也可以Web 开发，当初Baas 主要是为了解决移动应用开发者的后端服务问题，Baas 也提供其他的服务；</p>
-<h2 id="那么Baas_都提供哪些服务呢？">那么Baas 都提供哪些服务呢？</h2><hr>
-<p>以<a href="https://www.parse.com/" target="_blank" rel="external">Parse</a> 为例，主要有以下功能：</p>
-<ul>
-<li>消息推送</li>
-<li>数据分析</li>
-<li>保存数据到云平台</li>
-<li>简单的社交服务</li>
-<li>本地数据储存</li>
-<li>在云服务上运行客户端代码</li>
-<li>后台工作</li>
-<li>实时查看应用程序的数据，数据推送，日志等</li>
-</ul>
-<p>其实可以吐槽一下，其实实现的功能比较基础的，一般有后端开发经验的开发者，也不是什么难事，但是自己要搭建服务器，还要一系列的服务要实现， 也是费时费工，有这样的服务，提供的简单的API，使用起来上手非常容易，也提供了一些 Demo，只要自己在服务后台创建应用，申请API_ID，API_KEY就可以使用。</p>
-<h2 id="Baas_服务商都有哪些呢？">Baas 服务商都有哪些呢？</h2><hr>
-<blockquote>
-<p>2013年4月，Facebook收购Parse；2014年6月，苹果在一年一度的WWDC上发布了CloudKit；等到了2014年10月份，Google也出手收购了Firebase。<br>——来自 <a href="http://www.pingwest.com/baas/" target="_blank" rel="external">PingWest</a></p>
-</blockquote>
-<p>从巨头的态度，就已经看出他们对Baas 的态度，能让移动开发更家简单，才会吸引更多的开发者；当然Baas 的厂商也是层出不穷，而且提供的功能也有各部相同，所以作为一个移动开发者，选择一个适合自己的服务尤为重要，所以接下来就给大家介绍几个知名的Baas 服务，以及他们的提供的功能。</p>
-<blockquote>
-<h2 id="Appcelerator_Cloud"><a href="http://www.appcelerator.com/cloud/" target="_blank" rel="external">Appcelerator Cloud</a></h2><p>它要依赖Appcelerator Titanium SDK 一起使用，官方宣称目前共有265728526 设备运行着Appcelerator Cloud 服务提供的应用程序，客户不乏有Ebay，vmWare；</p>
-<h3 id="Parse"><a href="https://www.parse.com/" target="_blank" rel="external">Parse</a></h3><hr>
-<p>也算是特别出名的，刚刚介绍Baas 的时候，就拿它当例子，他的出名更归功于跟了Facebook；</p>
-<h3 id="UserGrid"><a href="http://usergrid.incubator.apache.org/" target="_blank" rel="external">UserGrid</a></h3><hr>
-<p>Apache 提供了一个Baas 框架，支持多平台，</p>
-<h3 id="LeanCloud（AVOSCloud）"><a href="https://leancloud.cn/" target="_blank" rel="external">LeanCloud（AVOSCloud）</a></h3><hr>
-<p>LeanCloud 和Facebook Parse 提供的重合度很高</p>
-<ul>
-<li>社交IM 服务</li>
-<li>消息推送服务</li>
-<li>数据分析</li>
-<li>支持任何类型的结构化 / 半结构化数据，还有地理位置存储</li>
-<li>并且提供CDN 存储</li>
-<li>云代码</li>
-<li>集成GitHub、Bitbucket 或 CSDNCode</li>
-<li>对每一个应用，每个月免费提供 500 万次的请求配额</li>
-</ul>
-</blockquote>
-<p>除了上面这些，国外的比如<a href="http://www.kinvey.com/" target="_blank" rel="external">Kinvey</a>，<a href="https://www.stackmob.com/" target="_blank" rel="external">StackMob</a>，<a href="http://www.applicasa.com/" target="_blank" rel="external">Applicasa</a>，名气都是很大，他们提供的功能大都很全，很强大，当然也有提供专有的服务，比如消息推送，IM，分享等等，就不意义介绍了。</p>
-<p>下面就说说国内的，国内的Baas 服务随着国内移动开发的的热潮，也如雨后春笋般发展，比如：</p>
-<ul>
-<li><strong><a href="http://www.umeng.com/" target="_blank" rel="external">友盟</a></strong>，提供了应用分析，消息推送社会化分析，如果你仔细注意，友盟已经被阿里收购，也看出国内的巨头也对Baas 足够的重视；</li>
-<li><strong><a href="http://sharesdk.mob.com/" target="_blank" rel="external">Mob - ShareSDK</a></strong>，又比如专门做社会化分享的，几乎集成了国内外的主流社交网站；</li>
-<li><strong><a href="https://www.jpush.cn/" target="_blank" rel="external">极光推送</a></strong>，专门做推送服务；</li>
-</ul>
-<p>除了上面的这些，还有其他的比如应用测试，应用分析等等很多，就不一一列举了。</p>
-<p>到了最后，选择一款适合的自己的Baas 服务也是不易的，比如要考虑到以后发展的扩展，各种Baas 的对比，Baas 服务的安全问题等等都是我们该考虑的问题。</p>
-<p><br></p>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://www.pingwest.com/baas/" target="_blank" rel="external">你可能没听说过的BaaS，却是Facebook、苹果和Google同时盯上的领域</a></li>
-<li><a href="http://www.infoq.com/cn/articles/the-definition-development-and-future-of-baas-services" target="_blank" rel="external">BaaS服务的定义、发展以及未来</a></li>
-<li><a href="http://tikitoo.github.io/blog/cloud%20platform/2014/11/28/baas-detail.html" target="_blank" rel="external">了解Baas（Backend as a Service） - Tikitoo Blog</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/48384a8831de" target="_blank" rel="external">http://www.jianshu.com/p/48384a8831de</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="http://cdn.pingwest.com/wp-content/uploads/2014/12/BaaS.jpg" alt="Baas（题图来自 [PingWest](http://www.pingwest.com/baas/)）"></p>
-<p]]>
-    </summary>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-      <category term="baas" scheme="http://tikitoo.me/tags/baas/"/>
-    
-      <category term="mobile" scheme="http://tikitoo.me/tags/mobile/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[10个很棒的学习Android 开发的网站]]></title>
-    <link href="http://tikitoo.me/2015/02/22/10-great-learning-android-development-of-the-site/"/>
-    <id>http://tikitoo.me/2015/02/22/10-great-learning-android-development-of-the-site/</id>
-    <published>2015-02-22T05:47:08.000Z</published>
-    <updated>2015-07-01T09:03:04.000Z</updated>
-    <content type="html"><![CDATA[<p>看到<a href="http://www.jianshu.com/users/eFsf4z/latest_articles" target="_blank" rel="external">江湖旅人</a> 写的《<a href="http://www.jianshu.com/p/ff96a8e5abdb" target="_blank" rel="external">10个很棒的学习iOS开发的网站 - 简书</a>》，所以就忍不住写Android 啦，也希望对大家有帮助。<br>我推荐的网站，都是我在学习Android 开发过程中发现的好网站，给初学者一些建议，少走一些弯路。</p>
-<h2 id="Android_Developers"><a href="https://developer.android.com/index.html" target="_blank" rel="external">Android Developers</a></h2><hr>
-<p>作为一个Android 开发者，官网的资料当然不可错过，从设计，培训，指南，文档，都不应该错过，在以后的学习过程中慢慢理解体会。<br><img src="http://ww4.sinaimg.cn/large/68622377jw1epljqud94bj21fj0tcaiz.jpg" alt="Android Developer"></p>
-<h2 id="Android_Guides_-_CodePath"><a href="http://guides.codepath.com/android" target="_blank" rel="external">Android Guides  - CodePath</a></h2><hr>
-<p>CodePath 是国外一个技术培训机构，主要培训iOS 和Android 开发，而CodePath 将Android Guides 放在Github，已经获得了4000+ 个赞，对于Android 初学这特别适合，而且浅显易懂。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqvisahj21fj0tck65.jpg" alt="CodePath"></p>
-<h2 id="Android_tutorial_-_TutorialSpoint"><a href="http://www.tutorialspoint.com/android/" target="_blank" rel="external">Android tutorial - TutorialSpoint</a></h2><hr>
-<p>TutorialSpoint 是一个专业的技术教程网站，基本上我们所熟知的热门技术，都能在这里找到教程，知识点覆盖的特别全，而且代码风格也很不错，同时也适合初学着；更人性化的是，所有教程提供离线PDF 下载。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwixt2j21fj0tc17a.jpg" alt="Tutorial Spoint"></p>
-<h2 id="Android_Development_-_Vogella"><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a></h2><hr>
-<p>Vogella 提供的Android 开发教程也是可圈可点的，可能知识点覆盖不是特别全，但是单个知识点，Vogella 讲解的还是很详细的。</p>
-<p><img src="http://ww3.sinaimg.cn/large/68622377jw1epljqwiqdej21fj0tck8z.jpg" alt="Vogella"></p>
-<h2 id="AndroidHive"><a href="http://www.androidhive.info/" target="_blank" rel="external">AndroidHive</a></h2><hr>
-<p>AndroidHive 是一个个人博客，主要写Android 开发的教程，虽然只是一个人，但却提供了绘图，到写教程，功能视频演示，也表现出了博主的专业与敬业，博主写的东西也是跟随新技术，可实用性特别强。<br><img src="http://ww2.sinaimg.cn/large/68622377jw1epljqxvulzj21fj0tcwot.jpg" alt="Android Hive"></p>
-<h2 id="Android_SDK_-_Tuts+_Code"><a href="http://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code</a></h2><hr>
-<p>Tuts+ 是一个技术教程，课程和电子书的网站，基本上热门的技术都提供了，他的教程主要是免费的，而课程，电子书是有偿的，由于其专业性，大多教程都是高精华的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqyixf0j21fj0tcdq4.jpg" alt="Tuts Plus"></p>
-<h2 id="Lynda"><a href="http://www.lynda.com/" target="_blank" rel="external">Lynda</a></h2><hr>
-<p>Lynda 是一个在线学习网站，该网站提供技术，设计等很多的课程。</p>
-<p><img src="http://ww1.sinaimg.cn/large/68622377jw1epljqzu0n2j21fj0tctn7.jpg" alt="Lynda"></p>
-<h2 id="Android_Questions_-_Stack_Overflow"><a href="http://stackoverflow.com/questions/tagged/android" target="_blank" rel="external">Android Questions - Stack Overflow</a></h2><hr>
-<p>Stackoverflow 是一个技术在线问答网站，几乎平常遇到的所有技术网站，在这里都能找到答案，而且你提问的问题，上面有很多大牛会很热心回答。</p>
-<p><img src="http://ww4.sinaimg.cn/large/68622377jw1epljr0g5zjj21fj0tck6a.jpg" alt="Stackoverflow"></p>
-<h2 id="Search_·_android_-_Github"><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=android" target="_blank" rel="external">Search · android - Github</a></h2><hr>
-<p>Github 是一个基于Git 的代码托管工具，几乎所有知名的开源软件都选择Github 来托管，而很多Android 开发者也都选择Github，几乎常见的Demo 在Github 都能找到类似的。<br><img src="http://ww1.sinaimg.cn/large/68622377jw1epljr0ys5xj21fj0tc44x.jpg" alt="Github"></p>
-<h2 id="Android_Archives_|_Java_Code_Geeks"><a href="http://www.javacodegeeks.com/tutorials/android-tutorials/android-core-tutorials/" target="_blank" rel="external">Android Archives | Java Code Geeks</a></h2><hr>
-<p>Java Code Geeks 主要是一个Java 教程的网站，而他提供的Android 教程，一步一步，还有配图，使初学者没有太大压力。<br><img src="http://ww3.sinaimg.cn/large/68622377jw1epljr1kqqoj21fj0tcakk.jpg" alt="Java Code Geeks"></p>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/85cb02292acc" target="_blank" rel="external">http://www.jianshu.com/p/85cb02292acc</a><br>非商业转载请在「<code>开头</code>」注明作者「<code>详细信息</code>」和「<code>本文出处</code>」。</p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>看到<a href="http://www.jianshu.com/users/eFsf4z/latest_articles" target="_blank" rel="external">江湖旅人</a> 写的《<a href="http://www.jianshu.co]]>
-    </summary>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-      <category term="website" scheme="http://tikitoo.me/tags/website/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[我是如何自学Android，资料分享（2015）]]></title>
-    <link href="http://tikitoo.me/2015/02/11/how-do-i-self-study-android-2015/"/>
-    <id>http://tikitoo.me/2015/02/11/how-do-i-self-study-android-2015/</id>
-    <published>2015-02-11T01:37:16.000Z</published>
-    <updated>2015-07-01T09:00:58.000Z</updated>
-    <content type="html"><![CDATA[<p>自己学了两三个月的Android，最近花了一周左右的时间写了个App——<a href="https://github.com/Tikitoo/Diigoer" target="_blank" rel="external">Diigoer（已开源）</a>，又花了一两周时间找工作，收到了两个Offer，也算是对自己学习的一种认可吧；我刚开始学习总结的——《<a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a>》，如果是初学Android 的话，不应该错过的，而今天这篇分享好这篇文章，相对于第一次写的会有所提升，所以建议先把上一篇看了，再来看这一篇；<br>那下面就切入正题吧，之前重复的就不再介绍了，相对于第一季，自己对Android 的认识更加深了（算是入门了吧），干货更多了，更加通俗易懂了，英文资料会多一点；而自己学习过程中发现的一些好资源，分享给你们，希望对你们的有一些帮助；</p>
-<h2 id="Java_学习">Java 学习</h2><hr>
-<p>我要再次强调，一定要有Java 基础（虽然现在使用其他语言也可以开发Android，但毕竟是很小众），也不要认为学习Java 两三周就可以不用管了，这会在以后的深入学习中暴露出问题，所以Java 基础一定要牢固，当然我也不是说，Java 学的特别好，才能去学习Android，毕竟学习是循序渐进的，所以在以后的学习中要注意，对于Java 系统的学习，我有一下几个推荐；</p>
-<blockquote>
-<ul>
-<li><a href="http://introcs.cs.princeton.edu/java/home/" target="_blank" rel="external">Introduction to Programming in Java: An Interdisciplinary Approach</a><br>普林斯顿的公开课，也有书籍，我觉得可以直接跟着公开课学习就OK 啦；</li>
-<li><a href="http://www.tutorialspoint.com/java/" target="_blank" rel="external">Java Tutorial - TutorialSpoint</a><br>TutorialSpoint 是一个专门技术教程网站，其他教程也可以去看学习；当然你想离线观看，网站还提供了PDF 版<ul>
-<li><a href="http://www.tutorialspoint.com/java/java_tutorial.pdf" target="_blank" rel="external">Java Tutorial PDF</a></li>
-</ul>
-</li>
-<li><a href="http://math.hws.edu/eck/cs124/downloads/javanotes7.pdf" target="_blank" rel="external">Javanotes 7.0 — Title Page</a><br>这个是霍巴特威廉史密斯学院的一本书，跟着JDK 版本，已经发行了好多版本；</li>
-</ul>
-</blockquote>
-<p>由于篇幅有限，所以在这里就不累赘了，以后会专门写一篇文章来说Java；</p>
-<h2 id="Android_系列教程">Android 系列教程</h2><hr>
-<p>这一段时间，发现了好多学习资源，自己收藏了，不敢独享，所以拿出来和大家分享，如果您发现不错的学习资源，欢迎留言；<br>而学习的过程中，也忽略了一些问题，比如自己学习的不系统，如果您也是自学的话，一定要注意这个问题，我觉得，除了看官方文档和大牛的博客之外，最重要就找一本好书，把自己的知识系统化；</p>
-<h3 id="入门指南">入门指南</h3><hr>
-<ul>
-<li><a href="developer.android.com/docs/training/index.html">Getting Started | Android Developers</a></li>
-<li><a href="http://halfapp.com/blog/get-started-programming-android-apps/" target="_blank" rel="external">How to get started programming Android apps | HalfApp</a></li>
-<li><a href="http://www.reddit.com/r/Android/comments/1w3woc/a_step_by_step_guide_about_how_to_get_started_and/" target="_blank" rel="external">A step by step guide about how to get started and involved in Android Development - Reddit</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.jianshu.com/p/2ee0e74abbdf" target="_blank" rel="external">我是如何自学Android，资料分享</a></li>
-<li><a href="http://drakeet.me/android_base_road" target="_blank" rel="external">我推荐的 Android 基础学习路线</a></li>
-<li><a href="http://mmclub.github.io/blog/2014/04/03/start-learning-android/" target="_blank" rel="external">Android入门杂谈</a></li>
-</ul>
-<h3 id="书籍推荐">书籍推荐</h3><hr>
-<p>首先自己没有很系统地去看一本书，所以我也是搜索，或者实在知乎上别人推荐的，所以，要根据自己的情况，适合自己的书来看；</p>
-<ul>
-<li><a href="http://commonsware.com/Android/" target="_blank" rel="external"> The Busy Coder’s Guide to Android Development</a><br>这是大牛CommonsGuy 开源的一本书，它的更新非常及时，基本上就是跟着SDK 更新的，下载PDF 可以在这里（<a href="http://commonsware.com/Android/4-2-free" target="_blank" rel="external">Four-to-Free Guarantee</a>）下载，书籍中源码可以在Github（<a href="https://github.com/commonsguy/cw-omnibus" target="_blank" rel="external">commonsguy/cw-omnibus</a>） 中查看；</li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">Best Android Books and Resources 2014</a><br>这篇文章主要介绍了Android 书籍和开发资源；</li>
-</ul>
-<h3 id="公开课">公开课</h3><hr>
-<ul>
-<li><a href="https://www.udacity.com/course/ud853" target="_blank" rel="external">How to Develop Android Apps Online Course - Udacity</a></li>
-<li><a href="https://class.coursera.org/android-001/lecture" target="_blank" rel="external">Programming Mobile Applications for Android (Coursera)</a></li>
-<li><a href="https://www.youtube.com/playlist?list=PLB03EA9545DD188C3" target="_blank" rel="external">Android Development For Absolute Beginners - YouTube</a></li>
-</ul>
-<h3 id="系列教程">系列教程</h3><hr>
-<ul>
-<li><a href="https://github.com/thecodepath/android_guides/wiki" target="_blank" rel="external">Home · codepath/android_guides Wiki - codepath</a><br>Android 指南，它不仅介绍怎么创建一个最简单的App Demo，循序渐进教你使用各种流行的框架，对于即将工作的同学来说是很用用的；Demo 很有实战意义；</li>
-<li><a href="http://www.tutorialspoint.com/android/index.htm" target="_blank" rel="external">Android tutorial - TutorialSpoint</a><br>是不是特别熟悉呀，对上面提到过，教程特别通俗易懂，代码实例也不错；</li>
-<li><a href="http://www.vogella.com/tutorials/android.html" target="_blank" rel="external">Android Development - Vogella</a><br>教程挺通俗易懂</li>
-<li><a href="http://androidhive.info/" target="_blank" rel="external">AndroidHive | Tutorials, Games, Apps, Tips |</a><br>博主是印度人，博客主要是以教程为主，质量较高，而且会分享比较新的东西；</li>
-<li><a href="http://www.codelearn.org/android-tutorial/" target="_blank" rel="external">Android Tutorial | Interactive and Step by step tutorial to learn Android</a></li>
-<li><a href="https://code.tutsplus.com/categories/android-sdk" target="_blank" rel="external">Android SDK - Tuts+ Code Category</a></li>
-<li><a href="http://www.learn2crack.com/category/androidprogramming" target="_blank" rel="external">Android Programming Archives - Learn2Crack</a></li>
-<li><a href="https://www.mysliderule.com/learning-paths/android/learn/" target="_blank" rel="external">Android Learning Path | SlideRule</a></li>
-</ul>
-<h3 id="大牛博客推荐">大牛博客推荐</h3><hr>
-<ul>
-<li><a href="https://github.com/android-cn/android-dev-cn" target="_blank" rel="external">android-cn/android-dev-cn</a><br>主要介绍国内Android 开发大牛；</li>
-<li><a href="https://github.com/android-cn/android-dev-com" target="_blank" rel="external">android-cn/android-dev-com</a><br>主要介绍国外Android 开发大牛；</li>
-<li><a href="http://www.quora.com/What-are-must-read-Android-developer-blogs" target="_blank" rel="external">What are must-read Android developer blogs? - Quora</a><br>Quora 上的回答</li>
-<li><a href="http://www.zhihu.com/question/19775981" target="_blank" rel="external">有哪些 Android 大牛的 blog 值得推荐？ - 知乎</a><br>知乎上的回答</li>
-</ul>
-<h3 id="开源App">开源App</h3><hr>
-<ul>
-<li><a href="https://f-droid.org/" target="_blank" rel="external">F-Droid | Free and Open Source Android App Repository</a><br>F-Droid 是一个Android 开源App 仓库</li>
-<li><a href="http://blog.tisa7.com/android_open_source_projects" target="_blank" rel="external">Android优秀开源项目 - 小猪爬爬</a></li>
-<li><a href="https://android-arsenal.com/" target="_blank" rel="external">The Android Arsenal - A categorized directory of free libraries and tools for Android</a><br>在这里，找到最新最流行的Android 开源类库</li>
-<li><a href="https://github.com/Trinea/android-open-project" target="_blank" rel="external">Trinea/android-open-project - Trinea</a><br>大牛Trinea 写的Android 开源项目汇总</li>
-</ul>
-<h3 id="开发工具">开发工具</h3><hr>
-<ul>
-<li><a href="http://www.codota.com/" target="_blank" rel="external">Great Code Examples &amp; Snippets | Codota</a><br>一个Android 代码搜索引擎；前两天发现了这个工具就爱不释手，写了篇文章——《<a href="http://www.jianshu.com/p/59b89c26f9e0" target="_blank" rel="external">Android 开发工具之Codota——搜索最好的Android 代码 - 简书</a>》，让你参考入门。</li>
-<li><a href="http://www.gradleware.com/" target="_blank" rel="external">Gradle</a><br>知乎上我回答的《<a href="http://www.zhihu.com/question/27866554/answer/38427122" target="_blank" rel="external">如何从eclipse转入android studio,感觉Gradle什么的很难理解的。有什么教程吗? - Tikitoo 的回答 - 知乎</a>》，可以参考。</li>
-<li><a href="">Android Studio</a><br>从Google 的态度就可以看出，Android Studio 就是未来，而且在最近发布了正式版，教程在网上也不少。</li>
-<li><a href="http://androiduiux.com" target="_blank" rel="external">Android User Interface | User Experience | Inspiration source for Android Designers and Developers</a></li>
-<li><a href="http://www.android-app-patterns.com/" target="_blank" rel="external">Android App Patterns</a></li>
-<li><a href="https://www.iconfinder.com/" target="_blank" rel="external">Iconfinder - 400,000+ free and premium icons</a><br>一个Icon 搜索引擎</li>
-<li><a href="https://github.com/google/material-design-icons" target="_blank" rel="external">google/material-design-icons - github</a><br>Google 把官方的Material Design 1000+ 的Icon 开源了，不仅仅只有Android 版，而且还有Web 和iOS，真是业界良心呀。</li>
-<li><a href="https://github.com/inferjay/AndroidDevTools" target="_blank" rel="external">inferjay/AndroidDevTools</a><br>inferjay 总结的开发工具，并且提供了国内的镜像。</li>
-<li><a href="https://www.genymotion.com/" target="_blank" rel="external">Genymotion - A faster Android emulator</a><br>Genymotion 是Android 的虚拟机，比官方的快了不知多少啊，它是基于Virtual Box，并且提供了插件。</li>
-</ul>
-<h3 id="订阅">订阅</h3><hr>
-<ul>
-<li><a href="http://androidweekly.net/" target="_blank" rel="external">Android 周刊</a></li>
-<li><a href="http://www.androidweekly.cn/" target="_blank" rel="external">Android开发技术周报</a></li>
-<li><a href="https://github.com/nemoTyrant/manong#ANDROID" target="_blank" rel="external">码农周刊 - Android</a></li>
-</ul>
-<h3 id="资源">资源</h3><hr>
-<ul>
-<li><a href="http://www.androidauthority.com/best-resources-android-development-372414/" target="_blank" rel="external">Best resources for Android development</a></li>
-<li><a href="http://www.bongizmo.com/blog/android-resources-each-developer-should-know/" target="_blank" rel="external">Resources every Android developer must know</a><br>中文版——《<a href="http://www.importnew.com/3988.html" target="_blank" rel="external">Android开发者必知的开发资源 - ImportNew</a><br>》，译者是ImportNew - 黄小非</li>
-<li><a href="http://yeungeek.com/awesome-resources/" target="_blank" rel="external">开发资源 | Android 沉思录</a></li>
-<li><a href="http://www.apptentive.com/blog/programming-resources-for-android-developers/" target="_blank" rel="external">Android Developer Resources, Tutorials, and References — Being Apptentive</a></li>
-<li><a href="https://github.com/codepath/android_guides/wiki/Beginning-Android-Resources" target="_blank" rel="external">Beginning Android Resources · codepath/android_guides Wiki</a></li>
-<li><a href="http://www.cnblogs.com/mainroadlee/p/android_resources_list.html" target="_blank" rel="external">Android开发者资源大汇总 - Android开发周刊 - 博客园</a></li>
-<li><a href="https://github.com/snowdream/awesome-android" target="_blank" rel="external">awesome-android - github</a></li>
-<li><a href="https://plus.google.com/+KevinDarty/posts/Qex6Ae6zhZW" target="_blank" rel="external">Where To Start - Learning Android Development the Right Way - Kevin Darty - Google+</a></li>
-<li><a href="http://www.reddit.com/r/androiddev/wiki/resources" target="_blank" rel="external">resources - androiddev reddit</a></li>
-<li><a href="http://zhuanlan.zhihu.com/anzhuo/19657543" target="_blank" rel="external">Android自学资料汇总</a></li>
-<li><a href="http://stormzhang.github.io/android/2014/07/07/learn-android-from-rookie/" target="_blank" rel="external">Android 学习之路</a></li>
-</ul>
-<h2 id="参考">参考</h2><hr>
-<ul>
-<li><a href="http://www.quora.com/What-are-the-best-resources-to-learn-Android-development" target="_blank" rel="external">http://www.quora.com/What-are-the-best-resources-to-learn-Android-development</a></li>
-<li><a href="http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#" target="_blank" rel="external">http://www.quora.com/What-are-the-best-websites-to-learn-Android-development-tools#</a></li>
-<li><a href="http://www.sitepoint.com/12-android-tutorials-beginners/" target="_blank" rel="external">http://www.sitepoint.com/12-android-tutorials-beginners/</a></li>
-<li><a href="http://nimooli.com/blog/best-android-books-2014/" target="_blank" rel="external">http://nimooli.com/blog/best-android-books-2014/</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/874ff12a4c01" target="_blank" rel="external">http://www.jianshu.com/p/874ff12a4c01</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>自己学了两三个月的Android，最近花了一周左右的时间写了个App——<a href="https://github.com/Tikitoo/Diigoer" target="_blank" rel="external">Diigoer（已开源）</a>，又花了一两周时间]]>
-    </summary>
-    
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
-    
-      <category term="tutorial" scheme="http://tikitoo.me/tags/tutorial/"/>
     
   </entry>
   
