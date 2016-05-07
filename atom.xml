@@ -4,9 +4,9 @@
   <title><![CDATA[Tikitoo Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://tikitoo.me//"/>
+  <link href="http://tikitoo.github.io//"/>
   <updated>2016-04-26T15:03:39.990Z</updated>
-  <id>http://tikitoo.me//</id>
+  <id>http://tikitoo.github.io//</id>
   
   <author>
     <name><![CDATA[Tikitoo]]></name>
@@ -17,11 +17,11 @@
   
   <entry>
     <title><![CDATA[Android 开发值得订阅的日报和周刊]]></title>
-    <link href="http://tikitoo.me/2016/04/26/android-worth-subscribe-daily-weekly/"/>
-    <id>http://tikitoo.me/2016/04/26/android-worth-subscribe-daily-weekly/</id>
+    <link href="http://tikitoo.github.io/2016/04/26/android-worth-subscribe-daily-weekly/"/>
+    <id>http://tikitoo.github.io/2016/04/26/android-worth-subscribe-daily-weekly/</id>
     <published>2016-04-26T14:58:41.000Z</published>
     <updated>2016-04-26T15:03:39.990Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://androidweekly.net/" target="_blank" rel="external">Android Weekly </a><br>Android Weekly 是由一群国外知名的Android 开发者维护，分享的内容不仅仅只有干货，而且还有最新的技术分享，也是Android 开发圈子最早，最有名的周报。如果想看中文版，请移步知乎专栏——《<a href="http://tikitoo.me/resources/Android%20Weekly">Android Weekly - 知乎专栏</a>》。</p>
+    <content type="html"><![CDATA[<p><a href="http://androidweekly.net/" target="_blank" rel="external">Android Weekly </a><br>Android Weekly 是由一群国外知名的Android 开发者维护，分享的内容不仅仅只有干货，而且还有最新的技术分享，也是Android 开发圈子最早，最有名的周报。如果想看中文版，请移步知乎专栏——《<a href="http://tikitoo.me/resources/Android%20Weekly" target="_blank" rel="external">Android Weekly - 知乎专栏</a>》。</p>
 <p><a href="http://www.androidweekly.cn/" target="_blank" rel="external">Android开发技术周报</a><br>Android开发技术周报是由<a href="http://weibo.com/234959219" target="_blank" rel="external">@脉脉不嘚語</a> 维护更新，截止到现在，已经发布了28 期，分享的都是高质量的文章教程，代码库，工具，新闻视频，设计等。</p>
 <p><a href="http://zhuanlan.zhihu.com/andlib" target="_blank" rel="external">Android 科学院</a><br>由<a href="http://weibo.com/n/duguguiyu?from=feed&amp;loc=at" target="_blank" rel="external">@duguguiyu</a> 和豌豆荚一小撮工程师组成，分享的都是最新的Android 技术；虽然更新频率不是很高，但是质量确是很很高的，值得一看的。</p>
 <p><a href="http://www.devtf.cn/?cat=2" target="_blank" rel="external">开发技术前线</a><br>开发技术前线是一个高质量技术文章的聚合网站，主要翻译国外Android，iOS 的优质文章，以及招聘等内容。</p>
@@ -42,18 +42,18 @@
     <![CDATA[<p><a href="http://androidweekly.net/" target="_blank" rel="external">Android Weekly </a><br>Android Weekly 是由一群国外知名的Android 开发者维护，分享的内容不仅仅只]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="周刊" scheme="http://tikitoo.me/tags/%E5%91%A8%E5%88%8A/"/>
+      <category term="周刊" scheme="http://tikitoo.github.io/tags/%E5%91%A8%E5%88%8A/"/>
     
-      <category term="日报" scheme="http://tikitoo.me/tags/%E6%97%A5%E6%8A%A5/"/>
+      <category term="日报" scheme="http://tikitoo.github.io/tags/%E6%97%A5%E6%8A%A5/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[这些小工具让你的Android 开发更高效（下）]]></title>
-    <link href="http://tikitoo.me/2016/04/07/android_develop_tools_02/"/>
-    <id>http://tikitoo.me/2016/04/07/android_develop_tools_02/</id>
+    <link href="http://tikitoo.github.io/2016/04/07/android_develop_tools_02/"/>
+    <id>http://tikitoo.github.io/2016/04/07/android_develop_tools_02/</id>
     <published>2016-04-06T23:41:41.000Z</published>
     <updated>2016-04-20T12:49:47.862Z</updated>
     <content type="html"><![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](https://www.airpair.com/android/android-tools-every-android-developer-should-know-about)"><br>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
@@ -105,18 +105,18 @@
     <![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](ht]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="Tool" scheme="http://tikitoo.me/tags/Tool/"/>
+      <category term="Tool" scheme="http://tikitoo.github.io/tags/Tool/"/>
     
-      <category term="工具" scheme="http://tikitoo.me/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://tikitoo.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[这些小工具让你的Android 开发更高效（上）]]></title>
-    <link href="http://tikitoo.me/2016/03/20/android_develop_tools_01/"/>
-    <id>http://tikitoo.me/2016/03/20/android_develop_tools_01/</id>
+    <link href="http://tikitoo.github.io/2016/03/20/android_develop_tools_01/"/>
+    <id>http://tikitoo.github.io/2016/03/20/android_develop_tools_01/</id>
     <published>2016-03-20T00:54:41.000Z</published>
     <updated>2016-04-20T12:49:45.707Z</updated>
     <content type="html"><![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](https://www.airpair.com/android/android-tools-every-android-developer-should-know-about)"><br>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
@@ -168,18 +168,18 @@
     <![CDATA[<p><img src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2014/09/android-tools.png" alt="Photo from [https://www.airpair.com](ht]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="Tool" scheme="http://tikitoo.me/tags/Tool/"/>
+      <category term="Tool" scheme="http://tikitoo.github.io/tags/Tool/"/>
     
-      <category term="工具" scheme="http://tikitoo.me/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://tikitoo.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 中 Handler，Looper，HandlerThread 的使用]]></title>
-    <link href="http://tikitoo.me/2016/03/19/android_handler_looper/"/>
-    <id>http://tikitoo.me/2016/03/19/android_handler_looper/</id>
+    <link href="http://tikitoo.github.io/2016/03/19/android_handler_looper/"/>
+    <id>http://tikitoo.github.io/2016/03/19/android_handler_looper/</id>
     <published>2016-03-19T03:23:41.000Z</published>
     <updated>2016-04-20T12:48:36.080Z</updated>
     <content type="html"><![CDATA[<p>Android 中非UI 线程（WorkThread）不能操作UI 线程（MainThread），那线程之间通信我们该怎么办？在Java 我们可以通过多线程来处理，但是Java 的多线程晦涩难懂，所以Android 的引入了Handler，Looper 的机制来处理线程间的通信。</p>
@@ -204,14 +204,14 @@
     <![CDATA[<p>Android 中非UI 线程（WorkThread）不能操作UI 线程（MainThread），那线程之间通信我们该怎么办？在Java 我们可以通过多线程来处理，但是Java 的多线程晦涩难懂，所以Android 的引入了Handler，Looper 的机制来处理线程间的]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[AsyncTask 的使用和注意的问题]]></title>
-    <link href="http://tikitoo.me/2016/03/14/android_asynctask_use_and_problem/"/>
-    <id>http://tikitoo.me/2016/03/14/android_asynctask_use_and_problem/</id>
+    <link href="http://tikitoo.github.io/2016/03/14/android_asynctask_use_and_problem/"/>
+    <id>http://tikitoo.github.io/2016/03/14/android_asynctask_use_and_problem/</id>
     <published>2016-03-14T00:05:41.000Z</published>
     <updated>2016-04-19T15:17:21.543Z</updated>
     <content type="html"><![CDATA[<p>AsyncTask 算是我们比较经常使用的一个系统类了，我们知道费UI 线程是不能更新UI 的，当我们做一些耗时的操作只能借助Handler，Looper 来实现，比如我们从网络下载东西，想要进度条来更新，自己实现会很麻烦。然而使用AsyncTask 处理起来会非常轻松。<br>它来做一些异步处理的请求，然后可以很轻松地更新UI。<br>它是一个抽象类，就说明它是不具体的，我们要使用它，肯定要实现他的抽象方法。<br>我们继承会发现AsyncTask<params, progress,="" result=""> 枚举有三个不同的变量，这个我们可以跟着他的不同的方法的参数和返回值来一块看会更加清晰。</params,></p>
@@ -229,14 +229,14 @@
     <![CDATA[<p>AsyncTask 算是我们比较经常使用的一个系统类了，我们知道费UI 线程是不能更新UI 的，当我们做一些耗时的操作只能借助Handler，Looper 来实现，比如我们从网络下载东西，想要进度条来更新，自己实现会很麻烦。然而使用AsyncTask 处理起来会非常轻松。<]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 开发进阶指南]]></title>
-    <link href="http://tikitoo.me/2016/03/01/android_medium_guide/"/>
-    <id>http://tikitoo.me/2016/03/01/android_medium_guide/</id>
+    <link href="http://tikitoo.github.io/2016/03/01/android_medium_guide/"/>
+    <id>http://tikitoo.github.io/2016/03/01/android_medium_guide/</id>
     <published>2016-02-29T23:22:41.000Z</published>
     <updated>2016-04-19T15:53:08.902Z</updated>
     <content type="html"><![CDATA[<p>之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习。当初在逛知乎看到了一些问题（PS：逛知乎还是很有好处的嘛！！！），看到很多回答就觉得很受启发，还有看别人的博客，也很受用，想要写一篇文章的想法，等了一两周才开始动手。</p>
@@ -308,18 +308,18 @@
     <![CDATA[<p>之前有人在朋友圈评论我说，现在学习Android 遇到了瓶颈，基本上一般的API，市面上大部分App UI 都能做出来，该怎么提高？然后我回复他了，我学习Android 也有一年左右，也是个菜鸟，也遇到这样的问题，所以就各种查资料，看看大神们都在研究什么技术，也跟着学习学习]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="Guide" scheme="http://tikitoo.me/tags/Guide/"/>
+      <category term="Guide" scheme="http://tikitoo.github.io/tags/Guide/"/>
     
-      <category term="指南" scheme="http://tikitoo.me/tags/%E6%8C%87%E5%8D%97/"/>
+      <category term="指南" scheme="http://tikitoo.github.io/tags/%E6%8C%87%E5%8D%97/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 开发有哪些新技术出现？]]></title>
-    <link href="http://tikitoo.me/2016/01/29/What-new-technologies-have-android/"/>
-    <id>http://tikitoo.me/2016/01/29/What-new-technologies-have-android/</id>
+    <link href="http://tikitoo.github.io/2016/01/29/What-new-technologies-have-android/"/>
+    <id>http://tikitoo.github.io/2016/01/29/What-new-technologies-have-android/</id>
     <published>2016-01-29T14:45:25.000Z</published>
     <updated>2016-01-30T04:25:47.213Z</updated>
     <content type="html"><![CDATA[<p>作为一个程序员，应该养成持续学习的能力，随时关注新技术，有时候做起事来会让你事半功倍的效果。之前在知乎上看到下面这个问题，觉得很受用，所有就总结了大牛们的回答，也跟着大牛们的脚步，看看有哪些新技术，也跟着学习学习，涨涨见识。</p>
@@ -370,14 +370,14 @@
 <p>本文参考]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[每周阅读清单：程序员修炼，兴趣，TED]]></title>
-    <link href="http://tikitoo.me/2016/01/23/reading-list_programmer_interest_ted/"/>
-    <id>http://tikitoo.me/2016/01/23/reading-list_programmer_interest_ted/</id>
+    <link href="http://tikitoo.github.io/2016/01/23/reading-list_programmer_interest_ted/"/>
+    <id>http://tikitoo.github.io/2016/01/23/reading-list_programmer_interest_ted/</id>
     <published>2016-01-23T13:43:30.000Z</published>
     <updated>2016-01-26T14:56:35.501Z</updated>
     <content type="html"><![CDATA[<p>不知不觉快要过年了，估计大家也都比较忙吧。这一周也上了六天，刚好今天你晚上有点空闲时间，就来总结这周工作和学习发现的好东西和好文章，来分享给大家。<br>我平常获取技术和文章大都在微博，微信，遇到好的博客都会使用Feedly 来订阅，遇到好的文章来不及看都会放在Pocket 来看。今天阅读清单也到了第二期了，也希望能给大家一些帮助。</p>
@@ -411,14 +411,14 @@
     <![CDATA[<p>不知不觉快要过年了，估计大家也都比较忙吧。这一周也上了六天，刚好今天你晚上有点空闲时间，就来总结这周工作和学习发现的好东西和好文章，来分享给大家。<br>我平常获取技术和文章大都在微博，微信，遇到好的博客都会使用Feedly 来订阅，遇到好的文章来不及看都会放在Pocket]]>
     </summary>
     
-      <category term="阅读清单" scheme="http://tikitoo.me/tags/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/"/>
+      <category term="阅读清单" scheme="http://tikitoo.github.io/tags/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 中WebView 的使用]]></title>
-    <link href="http://tikitoo.me/2016/01/05/android-webview-note/"/>
-    <id>http://tikitoo.me/2016/01/05/android-webview-note/</id>
+    <link href="http://tikitoo.github.io/2016/01/05/android-webview-note/"/>
+    <id>http://tikitoo.github.io/2016/01/05/android-webview-note/</id>
     <published>2016-01-05T15:39:41.000Z</published>
     <updated>2016-01-20T13:17:32.686Z</updated>
     <content type="html"><![CDATA[<p>我们都知道Webview 是用来加载网页的，底层使用Webkit 来实现的。首先要在清单文件里注册网络请求权限</p>
@@ -467,16 +467,16 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="WebView" scheme="http://tikitoo.me/tags/WebView/"/>
+      <category term="WebView" scheme="http://tikitoo.github.io/tags/WebView/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 开发者必备的书单]]></title>
-    <link href="http://tikitoo.me/2016/01/02/android-book/"/>
-    <id>http://tikitoo.me/2016/01/02/android-book/</id>
+    <link href="http://tikitoo.github.io/2016/01/02/android-book/"/>
+    <id>http://tikitoo.github.io/2016/01/02/android-book/</id>
     <published>2016-01-02T13:39:41.000Z</published>
     <updated>2016-01-26T14:56:28.494Z</updated>
     <content type="html"><![CDATA[<p>大家好，最近一段时间，Android 方面的书籍可谓是百花齐放，这几本书的作者都是在一线互联网公司奋斗的工程师，他们把多年的工作经验，身心耕植，汇聚成一本书。作为菜鸟的我们，只有一睹大神的风采了。所以借这个周末，我也列举了一些书，作为一个Android 开发工程师，这些书都是不可多得的好书，书中知识迟早是要掌握的。</p>
@@ -501,16 +501,16 @@
     <![CDATA[<p>大家好，最近一段时间，Android 方面的书籍可谓是百花齐放，这几本书的作者都是在一线互联网公司奋斗的工程师，他们把多年的工作经验，身心耕植，汇聚成一本书。作为菜鸟的我们，只有一睹大神的风采了。所以借这个周末，我也列举了一些书，作为一个Android 开发工程师，这些书都]]>
     </summary>
     
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
+      <category term="android" scheme="http://tikitoo.github.io/tags/android/"/>
     
-      <category term="书单" scheme="http://tikitoo.me/tags/%E4%B9%A6%E5%8D%95/"/>
+      <category term="书单" scheme="http://tikitoo.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[2015 年——懵懵懂懂，跌跌撞撞]]></title>
-    <link href="http://tikitoo.me/2015/12/26/2015-summer/"/>
-    <id>http://tikitoo.me/2015/12/26/2015-summer/</id>
+    <link href="http://tikitoo.github.io/2015/12/26/2015-summer/"/>
+    <id>http://tikitoo.github.io/2015/12/26/2015-summer/</id>
     <published>2015-12-26T05:35:16.000Z</published>
     <updated>2016-01-07T14:29:06.609Z</updated>
     <content type="html"><![CDATA[<blockquote>
@@ -534,16 +534,16 @@
 <h2 id="读过的书">读过的书</h2><p>苏东坡传<br>从零到一<br>硅谷百年史<br>暗时间<br>简明HTTP 指南]]>
     </summary>
     
-      <category term="总结" scheme="http://tikitoo.me/tags/%E6%80%BB%E7%BB%93/"/>
+      <category term="总结" scheme="http://tikitoo.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
-      <category term="生活" scheme="http://tikitoo.me/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://tikitoo.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[开发者必备的网站]]></title>
-    <link href="http://tikitoo.me/2015/11/02/developer-website/"/>
-    <id>http://tikitoo.me/2015/11/02/developer-website/</id>
+    <link href="http://tikitoo.github.io/2015/11/02/developer-website/"/>
+    <id>http://tikitoo.github.io/2015/11/02/developer-website/</id>
     <published>2015-11-02T13:43:09.000Z</published>
     <updated>2016-01-26T14:59:32.022Z</updated>
     <content type="html"><![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。</p>
@@ -580,16 +580,16 @@
     <![CDATA[<p>前两天是1024 程序员节，也祝大家过得愉快。本来是想提前写的，一直拖到现在（拖延症致死呀)，所以就大家多等了几天，前两天我写的文章《Android 开发者必备的网站》，今天为大家推荐一些开发者必知的网站，除了一些基本的技术网站，还有一些交流的网站，不多说那就进入正题吧。<]]>
     </summary>
     
-      <category term="website" scheme="http://tikitoo.me/tags/website/"/>
+      <category term="website" scheme="http://tikitoo.github.io/tags/website/"/>
     
-      <category term="网站" scheme="http://tikitoo.me/tags/%E7%BD%91%E7%AB%99/"/>
+      <category term="网站" scheme="http://tikitoo.github.io/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎]]></title>
-    <link href="http://tikitoo.me/2015/09/27/android-studio-the-very-useful-plugins/"/>
-    <id>http://tikitoo.me/2015/09/27/android-studio-the-very-useful-plugins/</id>
+    <link href="http://tikitoo.github.io/2015/09/27/android-studio-the-very-useful-plugins/"/>
+    <id>http://tikitoo.github.io/2015/09/27/android-studio-the-very-useful-plugins/</id>
     <published>2015-09-27T11:49:59.000Z</published>
     <updated>2015-09-27T12:01:50.000Z</updated>
     <content type="html"><![CDATA[<p>我要回答了。你们只负责点赞吧。</p>
@@ -612,7 +612,7 @@
 </ul>
 <hr>
 <blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/android-studio-the-very-useful-plugins">Android Studio有哪些非常好用的插件？</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/android-studio-the-very-useful-plugins" target="_blank" rel="external">Android Studio有哪些非常好用的插件？</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
 <p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
 </blockquote>
 ]]></content>
@@ -622,16 +622,16 @@
 <p><strong>Android ButterKnife Zelezny</strong><br>不想写findViewById() 就用ButterKnife，ButterKnif]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="Android Studio" scheme="http://tikitoo.me/tags/Android-Studio/"/>
+      <category term="Android Studio" scheme="http://tikitoo.github.io/tags/Android-Studio/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android Studio live templates 的使用]]></title>
-    <link href="http://tikitoo.me/2015/09/13/android-studio-live-templates-md/"/>
-    <id>http://tikitoo.me/2015/09/13/android-studio-live-templates-md/</id>
+    <link href="http://tikitoo.github.io/2015/09/13/android-studio-live-templates-md/"/>
+    <id>http://tikitoo.github.io/2015/09/13/android-studio-live-templates-md/</id>
     <published>2015-09-13T10:22:43.000Z</published>
     <updated>2015-09-13T11:05:58.000Z</updated>
     <content type="html"><![CDATA[<p>在Android Studio 中，我们会发现有时候我们有一些打出一些拼写就会出来一些东西。</p>
@@ -658,14 +658,14 @@
 <p>比如：<em>psvm</em><br><figure class="highlight java"><table><tr><td class="gutter"><p]]>
     </summary>
     
-      <category term="Android Studio" scheme="http://tikitoo.me/tags/Android-Studio/"/>
+      <category term="Android Studio" scheme="http://tikitoo.github.io/tags/Android-Studio/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[写给Android 开发的入门教程]]></title>
-    <link href="http://tikitoo.me/2015/08/23/android-developer-tutorial/"/>
-    <id>http://tikitoo.me/2015/08/23/android-developer-tutorial/</id>
+    <link href="http://tikitoo.github.io/2015/08/23/android-developer-tutorial/"/>
+    <id>http://tikitoo.github.io/2015/08/23/android-developer-tutorial/</id>
     <published>2015-08-23T06:45:34.000Z</published>
     <updated>2016-01-26T14:59:52.392Z</updated>
     <content type="html"><![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较好的资源，所以今天就把它整理成博客了，再好好整理一些好的资料分享给大家。其实我觉得，相对于稍微有点经验的人来说，初学者更需要指导，因为初学者没有好的知识体系，所以会走不少弯路，所以我就以我的经验，和在微博，论坛上大家公认的资料整理出来，也希望能帮到大家。</p>
@@ -727,7 +727,7 @@
 <p>Alway Be Coding。当敲的代码多了，你的能力才能慢慢提升，切忌眼高手低。</p>
 <hr>
 <blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/08/23/android-developer-tutorial/">http://tikitoo.me/2015/08/23/android-developer-tutorial/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/08/23/android-developer-tutorial/" target="_blank" rel="external">http://tikitoo.me/2015/08/23/android-developer-tutorial/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
 <p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
 </blockquote>
 ]]></content>
@@ -735,22 +735,22 @@
     <![CDATA[<p>之前在知乎上回答的问题——《<a href="http://www.zhihu.com/question/19611325" target="_blank" rel="external">初学者学习 Android 开发，有什么好网站推荐？</a>》，就挑了一些大家公认比较]]>
     </summary>
     
-      <category term="Android" scheme="http://tikitoo.me/tags/Android/"/>
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
     
-      <category term="Android 入门" scheme="http://tikitoo.me/tags/Android-%E5%85%A5%E9%97%A8/"/>
+      <category term="Android 入门" scheme="http://tikitoo.github.io/tags/Android-%E5%85%A5%E9%97%A8/"/>
     
-      <category term="Android 开发" scheme="http://tikitoo.me/tags/Android-%E5%BC%80%E5%8F%91/"/>
+      <category term="Android 开发" scheme="http://tikitoo.github.io/tags/Android-%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android 教程" scheme="http://tikitoo.me/tags/Android-%E6%95%99%E7%A8%8B/"/>
+      <category term="Android 教程" scheme="http://tikitoo.github.io/tags/Android-%E6%95%99%E7%A8%8B/"/>
     
-      <category term="自学Android" scheme="http://tikitoo.me/tags/%E8%87%AA%E5%AD%A6Android/"/>
+      <category term="自学Android" scheme="http://tikitoo.github.io/tags/%E8%87%AA%E5%AD%A6Android/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Tikitoo：来使用利器来提高效率吧]]></title>
-    <link href="http://tikitoo.me/2015/08/03/my-liqi/"/>
-    <id>http://tikitoo.me/2015/08/03/my-liqi/</id>
+    <link href="http://tikitoo.github.io/2015/08/03/my-liqi/"/>
+    <id>http://tikitoo.github.io/2015/08/03/my-liqi/</id>
     <published>2015-08-03T09:06:11.000Z</published>
     <updated>2015-08-03T09:35:05.000Z</updated>
     <content type="html"><![CDATA[<h2 id="介绍一下你自己和所做的工作。">介绍一下你自己和所做的工作。</h2><p>我是梁义发，网络ID 为Tikitoo。我2014 年毕业，后来自学了Android 开发，现在算是入门Android 开发吧。我也是一名互联网爱好者，也爱写文章。</p>
@@ -781,18 +781,18 @@
 <h2 id=]]>
     </summary>
     
-      <category term="Tools" scheme="http://tikitoo.me/tags/Tools/"/>
+      <category term="Tools" scheme="http://tikitoo.github.io/tags/Tools/"/>
     
-      <category term="利器" scheme="http://tikitoo.me/tags/%E5%88%A9%E5%99%A8/"/>
+      <category term="利器" scheme="http://tikitoo.github.io/tags/%E5%88%A9%E5%99%A8/"/>
     
-      <category term="效率" scheme="http://tikitoo.me/tags/%E6%95%88%E7%8E%87/"/>
+      <category term="效率" scheme="http://tikitoo.github.io/tags/%E6%95%88%E7%8E%87/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Atom 在Ubuntu 中文显示乱码（方块）解决方法]]></title>
-    <link href="http://tikitoo.me/2015/07/23/ubuntu-atom-zh-display-squre/"/>
-    <id>http://tikitoo.me/2015/07/23/ubuntu-atom-zh-display-squre/</id>
+    <link href="http://tikitoo.github.io/2015/07/23/ubuntu-atom-zh-display-squre/"/>
+    <id>http://tikitoo.github.io/2015/07/23/ubuntu-atom-zh-display-squre/</id>
     <published>2015-07-23T03:56:23.000Z</published>
     <updated>2015-07-23T03:59:43.000Z</updated>
     <content type="html"><![CDATA[<p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
@@ -813,16 +813,16 @@
 <p>因为是Atom 官方]]>
     </summary>
     
-      <category term="Atom" scheme="http://tikitoo.me/tags/Atom/"/>
+      <category term="Atom" scheme="http://tikitoo.github.io/tags/Atom/"/>
     
-      <category term="Ubuntu" scheme="http://tikitoo.me/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="http://tikitoo.github.io/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android 开发工具之ALFI（Android Library Finder）]]></title>
-    <link href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"/>
-    <id>http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</id>
+    <link href="http://tikitoo.github.io/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"/>
+    <id>http://tikitoo.github.io/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</id>
     <published>2015-07-06T16:12:37.000Z</published>
     <updated>2015-07-06T16:24:27.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
@@ -868,7 +868,7 @@
 </ul>
 <hr>
 <blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/" target="_blank" rel="external">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
 <p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
 </blockquote>
 ]]></content>
@@ -879,18 +879,18 @@
 <p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于And]]>
     </summary>
     
-      <category term="alfi" scheme="http://tikitoo.me/tags/alfi/"/>
+      <category term="alfi" scheme="http://tikitoo.github.io/tags/alfi/"/>
     
-      <category term="android" scheme="http://tikitoo.me/tags/android/"/>
+      <category term="android" scheme="http://tikitoo.github.io/tags/android/"/>
     
-      <category term="tools" scheme="http://tikitoo.me/tags/tools/"/>
+      <category term="tools" scheme="http://tikitoo.github.io/tags/tools/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Android Studio 入门指南（Slides）]]></title>
-    <link href="http://tikitoo.me/2015/07/02/html-embed-slides-com-test/"/>
-    <id>http://tikitoo.me/2015/07/02/html-embed-slides-com-test/</id>
+    <link href="http://tikitoo.github.io/2015/07/02/html-embed-slides-com-test/"/>
+    <id>http://tikitoo.github.io/2015/07/02/html-embed-slides-com-test/</id>
     <published>2015-07-02T10:14:58.000Z</published>
     <updated>2015-07-02T10:22:02.000Z</updated>
     <content type="html"><![CDATA[<p>This is Html embed slides.com.</p>
@@ -901,16 +901,16 @@
 <iframe src="//slides.com/tikitoo/android-sutdio/embed" width="700" height="510" scrolling="no" frameb]]>
     </summary>
     
-      <category term="html" scheme="http://tikitoo.me/tags/html/"/>
+      <category term="html" scheme="http://tikitoo.github.io/tags/html/"/>
     
-      <category term="slides" scheme="http://tikitoo.me/tags/slides/"/>
+      <category term="slides" scheme="http://tikitoo.github.io/tags/slides/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[使用Github + Hexo 来搭建自己的博客]]></title>
-    <link href="http://tikitoo.me/2015/07/01/User-github-hexo-build-blog/"/>
-    <id>http://tikitoo.me/2015/07/01/User-github-hexo-build-blog/</id>
+    <link href="http://tikitoo.github.io/2015/07/01/User-github-hexo-build-blog/"/>
+    <id>http://tikitoo.github.io/2015/07/01/User-github-hexo-build-blog/</id>
     <published>2015-07-01T04:47:18.000Z</published>
     <updated>2015-07-01T13:28:49.000Z</updated>
     <content type="html"><![CDATA[<p>发现Hexo 一个主题不错，就尝试着Hexo 来搭建博客，在搭建的过程中也有不少坑，不过看了很多大牛详细的教程，终于把Hexo 博客搭建好了，所以就来总结总结。</p>
@@ -932,11 +932,11 @@
 <p>Hexo 是一个基于Node.js 的一个博客框架。它支持Markdown 和大多数Octopre]]>
     </summary>
     
-      <category term="blog" scheme="http://tikitoo.me/tags/blog/"/>
+      <category term="blog" scheme="http://tikitoo.github.io/tags/blog/"/>
     
-      <category term="github" scheme="http://tikitoo.me/tags/github/"/>
+      <category term="github" scheme="http://tikitoo.github.io/tags/github/"/>
     
-      <category term="hexo" scheme="http://tikitoo.me/tags/hexo/"/>
+      <category term="hexo" scheme="http://tikitoo.github.io/tags/hexo/"/>
     
   </entry>
   
