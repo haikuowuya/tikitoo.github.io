@@ -1,0 +1,914 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Android,Android Studio," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Tikitoo Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="这是翻译官方的文档，英语好的可以直接去官方文档查看，英语不好，大家就将就看吧，算是我翻译的第一篇技术文章，因为是个英语渣，技术也渣，所以最近在学英语，就尝试着自己来翻译，不过翻译有不好的地方，大家可以指出来，我会在以后的翻译中慢慢改进。以后我也会尝试者每周翻译一篇英文技术文章，如果你有好的学习英语和翻译方面的技巧，欢迎与我交流。原文链接：http://developer.android.com/i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Studio 提示与技巧（官方文档翻译）">
+<meta property="og:url" content="http://tikitoo.github.io/2016/05/10/android-studio-tips-and-tricks-zh/index.html">
+<meta property="og:site_name" content="Tikitoo Blog">
+<meta property="og:description" content="这是翻译官方的文档，英语好的可以直接去官方文档查看，英语不好，大家就将就看吧，算是我翻译的第一篇技术文章，因为是个英语渣，技术也渣，所以最近在学英语，就尝试着自己来翻译，不过翻译有不好的地方，大家可以指出来，我会在以后的翻译中慢慢改进。以后我也会尝试者每周翻译一篇英文技术文章，如果你有好的学习英语和翻译方面的技巧，欢迎与我交流。原文链接：http://developer.android.com/i">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/68622377gw1f3qmappgooj207s07q0ue.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/68622377gw1f3qkgo4054j207s07q0ue.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/68622377gw1f3qmbb94eqj20qu0j83zy.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg">
+<meta property="og:updated_time" content="2016-05-10T14:57:44.845Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android Studio 提示与技巧（官方文档翻译）">
+<meta name="twitter:description" content="这是翻译官方的文档，英语好的可以直接去官方文档查看，英语不好，大家就将就看吧，算是我翻译的第一篇技术文章，因为是个英语渣，技术也渣，所以最近在学英语，就尝试着自己来翻译，不过翻译有不好的地方，大家可以指出来，我会在以后的翻译中慢慢改进。以后我也会尝试者每周翻译一篇英文技术文章，如果你有好的学习英语和翻译方面的技巧，欢迎与我交流。原文链接：http://developer.android.com/i">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Android Studio 提示与技巧（官方文档翻译） | Tikitoo Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72517765-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?dd585a1672bc69dcafe1cab0ae54376a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tikitoo Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resources">
+          <a href="/resources" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            朋友们
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android Studio 提示与技巧（官方文档翻译）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T22:58:41+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/android-studio-tips-and-tricks-zh/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/android-studio-tips-and-tricks-zh/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>这是翻译官方的文档，英语好的可以直接去官方文档查看，英语不好，大家就将就看吧，算是我翻译的第一篇技术文章，因为是个英语渣，技术也渣，所以最近在学英语，就尝试着自己来翻译，不过翻译有不好的地方，大家可以指出来，我会在以后的翻译中慢慢改进。<br>以后我也会尝试者每周翻译一篇英文技术文章，如果你有好的学习英语和翻译方面的技巧，欢迎与我交流。<br>原文链接：<a href="http://developer.android.com/intl/zh-cn/sdk/installing/studio-tips.html" target="_blank" rel="external">http://developer.android.com/intl/zh-cn/sdk/installing/studio-tips.html</a></p>
+</blockquote>
+<p>如果你对Android Studio 和Intellij IDEA 的界面很陌生的话，刚好这篇文章提供一些技巧，教你一些最常见的技巧来使你提高生产率。</p>
+<h2 id="高效率快捷键"><a href="">高效率快捷键</a></h2><p>Android Studio 包括了许多功能，来帮助你的编程效率更高，这部分包含了一些特性帮助你快速，高效地工作。</p>
+<h3 id="智能渲染">智能渲染</h3><p>使用智能渲染，Android Studio 中显示快速修复渲染的错误的链接。例如，如果你在布局文件中添加一个不指定宽和高的按钮，Android Studio 会自动会将缺少的属性显示在渲染的消息中。点击这些消息在布局中添加缺少的属性。</p>
+<h3 id="在调试中渲染Bitmap">在调试中渲染Bitmap</h3><p>当你在调试中，你可以右键点击Bitmap 变量在你的App 来调用Bitmap 视图。<br>这将提取从调试的过程相关数据，并显示调试器中的Bitmap 中。<br><img src="http://ww2.sinaimg.cn/large/68622377gw1f3qmappgooj207s07q0ue.jpg" alt=""></p>
+<h3 id="创建新文件">创建新文件</h3><p>你可以通过点击Project 面板中相应的文件夹中，通过输入“Alt + Insert”(Windows/Linux) ，或者Command + N(Mac)，来快速添加新的代码和资源文件。根据所选中的目录类型，Android Studio 会提供创建适当的文件类型。<br>例如，如果你选中一个布局目录，键入“Alt + Insert”（在Windows），选中布局资源文件，打开一个对话框，你可以输入一个文件的名字（可以省去.xml 后缀），然后选择根节点，编辑后会切换到设计编辑器中，你可以开始设计布局。</p>
+<h3 id="输出框信息过滤">输出框信息过滤</h3><p>当你检查构建（build） 结果，你可以按照消息类型过滤消息，快速找到感兴趣的消息。<br><img src="http://ww3.sinaimg.cn/large/68622377gw1f3qkgo4054j207s07q0ue.jpg" alt=""></p>
+<h3 id="父层次设置">父层次设置</h3><p>Activity 上一个Activity 可以通过在一个Activity 向导中创建一个新的Activity 中设置。设置父层次的返回按钮自动引入在你的应用中的ActionBar 中。因此返回按钮不需要在“menu.xml” 中手动指定了。</p>
+<h3 id="创建布局">创建布局</h3><p>Android Studio 提供了一个高级的布局编辑器，允许你拖拽控件到你的布局中。在预览布局中编辑XML 。<br>当在编辑Text 视图中，你可以打开在窗口的右侧预览面板设置上的布局。你可以通过修改面板顶部面板改变各种选项来修改预览，包括预览设备，主题，平台版本等等，可以同时预览多个设备上布局，可以从“<strong>设备</strong>”选项中下拉”预览所有屏幕的尺寸” 的选项。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f3qmbb94eqj20qu0j83zy.jpg" alt=""></p>
+<p>你可以通过点击底部的Design 窗口来切换图形编辑器。当编辑是Desin 视图时，你可以通过点击左边的窗口的面板拖拽来显示和隐藏控件。点击Designer 右边窗口的显示面板，显示布局的层次和在布局文件中每个View 的属性列表。</p>
+<h3 id="注解">注解</h3><p>Android Studio 提供了 <code>Support-Annotations</code> 库帮助你在代码中使用注解，它属于支持库的一部分，添加依赖这个库可以装饰你的代码，帮助你捕获Bug，比如空指针异常，资源类型冲突，你也可以创建枚举注解，例如，从一组定义的常量中检查传入的参数值，更多请看 <a href="http://developer.android.com/tools/debugging/annotations.html#annotations" target="_blank" rel="external">改善与标注的代码检查</a>。</p>
+<h3 id="Java_类反编译">Java 类反编译</h3><p>当你没有查找到源代码时，Android Studio 允许你查看Java 库里有什么。<br>内置反编译让在Android Studio 中很方便，右击一个类，方法或者字段，当你没有源文件并且选择反编译。反编译的代码会出现。要调整反编译的设置，选择 <strong>File &gt; Settings &gt; Other Settings &gt; Java Decompiler</strong>。</p>
+<h3 id="调试和性能增强">调试和性能增强</h3><p>Android Studio 提供了调试和性能增强，比如：</p>
+<ul>
+<li>自定义快捷键，更改当前的快捷键，选择 <strong>File &gt; Settings &gt; Keymap</strong>。</li>
+<li>支持高分辨率（视网膜）显示在Widnows 和Linux。</li>
+<li>Scratch 文件快速原型文件，不会创造任何项目文件。<br>选择<strong>Tools &gt; New Scratch File</strong> 打开一个Scratch 文件快速构建和运行代码原型。再加上Android Studio 的代码辅助，Scratch 文件允许你快速运行和支持所有文件类型的调试代码更新。通过嵌入脚本语言创建的代码，你可以从临时文件中运行代码。</li>
+</ul>
+<h3 id="动态模板">动态模板</h3><p>动态模板允许你输入代码片段快速插入和完成小块的代码。插入动态模板输入模板的缩写点击Tab 键，Android Studio 中插入代码片段到相关联的代码中。</p>
+<p>例如，输入 <code>newInstance</code> 缩写，按Tab 键将插入一个新初始化包括参数占位符的Fragment 。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> $fragment$ newInstance($args$) &#123;</span><br><span class="line">    $nullChecks$</span><br><span class="line">    Bundle args = <span class="keyword">new</span> Bundle();</span><br><span class="line">    $addArgs$</span><br><span class="line">    $fragment$ fragment = <span class="keyword">new</span> $fragment$();</span><br><span class="line">    fragment.setArguments(args);</span><br><span class="line">    <span class="keyword">return</span> fragment;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>相似的，输入 <code>fbc</code> 将插入 <code>findViewById</code> 将调用资源Id 要转换的类型。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">() findViewById(R.id.);</span><br></pre></td></tr></table></figure></p>
+<p>用 <strong>File &gt; Settings &gt; Editor &gt; Live Templates</strong> 菜单选项来显示，支持实时模板和自定义插入代码。</p>
+<h2 id="基于的IntelliJ编码实践工作"><a href="">基于的IntelliJ编码实践工作</a></h2><p>本节仅仅是一小部分代码编辑实践。当你在使用Android Studio 时你应该考虑使用它。</p>
+<p>想要了解IntelliJ IDEA的界面完整的用户文档（Android Studio 是基于它的）请参考 <a href="http://www.jetbrains.com/idea/documentation/index.jsp" target="_blank" rel="external">IntelliJ IDEA 文档</a>。</p>
+<h3 id="Alt_+_Enter"><em>Alt + Enter</em></h3><p>快速修复代码中的错误，强大的Intellij 实现了Alt + Enter 修复错误（遗漏的导入，变量赋值，丢失的引用等）在可能的情况下，如果不可以，选择最有可能解决问题的建议。</p>
+<h3 id="Ctrl_+_D"><em>Ctrl + D</em></h3><p>Ctrl + D 是一个强大的快速复制代码行和片段，只需要选择所需的行或者片段，然后输入这个快捷键（Ctrl + D）。</p>
+<h3 id="导航菜单">导航菜单</h3><p>如果你不熟悉一些API 的类，文件或者标识，导航菜单可以可以直接跳转类的方法，字段，而不需要你在手动去搜索。</p>
+<h3 id="范围检查">范围检查</h3><p>代码段范围指定的更容易识别和定位的颜色，例如，你可以设定一个范围，以确定指定ActionBar 的ID。</p>
+<h3 id="注入语言">注入语言</h3><p>使用嵌入语言，Android Studio 允许你在工作区中嵌入不同的语言，这个语法的延伸，错误高亮和嵌入语言的编码帮助。这对于内嵌检查正则表达式的值和验证XML 是非常有用的。</p>
+<h3 id="代码折叠">代码折叠</h3><p>这让你可以选择性地隐藏和显示部分可读代码。例如资源表达式或者内嵌代码可以被折叠或隐藏成一行，使得外部的结构更加容易阅读。</p>
+<h3 id="图片和颜色预览">图片和颜色预览</h3><p>当你在代码中引用图片或者图标，会在代码边上显示图片或者图标的预览（根据实际尺寸的不同密度），以帮助你验证图像或图标参考。按 <code>F1</code> 键在预览图片或者图标显示资源文件的详细信息。例如<code>dp</code> 的设置。</p>
+<h3 id="快速查找文档">快速查找文档</h3><p>你可以检查使用的主题属性 <strong>View &gt; Quick Documentation</strong> (<strong>F1</strong>)，查看主题的的继承层次，并解决各种属性值。</p>
+<p>如果你调用 <strong>View &gt; Quick Documentation</strong> (usually bound to F1) 来查看android:textAppearanceLarge 的主题属性值。你将会看到主题的继承层次，显示出各种属性解析值。</p>
+<h3 id="快捷键">快捷键</h3><p>下表列出了常用的键盘快捷键。修改默认的快捷键可以在：<strong>File</strong> &gt; <strong>Settings</strong> &gt; <strong>Keymap</strong>（Windows/Linux）。如果你使用Mac OS X，必须更新到Mac OS X 10.5+ 的版本来使用快捷键： <strong>Android Studio &gt; Preferences &gt; Keymap</strong>。</p>
+<h3 id="编程键盘命令">编程键盘命令</h3><table>
+<thead>
+<tr>
+<th>名字</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>命令查找</td>
+<td>CTRL + SHIFT + A</td>
+</tr>
+<tr>
+<td>工程快速修复</td>
+<td>ALT + ENTER</td>
+</tr>
+<tr>
+<td>格式化代码</td>
+<td>CTRL + ALT + L (Win)OPTION + CMD + L (Mac)</td>
+</tr>
+<tr>
+<td>显示文档</td>
+<td>CTRL + Q (Win)F1 (Mac)</td>
+</tr>
+<tr>
+<td>显示选中方法的参数</td>
+<td>CTRL + P</td>
+</tr>
+<tr>
+<td>生成方法</td>
+<td>ALT + Insert (Win)CMD + N (Mac)</td>
+</tr>
+<tr>
+<td>跳转到源码</td>
+<td>F4 (Win)CMD + down-arrow (Mac)</td>
+</tr>
+<tr>
+<td>删除行</td>
+<td>CTRL + Y (Win)CMD + Backspace (Mac)</td>
+</tr>
+<tr>
+<td>通过符号名称搜索</td>
+<td>CTRL + ALT + SHIFT + N (Win)OPTION + CMD + O (Mac)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="工程和编辑器快捷键">工程和编辑器快捷键</h3><table>
+<thead>
+<tr>
+<th>名字</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>构建</td>
+<td>CTRL + F9 (Win)CMD + F9 (Mac)</td>
+</tr>
+<tr>
+<td>构建和运行</td>
+<td>SHIFT + F10 (Win)CTRL + R (Mac)</td>
+</tr>
+<tr>
+<td>切换项目可见</td>
+<td>ALT + 1 (Win)CMD + 1 (Mac)</td>
+</tr>
+<tr>
+<td>导航打开的标签页</td>
+<td>ALT + left-arrow; ALT + right-arrow (Win)CTRL + left-arrow; CTRL + right-arrow (Mac)</td>
+</tr>
+</tbody>
+</table>
+<p>更多的快捷键完全参考指南，请看<a href="http://www.jetbrains.com/idea/documentation/index.jsp" target="_blank" rel="external">IntelliJ IDEA</a> 文档。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.github.io/2016/05/10/android-studio-tips-and-tricks-zh/">http://tikitoo.github.io/2016/05/10/android-studio-tips-and-tricks-zh</a><br>非商业转载转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
+<p>本文首发我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
+</blockquote>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag">#Android</a>
+          
+            <a href="/tags/Android-Studio/" rel="tag">#Android Studio</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/26/android-worth-subscribe-daily-weekly/" rel="next" title="Android 开发值得订阅的日报和周刊">
+                <i class="fa fa-chevron-left"></i> Android 开发值得订阅的日报和周刊
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/10/android-studio-tips-and-tricks-zh/"
+           data-title="Android Studio 提示与技巧（官方文档翻译）" data-url="http://tikitoo.github.io/2016/05/10/android-studio-tips-and-tricks-zh/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww1.sinaimg.cn/mw690/68622377jw1etahntwg7pj2050050q2q.jpg"
+               alt="Tikitoo" />
+          <p class="site-author-name" itemprop="name">Tikitoo</p>
+          <p class="site-description motion-element" itemprop="description">Android 开发工程师，互联网爱好者。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">41</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/lyf0306" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://douban.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-douban"></i> Douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/tikitoo" target="_blank">
+                  
+                    <i class="fa fa-zhihu"></i> Zhihu
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/c35153600475/latest_articles" target="_blank">
+                  
+                    <i class="fa fa-jianshu"></i> Jianshu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#高效率快捷键"><span class="nav-number">1.</span> <span class="nav-text">高效率快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#智能渲染"><span class="nav-number">1.1.</span> <span class="nav-text">智能渲染</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在调试中渲染Bitmap"><span class="nav-number">1.2.</span> <span class="nav-text">在调试中渲染Bitmap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建新文件"><span class="nav-number">1.3.</span> <span class="nav-text">创建新文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出框信息过滤"><span class="nav-number">1.4.</span> <span class="nav-text">输出框信息过滤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#父层次设置"><span class="nav-number">1.5.</span> <span class="nav-text">父层次设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建布局"><span class="nav-number">1.6.</span> <span class="nav-text">创建布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注解"><span class="nav-number">1.7.</span> <span class="nav-text">注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java_类反编译"><span class="nav-number">1.8.</span> <span class="nav-text">Java 类反编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试和性能增强"><span class="nav-number">1.9.</span> <span class="nav-text">调试和性能增强</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动态模板"><span class="nav-number">1.10.</span> <span class="nav-text">动态模板</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于的IntelliJ编码实践工作"><span class="nav-number">2.</span> <span class="nav-text">基于的IntelliJ编码实践工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Alt_+_Enter"><span class="nav-number">2.1.</span> <span class="nav-text">Alt + Enter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ctrl_+_D"><span class="nav-number">2.2.</span> <span class="nav-text">Ctrl + D</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航菜单"><span class="nav-number">2.3.</span> <span class="nav-text">导航菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#范围检查"><span class="nav-number">2.4.</span> <span class="nav-text">范围检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注入语言"><span class="nav-number">2.5.</span> <span class="nav-text">注入语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码折叠"><span class="nav-number">2.6.</span> <span class="nav-text">代码折叠</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片和颜色预览"><span class="nav-number">2.7.</span> <span class="nav-text">图片和颜色预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速查找文档"><span class="nav-number">2.8.</span> <span class="nav-text">快速查找文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键"><span class="nav-number">2.9.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编程键盘命令"><span class="nav-number">2.10.</span> <span class="nav-text">编程键盘命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工程和编辑器快捷键"><span class="nav-number">2.11.</span> <span class="nav-text">工程和编辑器快捷键</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tikitoo</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"tikitoo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>
