@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://tikitoo.github.io//"/>
-  <updated>2016-05-17T13:55:19.667Z</updated>
+  <updated>2016-05-23T13:52:05.039Z</updated>
   <id>http://tikitoo.github.io//</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Medium Android 客户端都使用了哪些开源项目？]]></title>
+    <link href="http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/"/>
+    <id>http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/</id>
+    <published>2016-05-24T00:15:41.000Z</published>
+    <updated>2016-05-23T13:52:05.039Z</updated>
+    <content type="html"><![CDATA[<p>Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师<a href="https://medium.com/@dmccartney" target="_blank" rel="external">Daniel McCartney</a> 分享了他们Android App 使用的开源项目。</p>
+<p><a href="https://source.android.com/" target="_blank" rel="external">Android Open Source Project</a><br>你可以把Android 平台修改构建成你所需要的。当然你也可以提交贡献代码。</p>
+<p><a href="https://github.com/google/guava" target="_blank" rel="external">google/guava</a><br>Guava 是支持Java 6+ 的Googel 核心类库，它包括集合类，缓存，并发库，通用注解等等。</p>
+<p><a href="https://github.com/google/dagger" target="_blank" rel="external">google/dagger  </a><br>Dagger 2 是一个快速的依赖注入库，它使用APT 的方式在编译时生成代码，在牺牲了微小代价的情况下，使项目架构更加整洁。</p>
+<p><a href="https://github.com/square/retrofit" target="_blank" rel="external">square/retrofit  </a><br>Retrofit 是一个类型安全的Rest 风格的类库，它通过注解的方式来实现网络请求。</p>
+<p><a href="https://github.com/square/okhttp" target="_blank" rel="external">square/okhttp  </a><br>OkHttp 是一个HTTP + SPDY 的网络请求库。</p>
+<p><a href="https://github.com/FasterXML/jackson" target="_blank" rel="external">FasterXML/jackson  </a><br>Jackson 是一个Json 解析和生成库。</p>
+<p><a href="https://github.com/square/otto" target="_blank" rel="external">square/otto  </a><br>Otto 是一个基于Guava 项目实现的事件总线的类库。</p>
+<p><a href="https://github.com/bumptech/glide" target="_blank" rel="external">bumptech/glide  </a><br>Glide 是一个图片加载和缓存库，它主要专注于平滑滚动。</p>
+<p><a href="https://github.com/square/phrase" target="_blank" rel="external">square/phrase  </a><br>Phrase 是一个Android 字符串资源模板类库。</p>
+<p><a href="https://github.com/JakeWharton/butterknife/" target="_blank" rel="external">JakeWharton/butterknife</a><br>ButterKnife 是一个View 注入类库。</p>
+<p><a href="https://github.com/chrisjenx/Calligraphy" target="_blank" rel="external">chrisjenx/Calligraphy  </a><br>Calligraphy 是一个自定义字体的类库。</p>
+<p><a href="https://github.com/JakeWharton/hugo" target="_blank" rel="external">JakeWharton/hugo</a><br>Hugo 是一个通过注解的方法来实现日志功能的类库。</p>
+<p><a href="https://github.com/mockito/mockito" target="_blank" rel="external">mockito/mockito</a><br>Mockito 是一个Java 的Mocking 单元测试框架。</p>
+<p><a href="https://github.com/robolectric/robolectric" target="_blank" rel="external">robolectric/robolectric</a><br>robolectric 是一个Android 的单元测试框架。</p>
+<p><a href="https://github.com/JakeWharton/sdk-manager-plugin" target="_blank" rel="external">JakeWharton/sdk-manager-plugin</a><br>sdk-manager-plugin 是用来下载和管理你的Android SDK的Gradle 插件。</p>
+<hr>
+<p>下面还有很多第三方的工具，可以让你的App 大放异彩。</p>
+<p><a href="https://github.com/facebook/facebook-android-sdk" target="_blank" rel="external">facebook/facebook-android-sdk</a><br>facebook-android-sdk 是集成Facebook 平台用于Android 的SDK。</p>
+<p><a href="http://fabric.io/" target="_blank" rel="external">Fabric</a><br>Fabric 是Twitter 移动开发平台，它集成了一系列好用的工具，比如分析，崩溃捕获等等。</p>
+<p><a href="https://developer.android.com/google/" target="_blank" rel="external">Google Services | Android Developers</a><br>利用Google 最新的技术，只需要简单的API，实现很多强大的功能。</p>
+<hr>
+<blockquote>
+<p>本文作者：<a href="https://medium.com/@dmccartney" target="_blank" rel="external">Daniel McCartney</a><br>本文译者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>原文链接：<a href="https://medium.engineering/medium-android-tools-f827bb96b8e4" target="_blank" rel="external">https://medium.engineering/medium-android-tools-f827bb96b8e4</a><br>翻译链接：<a href="http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/">http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/</a><br>非商业转载转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>，以及本文所有内容。</p>
+<p>本文首发我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师<a href="https://medium.com/@dmccartney" target="_bla]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
+    
+      <category term="开源项目" scheme="http://tikitoo.github.io/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="翻译" scheme="http://tikitoo.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[教你写一个炫酷的Material Design 风格的登录和注册页面]]></title>
@@ -1009,74 +1054,6 @@
       <category term="Atom" scheme="http://tikitoo.github.io/tags/Atom/"/>
     
       <category term="Ubuntu" scheme="http://tikitoo.github.io/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Android 开发工具之ALFI（Android Library Finder）]]></title>
-    <link href="http://tikitoo.github.io/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/"/>
-    <id>http://tikitoo.github.io/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</id>
-    <published>2015-07-06T16:12:37.000Z</published>
-    <updated>2015-07-06T16:24:27.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
-</blockquote>
-<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于Android 应用是新的构建系统（虽然有点慢，不过我已经找到解决方案），但是一个很酷的特点是依赖管理可以从远程仓库自动下载，使它们能在你的应用中使用。基本上，你只需在<code>build.gradle</code> 文件中添加一行就可以将类库添加到你的项目中，很容易，对吧？</p>
-<hr>
-<h2 id="在Android_Studio_来添加依赖类库">在Android Studio 来添加依赖类库</h2><ul>
-<li>在Module 点击右键。</li>
-<li>选择打开Module 设置（Open Module Settings）。</li>
-<li>切换到Dependencies（依赖） 标签。</li>
-<li>点击右边的“<code>+</code>” 按钮。</li>
-<li>选择Libary Dependencies（类库依赖）。</li>
-<li>输入要要搜索的类库。</li>
-<li>在搜索结果中，选择要依赖的类库。</li>
-</ul>
-<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1389/1*S0xNtJxa4cz-2-PpmDfBzA.png" alt="Android Studio module properties"></p>
-<p>然后就在Module 文件夹下的<code>build.gradle</code> 文件就有多出一行刚刚添加的依赖库。</p>
-<hr>
-<h2 id="使用GradlePlease_在线搜索类库">使用GradlePlease 在线搜索类库</h2><ul>
-<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">http://gradleplease.appspot.com/</a></li>
-</ul>
-<p>如果你想在网页中体验的话，可以打开上面的网站，输入你要寻找的类库，它仅仅能显示一个结果，但是，你要现实两个，三个呢？</p>
-<p><img src="https://d262ilb51hltx0.cloudfront.net/max/1048/1*aBG37_BY975lZIqc9NN8Pw.png" alt="gradleplease"></p>
-<hr>
-<h2 id="使用ALFI（Android_Library_Finder）">使用ALFI（Android Library Finder）</h2><p>来试试<a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">ALFI</a>：<br><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*F0qdIxZLLVTmG5Zl5Eu3uw.png" alt="[https://github.com/cesarferreira/alfi](https://github.com/cesarferreira/alfi)"></p>
-<h3 id="安装">安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install alfi</span><br></pre></td></tr></table></figure>
-<h3 id="搜索：">搜索：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">alfi</span> picasso</span><br></pre></td></tr></table></figure>
-<ul>
-<li>打开终端，或者打开Android Studio 的终端（前提是已经配置过）。</li>
-<li>输入： <code>alfi 类库名字</code>。</li>
-<li>选择合适的依赖库。</li>
-<li>粘贴到你的<code>build.gralde</code>。</li>
-</ul>
-<p>仅仅只需要几个步骤，没有UI，一次就出来了很多结果。</p>
-<p><img src="http://ww2.sinaimg.cn/large/68622377gw1etthxcv4t2j20pp0d2dni.jpg" alt="alfi picasso"></p>
-<p>又比如我们想知道Android 支持类库都有哪些？<br>我们可以输入<code>alfi com.android.support</code> 来获取。</p>
-<hr>
-<h2 id="参考">参考</h2><ul>
-<li>本文整理来自：<a href="https://medium.com/the-engineering-team/android-library-finder-6c208ba16023" target="_blank" rel="external">Android Library Finder - Fastest way to get your dependencies</a></li>
-<li><a href="http://gradleplease.appspot.com/" target="_blank" rel="external">Gradle Please</a></li>
-<li><a href="https://github.com/cesarferreira/alfi" target="_blank" rel="external">alfi - Android Library Finder | Github</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/" target="_blank" rel="external">http://tikitoo.me/2015/07/07/android-development-tools-of-the-alfi-android-libary-finder/</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote>
-<p>Fastest way to get your dependencies（最快的方式获取依赖）</p>
-</blockquote>
-<p>作为一个Android 开发者，你可能使用Android Studio Gradle 构建你的项目，对于And]]>
-    </summary>
-    
-      <category term="alfi" scheme="http://tikitoo.github.io/tags/alfi/"/>
-    
-      <category term="android" scheme="http://tikitoo.github.io/tags/android/"/>
-    
-      <category term="tools" scheme="http://tikitoo.github.io/tags/tools/"/>
     
   </entry>
   

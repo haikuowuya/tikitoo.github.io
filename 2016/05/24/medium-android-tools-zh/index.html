@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android,Android Studio,Tools," />
+  <meta name="keywords" content="Android,开源项目,翻译," />
 
 
 
@@ -59,27 +59,23 @@
 
 
 
-<meta name="description" content="前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。
-我的经历
-当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高">
+<meta name="description" content="Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师Daniel McCartney 分享了他们Android App 使用的开源项目。
+Android Open Source Project你可以把Android 平台修改构建成你所需要的。当然你也可以提交贡献代码。
+google/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="是时候把Android 项目切换到Android Studio">
-<meta property="og:url" content="http://tikitoo.github.io/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/index.html">
+<meta property="og:title" content="Medium Android 客户端都使用了哪些开源项目？">
+<meta property="og:url" content="http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/index.html">
 <meta property="og:site_name" content="Tikitoo Blog">
-<meta property="og:description" content="前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。
-我的经历
-当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/68622377gw1et3o1cgo1pj20qo0bogmb.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/68622377gw1et3ljatc2vj20m50hq40y.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/68622377gw1et3lme261sj209q0ajmyw.jpg">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/68622377gw1et3lmdqdx5j20el07djs8.jpg">
-<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg">
-<meta property="og:updated_time" content="2015-07-01T08:34:12.000Z">
+<meta property="og:description" content="Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师Daniel McCartney 分享了他们Android App 使用的开源项目。
+Android Open Source Project你可以把Android 平台修改构建成你所需要的。当然你也可以提交贡献代码。
+google/">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg">
+<meta property="og:updated_time" content="2016-05-23T13:52:05.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="是时候把Android 项目切换到Android Studio">
-<meta name="twitter:description" content="前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。
-我的经历
-当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高">
+<meta name="twitter:title" content="Medium Android 客户端都使用了哪些开源项目？">
+<meta name="twitter:description" content="Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师Daniel McCartney 分享了他们Android App 使用的开源项目。
+Android Open Source Project你可以把Android 平台修改构建成你所需要的。当然你也可以提交贡献代码。
+google/">
 
 
 
@@ -97,7 +93,7 @@
   };
 </script>
 
-  <title> 是时候把Android 项目切换到Android Studio | Tikitoo Blog </title>
+  <title> Medium Android 客户端都使用了哪些开源项目？ | Tikitoo Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +262,7 @@
             
             
               
-                是时候把Android 项目切换到Android Studio
+                Medium Android 客户端都使用了哪些开源项目？
               
             
           </h1>
@@ -278,8 +274,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-06-14T15:44:38+08:00" content="2015-06-14">
-              2015-06-14
+            <time itemprop="dateCreated" datetime="2016-05-24T08:15:41+08:00" content="2016-05-24">
+              2016-05-24
             </time>
           </span>
 
@@ -289,8 +285,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/14/it-is-time-to-switch-to-android-studio-android-project/" itemprop="commentsCount"></span>
+                <a href="/2016/05/24/medium-android-tools-zh/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/24/medium-android-tools-zh/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -311,72 +307,31 @@
       
 
       
-        <p><img src="http://ww4.sinaimg.cn/large/68622377gw1et3o1cgo1pj20qo0bogmb.jpg" alt="Support for C/C++"><br>前几天时间刚结束的Google I/O 大会，是开发者的盛宴，众多新技术让我们目不暇接；当然作为一个Android 开发者，也有很多不可错过的东西，其中Android Studio 发布1.3 版本对于Android 开发者是个福音。</p>
-<h2 id="我的经历">我的经历</h2><hr>
-<p>当我还是Java 程序员的时候，我就在使用IntelliJ IDEA（没错Android Studio 就是基于它的），我能感受到一个好的工具，能大大提高我们的生产效率。所以当我转做Android 开发的时候，自然而然地使用Android Studio 开发，当然遇到好多问题，不过最终我都克服了，现在使用Android Studio 虽然算不上得心应手，但对于平常的开发还是绰绰有余，也能解决掉平常遇到的小问题。</p>
-<h2 id="Android_Studio在国内为什么这么不流行？">Android Studio在国内为什么这么不流行？</h2><hr>
-<p>当然我也知道，Android Studio 在国内为什么这么不流行？我总结几点原因，之前在微博上和大牛们有讨论过。</p>
-<ul>
-<li><p><strong>国内的网络环境。</strong>对于下载，安装，更新都需要科学上网，初学者遇到这些问题基本上都会退缩；就算当初能科学上网，我也是遇到一大堆问题。</p>
-</li>
-<li><p><strong>学习成本高。</strong>基本上国内的开发者的博客，入门教程大都是基于Eclipse，Android Studio 的教程少之又少，所以资源少，所以让初学者望而却步。</p>
-</li>
-<li><p><strong>从业者和教育者的固步自封。</strong>基本上，Android 开发的不管大小公司，很少有公司使用Android Studio 来开发，再加上大家已经习惯使用Eclipse 开发，不愿意脱离熟悉的环境。市面上的Android 开发书籍，基本上都是以Eclipse 作为开发环境来讲解样例的，所以综上来说，没有人带头使用，造就了Android Studio 没有流行的原因。也只是稍微有点觉悟的公司都使用Android Studio 开发。</p>
-</li>
-<li><p><strong>Android Studio 没有稳定的版本，并且不支持C/C++ 开发。</strong>直到2014 年 12 月才终于发布了正式版（1.0）。在这之前，时常会出现一些Bug。不过随着Android Studio 正式版的发布，到Google I/O 2015 的1.3 的发布，支持C/C++ 等众多特性，我们看到Android Studio 变得更加健壮，也让Android 开发者有信心切换到Android Studio。</p>
-</li>
-</ul>
-<p>对于以上的几个问题，我都已经找到了解决办法。</p>
-<ul>
-<li>作为一个程序员，第一步就要学会科学上网，至于方法，自行搜索，如果找不到，劝你还是不要做程序员了。</li>
-<li>至于说Android Studio 的教程，我会在文章结尾推荐大家一些教程，对于入门，熟悉使用也是足够了。</li>
-<li>对于从业者和教育者，我建议大家去关注微博上的大牛，关注Github 的Android 开发者，他们都在使用Android Studio，有什么问题，可以向他们请教。我也希望，作为一个Android 开发者，也向周围的人推荐使用Android Studio。</li>
-</ul>
-<h2 id="Android_Studio_VS_Eclipse">Android Studio VS Eclipse</h2><hr>
-<p>至于说Android Studio 和Eclipse 孰优孰劣，网上大牛们已经很多讨论了，更多请看，我就不多谈论了。</p>
-<ul>
-<li><a href="http://www.infoq.com/cn/news/2013/11/why-drop-eclipse-use-intellij" target="_blank" rel="external">我们为何放弃Eclipse，投奔IntelliJ IDEA</a></li>
-<li><a href="http://stormzhang.com/devtools/2014/11/25/android-studio-tutorial1/" target="_blank" rel="external">Android Studio VS Eclipse</a></li>
-<li><a href="http://www.zhihu.com/question/21534929" target="_blank" rel="external">Android Studio 比 Eclipse 好用在哪里？</a></li>
-</ul>
-<p>也有人担心Android Studio 编译速度慢，不过以后就不用担心了，Android Studio 1.3 重写了编译系统，采用和Eclispe 一样的编译原理，所以我们就不用担心Android Studio 的速度了，我也亲自测试了，真的快了好多。</p>
-<p>Google 官方也停止了ADT 的更新。那么使用Eclipse 就意味着好多新特性不能使用。而Android Studio 几乎每周都有更新，而且众多服务的集成，让开发者开发更加便捷，专注。</p>
-<p>如果你上Github 的话，目前现在流行的开源Android 项目已经没有采用Eclipse，基本上全部采用Android Studio，而且Android Studio 集成Git 插件，从Github Clone 项目特别方便，而且可以直接运行。</p>
-<h3 id="介绍Android_Studio_1-3_的新特性">介绍Android Studio 1.3 的新特性</h3><p>如果说Android Studio 1.0 可以勉强够用，那么Android Studio 1.3 相比1.0 就是质的改变，支持C/C++，支持SVG 图片自动生成不同分辨率的图片，增加主题编辑器，以后编辑主题，你也可以实时预览了等等很多。更多请看。</p>
-<ul>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a></li>
-</ul>
-<h2 id="怎么将Eclipse_项目切换到Android_Studio？">怎么将Eclipse 项目切换到Android Studio？</h2><hr>
-<p>不用急，Google 官方已经给出了两种解决方式解决方案。</p>
-<h3 id="第一种">第一种</h3><p>直接选择目录，next 一直到最后，我们的Eclipse 的项目就到了Android Studio 上了，需要注意的是，这样导入的项目还是会保留Eclipse 的构建方式，比如我们在Eclipse 上使用Ant 构建，迁移后还是会是会用Ant 构建。</p>
-<p><img src="http://ww1.sinaimg.cn/large/68622377gw1et3ljatc2vj20m50hq40y.jpg" alt="导入Eclipse ADT"></p>
-<h3 id="第二种">第二种</h3><p>首先，我们在Eclipse 将项目导出为Gradle 项目。<br><img src="http://ww1.sinaimg.cn/large/68622377gw1et3lme261sj209q0ajmyw.jpg" alt="选择导出"><br><img src="http://ww4.sinaimg.cn/large/68622377gw1et3lmdqdx5j20el07djs8.jpg" alt="导出Gradle 项目"><br>然后在Android Studio 直接打开build.grade 即可。<br>这样，项目就变成了Gradle 构建了。</p>
-<p>当然了，如果项目比较庞大，特别是商业项目，直接切换，难免会有很多问题，不过这是难免的，切换过来，也会一段时间内不太适应，不过当你适应了Android Studio 的便捷的开发，就会对它不离不弃了。</p>
-<p>上面的两种方式是官方提供的方式，如果英文过关的话，可以看英文原文。</p>
-<ul>
-<li><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a></li>
-</ul>
-<h2 id="参考以及文章推荐">参考以及文章推荐</h2><hr>
-<p>最后，关于Android Studio 我感觉不错的文章，推荐给你。</p>
-<ul>
-<li><p><a href="http://www.jianshu.com/p/36cfa1614d23" target="_blank" rel="external">Android Studio 入门指南</a><br>这是我写的文章，主要是给初学者搭建Android Studio 开发环境来看的。</p>
-</li>
-<li><p><a href="http://stormzhang.com/" target="_blank" rel="external">Android Studio系列教程</a><br>这篇是大牛StormZhang 写的系列Android Studio 教程，深入浅出，通俗易懂。</p>
-</li>
-<li><p><a href="http://tools.android.com/tech-docs/new-build-system/migrating-from-eclipse-projects" target="_blank" rel="external">Migrating From Eclipse Projects（从Eclipse 迁移项目到Android Studio）</a><br>这篇是官方给出的从Eclipse 迁移项目到Android Studio 的两种解决方式。</p>
-</li>
-</ul>
-<ul>
-<li><a href="http://robovm.com/google-io-summary-whats-new-in-android-development-tools/" target="_blank" rel="external">Google I/O Summary: What’s new in Android Development Tools</a></li>
-<li><a href="http://www.jianshu.com/p/4f7f55471da2" target="_blank" rel="external">Google I/O 2015 为 Android 开发者带来了哪些福利？ - 代码家</a><br>上面两篇，都是对Google IO 2015 的总结，一个中文，一个英文，就看你喜欢看哪个了。中文是大牛代码家总结的。<br><br></li>
-<li><a href="http://www.jianshu.com/p/fc03942548cc#" target="_blank" rel="external">Android Studio 的安装和配置篇（Windows篇）</a></li>
-<li><a href="http://android-studio.org/index.php/docs/guide" target="_blank" rel="external">Android Studio 使用指南 | Android Studio 中文教程</a></li>
-<li><a href="http://www.jianshu.com/p/470730011d85" target="_blank" rel="external">从Eclipse中导入项目到AndroidStudio中</a></li>
-</ul>
+        <p>Medium 是一个写作的平台，他的创始人也创立了Twitter，Square（JakeWharton 大神所在的公司），这篇文章是Medium 的Android工程师<a href="https://medium.com/@dmccartney" target="_blank" rel="external">Daniel McCartney</a> 分享了他们Android App 使用的开源项目。</p>
+<p><a href="https://source.android.com/" target="_blank" rel="external">Android Open Source Project</a><br>你可以把Android 平台修改构建成你所需要的。当然你也可以提交贡献代码。</p>
+<p><a href="https://github.com/google/guava" target="_blank" rel="external">google/guava</a><br>Guava 是支持Java 6+ 的Googel 核心类库，它包括集合类，缓存，并发库，通用注解等等。</p>
+<p><a href="https://github.com/google/dagger" target="_blank" rel="external">google/dagger  </a><br>Dagger 2 是一个快速的依赖注入库，它使用APT 的方式在编译时生成代码，在牺牲了微小代价的情况下，使项目架构更加整洁。</p>
+<p><a href="https://github.com/square/retrofit" target="_blank" rel="external">square/retrofit  </a><br>Retrofit 是一个类型安全的Rest 风格的类库，它通过注解的方式来实现网络请求。</p>
+<p><a href="https://github.com/square/okhttp" target="_blank" rel="external">square/okhttp  </a><br>OkHttp 是一个HTTP + SPDY 的网络请求库。</p>
+<p><a href="https://github.com/FasterXML/jackson" target="_blank" rel="external">FasterXML/jackson  </a><br>Jackson 是一个Json 解析和生成库。</p>
+<p><a href="https://github.com/square/otto" target="_blank" rel="external">square/otto  </a><br>Otto 是一个基于Guava 项目实现的事件总线的类库。</p>
+<p><a href="https://github.com/bumptech/glide" target="_blank" rel="external">bumptech/glide  </a><br>Glide 是一个图片加载和缓存库，它主要专注于平滑滚动。</p>
+<p><a href="https://github.com/square/phrase" target="_blank" rel="external">square/phrase  </a><br>Phrase 是一个Android 字符串资源模板类库。</p>
+<p><a href="https://github.com/JakeWharton/butterknife/" target="_blank" rel="external">JakeWharton/butterknife</a><br>ButterKnife 是一个View 注入类库。</p>
+<p><a href="https://github.com/chrisjenx/Calligraphy" target="_blank" rel="external">chrisjenx/Calligraphy  </a><br>Calligraphy 是一个自定义字体的类库。</p>
+<p><a href="https://github.com/JakeWharton/hugo" target="_blank" rel="external">JakeWharton/hugo</a><br>Hugo 是一个通过注解的方法来实现日志功能的类库。</p>
+<p><a href="https://github.com/mockito/mockito" target="_blank" rel="external">mockito/mockito</a><br>Mockito 是一个Java 的Mocking 单元测试框架。</p>
+<p><a href="https://github.com/robolectric/robolectric" target="_blank" rel="external">robolectric/robolectric</a><br>robolectric 是一个Android 的单元测试框架。</p>
+<p><a href="https://github.com/JakeWharton/sdk-manager-plugin" target="_blank" rel="external">JakeWharton/sdk-manager-plugin</a><br>sdk-manager-plugin 是用来下载和管理你的Android SDK的Gradle 插件。</p>
+<hr>
+<p>下面还有很多第三方的工具，可以让你的App 大放异彩。</p>
+<p><a href="https://github.com/facebook/facebook-android-sdk" target="_blank" rel="external">facebook/facebook-android-sdk</a><br>facebook-android-sdk 是集成Facebook 平台用于Android 的SDK。</p>
+<p><a href="http://fabric.io/" target="_blank" rel="external">Fabric</a><br>Fabric 是Twitter 移动开发平台，它集成了一系列好用的工具，比如分析，崩溃捕获等等。</p>
+<p><a href="https://developer.android.com/google/" target="_blank" rel="external">Google Services | Android Developers</a><br>利用Google 最新的技术，只需要简单的API，实现很多强大的功能。</p>
 <hr>
 <blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://www.jianshu.com/p/fe6af27c12ed" target="_blank" rel="external">http://www.jianshu.com/p/fe6af27c12ed</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+<p>本文作者：<a href="https://medium.com/@dmccartney" target="_blank" rel="external">Daniel McCartney</a><br>本文译者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>原文链接：<a href="https://medium.engineering/medium-android-tools-f827bb96b8e4" target="_blank" rel="external">https://medium.engineering/medium-android-tools-f827bb96b8e4</a><br>翻译链接：<a href="http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/">http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/</a><br>非商业转载转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>，以及本文所有内容。</p>
+<p>本文首发我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
 </blockquote>
 
       
@@ -388,9 +343,9 @@
           
             <a href="/tags/Android/" rel="tag">#Android</a>
           
-            <a href="/tags/Android-Studio/" rel="tag">#Android Studio</a>
+            <a href="/tags/开源项目/" rel="tag">#开源项目</a>
           
-            <a href="/tags/Tools/" rel="tag">#Tools</a>
+            <a href="/tags/翻译/" rel="tag">#翻译</a>
           
         </div>
       
@@ -399,17 +354,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/04/20/android-studio-getting-guide/" rel="next" title="Android Studio 入门指南">
-                <i class="fa fa-chevron-left"></i> Android Studio 入门指南
+              <a href="/2016/05/17/beautiful-android-login-and-signup-screens-with-material-design-zh/" rel="next" title="教你写一个炫酷的Material Design 风格的登录和注册页面">
+                <i class="fa fa-chevron-left"></i> 教你写一个炫酷的Material Design 风格的登录和注册页面
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/07/01/User-github-hexo-build-blog/" rel="prev" title="使用Github + Hexo 来搭建自己的博客">
-                使用Github + Hexo 来搭建自己的博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -435,8 +386,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/06/14/it-is-time-to-switch-to-android-studio-android-project/"
-           data-title="是时候把Android 项目切换到Android Studio" data-url="http://tikitoo.github.io/2015/06/14/it-is-time-to-switch-to-android-studio-android-project/">
+      <div class="ds-thread" data-thread-key="2016/05/24/medium-android-tools-zh/"
+           data-title="Medium Android 客户端都使用了哪些开源项目？" data-url="http://tikitoo.github.io/2016/05/24/medium-android-tools-zh/">
       </div>
     
   </div>
@@ -584,7 +535,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我的经历"><span class="nav-number">1.</span> <span class="nav-text">我的经历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android_Studio在国内为什么这么不流行？"><span class="nav-number">2.</span> <span class="nav-text">Android Studio在国内为什么这么不流行？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android_Studio_VS_Eclipse"><span class="nav-number">3.</span> <span class="nav-text">Android Studio VS Eclipse</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍Android_Studio_1-3_的新特性"><span class="nav-number">3.1.</span> <span class="nav-text">介绍Android Studio 1.3 的新特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么将Eclipse_项目切换到Android_Studio？"><span class="nav-number">4.</span> <span class="nav-text">怎么将Eclipse 项目切换到Android Studio？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一种"><span class="nav-number">4.1.</span> <span class="nav-text">第一种</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种"><span class="nav-number">4.2.</span> <span class="nav-text">第二种</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考以及文章推荐"><span class="nav-number">5.</span> <span class="nav-text">参考以及文章推荐</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
