@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://tikitoo.github.io//"/>
-  <updated>2016-05-23T13:52:05.039Z</updated>
+  <updated>2016-05-26T23:30:31.108Z</updated>
   <id>http://tikitoo.github.io//</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[知道Android 中Gradle 的这些技巧，提升编译构建速度]]></title>
+    <link href="http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/"/>
+    <id>http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/</id>
+    <published>2016-05-26T00:15:41.000Z</published>
+    <updated>2016-05-26T23:30:31.108Z</updated>
+    <content type="html"><![CDATA[<p>不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么大胆黑谷歌会不会被喷死！！！）。好吧吐槽完了，下面切入正题，最后还是要自己去填坑。</p>
+<p>现在基本上都使用Android Studio 来开发，使用Gradle 构建项目，Gradle 的种种优点，多渠道打包方便，依赖类库统一管理，基于Groovy 的DSL 语言简洁方便。这些好处在我们开发省了我们不少事，但是唯一的问题就是编译构建运行的时候特别慢，甚至是致命的，最后发现加班的时间都浪费在编译构建上（说多了都是泪）。</p>
+<p>下面有几个技巧，让你你的Android Gradle 运行，编译更加快速。</p>
+<h2 id="设置代理">设置代理</h2><p>因为依赖要从Jcenter/Maven 仓库上下载，但是网络还是时不时地抽风。如果你使用VPN 或者全局代码可以从本地网络配置，就不需要在Android Studio 配置了（好像并没有什么用？）。给Gradle 设置代码需要在根目录的<strong>gradle.properties</strong> 配置。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 举例ShadowSocket</span><br><span class="line">systemProp.http.proxyHost=127.0.0.1</span><br><span class="line">systemProp.http.proxyPort=1080</span><br><span class="line">systemProp.https.proxyHost=127.0.0.1</span><br><span class="line">systemProp.https.proxyPort=1080</span><br></pre></td></tr></table></figure>
+<p>如果你用ShadowSocket，记得在本地开启。如果你使用其他代理软件，也类似，会有主机和端口。</p>
+<h2 id="更新Gradle，设置离线状态">更新Gradle，设置离线状态</h2><p>Android Studio 的版本一般都跟随着Gradle 的版本，在安装目录的根目录有个<strong>gradle</strong> 目录，就是最新版，我们可以在设置中打开Gradle，选择Use local gradle distribution，然后选择Gradle 的目录即可，这样就不会每次根据项目中./gradle/xxx 中的gradle 版本每次再下载。理论上Gradle 的版本越新构建运行越快，也只是理论上，所以推荐稳定版的版本。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480c56owej20z50dedj1.jpg" alt=""></p>
+<p>如果需要使用命令行编译，可以配置<strong>—daemon —parallel —offline</strong>。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480znt81ij20z50dutd3.jpg" alt=""></p>
+<h2 id="守护进程，并行编译">守护进程，并行编译</h2><p>在项目的根目录中有一个<strong>gradle.properties</strong> 文件，</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480bomjc0j20ry0am42c.jpg" alt=""></p>
+<p><strong>org.gradle.daemon=true</strong> 就是让你让你编译时使用守护进程。</p>
+<p><strong>org.gradle.parallel=true</strong> 使用并行编译</p>
+<p><strong>org.gradle.jvmargs=-Xmx2048m</strong> JVM最大允许分配的堆内存，按需分配</p>
+<p><strong>-XX:MaxPermSize=512m</strong> JVM最大允许分配的非堆内存，按需分配</p>
+<p>当然你也可以在下面的目录下面创建<code>gradle.properties</code> ，来配置全局的属性，在所有的项目中起作用。</p>
+<ul>
+<li><code>/home//.gradle/</code> (Linux)</li>
+<li><code>/Users//.gradle/</code> (Mac)</li>
+<li><code>C:\Users\\.gradle</code> (Windows)</li>
+</ul>
+<p>当然也可以修改<strong>xxx\android studio 安装目录\bin\studio64.exe.vmoptions</strong> 文件来配置JVM 的相关的参数。</p>
+<h2 id="开发使用SDK=21">开发使用SDK=21</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">	...</span><br><span class="line"></span><br><span class="line">    productFlavors &#123;</span><br><span class="line">        dev &#123;</span><br><span class="line">            minSdkVersion <span class="number">21</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        release &#123;</span><br><span class="line">            minSdkVersion <span class="number">14</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们都知道当API 不小于21，使用 ART，在 Build 时只做 class to dex，不做 mergeing dex，会省下大量的时间。</p>
+<h2 id="使用aar依赖">使用aar依赖</h2><p>我们都知道我们或多或少使用第三方的开源库或者工具，还有自己封装的类库，但是一次编译的时候在<strong>Library Module</strong> 目录下， 打开<strong>build/outputs/aar</strong>，就有生成的aar 文件。把他放在<strong>libs</strong> 目录下，在build.gradle 添加。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">allprojects &#123;</span><br><span class="line">   repositories &#123;</span><br><span class="line">      jcenter()</span><br><span class="line">      flatDir &#123;</span><br><span class="line">        dirs <span class="string">'libs'</span></span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile(<span class="symbol">name:</span><span class="string">'cards'</span>, <span class="symbol">ext:</span><span class="string">'aar'</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>当然也可以这样添加</strong></p>
+<p>我们可以新建一个jar/aar Module，选择aar 文件，然后新建的Module 目录下，就会多了个build.gradle 和xxx.aar。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">configurations.maybeCreate(<span class="string">"default"</span>)</span><br><span class="line">artifacts.add(<span class="string">"default"</span>, file(<span class="string">'mylibrary-debug.aar'</span>))</span><br></pre></td></tr></table></figure>
+<p>然后在我们的Module 中这样引用即可。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile project(':mylibrary-debug')</span><br></pre></td></tr></table></figure>
+<h2 id="dexOptions">dexOptions</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">classpath <span class="string">'com.android.tools.build:gradle:2.0.0-alpha9'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Default value: -Xmx10248m -XX:MaxPermSize=256m</span></span><br><span class="line">org.gradle.jvmargs=-<span class="constant">Xmx4g</span> -<span class="constant">XX</span><span class="symbol">:MaxPermSize=</span><span class="number">512</span>m</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dexOptions &#123;&#10;    preDexLibraries true&#10;    javaMaxHeapSize &#34;3g&#34;&#10;    incremental true&#10;    dexInProcess = true&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p>这里是参考stackoverflow 上的，好像有Bug，作者本人试了Android gradle 的版本至少是<strong>2.0.0-alpha9</strong>，然后配置一些参数。这里为JVM 设置4G，给Dex 设置3G。</p>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://stackoverflow.com/questions/35224255/to-run-dex-in-process-the-gradle-daemon-needs-a-larger-heap-it-currently-has-9" target="_blank" rel="external">android - To run dex in process, the Gradle daemon needs a larger heap. It currently has 910 MB | Stack Overflow</a></li>
+<li><a href="http://stackoverflow.com/questions/16682847/how-to-manually-include-external-aar-package-using-new-gradle-android-build-syst" target="_blank" rel="external">How to manually include external aar package using new Gradle Android Build System | Stack Overflow</a></li>
+<li><a href="http://www.devtf.cn/?p=585" target="_blank" rel="external">优化android studio编译效率的方法 | 开发技术前线</a></li>
+<li><a href="http://blog.isming.me/2015/03/18/android-build-speed-up/" target="_blank" rel="external">加速Android Studio/Gradle构建 | 码农明明桑</a></li>
+<li><a href="http://stackoverflow.com/questions/21882804/adding-local-aar-files-to-my-gradle-build" target="_blank" rel="external">android - Adding local .aar files to my gradle build | Stack Overflow</a></li>
+<li><a href="http://stormzhang.com/android/2015/03/01/android-reference-local-aar/" target="_blank" rel="external">Android模块化编程之引用本地的aar | Stormzhang</a></li>
+</ul>
+<blockquote>
+<p>本文译者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>原文链接：<a href="http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster">http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/</a><br>非商业转载转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>，以及本文所有内容。</p>
+<p>本文首发我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么]]>
+    </summary>
+    
+      <category term="Android" scheme="http://tikitoo.github.io/tags/Android/"/>
+    
+      <category term="Android Studio" scheme="http://tikitoo.github.io/tags/Android-Studio/"/>
+    
+      <category term="Gradle" scheme="http://tikitoo.github.io/tags/Gradle/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Medium Android 客户端都使用了哪些开源项目？]]></title>
@@ -1024,36 +1091,6 @@
       <category term="利器" scheme="http://tikitoo.github.io/tags/%E5%88%A9%E5%99%A8/"/>
     
       <category term="效率" scheme="http://tikitoo.github.io/tags/%E6%95%88%E7%8E%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Atom 在Ubuntu 中文显示乱码（方块）解决方法]]></title>
-    <link href="http://tikitoo.github.io/2015/07/23/ubuntu-atom-zh-display-squre/"/>
-    <id>http://tikitoo.github.io/2015/07/23/ubuntu-atom-zh-display-squre/</id>
-    <published>2015-07-23T03:56:23.000Z</published>
-    <updated>2015-07-23T03:59:43.000Z</updated>
-    <content type="html"><![CDATA[<p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
-<p>因为是Atom 官方没有提供对中文的显示，所以就自己找解决办法吧，不过网上的大神，已经找到了解决方法。之前在网络上有人说在设置中字体设置为<code>文泉驿正黑</code> 字体，就可以显示了，但是我设置了，但还是显示方块，今天又在网络上看到的，因为Ubuntu 系统默认是没有安装<code>文泉驿正黑</code> 字体的，需要我们手工安装来安装。</p>
-<p>我们可以使用下面的方式来安装：<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install ttf-wqy-*</span><br></pre></td></tr></table></figure></p>
-<p>安装了之后，使用快捷键 <code>Ctrl + ,</code> 打开设置。在<code>Edit Settings</code> 中的<code>Font Family</code> 中输入<code>&#39;DejaVu Sans Mono&#39;, &#39;文泉驿正黑&#39;</code> 即可。然后在编辑框中中文就可以正常显示了。</p>
-<p>今天又测试了Markdown 预览界面，中文还是显示方块，又去找方法了。</p>
-<p>在设置界面，打开左边<code>Open Settings Folder</code>，然后打开<code>style.less</code> 文件，添加以下内容即可。</p>
-<p><strong>style.less</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@font-family:</span> <span class="string">'DejaVu Sans Mono'</span>, <span class="string">'文泉驿正黑'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class">.markdown-preview</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  <span class="tag">atom-text-editor</span><span class="pseudo">::shadow</span> *&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="variable">@font-family</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>除了编辑框，Markdown 预览能正常显示中文外，其他地方可能也会显示不正常，这个时候，我们去网上搜索，基本上就是在配置中添加一些属性即可。</p>
-<h2 id="参考">参考</h2><ul>
-<li><a href="http://atom-china.org/t/topic/116" target="_blank" rel="external">中文字体问题&amp;讨论</a></li>
-<li><a href="http://atom-china.org/t/linux/85/3" target="_blank" rel="external">Linux 下中文显示成方块的解决方案</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>前几天在Ubuntu上安装了Atom，谁知道在所有地方的中文都显示方块。这让人很郁闷，虽然写程序中文很少,但是总归有写中文的地方吧。之前找了很长时间就都没有找解决办法。所以今天闲了起来，就又来找办法，终于找到了解决办法，所以就来总结一下。</p>
-<p>因为是Atom 官方]]>
-    </summary>
-    
-      <category term="Atom" scheme="http://tikitoo.github.io/tags/Atom/"/>
-    
-      <category term="Ubuntu" scheme="http://tikitoo.github.io/tags/Ubuntu/"/>
     
   </entry>
   

@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android,Android Studio," />
+  <meta name="keywords" content="Android,Android Studio,Gradle," />
 
 
 
@@ -59,29 +59,23 @@
 
 
 
-<meta name="description" content="我要回答了。你们只负责点赞吧。
-上面有好多大牛的推荐有很多不错。
-Android ButterKnife Zelezny不想写findViewById() 就用ButterKnife，ButterKnife 的注释不想写就用这个插件。
-Genymotion用了Genymotion 的虚拟机再也不用系统带的虚拟机了，配合这个插件，可以在Android Studio 直接打开虚拟机。
-GsonForm">
+<meta name="description" content="不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么大胆黑谷歌会不会被喷死！！！）。好吧吐槽完了，下面切入正题，最后还是要自己去填坑。
+现在基本上都使用Android Studi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎">
-<meta property="og:url" content="http://tikitoo.github.io/2015/09/27/android-studio-the-very-useful-plugins/index.html">
+<meta property="og:title" content="知道Android 中Gradle 的这些技巧，提升编译构建速度">
+<meta property="og:url" content="http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/index.html">
 <meta property="og:site_name" content="Tikitoo Blog">
-<meta property="og:description" content="我要回答了。你们只负责点赞吧。
-上面有好多大牛的推荐有很多不错。
-Android ButterKnife Zelezny不想写findViewById() 就用ButterKnife，ButterKnife 的注释不想写就用这个插件。
-Genymotion用了Genymotion 的虚拟机再也不用系统带的虚拟机了，配合这个插件，可以在Android Studio 直接打开虚拟机。
-GsonForm">
-<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg">
-<meta property="og:updated_time" content="2015-09-27T12:01:50.000Z">
+<meta property="og:description" content="不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么大胆黑谷歌会不会被喷死！！！）。好吧吐槽完了，下面切入正题，最后还是要自己去填坑。
+现在基本上都使用Android Studi">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/68622377gw1f480c56owej20z50dedj1.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/68622377gw1f480znt81ij20z50dutd3.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/68622377gw1f480bomjc0j20ry0am42c.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg">
+<meta property="og:updated_time" content="2016-05-26T23:30:31.108Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎">
-<meta name="twitter:description" content="我要回答了。你们只负责点赞吧。
-上面有好多大牛的推荐有很多不错。
-Android ButterKnife Zelezny不想写findViewById() 就用ButterKnife，ButterKnife 的注释不想写就用这个插件。
-Genymotion用了Genymotion 的虚拟机再也不用系统带的虚拟机了，配合这个插件，可以在Android Studio 直接打开虚拟机。
-GsonForm">
+<meta name="twitter:title" content="知道Android 中Gradle 的这些技巧，提升编译构建速度">
+<meta name="twitter:description" content="不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么大胆黑谷歌会不会被喷死！！！）。好吧吐槽完了，下面切入正题，最后还是要自己去填坑。
+现在基本上都使用Android Studi">
 
 
 
@@ -99,7 +93,7 @@ GsonForm">
   };
 </script>
 
-  <title> Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎 | Tikitoo Blog </title>
+  <title> 知道Android 中Gradle 的这些技巧，提升编译构建速度 | Tikitoo Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +262,7 @@ GsonForm">
             
             
               
-                Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎
+                知道Android 中Gradle 的这些技巧，提升编译构建速度
               
             
           </h1>
@@ -280,8 +274,8 @@ GsonForm">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-09-27T19:49:59+08:00" content="2015-09-27">
-              2015-09-27
+            <time itemprop="dateCreated" datetime="2016-05-26T08:15:41+08:00" content="2016-05-26">
+              2016-05-26
             </time>
           </span>
 
@@ -291,8 +285,8 @@ GsonForm">
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/09/27/android-studio-the-very-useful-plugins/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/27/android-studio-the-very-useful-plugins/" itemprop="commentsCount"></span>
+                <a href="/2016/05/26/android-studio-gradle-build-run-faster/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/26/android-studio-gradle-build-run-faster/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -313,28 +307,53 @@ GsonForm">
       
 
       
-        <p>我要回答了。你们只负责点赞吧。</p>
-<p>上面有好多大牛的推荐有很多不错。</p>
-<p><strong>Android ButterKnife Zelezny</strong><br>不想写findViewById() 就用ButterKnife，ButterKnife 的注释不想写就用这个插件。</p>
-<p><strong>Genymotion</strong><br>用了Genymotion 的虚拟机再也不用系统带的虚拟机了，配合这个插件，可以在Android Studio 直接打开虚拟机。</p>
-<p><strong>GsonFormat</strong><br>把 JSON 字符串直接实例化成类，每次想想写Model 类想死的心都有了，有了这个插件Model 类也不用写了。</p>
-<p><strong>Fir.im upload</strong><br>使用Fir.im 内测平台很方便有木有。但每次都把文件使用网页上传，不符合我们这么高大上的行业。有了这个插件，上传只用添加token，第一次选择生成的apk 文件的路径，就可以自动上传了。具体教程请看Fir.im 的官方教程。</p>
-<blockquote>
-<p><a href="http://blog.fir.im/geng-xin-ri-zhi150828/" target="_blank" rel="external">更新日志 - fir.im 回归，上线 Android Studio 插件</a></p>
-</blockquote>
-<p><strong>Markdown</strong><br>比如我们要写README 的时候，或者其他文档的时候，使用MD 的插件可以预览效果。</p>
-<p><strong>CodeGlance</strong><br>在编辑代码最右侧，显示一块代码小地图。</p>
-<p><strong>Android Material Design Icon Generator</strong><br>自动生成不同尺寸的Material Design Icon。</p>
-<p>PS: Android Studio 1.4 Preview 1 Canary Channel 中添加了Vector Asset 功能，你可以自动添加Material Design Icon 或者自己自定义的SVG 文件，生成VectorDrawables 文件，使用直接引用Drawable 文件。</p>
-<p>参考</p>
+        <p>不过有些事情我们是不得不承认的，Android Studio 越升级越卡顿有木有，每次升级都说有黑科技，但每次都被当做小白鼠，最后只能降版本保智商，每次构建，都要刷个干货群，刷个知乎才能完成，有时候代码改了运行了没有生效有木有？？？现在越来越觉得Google 不靠谱了（这么大胆黑谷歌会不会被喷死！！！）。好吧吐槽完了，下面切入正题，最后还是要自己去填坑。</p>
+<p>现在基本上都使用Android Studio 来开发，使用Gradle 构建项目，Gradle 的种种优点，多渠道打包方便，依赖类库统一管理，基于Groovy 的DSL 语言简洁方便。这些好处在我们开发省了我们不少事，但是唯一的问题就是编译构建运行的时候特别慢，甚至是致命的，最后发现加班的时间都浪费在编译构建上（说多了都是泪）。</p>
+<p>下面有几个技巧，让你你的Android Gradle 运行，编译更加快速。</p>
+<h2 id="设置代理">设置代理</h2><p>因为依赖要从Jcenter/Maven 仓库上下载，但是网络还是时不时地抽风。如果你使用VPN 或者全局代码可以从本地网络配置，就不需要在Android Studio 配置了（好像并没有什么用？）。给Gradle 设置代码需要在根目录的<strong>gradle.properties</strong> 配置。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 举例ShadowSocket</span><br><span class="line">systemProp.http.proxyHost=127.0.0.1</span><br><span class="line">systemProp.http.proxyPort=1080</span><br><span class="line">systemProp.https.proxyHost=127.0.0.1</span><br><span class="line">systemProp.https.proxyPort=1080</span><br></pre></td></tr></table></figure>
+<p>如果你用ShadowSocket，记得在本地开启。如果你使用其他代理软件，也类似，会有主机和端口。</p>
+<h2 id="更新Gradle，设置离线状态">更新Gradle，设置离线状态</h2><p>Android Studio 的版本一般都跟随着Gradle 的版本，在安装目录的根目录有个<strong>gradle</strong> 目录，就是最新版，我们可以在设置中打开Gradle，选择Use local gradle distribution，然后选择Gradle 的目录即可，这样就不会每次根据项目中./gradle/xxx 中的gradle 版本每次再下载。理论上Gradle 的版本越新构建运行越快，也只是理论上，所以推荐稳定版的版本。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480c56owej20z50dedj1.jpg" alt=""></p>
+<p>如果需要使用命令行编译，可以配置<strong>—daemon —parallel —offline</strong>。</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480znt81ij20z50dutd3.jpg" alt=""></p>
+<h2 id="守护进程，并行编译">守护进程，并行编译</h2><p>在项目的根目录中有一个<strong>gradle.properties</strong> 文件，</p>
+<p><img src="http://ww3.sinaimg.cn/large/68622377gw1f480bomjc0j20ry0am42c.jpg" alt=""></p>
+<p><strong>org.gradle.daemon=true</strong> 就是让你让你编译时使用守护进程。</p>
+<p><strong>org.gradle.parallel=true</strong> 使用并行编译</p>
+<p><strong>org.gradle.jvmargs=-Xmx2048m</strong> JVM最大允许分配的堆内存，按需分配</p>
+<p><strong>-XX:MaxPermSize=512m</strong> JVM最大允许分配的非堆内存，按需分配</p>
+<p>当然你也可以在下面的目录下面创建<code>gradle.properties</code> ，来配置全局的属性，在所有的项目中起作用。</p>
 <ul>
-<li><a href="https://www.quora.com/What-are-some-of-the-best-Android-Studio-plugins" target="_blank" rel="external">The best Android Studio plugins</a></li>
-<li><a href="https://github.com/judasn/IntelliJ-IDEA-Tutorial/blob/master/plugins-settings.md" target="_blank" rel="external">judasn/IntelliJ-IDEA-Tutorial · GitHub</a></li>
+<li><code>/home//.gradle/</code> (Linux)</li>
+<li><code>/Users//.gradle/</code> (Mac)</li>
+<li><code>C:\Users\\.gradle</code> (Windows)</li>
 </ul>
-<hr>
+<p>当然也可以修改<strong>xxx\android studio 安装目录\bin\studio64.exe.vmoptions</strong> 文件来配置JVM 的相关的参数。</p>
+<h2 id="开发使用SDK=21">开发使用SDK=21</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">	...</span><br><span class="line"></span><br><span class="line">    productFlavors &#123;</span><br><span class="line">        dev &#123;</span><br><span class="line">            minSdkVersion <span class="number">21</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        release &#123;</span><br><span class="line">            minSdkVersion <span class="number">14</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我们都知道当API 不小于21，使用 ART，在 Build 时只做 class to dex，不做 mergeing dex，会省下大量的时间。</p>
+<h2 id="使用aar依赖">使用aar依赖</h2><p>我们都知道我们或多或少使用第三方的开源库或者工具，还有自己封装的类库，但是一次编译的时候在<strong>Library Module</strong> 目录下， 打开<strong>build/outputs/aar</strong>，就有生成的aar 文件。把他放在<strong>libs</strong> 目录下，在build.gradle 添加。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">allprojects &#123;</span><br><span class="line">   repositories &#123;</span><br><span class="line">      jcenter()</span><br><span class="line">      flatDir &#123;</span><br><span class="line">        dirs <span class="string">'libs'</span></span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile(<span class="symbol">name:</span><span class="string">'cards'</span>, <span class="symbol">ext:</span><span class="string">'aar'</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>当然也可以这样添加</strong></p>
+<p>我们可以新建一个jar/aar Module，选择aar 文件，然后新建的Module 目录下，就会多了个build.gradle 和xxx.aar。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">configurations.maybeCreate(<span class="string">"default"</span>)</span><br><span class="line">artifacts.add(<span class="string">"default"</span>, file(<span class="string">'mylibrary-debug.aar'</span>))</span><br></pre></td></tr></table></figure>
+<p>然后在我们的Module 中这样引用即可。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile project(':mylibrary-debug')</span><br></pre></td></tr></table></figure>
+<h2 id="dexOptions">dexOptions</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">classpath <span class="string">'com.android.tools.build:gradle:2.0.0-alpha9'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Default value: -Xmx10248m -XX:MaxPermSize=256m</span></span><br><span class="line">org.gradle.jvmargs=-<span class="constant">Xmx4g</span> -<span class="constant">XX</span><span class="symbol">:MaxPermSize=</span><span class="number">512</span>m</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dexOptions &#123;&#10;    preDexLibraries true&#10;    javaMaxHeapSize &#34;3g&#34;&#10;    incremental true&#10;    dexInProcess = true&#10;&#125;</span><br></pre></td></tr></table></figure>
+<p>这里是参考stackoverflow 上的，好像有Bug，作者本人试了Android gradle 的版本至少是<strong>2.0.0-alpha9</strong>，然后配置一些参数。这里为JVM 设置4G，给Dex 设置3G。</p>
+<h2 id="参考">参考</h2><ul>
+<li><a href="http://stackoverflow.com/questions/35224255/to-run-dex-in-process-the-gradle-daemon-needs-a-larger-heap-it-currently-has-9" target="_blank" rel="external">android - To run dex in process, the Gradle daemon needs a larger heap. It currently has 910 MB | Stack Overflow</a></li>
+<li><a href="http://stackoverflow.com/questions/16682847/how-to-manually-include-external-aar-package-using-new-gradle-android-build-syst" target="_blank" rel="external">How to manually include external aar package using new Gradle Android Build System | Stack Overflow</a></li>
+<li><a href="http://www.devtf.cn/?p=585" target="_blank" rel="external">优化android studio编译效率的方法 | 开发技术前线</a></li>
+<li><a href="http://blog.isming.me/2015/03/18/android-build-speed-up/" target="_blank" rel="external">加速Android Studio/Gradle构建 | 码农明明桑</a></li>
+<li><a href="http://stackoverflow.com/questions/21882804/adding-local-aar-files-to-my-gradle-build" target="_blank" rel="external">android - Adding local .aar files to my gradle build | Stack Overflow</a></li>
+<li><a href="http://stormzhang.com/android/2015/03/01/android-reference-local-aar/" target="_blank" rel="external">Android模块化编程之引用本地的aar | Stormzhang</a></li>
+</ul>
 <blockquote>
-<p>本文作者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>本文出处：<a href="http://tikitoo.me/android-studio-the-very-useful-plugins" target="_blank" rel="external">Android Studio有哪些非常好用的插件？</a><br>转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>。</p>
-<p>欢迎关注我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<a href="http://weixin.sogou.com/gzh?openid=oIWsFt0tWyaAMPcOVIEsvZcHnPXA" target="_blank" rel="external">AndroidMate</a><br><img src="http://ww3.sinaimg.cn/mw690/68622377gw1eqmpbo4ugzj209k09kmx3.jpg" alt="安卓同学"></p>
+<p>本文译者：<a href="http://weibo.com/lyf0306" target="_blank" rel="external">Tikitoo</a><br>原文链接：<a href="http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster">http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/</a><br>非商业转载转载请在开头注明<code>作者详细信息</code>和<code>本文出处</code>，以及本文所有内容。</p>
+<p>本文首发我的微信公众号，分享<code>Android 开发</code>和<code>互联网内容</code>。<br>微信号：<code>AndroidMate</code><br>公众号：<code>安卓同学</code><br><img src="http://ww2.sinaimg.cn/large/68622377gw1f00ivyo4lsj20760760t7.jpg" alt="安卓同学"></p>
 </blockquote>
 
       
@@ -348,6 +367,8 @@ GsonForm">
           
             <a href="/tags/Android-Studio/" rel="tag">#Android Studio</a>
           
+            <a href="/tags/Gradle/" rel="tag">#Gradle</a>
+          
         </div>
       
 
@@ -355,17 +376,13 @@ GsonForm">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/13/android-studio-live-templates-md/" rel="next" title="Android Studio live templates 的使用">
-                <i class="fa fa-chevron-left"></i> Android Studio live templates 的使用
+              <a href="/2016/05/24/medium-android-tools-zh/" rel="next" title="Medium Android 客户端都使用了哪些开源项目？">
+                <i class="fa fa-chevron-left"></i> Medium Android 客户端都使用了哪些开源项目？
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/02/developer-website/" rel="prev" title="开发者必备的网站">
-                开发者必备的网站 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -391,8 +408,8 @@ GsonForm">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/09/27/android-studio-the-very-useful-plugins/"
-           data-title="Android Studio有哪些非常好用的插件？ - Tikitoo 的回答 - 知乎" data-url="http://tikitoo.github.io/2015/09/27/android-studio-the-very-useful-plugins/">
+      <div class="ds-thread" data-thread-key="2016/05/26/android-studio-gradle-build-run-faster/"
+           data-title="知道Android 中Gradle 的这些技巧，提升编译构建速度" data-url="http://tikitoo.github.io/2016/05/26/android-studio-gradle-build-run-faster/">
       </div>
     
   </div>
@@ -540,7 +557,7 @@ GsonForm">
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置代理"><span class="nav-number">1.</span> <span class="nav-text">设置代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新Gradle，设置离线状态"><span class="nav-number">2.</span> <span class="nav-text">更新Gradle，设置离线状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#守护进程，并行编译"><span class="nav-number">3.</span> <span class="nav-text">守护进程，并行编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发使用SDK=21"><span class="nav-number">4.</span> <span class="nav-text">开发使用SDK=21</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用aar依赖"><span class="nav-number">5.</span> <span class="nav-text">使用aar依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dexOptions"><span class="nav-number">6.</span> <span class="nav-text">dexOptions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
